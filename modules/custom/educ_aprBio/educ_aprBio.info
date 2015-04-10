@@ -1,0 +1,5 @@
+name = Education APR Bio
+description = Using College of Education APR, this creates a directory bio.
+core = 7.x
+version = 7.x-0.1-devs
+

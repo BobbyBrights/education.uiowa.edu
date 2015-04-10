@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * @file
+ *
+ * Uses College of Education’s customized APR web service to create a directory bio page.
+ * Needs to call web service, and get HawkID from GET
+ */
+
+

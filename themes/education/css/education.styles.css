@@ -1,5 +1,13 @@
+/* No files to import found in abstractions/**\/* */
+/* line 1, ../sass/base/_media.scss */
 img, media {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-/* No files to import found in partials/components/**\/* */
+/* line 1, ../sass/base/_page.scss */
+h2 {
+  color: #FFE100; }
+  /* line 4, ../sass/base/_page.scss */
+  h2 a {
+    color: #FFE100; }
+
+/*# sourceMappingURL=education.styles.css.map */
