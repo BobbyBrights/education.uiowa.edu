@@ -87,7 +87,7 @@ function education_articles_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 32,
+      'weight' => 41,
     ),
   );
 

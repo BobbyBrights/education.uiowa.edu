@@ -18,6 +18,9 @@ function education_articles_strongarm() {
     'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
+        'metatags' => array(
+          'weight' => '40',
+        ),
         'title' => array(
           'weight' => '-5',
         ),
