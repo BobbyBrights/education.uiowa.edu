@@ -10,4 +10,8 @@ h2 {
   h2 a {
     color: #FFE100; }
 
+/* line 2, ../sass/base/_typography.scss */
+a:hover, a:focus {
+  background-color: #d1d3d4; }
+
 /*# sourceMappingURL=education.styles.css.map */

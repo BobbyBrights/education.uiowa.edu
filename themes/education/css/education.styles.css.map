@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";;AAAA,UAAW;EACT,SAAS,EAAE,IAAI;;;ACDjB,EAAE;EACA,KAAK,ECDC,OAAO;;EDGb,IAAC;IACC,KAAK,ECJD,OAAO",
-"sources": ["../sass/base/_media.scss","../sass/base/_page.scss","../sass/variables/_colors.scss"],
+"mappings": ";;AAAA,UAAW;EACT,SAAS,EAAE,IAAI;;;ACDjB,EAAE;EACA,KAAK,ECDC,OAAO;;EDGb,IAAC;IACC,KAAK,ECJD,OAAO;;;ACCb,gBAAiB;EAAE,gBAAgB,EAAC,OAAO",
+"sources": ["../sass/base/_media.scss","../sass/base/_page.scss","../sass/variables/_colors.scss","../sass/base/_typography.scss"],
 "names": [],
 "file": "education.styles.css"
 }
