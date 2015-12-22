@@ -1,5 +1,5 @@
 name = education
-description = Please provide a description for your theme.
+description = Default theme created by ITS.
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
