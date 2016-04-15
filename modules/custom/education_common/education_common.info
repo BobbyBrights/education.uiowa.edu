@@ -1,6 +1,7 @@
 name = Education Common
 core = 7.x
 package = Education
+dependencies[] = education_roles
 dependencies[] = features
 dependencies[] = menu
 features[features_api][] = api:2
