@@ -1,0 +1,85 @@
+<?php
+
+function education_person_install() {
+  // Add terms to the Person Ranks vocabulary.
+  $vid = taxonomy_vocabulary_machine_name_load('ranks')->vid;
+  $rank_terms = array(
+    "Staff",
+    "Professor",
+    "Clinical Professor",
+    "Assistant Professor",
+    "Clinical Assistant Professor",
+    "Associate Professor",
+    "Clinical Associate Professor",
+    "Clinical Instructor",
+    "Emeritus Professor",
+    "Adjunct",
+    "Affiliate",
+    "Visiting Assistant Professor",
+    "Temporary staff",
+    "Graduate student",
+  );
+  foreach ($rank_terms as $item) {
+    $term = new stdClass();
+    $term->name = $item;
+    $term->vid = $vid;
+    taxonomy_term_save($term);
+  }
+
+  // Add terms to the Areas of Expertise vocabulary.
+  $vid = taxonomy_vocabulary_machine_name_load('expertise')->vid;
+  $expertise_terms = array(
+    "Art Education",
+    "Assistive Technology",
+    "Assessment and Program Evaluation",
+    "Autism",
+    "Career Counseling / Development",
+    "Children's Literature",
+    "College Readiness",
+    "Core Curriculum / Common Core Standards",
+    "Counseling",
+    "Couple and Family Therapy",
+    "Diversity",
+    "Early Childhood Education",
+    "Education Administration / Leadership",
+    "Education Reform",
+    "Education / Instructional Technology",
+    "Elementary Education",
+    "Employment",
+    "English Education",
+    "English as a Second Language (ESL) / Bilingual Education",
+    "Federal Requirements (No Child Left Behind)",
+    "Finance and Higher Education",
+    "Foreign Languages",
+    "Gifted and Talented Programs",
+    "Higher Education",
+    "Immigrant Literacy",
+    "International Education / Human Rights",
+    "Learning Disabilities",
+    "Mathematics Education",
+    "Media and Young Children",
+    "Policy",
+    "Professional Development",
+    "Program Evaluation",
+    "Reading / Literacy / Literature Instruction",
+    "Social Justice in Schools",
+    "Special Education",
+    "Statistics",
+    "STEM",
+    "Student Life",
+    "Suicide Counseling / Prevention",
+    "Teacher Education / Preparation",
+    "Teacher Professional Development",
+    "Technology",
+    "Testing and Assessment",
+    "Universal Design for Learning",
+    "Workforce Development",
+    "Young Adult Literature",
+  );
+  foreach ($expertise_terms as $item) {
+    $term = new stdClass();
+    $term->name = $item;
+    $term->vid = $vid;
+    taxonomy_term_save($term);
+  }
+}
