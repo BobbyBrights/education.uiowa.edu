@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Scholarships feature.
+ */
+
+include_once 'education_scholarships.features.inc';
