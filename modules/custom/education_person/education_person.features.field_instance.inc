@@ -281,6 +281,45 @@ function education_person_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-person-field_person_phone_number'.
+  $field_instances['node-person-field_person_phone_number'] = array(
+    'bundle' => 'person',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_person_phone_number',
+    'label' => 'Phone number',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'telephone',
+      'settings' => array(
+        'placeholder' => '',
+      ),
+      'type' => 'telephone_default',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-person-field_person_working_title'.
   $field_instances['node-person-field_person_working_title'] = array(
     'bundle' => 'person',
@@ -329,6 +368,7 @@ function education_person_field_default_field_instances() {
   t('First name');
   t('Image');
   t('Last name');
+  t('Phone number');
   t('Short professional bio.');
   t('Working title');
 

@@ -118,6 +118,21 @@ function education_person_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_person_phone_number'.
+  $field_bases['field_person_phone_number'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_person_phone_number',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'telephone',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'telephone',
+  );
+
   // Exported field_base: 'field_person_working_title'.
   $field_bases['field_person_working_title'] = array(
     'active' => 1,
