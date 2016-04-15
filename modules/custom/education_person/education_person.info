@@ -3,6 +3,7 @@ core = 7.x
 package = Education
 dependencies[] = auto_entitylabel
 dependencies[] = ctools
+dependencies[] = education_common
 dependencies[] = email
 dependencies[] = entity_token
 dependencies[] = features
