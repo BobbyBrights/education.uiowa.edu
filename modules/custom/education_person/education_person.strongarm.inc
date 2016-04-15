@@ -102,6 +102,13 @@ function education_person_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_person_pattern';
+  $strongarm->value = 'person/[node:title]';
+  $export['pathauto_node_person_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'save_continue_person';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_person'] = $strongarm;
