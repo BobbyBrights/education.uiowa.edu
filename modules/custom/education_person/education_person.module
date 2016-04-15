@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Person feature.
+ */
+
+include_once 'education_person.features.inc';
