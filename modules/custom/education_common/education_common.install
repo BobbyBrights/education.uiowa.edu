@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Install tasks for education_common.
+ */
+function education_common_install() {
+  if (module_exists('overlay')) {
+    module_disable(array('overlay'));
+    drupal_uninstall_modules(array('overlay'));
+  }
+  if (module_exists('search')) {
+    module_disable(array('search'));
+    drupal_uninstall_modules(array('search'));
+  }
+}
