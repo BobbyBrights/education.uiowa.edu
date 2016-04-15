@@ -54,6 +54,32 @@ function education_person_field_default_field_bases() {
     'type' => 'email',
   );
 
+  // Exported field_base: 'field_person_expertise'.
+  $field_bases['field_person_expertise'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_person_expertise',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'expertise',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_person_first_name'.
   $field_bases['field_person_first_name'] = array(
     'active' => 1,
@@ -131,6 +157,32 @@ function education_person_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'telephone',
+  );
+
+  // Exported field_base: 'field_person_rank'.
+  $field_bases['field_person_rank'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_person_rank',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'ranks',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_person_working_title'.
