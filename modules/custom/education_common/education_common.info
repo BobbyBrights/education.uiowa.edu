@@ -1,11 +1,17 @@
 name = Education Common
 core = 7.x
 package = Education
+dependencies[] = ctools
 dependencies[] = education_roles
 dependencies[] = features
 dependencies[] = menu
+dependencies[] = node_revision_delete
+dependencies[] = strongarm
 dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_base][] = body
 features[menu_custom][] = main-menu
+features[variable][] = node_revision_delete_cron
+features[variable][] = node_revision_delete_time
 project path = sites/education.uiowa.edu/modules/custom
