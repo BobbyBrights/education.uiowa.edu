@@ -13,3 +13,12 @@ function education_common_install() {
     drupal_uninstall_modules(array('search'));
   }
 }
+
+/**
+ * Enable education_person feature.
+ */
+function education_common_update_7001() {
+  if (!module_exists('education_person')) {
+    module_enable(array('education_person'));
+  }
+}
