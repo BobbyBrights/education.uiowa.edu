@@ -1,0 +1,17 @@
+name = Education Page
+core = 7.x
+package = Education
+dependencies[] = ctools
+dependencies[] = education_common
+dependencies[] = features
+dependencies[] = metatag
+dependencies[] = strongarm
+dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_instance][] = node-page-body
+features[node][] = page
+features[variable][] = node_options_page
+features[variable][] = node_submitted_page
+features[variable][] = pathauto_node_page_pattern
+project path = sites/education.uiowa.edu/modules/custom
