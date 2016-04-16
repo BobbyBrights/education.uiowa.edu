@@ -29,3 +29,15 @@ function education_common_update_7001() {
 function education_common_update_7002() {
   variable_set('admin_theme', 'adminimal');
 }
+
+/**
+ * Enable education_page and education_scholarships features.
+ */
+function education_common_update_7003() {
+  if (!module_exists('education_page')) {
+    module_enable(array('education_page'));
+  }
+  if (!module_exists('education_scholarships')) {
+    module_enable(array('education_scholarships'));
+  }
+}
