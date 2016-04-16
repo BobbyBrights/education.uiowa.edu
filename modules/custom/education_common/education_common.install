@@ -22,3 +22,10 @@ function education_common_update_7001() {
     module_enable(array('education_person'));
   }
 }
+
+/**
+ * Set Adminimal as admin theme.
+ */
+function education_common_update_7002() {
+  variable_set('admin_theme', 'adminimal');
+}
