@@ -9,7 +9,6 @@ dependencies[] = strongarm
 dependencies[] = text
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
-features[field_base][] = body
 features[field_base][] = field_scholarship_recipients
 features[field_instance][] = node-scholarship-body
 features[field_instance][] = node-scholarship-field_scholarship_recipients
