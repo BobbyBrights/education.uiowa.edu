@@ -501,6 +501,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'create scholarship content'.
+  $permissions['create scholarship content'] = array(
+    'name' => 'create scholarship content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -541,6 +551,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any scholarship content'.
+  $permissions['delete any scholarship content'] = array(
+    'name' => 'delete any scholarship content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any video files'.
   $permissions['delete any video files'] = array(
     'name' => 'delete any video files',
@@ -576,6 +596,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own scholarship content'.
+  $permissions['delete own scholarship content'] = array(
+    'name' => 'delete own scholarship content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own video files'.
@@ -711,6 +740,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any scholarship content'.
+  $permissions['edit any scholarship content'] = array(
+    'name' => 'edit any scholarship content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any video files'.
   $permissions['edit any video files'] = array(
     'name' => 'edit any video files',
@@ -757,6 +796,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own scholarship content'.
+  $permissions['edit own scholarship content'] = array(
+    'name' => 'edit own scholarship content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own video files'.
