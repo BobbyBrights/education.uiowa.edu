@@ -49,3 +49,11 @@ function education_common_update_7004() {
   module_disable(array('shortcut', 'toolbar'));
   drupal_uninstall_modules(array('shortcut', 'toolbar'));
 }
+
+/**
+ * Enable Adminimal theme.
+ */
+function education_common_update_7005() {
+  // Forgot to do this in update 7002.
+  theme_enable(array('adminimal'));
+}
