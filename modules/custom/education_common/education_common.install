@@ -41,3 +41,11 @@ function education_common_update_7003() {
     module_enable(array('education_scholarships'));
   }
 }
+
+/**
+ * Uninstall shortcut and toolbar.
+ */
+function education_common_update_7004() {
+  module_disable(array('shortcut', 'toolbar'));
+  drupal_uninstall_modules(array('shortcut', 'toolbar'));
+}
