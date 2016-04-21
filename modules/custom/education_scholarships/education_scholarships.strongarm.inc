@@ -50,6 +50,13 @@ function education_scholarships_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__scholarship';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__scholarship'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_scholarship';
   $strongarm->value = array(
     0 => 'status',
@@ -63,6 +70,20 @@ function education_scholarships_strongarm() {
   $strongarm->name = 'node_preview_scholarship';
   $strongarm->value = '1';
   $export['node_preview_scholarship'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_revision_delete_number_scholarship';
+  $strongarm->value = '20';
+  $export['node_revision_delete_number_scholarship'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_revision_delete_track_scholarship';
+  $strongarm->value = 1;
+  $export['node_revision_delete_track_scholarship'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
