@@ -24,4 +24,5 @@ features[variable][] = node_preview_scholarship
 features[variable][] = node_revision_delete_number_scholarship
 features[variable][] = node_revision_delete_track_scholarship
 features[variable][] = node_submitted_scholarship
+features_exclude[field_base][body] = body
 project path = sites/education.uiowa.edu/modules/custom

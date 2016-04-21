@@ -603,6 +603,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete own scholarship content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -803,6 +804,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit own scholarship content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
