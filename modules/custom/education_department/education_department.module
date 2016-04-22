@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Department feature.
+ */
+
+include_once 'education_department.features.inc';

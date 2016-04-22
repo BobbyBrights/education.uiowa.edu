@@ -1,0 +1,28 @@
+<?php
+
+function education_degree_option_install() {
+  // Add terms to the Degree Levels vocabulary.
+  $vid = taxonomy_vocabulary_machine_name_load('degree_levels')->vid;
+  $degree_level_terms = array(
+    "Ph.D.",
+    "Ed.S.",
+    "M.S.",
+    "M.A.T.",
+    "M.A.",
+    "B.S.",
+    "B.A.",
+    "Licensure",
+    "Endorsement",
+    "Certificate",
+    "Minor",
+  );
+  $weight = 0;
+  foreach ($degree_level_terms as $item) {
+    $term = new stdClass();
+    $term->name = $item;
+    $term->vid = $vid;
+    $term->weight = $weight;
+    taxonomy_term_save($term);
+    $weight++;
+  }
+}
