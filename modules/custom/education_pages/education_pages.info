@@ -8,4 +8,5 @@ features[ctools][] = page_manager:pages_default:1
 features[features_api][] = api:2
 features[page_manager_pages][] = news
 features[page_manager_pages][] = people_directory
+features[page_manager_pages][] = scholarships
 project path = sites/education.uiowa.edu/modules/custom
