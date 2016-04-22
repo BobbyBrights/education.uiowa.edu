@@ -491,6 +491,26 @@ function education_roles_user_default_permissions() {
     'module' => 'media_sharestream',
   );
 
+  // Exported permission: 'create degree content'.
+  $permissions['create degree content'] = array(
+    'name' => 'create degree content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create department content'.
+  $permissions['create department content'] = array(
+    'name' => 'create department content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
@@ -499,6 +519,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'create program content'.
+  $permissions['create program content'] = array(
+    'name' => 'create program content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'create scholarship content'.
@@ -531,6 +561,26 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any degree content'.
+  $permissions['delete any degree content'] = array(
+    'name' => 'delete any degree content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any department content'.
+  $permissions['delete any department content'] = array(
+    'name' => 'delete any department content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any document files'.
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
@@ -549,6 +599,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete any program content'.
+  $permissions['delete any program content'] = array(
+    'name' => 'delete any program content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any scholarship content'.
@@ -580,6 +640,26 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete own degree content'.
+  $permissions['delete own degree content'] = array(
+    'name' => 'delete own degree content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own department content'.
+  $permissions['delete own department content'] = array(
+    'name' => 'delete own department content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own document files'.
   $permissions['delete own document files'] = array(
     'name' => 'delete own document files',
@@ -596,6 +676,16 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own program content'.
+  $permissions['delete own program content'] = array(
+    'name' => 'delete own program content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own scholarship content'.
@@ -624,6 +714,13 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'delete terms in degree_levels'.
+  $permissions['delete terms in degree_levels'] = array(
+    'name' => 'delete terms in degree_levels',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in tags'.
@@ -721,6 +818,27 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any degree content'.
+  $permissions['edit any degree content'] = array(
+    'name' => 'edit any degree content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any department content'.
+  $permissions['edit any department content'] = array(
+    'name' => 'edit any department content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any document files'.
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
@@ -739,6 +857,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit any program content'.
+  $permissions['edit any program content'] = array(
+    'name' => 'edit any program content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit any scholarship content'.
@@ -781,6 +909,27 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit own degree content'.
+  $permissions['edit own degree content'] = array(
+    'name' => 'edit own degree content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own department content'.
+  $permissions['edit own department content'] = array(
+    'name' => 'edit own department content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own document files'.
   $permissions['edit own document files'] = array(
     'name' => 'edit own document files',
@@ -797,6 +946,16 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own program content'.
+  $permissions['edit own program content'] = array(
+    'name' => 'edit own program content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own scholarship content'.
@@ -816,6 +975,13 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit terms in degree_levels'.
+  $permissions['edit terms in degree_levels'] = array(
+    'name' => 'edit terms in degree_levels',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'generate features'.
@@ -985,12 +1151,29 @@ function education_roles_user_default_permissions() {
     'module' => 'view_unpublished',
   );
 
+  // Exported permission: 'view any unpublished degree content'.
+  $permissions['view any unpublished degree content'] = array(
+    'name' => 'view any unpublished degree content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished department content'.
+  $permissions['view any unpublished department content'] = array(
+    'name' => 'view any unpublished department content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
   // Exported permission: 'view any unpublished page content'.
   $permissions['view any unpublished page content'] = array(
     'name' => 'view any unpublished page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'view_unpublished',
   );
@@ -1000,7 +1183,15 @@ function education_roles_user_default_permissions() {
     'name' => 'view any unpublished person content',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished program content'.
+  $permissions['view any unpublished program content'] = array(
+    'name' => 'view any unpublished program content',
+    'roles' => array(
+      'administrator' => 'administrator',
     ),
     'module' => 'view_unpublished',
   );
@@ -1010,7 +1201,6 @@ function education_roles_user_default_permissions() {
     'name' => 'view any unpublished scholarship content',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'view_unpublished',
   );

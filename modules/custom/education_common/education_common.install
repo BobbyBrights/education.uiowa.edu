@@ -57,3 +57,12 @@ function education_common_update_7005() {
   // Forgot to do this in update 7002.
   theme_enable(array('adminimal'));
 }
+
+/**
+ * Enable education_degree_option and dependent features (education_academic_program, education_department).
+ */
+function education_common_update_7006() {
+  if (!module_exists('education_degree_option')) {
+    module_enable(array('education_degree_option'));
+  }
+}
