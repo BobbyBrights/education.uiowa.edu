@@ -66,3 +66,12 @@ function education_common_update_7006() {
     module_enable(array('education_degree_option'));
   }
 }
+
+/**
+ * Enable education_pages.
+ */
+function education_common_update_7007() {
+  if (!module_exists('education_pages')) {
+    module_enable(array('education_pages'));
+  }
+}
