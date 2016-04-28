@@ -84,3 +84,11 @@ function education_common_update_7008() {
   module_disable($module_list, FALSE);
   drupal_uninstall_modules($module_list);
 }
+
+/**
+ * Set education_radix as default theme.
+ */
+function education_common_update_7009() {
+  theme_enable(array('education_radix'));
+  variable_set('theme_default', 'education_radix');
+}
