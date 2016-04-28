@@ -222,6 +222,25 @@ function education_pages_default_page_manager_pages() {
   $display->uuid = 'a6b7aeaa-a69a-47bb-8133-f4887d867867';
   $display->content = array();
   $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-812f7dd1-afa4-437f-b89a-a38b54443979';
+    $pane->panel = 'center';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'scholarships-scholarships_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '812f7dd1-afa4-437f-b89a-a38b54443979';
+    $display->content['new-812f7dd1-afa4-437f-b89a-a38b54443979'] = $pane;
+    $display->panels['center'][0] = 'new-812f7dd1-afa4-437f-b89a-a38b54443979';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
