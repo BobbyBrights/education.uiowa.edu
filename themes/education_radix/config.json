@@ -1,7 +1,7 @@
 {
   "name": "Education",
   "description": "A theme based on Radix.",
-  "browserSyncProxy" : "http://panopoly.dev",
+  "browserSyncProxy" : "education.uiowa.edu.dd:8083",
   "bowerDir": "./bower_components",
   "css": {
     "file" : "education_radix.style.scss",
