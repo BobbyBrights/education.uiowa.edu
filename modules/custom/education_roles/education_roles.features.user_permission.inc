@@ -144,6 +144,33 @@ function education_roles_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: 'add terms in degree_levels'.
+  $permissions['add terms in degree_levels'] = array(
+    'name' => 'add terms in degree_levels',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in expertise'.
+  $permissions['add terms in expertise'] = array(
+    'name' => 'add terms in expertise',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in ranks'.
+  $permissions['add terms in ranks'] = array(
+    'name' => 'add terms in ranks',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
   // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
@@ -521,6 +548,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'create person content'.
+  $permissions['create person content'] = array(
+    'name' => 'create person content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create program content'.
   $permissions['create program content'] = array(
     'name' => 'create program content',
@@ -601,6 +638,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any person content'.
+  $permissions['delete any person content'] = array(
+    'name' => 'delete any person content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any program content'.
   $permissions['delete any program content'] = array(
     'name' => 'delete any program content',
@@ -678,6 +725,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete own person content'.
+  $permissions['delete own person content'] = array(
+    'name' => 'delete own person content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own program content'.
   $permissions['delete own program content'] = array(
     'name' => 'delete own program content',
@@ -719,7 +776,27 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'delete terms in degree_levels'.
   $permissions['delete terms in degree_levels'] = array(
     'name' => 'delete terms in degree_levels',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'delete terms in expertise'.
+  $permissions['delete terms in expertise'] = array(
+    'name' => 'delete terms in expertise',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'delete terms in ranks'.
+  $permissions['delete terms in ranks'] = array(
+    'name' => 'delete terms in ranks',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -859,6 +936,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any person content'.
+  $permissions['edit any person content'] = array(
+    'name' => 'edit any person content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any program content'.
   $permissions['edit any program content'] = array(
     'name' => 'edit any program content',
@@ -948,6 +1035,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit own person content'.
+  $permissions['edit own person content'] = array(
+    'name' => 'edit own person content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own program content'.
   $permissions['edit own program content'] = array(
     'name' => 'edit own program content',
@@ -980,7 +1077,30 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'edit terms in degree_levels'.
   $permissions['edit terms in degree_levels'] = array(
     'name' => 'edit terms in degree_levels',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in expertise'.
+  $permissions['edit terms in expertise'] = array(
+    'name' => 'edit terms in expertise',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in ranks'.
+  $permissions['edit terms in ranks'] = array(
+    'name' => 'edit terms in ranks',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
     'module' => 'taxonomy',
   );
 
