@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Scholarship Views feature.
+ */
+
+include_once 'education_scholarship_views.features.inc';
