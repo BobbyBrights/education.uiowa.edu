@@ -1,5 +1,5 @@
 {
-  "name": "Education Radix",
+  "name": "Education",
   "description": "A theme based on Radix.",
   "browserSyncProxy" : "http://panopoly.dev",
   "bowerDir": "./bower_components",
