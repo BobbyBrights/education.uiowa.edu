@@ -1,0 +1,9 @@
+.breadcrumb {
+  background-color: transparent;
+  border-radius: 0;
+  color: $blue;
+  list-style: outside none none;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  @include font-size(0.75);
+}
