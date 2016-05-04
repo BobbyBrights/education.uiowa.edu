@@ -1,0 +1,10 @@
+@import '../variables/colors';
+
+a {
+  color: $blue;
+
+  &:hover, &:focus {
+    color: darken($blue, 10);
+    text-decoration: none;
+  }
+}
