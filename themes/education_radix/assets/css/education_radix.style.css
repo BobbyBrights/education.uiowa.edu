@@ -8635,6 +8635,16 @@ p {
   margin: 0;
   padding-bottom: 0; }
 
+#footer {
+  background-color: #000000;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 2rem 0; }
+  #footer a {
+    color: #ffcd00; }
+    #footer a:hover, #footer a:focus {
+      color: #cca400; }
+
 .breadcrumb {
   background-color: transparent;
   border-radius: 0;
