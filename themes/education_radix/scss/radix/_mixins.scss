@@ -43,7 +43,7 @@
 // Breakpoint mixin.
 // Usage: @include breakpoint(sm) { ... }
 // -----------------------------------------------------------------------------
-@mixin breakpoint($class) {
+@mixin radix_breakpoint($class) {
   @if $class == xs {
     @media (max-width: $screen-xs-max) { @content; }
   }

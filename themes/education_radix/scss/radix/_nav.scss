@@ -63,7 +63,7 @@ ul.nav {
         display: none !important;
       }
     }
-    @include breakpoint(md) {
+    @include radix_breakpoint(md) {
       float: none;
       margin-bottom: 18px;
     }
