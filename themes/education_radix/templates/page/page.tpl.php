@@ -79,6 +79,9 @@
         <?php endif; ?>
       </div>
     </div>
+    <div id="sidebar-first" class="container">
+      <?php print render($page['sidebar_first']); ?>
+    </div>
     <div id="content" class="container">
       <?php print render($page['content']); ?>
     </div>
