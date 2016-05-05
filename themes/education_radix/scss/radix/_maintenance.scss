@@ -13,7 +13,7 @@ body.maintenance-page {
       font-size: 3.0em;
       margin-top: 0;
     }
-    @include breakpoint(md) {
+    @include radix_breakpoint(md) {
       padding-top: 30px;
       padding-bottom: 30px;
     }
@@ -27,7 +27,7 @@ body.maintenance-page {
   .page-header {
     h1 {
       font-size: 24px;
-      @include breakpoint(md) {
+      @include radix_breakpoint(md) {
         font-size: 36px;
       }
     }
