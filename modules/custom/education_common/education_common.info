@@ -4,6 +4,7 @@ package = Education
 dependencies[] = ctools
 dependencies[] = education_roles
 dependencies[] = features
+dependencies[] = jquery_update
 dependencies[] = menu
 dependencies[] = menu_block
 dependencies[] = node_revision_delete
