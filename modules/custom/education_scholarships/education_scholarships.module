@@ -5,3 +5,13 @@
  */
 
 include_once 'education_scholarships.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function education_scholarships_form_scholarship_node_form_alter(&$form, &$form_state, $form_id) {
+  // Expose the summary and make it required.
+  $form['body'][LANGUAGE_NONE][0]['summary']['#required'] = TRUE;
+  $script = 'jQuery(document).ready(function(){ jQuery(".link-edit-summary").click(); });';
+  drupal_add_js($script, 'inline');
+}
