@@ -14,4 +14,6 @@ function education_scholarships_form_scholarship_node_form_alter(&$form, &$form_
   $form['body'][LANGUAGE_NONE][0]['summary']['#required'] = TRUE;
   $script = 'jQuery(document).ready(function(){ jQuery(".link-edit-summary").click(); });';
   drupal_add_js($script, 'inline');
+  // Change description of summary.
+  $form['body'][LANGUAGE_NONE][0]['summary']['#description'] = t('Please provide a short description to be displayed on the Available Scholarships page.');
 }
