@@ -16,8 +16,6 @@ function education_radix_menu_link($variables) {
 
   if (!empty($element['#below'])) {
     $sub_menu = drupal_render($element['#below']);
-    $element['#localized_options']['html'] = TRUE;
-    $element['#title'] .= '<span class="caret"></span>';
   }
 
   // Fix for active class.
