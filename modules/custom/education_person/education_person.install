@@ -83,3 +83,11 @@ function education_person_install() {
     taxonomy_term_save($term);
   }
 }
+/**
+ * Enable education_degree_option and dependent features (education_academic_program, education_department).
+ */
+function education_person_update_7001() {
+  if (!module_exists('education_degree_option')) {
+    module_enable(array('education_degree_option'));
+  }
+}
