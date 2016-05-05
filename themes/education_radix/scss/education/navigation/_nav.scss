@@ -1,0 +1,15 @@
+.nav {
+  margin: 0;
+
+  li {
+    margin: 0;
+
+    a {
+      padding: 5px 15px;
+
+      &:hover, &:focus {
+        background-color: $black_20;
+      }
+    }
+  }
+}

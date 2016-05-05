@@ -5,6 +5,7 @@ dependencies[] = ctools
 dependencies[] = education_roles
 dependencies[] = features
 dependencies[] = menu
+dependencies[] = menu_block
 dependencies[] = node_revision_delete
 dependencies[] = strongarm
 dependencies[] = text

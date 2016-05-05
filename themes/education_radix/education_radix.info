@@ -9,6 +9,7 @@ base theme  = radix
 
 ; Regions
 regions[content] = Content
+regions[sidebar_first] = Sidebar First
 
 ; Breakpoints
 breakpoints[xs] = (max-width: 767px)

@@ -1,0 +1,15 @@
+.region-sidebar-first .menu-block-wrapper {
+  background-color: $yellow;
+  padding: 20px;
+  padding-bottom: 300px;
+
+  a {
+    color: $black;
+    text-transform: uppercase;
+    @include font-size(1.125);
+  }
+
+ li ul a {
+    text-transform: none;
+  }
+}
