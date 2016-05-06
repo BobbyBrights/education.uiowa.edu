@@ -26,3 +26,43 @@ function education_degree_option_install() {
     $weight++;
   }
 }
+
+/**
+ * Re-add terms to Degree Levels vocabulary.
+ */
+function education_degree_option_update_7001() {
+  $clear_old_terms = TRUE;
+  $vocabulary = 'degree_levels';
+  $new_terms = array(
+    "Ph.D.",
+    "Ed.S.",
+    "M.S.",
+    "M.A.T.",
+    "M.A.",
+    "B.S.",
+    "B.A.",
+    "Licensure",
+    "Endorsement",
+    "Certificate",
+    "Minor",
+  );
+  // Load the vocabulary ID.
+  $vid = taxonomy_vocabulary_machine_name_load($vocabulary)->vid;
+  // Check if we want to clear out the old terms from the vocabulary.
+  if ($clear_old_terms == TRUE) {
+    $terms = taxonomy_get_tree((int) $vid);
+    foreach ($terms as $t) {
+      taxonomy_term_delete($t->tid);
+    }
+  }
+  // Create new terms from the $new_terms array.
+  $weight = 0;
+  foreach ($new_terms as $item) {
+    $new_term = new stdClass();
+    $new_term->name = $item;
+    $new_term->vid = $vid;
+    $new_term->weight = $weight;
+    taxonomy_term_save($new_term);
+    $weight++;
+  }
+}
