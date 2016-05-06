@@ -91,3 +91,112 @@ function education_person_update_7001() {
     module_enable(array('education_degree_option'));
   }
 }
+
+/**
+ * Re-create terms in Ranks and Expertise vocabularies.
+ */
+function education_person_update_7002() {
+  // Re-create terms in Ranks vocabulary.
+  $clear_old_terms = TRUE;
+  $vocabulary = 'ranks';
+  $new_terms = array(
+    "Staff",
+    "Professor",
+    "Clinical Professor",
+    "Assistant Professor",
+    "Clinical Assistant Professor",
+    "Associate Professor",
+    "Clinical Associate Professor",
+    "Clinical Instructor",
+    "Emeritus Professor",
+    "Adjunct",
+    "Affiliate",
+    "Visiting Assistant Professor",
+    "Temporary staff",
+    "Graduate student",
+  );
+  // Load the vocabulary ID.
+  $vid = taxonomy_vocabulary_machine_name_load($vocabulary)->vid;
+  // Check if we want to clear out the old terms from the vocabulary.
+  if ($clear_old_terms == TRUE) {
+    $terms = taxonomy_get_tree((int) $vid);
+    foreach ($terms as $t) {
+      taxonomy_term_delete($t->tid);
+    }
+  }
+  // Create new terms from the $new_terms array.
+  foreach ($new_terms as $item) {
+    $new_term = new stdClass();
+    $new_term->name = $item;
+    $new_term->vid = $vid;
+    taxonomy_term_save($new_term);
+  }
+
+  // Re-create terms in Experiense vocabulary.
+  $clear_old_terms = TRUE;
+  $vocabulary = 'expertise';
+  $new_terms = array(
+    "Art Education",
+    "Assistive Technology",
+    "Assessment and Program Evaluation",
+    "Autism",
+    "Career Counseling / Development",
+    "Children's Literature",
+    "College Readiness",
+    "Core Curriculum / Common Core Standards",
+    "Counseling",
+    "Couple and Family Therapy",
+    "Diversity",
+    "Early Childhood Education",
+    "Education Administration / Leadership",
+    "Education Reform",
+    "Education / Instructional Technology",
+    "Elementary Education",
+    "Employment",
+    "English Education",
+    "English as a Second Language (ESL) / Bilingual Education",
+    "Federal Requirements (No Child Left Behind)",
+    "Finance and Higher Education",
+    "Foreign Languages",
+    "Gifted and Talented Programs",
+    "Higher Education",
+    "Immigrant Literacy",
+    "International Education / Human Rights",
+    "Learning Disabilities",
+    "Mathematics Education",
+    "Media and Young Children",
+    "Policy",
+    "Professional Development",
+    "Program Evaluation",
+    "Reading / Literacy / Literature Instruction",
+    "Social Justice in Schools",
+    "Special Education",
+    "Statistics",
+    "STEM",
+    "Student Life",
+    "Suicide Counseling / Prevention",
+    "Teacher Education / Preparation",
+    "Teacher Professional Development",
+    "Technology",
+    "Testing and Assessment",
+    "Universal Design for Learning",
+    "Workforce Development",
+    "Young Adult Literature",
+  );
+  // Load the vocabulary ID.
+  $vid = taxonomy_vocabulary_machine_name_load($vocabulary)->vid;
+  // Check if we want to clear out the old terms from the vocabulary.
+  if ($clear_old_terms == TRUE) {
+    $terms = taxonomy_get_tree((int) $vid);
+    foreach ($terms as $t) {
+      taxonomy_term_delete($t->tid);
+    }
+  }
+  // Create new terms from the $new_terms array.
+  foreach ($new_terms as $item) {
+    $new_term = new stdClass();
+    $new_term->name = $item;
+    $new_term->vid = $vid;
+    taxonomy_term_save($new_term);
+  }
+}
