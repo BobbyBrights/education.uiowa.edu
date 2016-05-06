@@ -51,39 +51,45 @@
 <div id="main-wrapper">
   <div id="main" class="main">
     <div class="container">
-      <?php if ($breadcrumb): ?>
-        <div id="breadcrumb" class="visible-desktop">
-          <?php print $breadcrumb; ?>
-        </div>
-      <?php endif; ?>
-      <?php if ($messages): ?>
-        <div id="messages">
-          <?php print $messages; ?>
-        </div>
-      <?php endif; ?>
-      <div id="page-header">
-        <?php if ($title): ?>
-          <div class="page-header">
-            <h1 class="title"><?php print $title; ?></h1>
+      <h1 class="offscreen title"><?php print $title; ?></h1>
+      <div class="row">
+        <?php if ($sidebar_first): ?>
+          <div id="sidebar-first" class="col-md-<?php print $sidebar_first_width; ?>" >
+            <?php print render($page['sidebar_first']); ?>
           </div>
         <?php endif; ?>
-        <?php if ($tabs): ?>
-          <div class="tabs">
-            <?php print render($tabs); ?>
+
+        <div id="content" class="col-md-<?php print $content_width; ?>">
+          <?php if ($messages): ?>
+            <div id="messages">
+              <?php print $messages; ?>
+            </div>
+          <?php endif; ?>
+          <?php if ($breadcrumb): ?>
+            <div id="breadcrumb" class="visible-desktop">
+              <?php print $breadcrumb; ?>
+            </div>
+          <?php endif; ?>
+          <div id="page-header">
+            <?php if ($title): ?>
+              <div class="page-header">
+                <div class="h1 title"><?php print $title; ?></div>
+              </div>
+            <?php endif; ?>
+            <?php if ($tabs): ?>
+              <div class="tabs">
+                <?php print render($tabs); ?>
+              </div>
+            <?php endif; ?>
+            <?php if ($action_links): ?>
+              <ul class="action-links">
+                <?php print render($action_links); ?>
+              </ul>
+            <?php endif; ?>
           </div>
-        <?php endif; ?>
-        <?php if ($action_links): ?>
-          <ul class="action-links">
-            <?php print render($action_links); ?>
-          </ul>
-        <?php endif; ?>
+          <?php print render($page['content']); ?>
+        </div>
       </div>
-    </div>
-    <div id="sidebar-first" class="container">
-      <?php print render($page['sidebar_first']); ?>
-    </div>
-    <div id="content" class="container">
-      <?php print render($page['content']); ?>
     </div>
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
