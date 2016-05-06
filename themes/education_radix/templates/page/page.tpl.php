@@ -51,40 +51,39 @@
 <div id="main-wrapper">
   <div id="main" class="main">
     <div class="container">
-      <?php if ($breadcrumb): ?>
-        <div id="breadcrumb" class="visible-desktop">
-          <?php print $breadcrumb; ?>
-        </div>
-      <?php endif; ?>
-      <?php if ($messages): ?>
-        <div id="messages">
-          <?php print $messages; ?>
-        </div>
-      <?php endif; ?>
-      <div id="page-header">
-        <?php if ($title): ?>
-          <div class="page-header">
-            <h1 class="title"><?php print $title; ?></h1>
-          </div>
-        <?php endif; ?>
-        <?php if ($tabs): ?>
-          <div class="tabs">
-            <?php print render($tabs); ?>
-          </div>
-        <?php endif; ?>
-        <?php if ($action_links): ?>
-          <ul class="action-links">
-            <?php print render($action_links); ?>
-          </ul>
-        <?php endif; ?>
-      </div>
-    </div>
-    <div class="container">
+      <h1 class="offscreen title"><?php print $title; ?></h1>
       <div class="row">
         <div id="sidebar-first" class="col-md-3">
           <?php print render($page['sidebar_first']); ?>
         </div>
         <div id="content" class="col-md-9">
+          <?php if ($messages): ?>
+            <div id="messages">
+              <?php print $messages; ?>
+            </div>
+          <?php endif; ?>
+          <?php if ($breadcrumb): ?>
+            <div id="breadcrumb" class="visible-desktop">
+              <?php print $breadcrumb; ?>
+            </div>
+          <?php endif; ?>
+          <div id="page-header">
+            <?php if ($title): ?>
+              <div class="page-header">
+                <div class="h1 title"><?php print $title; ?></div>
+              </div>
+            <?php endif; ?>
+            <?php if ($tabs): ?>
+              <div class="tabs">
+                <?php print render($tabs); ?>
+              </div>
+            <?php endif; ?>
+            <?php if ($action_links): ?>
+              <ul class="action-links">
+                <?php print render($action_links); ?>
+              </ul>
+            <?php endif; ?>
+          </div>
           <?php print render($page['content']); ?>
         </div>
       </div>
