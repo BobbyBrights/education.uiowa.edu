@@ -79,11 +79,15 @@
         <?php endif; ?>
       </div>
     </div>
-    <div id="sidebar-first" class="container">
-      <?php print render($page['sidebar_first']); ?>
-    </div>
-    <div id="content" class="container">
-      <?php print render($page['content']); ?>
+    <div class="container">
+      <div class="row">
+        <div id="sidebar-first" class="col-md-3">
+          <?php print render($page['sidebar_first']); ?>
+        </div>
+        <div id="content" class="col-md-9">
+          <?php print render($page['content']); ?>
+        </div>
+      </div>
     </div>
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
