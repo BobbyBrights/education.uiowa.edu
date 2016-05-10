@@ -21,7 +21,7 @@ function education_person_node_info() {
     'person' => array(
       'name' => t('Person'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Faculty, staff, students, and affiliates of the College of Education.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
