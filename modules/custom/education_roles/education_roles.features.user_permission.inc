@@ -149,6 +149,7 @@ function education_roles_user_default_permissions() {
     'name' => 'add terms in degree_levels',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy_access_fix',
   );
@@ -158,6 +159,7 @@ function education_roles_user_default_permissions() {
     'name' => 'add terms in expertise',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy_access_fix',
   );
@@ -167,6 +169,17 @@ function education_roles_user_default_permissions() {
     'name' => 'add terms in ranks',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
+  // Exported permission: 'add terms in tags'.
+  $permissions['add terms in tags'] = array(
+    'name' => 'add terms in tags',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy_access_fix',
   );
@@ -518,6 +531,16 @@ function education_roles_user_default_permissions() {
     'module' => 'media_sharestream',
   );
 
+  // Exported permission: 'create center content'.
+  $permissions['create center content'] = array(
+    'name' => 'create center content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create degree content'.
   $permissions['create degree content'] = array(
     'name' => 'create degree content',
@@ -578,6 +601,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create service content'.
+  $permissions['create service content'] = array(
+    'name' => 'create service content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -596,6 +629,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete any center content'.
+  $permissions['delete any center content'] = array(
+    'name' => 'delete any center content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any degree content'.
@@ -668,6 +711,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any service content'.
+  $permissions['delete any service content'] = array(
+    'name' => 'delete any service content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any video files'.
   $permissions['delete any video files'] = array(
     'name' => 'delete any video files',
@@ -685,6 +738,16 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own center content'.
+  $permissions['delete own center content'] = array(
+    'name' => 'delete own center content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own degree content'.
@@ -748,6 +811,16 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'delete own scholarship content'.
   $permissions['delete own scholarship content'] = array(
     'name' => 'delete own scholarship content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own service content'.
+  $permissions['delete own service content'] = array(
+    'name' => 'delete own service content',
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
@@ -895,6 +968,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any center content'.
+  $permissions['edit any center content'] = array(
+    'name' => 'edit any center content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any degree content'.
   $permissions['edit any degree content'] = array(
     'name' => 'edit any degree content',
@@ -966,6 +1049,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any service content'.
+  $permissions['edit any service content'] = array(
+    'name' => 'edit any service content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any video files'.
   $permissions['edit any video files'] = array(
     'name' => 'edit any video files',
@@ -994,6 +1087,16 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own center content'.
+  $permissions['edit own center content'] = array(
+    'name' => 'edit own center content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own degree content'.
@@ -1065,6 +1168,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own service content'.
+  $permissions['edit own service content'] = array(
+    'name' => 'edit own service content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own video files'.
   $permissions['edit own video files'] = array(
     'name' => 'edit own video files',
@@ -1100,6 +1213,15 @@ function education_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in tags'.
+  $permissions['edit terms in tags'] = array(
+    'name' => 'edit terms in tags',
+    'roles' => array(
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -1262,6 +1384,15 @@ function education_roles_user_default_permissions() {
     'module' => 'view_unpublished',
   );
 
+  // Exported permission: 'view any unpublished center content'.
+  $permissions['view any unpublished center content'] = array(
+    'name' => 'view any unpublished center content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
   // Exported permission: 'view any unpublished content'.
   $permissions['view any unpublished content'] = array(
     'name' => 'view any unpublished content',
@@ -1319,6 +1450,15 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'view any unpublished scholarship content'.
   $permissions['view any unpublished scholarship content'] = array(
     'name' => 'view any unpublished scholarship content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished service content'.
+  $permissions['view any unpublished service content'] = array(
+    'name' => 'view any unpublished service content',
     'roles' => array(
       'administrator' => 'administrator',
     ),

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Center feature.
+ */
+
+include_once 'education_center.features.inc';

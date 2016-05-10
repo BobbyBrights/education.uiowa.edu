@@ -99,7 +99,7 @@ function education_person_field_default_field_instances() {
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'If no directory link, leave blank. Email link can be added programmatically. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -565,6 +565,7 @@ function education_person_field_default_field_instances() {
   t('Building');
   t('Email');
   t('First name');
+  t('If no directory link, leave blank. Email link can be added programmatically. ');
   t('Image');
   t('Last name');
   t('Office number');
