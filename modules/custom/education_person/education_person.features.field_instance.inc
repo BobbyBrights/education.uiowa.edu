@@ -90,7 +90,7 @@ function education_person_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 13,
+      'weight' => 20,
     ),
   );
 
@@ -147,7 +147,50 @@ function education_person_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 10,
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'node-person-field_person_building'.
+  $field_instances['node-person-field_person_building'] = array(
+    'bundle' => 'person',
+    'default_value' => array(
+      0 => array(
+        'sitenow_map' => array(
+          'value' => 'LC',
+        ),
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'sitenow_maps',
+        'settings' => array(),
+        'type' => 'sitenow_map_formatter_abbr',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_person_building',
+    'label' => 'Building',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'sitenow_maps',
+      'settings' => array(),
+      'type' => 'sitenow_map_widget_building_select',
+      'weight' => 11,
     ),
   );
 
@@ -357,6 +400,46 @@ function education_person_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-person-field_person_office_number'.
+  $field_instances['node-person-field_person_office_number'] = array(
+    'bundle' => 'person',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_person_office_number',
+    'label' => 'Office number',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-person-field_person_phone_number'.
   $field_instances['node-person-field_person_phone_number'] = array(
     'bundle' => 'person',
@@ -392,7 +475,7 @@ function education_person_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 9,
+      'weight' => 15,
     ),
   );
 
@@ -479,10 +562,12 @@ function education_person_field_default_field_instances() {
   t('Affiliations');
   t('Areas of expertise');
   t('Bio');
+  t('Building');
   t('Email');
   t('First name');
   t('Image');
   t('Last name');
+  t('Office number');
   t('Phone number');
   t('Rank');
   t('Short professional bio.');
