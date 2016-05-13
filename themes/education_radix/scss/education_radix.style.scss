@@ -18,6 +18,7 @@
 
 // Education global partials.
 // -----------------------------------------------------------------------------
+@import "breakpoint";
 @import "radix/mixins";
 @import "base/mixins";
 @import "base/helpers";
@@ -101,6 +102,7 @@
 @import "base/typography";
 @import "layout/**/*";
 @import "components/**/*";
+@import "education/variables/**/*";
 @import "education/mixins/**/*";
 @import "education/typography/**/*";
 @import "education/**/*";

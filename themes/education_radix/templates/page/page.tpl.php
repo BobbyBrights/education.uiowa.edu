@@ -49,6 +49,7 @@
 </header>
 
 <div id="main-wrapper">
+  <div id="bg-image" aria-hidden=true></div>
   <div id="main" class="main">
     <div class="container">
       <h1 class="offscreen title"><?php print $title; ?></h1>

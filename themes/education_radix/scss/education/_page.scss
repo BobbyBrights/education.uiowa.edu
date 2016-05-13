@@ -4,6 +4,12 @@
   padding-bottom: 0;
 }
 
+#bg-image {
+  @include breakpoint($education-md-min) {
+    height: 200px;
+  }
+}
+
 #sidebar-first {
   margin-bottom: 36px;
 }
