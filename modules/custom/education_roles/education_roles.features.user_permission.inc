@@ -571,16 +571,6 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'create page content'.
-  $permissions['create page content'] = array(
-    'name' => 'create page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create person content'.
   $permissions['create person content'] = array(
     'name' => 'create person content',
@@ -691,16 +681,6 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'delete any page content'.
-  $permissions['delete any page content'] = array(
-    'name' => 'delete any page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any person content'.
   $permissions['delete any person content'] = array(
     'name' => 'delete any person content',
@@ -806,16 +786,6 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete own page content'.
-  $permissions['delete own page content'] = array(
-    'name' => 'delete own page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete own person content'.
@@ -1049,16 +1019,6 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit any page content'.
-  $permissions['edit any page content'] = array(
-    'name' => 'edit any page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any person content'.
   $permissions['edit any person content'] = array(
     'name' => 'edit any person content',
@@ -1176,16 +1136,6 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit own page content'.
-  $permissions['edit own page content'] = array(
-    'name' => 'edit own page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit own person content'.
