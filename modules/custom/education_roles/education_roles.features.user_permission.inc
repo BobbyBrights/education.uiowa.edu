@@ -207,7 +207,6 @@ function education_roles_user_default_permissions() {
     'name' => 'administer background image',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'bg_image',
   );
