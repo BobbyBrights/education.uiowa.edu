@@ -1505,7 +1505,9 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'view any unpublished background_image content'.
   $permissions['view any unpublished background_image content'] = array(
     'name' => 'view any unpublished background_image content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'view_unpublished',
   );
 
@@ -1523,6 +1525,7 @@ function education_roles_user_default_permissions() {
     'name' => 'view any unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'view_unpublished',
   );
