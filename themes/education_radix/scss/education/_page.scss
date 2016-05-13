@@ -5,8 +5,14 @@
 }
 
 #bg-image {
-  @include breakpoint($education-md-min) {
+  @include breakpoint($education-bg-image) {
     height: 200px;
+  }
+}
+
+#content {
+  @include breakpoint($education-bg-image) {
+    padding-top: 20px;
   }
 }
 

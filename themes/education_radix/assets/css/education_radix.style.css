@@ -8657,6 +8657,10 @@ p {
   #bg-image {
     height: 200px; } }
 
+@media (min-width: 992px) {
+  #content {
+    padding-top: 20px; } }
+
 #sidebar-first {
   margin-bottom: 36px; }
 
@@ -8708,6 +8712,9 @@ p {
   background-color: #ffcd00;
   padding: 20px;
   padding-bottom: 300px; }
+  @media (min-width: 992px) {
+    .region-sidebar-first .menu-block-wrapper {
+      margin-top: -30px; } }
   .region-sidebar-first .menu-block-wrapper a {
     color: #000000;
     text-transform: uppercase;
@@ -8737,6 +8744,9 @@ p {
   background-color: #ffcd00;
   padding: 20px;
   padding-bottom: 300px; }
+  @media (min-width: 992px) {
+    .region-sidebar-first .menu-block-wrapper {
+      margin-top: -30px; } }
   .region-sidebar-first .menu-block-wrapper a {
     color: #000000;
     text-transform: uppercase;
