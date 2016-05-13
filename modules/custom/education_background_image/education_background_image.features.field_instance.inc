@@ -14,7 +14,7 @@ function education_background_image_field_default_field_instances() {
   $field_instances['node-background_image-field_background_image'] = array(
     'bundle' => 'background_image',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Images must be exactly 2000x200 pixels.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -43,8 +43,8 @@ function education_background_image_field_default_field_instances() {
       'file_directory' => 'background_image',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '2000x2000',
-      'min_resolution' => '',
+      'max_resolution' => '2000x200',
+      'min_resolution' => '2000x200',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -78,6 +78,7 @@ function education_background_image_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Image');
+  t('Images must be exactly 2000x200 pixels.');
 
   return $field_instances;
 }
