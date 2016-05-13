@@ -1342,6 +1342,16 @@ function education_roles_user_default_permissions() {
     'module' => 'features',
   );
 
+  // Exported permission: 'manage background images'.
+  $permissions['manage background images'] = array(
+    'name' => 'manage background images',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'bg_image_ui',
+  );
+
   // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
