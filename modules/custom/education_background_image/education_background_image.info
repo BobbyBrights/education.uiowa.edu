@@ -2,6 +2,7 @@ name = Education Background Image
 core = 7.x
 package = Education
 version = 7.x-1.0
+dependencies[] = bg_image_ui
 dependencies[] = node
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

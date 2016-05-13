@@ -3,6 +3,7 @@ description = Provides roles and permissions for education.uiowa.edu
 core = 7.x
 package = Education
 dependencies[] = bg_image
+dependencies[] = bg_image_ui
 dependencies[] = block
 dependencies[] = ckeditor_link
 dependencies[] = contextual
