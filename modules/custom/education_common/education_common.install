@@ -245,3 +245,29 @@ function education_common_update_7011() {
   // Unrelated. Use Education theme's css in the WYSIWYG.
   variable_set('sitenow_wysiwyg_theme_css', '%bsites/education.uiowa.edu/themes/education_radix/assets/css/education_radix.style.css');
 }
+
+/**
+ * Set education_radix theme settings.
+ */
+function education_common_update_7012() {
+  $theme_settings = array(
+    'toggle_logo' => 0,
+    'toggle_name' => 0,
+    'toggle_slogan' => 0,
+    'toggle_node_user_picture' => 0,
+    'toggle_comment_user_picture' => 0,
+    'toggle_comment_user_verification' => 0,
+    'toggle_favicon' => 0,
+    'toggle_main_menu' => 0,
+    'toggle_secondary_menu' => 0,
+    'default_logo' => 0,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 0,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'jquery_update_jquery_version' => '',
+  );
+
+  variable_set('theme_education_radix_settings', $theme_settings);
+}
