@@ -164,6 +164,15 @@ function education_roles_user_default_permissions() {
     'module' => 'taxonomy_access_fix',
   );
 
+  // Exported permission: 'add terms in media_folders'.
+  $permissions['add terms in media_folders'] = array(
+    'name' => 'add terms in media_folders',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
   // Exported permission: 'add terms in ranks'.
   $permissions['add terms in ranks'] = array(
     'name' => 'add terms in ranks',
@@ -932,6 +941,15 @@ function education_roles_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'delete terms in media_folders'.
+  $permissions['delete terms in media_folders'] = array(
+    'name' => 'delete terms in media_folders',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in ranks'.
   $permissions['delete terms in ranks'] = array(
     'name' => 'delete terms in ranks',
@@ -1310,6 +1328,15 @@ function education_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in media_folders'.
+  $permissions['edit terms in media_folders'] = array(
+    'name' => 'edit terms in media_folders',
+    'roles' => array(
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );

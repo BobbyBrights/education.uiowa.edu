@@ -12,6 +12,7 @@ dependencies[] = features
 dependencies[] = image
 dependencies[] = jquery_ui_multiselect
 dependencies[] = link
+dependencies[] = media
 dependencies[] = metatag
 dependencies[] = options
 dependencies[] = pathauto
