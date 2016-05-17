@@ -214,7 +214,6 @@ function education_common_update_7011() {
   // A list of views to disable.
   $viewnames = array(
     'media_default',
-    'media_browser_plus',
   );
 
   // Grab list of views that are already disabled.
