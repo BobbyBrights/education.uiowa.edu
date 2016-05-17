@@ -10,6 +10,7 @@ dependencies[] = entity_token
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = image
+dependencies[] = jquery_ui_multiselect
 dependencies[] = link
 dependencies[] = metatag
 dependencies[] = options
