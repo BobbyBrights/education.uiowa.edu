@@ -202,6 +202,15 @@ function education_roles_user_default_permissions() {
     'module' => 'panels',
   );
 
+  // Exported permission: 'administer background image'.
+  $permissions['administer background image'] = array(
+    'name' => 'administer background image',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'bg_image',
+  );
+
   // Exported permission: 'administer blocks'.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
@@ -531,6 +540,16 @@ function education_roles_user_default_permissions() {
     'module' => 'media_sharestream',
   );
 
+  // Exported permission: 'create background_image content'.
+  $permissions['create background_image content'] = array(
+    'name' => 'create background_image content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create center content'.
   $permissions['create center content'] = array(
     'name' => 'create center content',
@@ -629,6 +648,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete any background_image content'.
+  $permissions['delete any background_image content'] = array(
+    'name' => 'delete any background_image content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any center content'.
@@ -738,6 +767,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own background_image content'.
+  $permissions['delete own background_image content'] = array(
+    'name' => 'delete own background_image content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own center content'.
@@ -968,6 +1006,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any background_image content'.
+  $permissions['edit any background_image content'] = array(
+    'name' => 'edit any background_image content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any center content'.
   $permissions['edit any center content'] = array(
     'name' => 'edit any center content',
@@ -1087,6 +1135,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own background_image content'.
+  $permissions['edit own background_image content'] = array(
+    'name' => 'edit own background_image content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own center content'.
@@ -1235,6 +1292,16 @@ function education_roles_user_default_permissions() {
     'module' => 'features',
   );
 
+  // Exported permission: 'manage background images'.
+  $permissions['manage background images'] = array(
+    'name' => 'manage background images',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'bg_image_ui',
+  );
+
   // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
@@ -1375,9 +1442,28 @@ function education_roles_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'view all background images'.
+  $permissions['view all background images'] = array(
+    'name' => 'view all background images',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'bg_image',
+  );
+
   // Exported permission: 'view any unpublished article content'.
   $permissions['view any unpublished article content'] = array(
     'name' => 'view any unpublished article content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished background_image content'.
+  $permissions['view any unpublished background_image content'] = array(
+    'name' => 'view any unpublished background_image content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -1398,6 +1484,7 @@ function education_roles_user_default_permissions() {
     'name' => 'view any unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'view_unpublished',
   );

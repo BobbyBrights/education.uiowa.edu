@@ -8520,6 +8520,14 @@ ul.dropdown-menu li {
 .views-exposed-form .views-reset-button {
   margin-top: 3px; }
 
+/**
+ * Global breakpoints.
+ *
+ * Use this file to specify global, fairly generaly breakpoints
+ * that are used throughout your partials.
+ * Add partial-specific breakpoint definititions to the partial
+ * instead.
+ */
 .offscreen {
   position: absolute;
   top: -99999em;
@@ -8645,6 +8653,14 @@ p {
   margin: 0;
   padding-bottom: 0; }
 
+@media (min-width: 992px) {
+  #bg-image {
+    height: 200px; } }
+
+@media (min-width: 992px) {
+  #content {
+    padding-top: 20px; } }
+
 #sidebar-first {
   margin-bottom: 36px; }
 
@@ -8696,6 +8712,9 @@ p {
   background-color: #ffcd00;
   padding: 20px;
   padding-bottom: 300px; }
+  @media (min-width: 992px) {
+    .region-sidebar-first .menu-block-wrapper {
+      margin-top: -30px; } }
   .region-sidebar-first .menu-block-wrapper a {
     color: #000000;
     text-transform: uppercase;
@@ -8725,6 +8744,9 @@ p {
   background-color: #ffcd00;
   padding: 20px;
   padding-bottom: 300px; }
+  @media (min-width: 992px) {
+    .region-sidebar-first .menu-block-wrapper {
+      margin-top: -30px; } }
   .region-sidebar-first .menu-block-wrapper a {
     color: #000000;
     text-transform: uppercase;
@@ -8955,5 +8977,22 @@ body {
 
 p {
   margin-bottom: 0.75rem; }
+
+/**
+ * Global breakpoints.
+ *
+ * Use this file to specify global, fairly generaly breakpoints
+ * that are used throughout your partials.
+ * Add partial-specific breakpoint definititions to the partial
+ * instead.
+ */
+/**
+ * Global breakpoints.
+ *
+ * Use this file to specify global, fairly generaly breakpoints
+ * that are used throughout your partials.
+ * Add partial-specific breakpoint definititions to the partial
+ * instead.
+ */
 
 /*# sourceMappingURL=education_radix.style.css.map */

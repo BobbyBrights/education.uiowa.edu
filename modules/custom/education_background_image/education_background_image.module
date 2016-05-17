@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Background Image feature.
+ */
+
+include_once 'education_background_image.features.inc';
