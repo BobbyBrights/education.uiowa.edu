@@ -144,6 +144,15 @@ function education_roles_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: 'add terms in audiences'.
+  $permissions['add terms in audiences'] = array(
+    'name' => 'add terms in audiences',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
   // Exported permission: 'add terms in degree_levels'.
   $permissions['add terms in degree_levels'] = array(
     'name' => 'add terms in degree_levels',
@@ -923,6 +932,15 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in audiences'.
+  $permissions['delete terms in audiences'] = array(
+    'name' => 'delete terms in audiences',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in degree_levels'.
   $permissions['delete terms in degree_levels'] = array(
     'name' => 'delete terms in degree_levels',
@@ -1310,6 +1328,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit terms in audiences'.
+  $permissions['edit terms in audiences'] = array(
+    'name' => 'edit terms in audiences',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in degree_levels'.
