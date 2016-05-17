@@ -232,6 +232,16 @@ function education_common_update_7011() {
     views_invalidate_cache();
   }
 
+  // Build an array of plugins that should show up in the WYSIWYG.
+  $education_wysiwyg_media_plugins = array(
+    0 => 'upload',
+    1 => 'media_browser_plus--media_browser_thumbnails',
+    2 => 'media_internet',
+  );
+
+  // Set which plugins show up in the WYSIWYG.
+  variable_set('media_wysiwyg_wysiwyg_browser_plugins', $education_wysiwyg_media_plugins);
+
   // Unrelated. Use Education theme's css in the WYSIWYG.
   variable_set('sitenow_wysiwyg_theme_css', '%bsites/education.uiowa.edu/themes/education_radix/assets/css/education_radix.style.css');
 }
