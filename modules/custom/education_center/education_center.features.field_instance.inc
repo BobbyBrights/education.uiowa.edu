@@ -165,6 +165,19 @@ function education_center_field_default_field_instances() {
     'label' => 'Leader person',
     'required' => FALSE,
     'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
