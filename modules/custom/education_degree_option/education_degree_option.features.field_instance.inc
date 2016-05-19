@@ -81,6 +81,19 @@ function education_degree_option_field_default_field_instances() {
     'label' => 'Degree level',
     'required' => 0,
     'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -120,6 +133,19 @@ function education_degree_option_field_default_field_instances() {
     'label' => 'Academic program',
     'required' => 0,
     'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
