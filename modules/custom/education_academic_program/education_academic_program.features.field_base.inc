@@ -49,8 +49,8 @@ function education_academic_program_field_default_field_bases() {
         ),
         'sort' => array(
           'direction' => 'ASC',
-          'field' => 'field_person_first_name:value',
-          'type' => 'field',
+          'property' => 'title',
+          'type' => 'property',
         ),
         'target_bundles' => array(
           'person' => 'person',
@@ -142,8 +142,8 @@ function education_academic_program_field_default_field_bases() {
         ),
         'sort' => array(
           'direction' => 'ASC',
-          'field' => 'field_person_first_name:value',
-          'type' => 'field',
+          'property' => 'title',
+          'type' => 'property',
         ),
         'target_bundles' => array(
           'person' => 'person',
