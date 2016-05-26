@@ -302,6 +302,25 @@ function education_roles_user_default_permissions() {
     'module' => 'image',
   );
 
+  // Exported permission: 'administer main-menu menu items'.
+  $permissions['administer main-menu menu items'] = array(
+    'name' => 'administer main-menu menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'menu_admin_per_menu',
+  );
+
+  // Exported permission: 'administer management menu items'.
+  $permissions['administer management menu items'] = array(
+    'name' => 'administer management menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_admin_per_menu',
+  );
+
   // Exported permission: 'administer media browser'.
   $permissions['administer media browser'] = array(
     'name' => 'administer media browser',
@@ -316,8 +335,6 @@ function education_roles_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'menu',
   );
@@ -338,6 +355,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: 'administer navigation menu items'.
+  $permissions['administer navigation menu items'] = array(
+    'name' => 'administer navigation menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: 'administer nodes'.
@@ -466,6 +492,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: 'administer user-menu menu items'.
+  $permissions['administer user-menu menu items'] = array(
+    'name' => 'administer user-menu menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: 'administer users'.
