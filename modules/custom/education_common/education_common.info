@@ -9,7 +9,6 @@ dependencies[] = hs_menu
 dependencies[] = jquery_update
 dependencies[] = media_browser_plus
 dependencies[] = menu
-dependencies[] = menu_admin_per_menu
 dependencies[] = menu_block
 dependencies[] = menu_link_weight
 dependencies[] = node_revision_delete
