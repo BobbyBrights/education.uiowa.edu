@@ -558,6 +558,16 @@ function education_roles_user_default_permissions() {
     'module' => 'media_sharestream',
   );
 
+  // Exported permission: 'create announcement content'.
+  $permissions['create announcement content'] = array(
+    'name' => 'create announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create background_image content'.
   $permissions['create background_image content'] = array(
     'name' => 'create background_image content',
@@ -676,6 +686,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: 'delete any announcement content'.
+  $permissions['delete any announcement content'] = array(
+    'name' => 'delete any announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any audio files'.
@@ -816,6 +836,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own announcement content'.
+  $permissions['delete own announcement content'] = array(
+    'name' => 'delete own announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own audio files'.
@@ -1092,6 +1122,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any announcement content'.
+  $permissions['edit any announcement content'] = array(
+    'name' => 'edit any announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any audio files'.
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
@@ -1242,6 +1282,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'metatag',
+  );
+
+  // Exported permission: 'edit own announcement content'.
+  $permissions['edit own announcement content'] = array(
+    'name' => 'edit own announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own audio files'.
@@ -1604,6 +1654,16 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'bg_image',
+  );
+
+  // Exported permission: 'view any unpublished announcement content'.
+  $permissions['view any unpublished announcement content'] = array(
+    'name' => 'view any unpublished announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'view_unpublished',
   );
 
   // Exported permission: 'view any unpublished article content'.
