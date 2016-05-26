@@ -8,6 +8,7 @@ dependencies[] = education_audiences
 dependencies[] = education_common
 dependencies[] = entityreference
 dependencies[] = features
+dependencies[] = jquery_ui_multiselect
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
