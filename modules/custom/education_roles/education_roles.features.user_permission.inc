@@ -307,7 +307,6 @@ function education_roles_user_default_permissions() {
     'name' => 'administer main-menu menu items',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'menu_admin_per_menu',
   );
@@ -335,6 +334,8 @@ function education_roles_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'menu',
   );
@@ -653,6 +654,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create fast_fact content'.
+  $permissions['create fast_fact content'] = array(
+    'name' => 'create fast_fact content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
@@ -803,6 +814,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any fast_fact content'.
+  $permissions['delete any fast_fact content'] = array(
+    'name' => 'delete any fast_fact content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any image files'.
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
@@ -943,6 +964,16 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'delete own event content'.
   $permissions['delete own event content'] = array(
     'name' => 'delete own event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own fast_fact content'.
+  $permissions['delete own fast_fact content'] = array(
+    'name' => 'delete own fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
@@ -1238,6 +1269,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any fast_fact content'.
+  $permissions['edit any fast_fact content'] = array(
+    'name' => 'edit any fast_fact content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any image files'.
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
@@ -1390,6 +1431,16 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'edit own event content'.
   $permissions['edit own event content'] = array(
     'name' => 'edit own event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own fast_fact content'.
+  $permissions['edit own fast_fact content'] = array(
+    'name' => 'edit own fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
@@ -1759,6 +1810,15 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'view any unpublished event content'.
   $permissions['view any unpublished event content'] = array(
     'name' => 'view any unpublished event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished fast_fact content'.
+  $permissions['view any unpublished fast_fact content'] = array(
+    'name' => 'view any unpublished fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
     ),

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Fast facts feature.
+ */
+
+include_once 'education_fast_facts.features.inc';
