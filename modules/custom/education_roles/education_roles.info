@@ -17,6 +17,7 @@ dependencies[] = education_center
 dependencies[] = education_degree_option
 dependencies[] = education_department
 dependencies[] = education_events
+dependencies[] = education_fast_facts
 dependencies[] = education_page
 dependencies[] = education_pages
 dependencies[] = education_person
