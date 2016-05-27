@@ -302,6 +302,24 @@ function education_roles_user_default_permissions() {
     'module' => 'image',
   );
 
+  // Exported permission: 'administer main-menu menu items'.
+  $permissions['administer main-menu menu items'] = array(
+    'name' => 'administer main-menu menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_admin_per_menu',
+  );
+
+  // Exported permission: 'administer management menu items'.
+  $permissions['administer management menu items'] = array(
+    'name' => 'administer management menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_admin_per_menu',
+  );
+
   // Exported permission: 'administer media browser'.
   $permissions['administer media browser'] = array(
     'name' => 'administer media browser',
@@ -338,6 +356,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: 'administer navigation menu items'.
+  $permissions['administer navigation menu items'] = array(
+    'name' => 'administer navigation menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: 'administer nodes'.
@@ -468,6 +495,15 @@ function education_roles_user_default_permissions() {
     'module' => 'path',
   );
 
+  // Exported permission: 'administer user-menu menu items'.
+  $permissions['administer user-menu menu items'] = array(
+    'name' => 'administer user-menu menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_admin_per_menu',
+  );
+
   // Exported permission: 'administer users'.
   $permissions['administer users'] = array(
     'name' => 'administer users',
@@ -558,6 +594,16 @@ function education_roles_user_default_permissions() {
     'module' => 'media_sharestream',
   );
 
+  // Exported permission: 'create announcement content'.
+  $permissions['create announcement content'] = array(
+    'name' => 'create announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create background_image content'.
   $permissions['create background_image content'] = array(
     'name' => 'create background_image content',
@@ -591,6 +637,26 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'create department content'.
   $permissions['create department content'] = array(
     'name' => 'create department content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create event content'.
+  $permissions['create event content'] = array(
+    'name' => 'create event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create fast_fact content'.
+  $permissions['create fast_fact content'] = array(
+    'name' => 'create fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
@@ -658,6 +724,16 @@ function education_roles_user_default_permissions() {
     'module' => 'path',
   );
 
+  // Exported permission: 'delete any announcement content'.
+  $permissions['delete any announcement content'] = array(
+    'name' => 'delete any announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any audio files'.
   $permissions['delete any audio files'] = array(
     'name' => 'delete any audio files',
@@ -716,6 +792,26 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete any event content'.
+  $permissions['delete any event content'] = array(
+    'name' => 'delete any event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any fast_fact content'.
+  $permissions['delete any fast_fact content'] = array(
+    'name' => 'delete any fast_fact content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any image files'.
@@ -778,6 +874,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete own announcement content'.
+  $permissions['delete own announcement content'] = array(
+    'name' => 'delete own announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own audio files'.
   $permissions['delete own audio files'] = array(
     'name' => 'delete own audio files',
@@ -833,6 +939,26 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own event content'.
+  $permissions['delete own event content'] = array(
+    'name' => 'delete own event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own fast_fact content'.
+  $permissions['delete own fast_fact content'] = array(
+    'name' => 'delete own fast_fact content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own image files'.
@@ -1032,6 +1158,16 @@ function education_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any announcement content'.
+  $permissions['edit any announcement content'] = array(
+    'name' => 'edit any announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any audio files'.
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
@@ -1091,6 +1227,26 @@ function education_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit any event content'.
+  $permissions['edit any event content'] = array(
+    'name' => 'edit any event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any fast_fact content'.
+  $permissions['edit any fast_fact content'] = array(
+    'name' => 'edit any fast_fact content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit any image files'.
@@ -1164,6 +1320,16 @@ function education_roles_user_default_permissions() {
     'module' => 'metatag',
   );
 
+  // Exported permission: 'edit own announcement content'.
+  $permissions['edit own announcement content'] = array(
+    'name' => 'edit own announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own audio files'.
   $permissions['edit own audio files'] = array(
     'name' => 'edit own audio files',
@@ -1220,6 +1386,26 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own event content'.
+  $permissions['edit own event content'] = array(
+    'name' => 'edit own event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own fast_fact content'.
+  $permissions['edit own fast_fact content'] = array(
+    'name' => 'edit own fast_fact content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own image files'.
@@ -1506,6 +1692,16 @@ function education_roles_user_default_permissions() {
     'module' => 'bg_image',
   );
 
+  // Exported permission: 'view any unpublished announcement content'.
+  $permissions['view any unpublished announcement content'] = array(
+    'name' => 'view any unpublished announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'view_unpublished',
+  );
+
   // Exported permission: 'view any unpublished article content'.
   $permissions['view any unpublished article content'] = array(
     'name' => 'view any unpublished article content',
@@ -1555,6 +1751,24 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'view any unpublished department content'.
   $permissions['view any unpublished department content'] = array(
     'name' => 'view any unpublished department content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished event content'.
+  $permissions['view any unpublished event content'] = array(
+    'name' => 'view any unpublished event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished fast_fact content'.
+  $permissions['view any unpublished fast_fact content'] = array(
+    'name' => 'view any unpublished fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
     ),

@@ -51,7 +51,7 @@ function education_academic_program_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 1,
     ),
   );
 
@@ -94,7 +94,7 @@ function education_academic_program_field_default_field_instances() {
       'module' => 'sitenow_maps',
       'settings' => array(),
       'type' => 'sitenow_map_widget_building_select',
-      'weight' => 48,
+      'weight' => 18,
     ),
   );
 
@@ -143,10 +143,14 @@ function education_academic_program_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 45,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 11,
     ),
   );
 
@@ -186,7 +190,7 @@ function education_academic_program_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 44,
+      'weight' => 9,
     ),
   );
 
@@ -238,7 +242,46 @@ function education_academic_program_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 41,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-program-field_program_email_address'.
+  $field_instances['node-program-field_program_email_address'] = array(
+    'bundle' => 'program',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Shared email accounts only',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_email_address',
+    'label' => 'Email address',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 13,
     ),
   );
 
@@ -287,10 +330,14 @@ function education_academic_program_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 43,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 7,
     ),
   );
 
@@ -334,7 +381,7 @@ function education_academic_program_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 42,
+      'weight' => 5,
     ),
   );
 
@@ -374,7 +421,7 @@ function education_academic_program_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 47,
+      'weight' => 17,
     ),
   );
 
@@ -413,7 +460,7 @@ function education_academic_program_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 46,
+      'weight' => 15,
     ),
   );
 
@@ -424,6 +471,7 @@ function education_academic_program_field_default_field_instances() {
   t('Contact title');
   t('Department');
   t('Description');
+  t('Email address');
   t('Leader person');
   t('Leader title');
   t('Most likely entries are "Program Coordinator" and "Graduate Assistant", but use the title given to the person on point to answer prospective student inquiries for the program.');
@@ -431,6 +479,7 @@ function education_academic_program_field_default_field_instances() {
   t('Phone number');
   t('Room number for mailing address. If program doesn\'t have one, use its department\'s.');
   t('Select the College of Education department this program is part of.');
+  t('Shared email accounts only');
   t('Typically "Program Coordinator" is the leader of the program, but please indicate if the current holder of the title is Interim or if there is another temporary designation.');
 
   return $field_instances;
