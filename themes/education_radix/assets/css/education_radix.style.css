@@ -8819,6 +8819,11 @@ p {
   background-color: #000;
   padding: 10px 0; }
 
+h1#site-name {
+  border-bottom: none;
+  margin: 0;
+  padding: 0; }
+
 .site-name {
   color: #fff;
   text-transform: uppercase;
@@ -9082,6 +9087,9 @@ img {
       padding: 5px 15px; }
       .nav li a:hover, .nav li a:focus {
         background-color: #cccccc; }
+
+.primary-menu-toggle {
+  float: right; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;

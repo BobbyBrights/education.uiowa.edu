@@ -13,9 +13,9 @@
 <header id="header" class="header" role="header">
   <div class="branding">
     <div class="container">
-      <a href="<?php print $front_page; ?>" class="site-name" rel="home" title="<?php print t('Home'); ?>">College of <span class="site-name-bold">Education</span></a>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#primaryMenu" aria-expanded="false" aria-controls="primaryMenu">
-        Button with data-target
+      <h1 id="site-name"><a href="<?php print $front_page; ?>" class="site-name" rel="home" title="<?php print t('Home'); ?>">College of <span class="site-name-bold">Education</span></a></h1>
+      <button class="btn btn-primary primary-menu-toggle" type="button" data-toggle="collapse" data-target="#primaryMenu" aria-expanded="false" aria-controls="primaryMenu">
+        Menu <span class="menu-icon" aria-hidden="true"></span>
       </button>
     </div>
   </div>
