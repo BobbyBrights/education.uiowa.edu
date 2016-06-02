@@ -3,6 +3,14 @@
   margin-top: 4px;
   text-transform: uppercase;
   @include font-size(1.2);
+  @extend .btn;
+  background-color: transparent;
+  color: #fff;
+
+  .menu-text {
+    position: relative;
+    top: -4px;
+  }
 
   .menu-icon {
     display: inline-block;
@@ -10,6 +18,14 @@
     width: 46px;
     background: transparent url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_white.png') no-repeat center center;
     background-size: contain;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  &:hover, &:focus {
+    color: $yellow;
+
+    .menu-icon {
+      background-image: url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_yellow.png');
+    }
   }
 }

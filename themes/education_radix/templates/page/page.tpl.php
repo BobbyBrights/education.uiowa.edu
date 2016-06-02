@@ -14,8 +14,8 @@
   <div class="branding">
     <div class="container">
       <h1 id="site-name"><a href="<?php print $front_page; ?>" class="site-name" rel="home" title="<?php print t('Home'); ?>">College of <span class="site-name-bold">Education</span></a></h1>
-      <button class="btn btn-primary primary-menu-toggle" type="button" data-toggle="collapse" data-target="#primaryMenu" aria-expanded="false" aria-controls="primaryMenu">
-        Menu <span class="menu-icon" aria-hidden="true"></span>
+      <button class="primary-menu-toggle" type="button" data-toggle="collapse" data-target="#primaryMenu" aria-expanded="false" aria-controls="primaryMenu">
+        <span class="menu-text">Menu</span><span class="menu-icon" aria-hidden="true"></span>
       </button>
     </div>
   </div>
