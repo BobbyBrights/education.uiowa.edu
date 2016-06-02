@@ -1,4 +1,15 @@
 .primary-menu-toggle {
   float: right;
   margin-top: 4px;
+  text-transform: uppercase;
+  @include font-size(1.2);
+
+  .menu-icon {
+    display: inline-block;
+    height: 23px;
+    width: 46px;
+    background: transparent url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_white.png') no-repeat center center;
+    background-size: contain;
+    margin-left: 0.5rem;
+  }
 }
