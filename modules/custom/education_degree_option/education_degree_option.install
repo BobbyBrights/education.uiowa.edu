@@ -9,6 +9,7 @@ function education_degree_option_install() {
     "M.S.",
     "M.A.T.",
     "M.A.",
+    "B.A./M.A.T. 4+1",
     "B.S.",
     "B.A.",
     "Licensure",
@@ -65,4 +66,19 @@ function education_degree_option_update_7001() {
     taxonomy_term_save($new_term);
     $weight++;
   }
+}
+
+/**
+ * Add "B.A./M.A.T. 4+1" term to Degree Levels vocabulary.
+ */
+function education_degree_option_update_7002() {
+  $vocabulary = 'degree_levels';
+  // Load the vocabulary ID.
+  $vid = taxonomy_vocabulary_machine_name_load($vocabulary)->vid;
+  // Add term to vocabulary
+    $new_term = new stdClass();
+    $new_term->name = "B.A./M.A.T. 4+1";
+    $new_term->vid = $vid;
+    $new_term->weight = 5; //current weight of B.S.
+    taxonomy_term_save($new_term);
 }
