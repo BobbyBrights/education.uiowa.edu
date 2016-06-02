@@ -12,10 +12,12 @@
 ?>
 <header id="header" class="header" role="header">
   <div class="branding">
-    <a href="<?php print $front_page; ?>" class="navbar-brand" rel="home" title="<?php print t('Home'); ?>">College of <span class="site-name-bold">Education</span></a>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#primaryMenu" aria-expanded="false" aria-controls="primaryMenu">
-      Button with data-target
-    </button>
+    <div class="container">
+      <a href="<?php print $front_page; ?>" class="site-name" rel="home" title="<?php print t('Home'); ?>">College of <span class="site-name-bold">Education</span></a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#primaryMenu" aria-expanded="false" aria-controls="primaryMenu">
+        Button with data-target
+      </button>
+    </div>
   </div>
   <div class="collapse" id="primaryMenu" role="navigation">
     <p>Menu will go here.</p>
