@@ -4,6 +4,7 @@
   padding-bottom: 0;
 }
 
+// Background header images.
 #bg-image {
   @include breakpoint($education-bg-image) {
     height: 200px;
@@ -13,24 +14,5 @@
 #content {
   @include breakpoint($education-bg-image) {
     padding-top: 20px;
-  }
-}
-
-#sidebar-first {
-  margin-bottom: 36px;
-}
-
-#footer {
-  background-color: $black;
-  color: #fff;
-  margin-bottom: 0;
-  padding: 2rem 0;
-
-  a {
-    color: $yellow;
-
-    &:hover, &:focus {
-      color: darken($yellow, 10);
-    }
   }
 }
