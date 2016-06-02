@@ -9089,7 +9089,8 @@ img {
         background-color: #cccccc; }
 
 .primary-menu-toggle {
-  float: right; }
+  float: right;
+  margin-top: 4px; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;
