@@ -1,0 +1,14 @@
+#footer {
+  background-color: $black;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 2rem 0;
+
+  a {
+    color: $yellow;
+
+    &:hover, &:focus {
+      color: darken($yellow, 10);
+    }
+  }
+}
