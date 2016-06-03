@@ -20,7 +20,16 @@
     </div>
   </div>
   <div class="collapse" id="primaryMenu" role="navigation">
-    <p>Menu will go here.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p><a href="#">Menu will go here.</a></p>
+        </div>
+        <div class="col-md-4">
+          <p><a href="#">Social links will go here.</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 

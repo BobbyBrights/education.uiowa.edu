@@ -9114,6 +9114,13 @@ img {
     .primary-menu-toggle:hover .menu-icon, .primary-menu-toggle:focus .menu-icon {
       background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_yellow.png"); }
 
+#primaryMenu {
+  background-color: #333333; }
+  #primaryMenu a {
+    color: #fff; }
+    #primaryMenu a:hover, #primaryMenu a:focus {
+      color: #ffcd00; }
+
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;
   padding: 20px; }

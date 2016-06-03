@@ -31,3 +31,15 @@
     }
   }
 }
+
+#primaryMenu {
+  background-color: $black_80;
+
+  a {
+    color: #fff;
+
+    &:hover, &:focus {
+      color: $yellow;
+    }
+  }
+}
