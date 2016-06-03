@@ -8826,12 +8826,13 @@ h1#site-name {
 
 .site-name {
   color: #fff;
+  font-family: "AvenirLT-Light";
   text-transform: uppercase;
   font-size: 2rem; }
   .site-name:hover, .site-name:focus {
     color: #ffe100; }
   .site-name .site-name-bold {
-    font-weight: bold; }
+    font-family: "AvenirLT-Black"; }
 
 #footer {
   background-color: #000000;
