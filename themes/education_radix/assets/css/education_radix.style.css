@@ -9122,6 +9122,11 @@ img {
   position: fixed;
   width: 100%;
   z-index: 1; }
+  #primaryMenu .container {
+    height: 100vh;
+    min-height: calc(100vh - (125px));
+    height: calc(100vh - (125px));
+    overflow-y: scroll; }
   #primaryMenu a {
     color: #fff; }
     #primaryMenu a:hover, #primaryMenu a:focus {

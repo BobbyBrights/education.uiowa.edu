@@ -34,10 +34,16 @@
 
 #primaryMenu {
   background-color: $black_80;
-  //min-height: 100%;
   position: fixed;
   width: 100%;
   z-index: 1;
+
+  .container {
+    height: 100vh;
+    min-height: calc(100vh - (#{$is_not_logged_in}));
+    height: calc(100vh - (#{$is_not_logged_in}));
+    overflow-y: scroll;
+  }
 
   a {
     color: #fff;

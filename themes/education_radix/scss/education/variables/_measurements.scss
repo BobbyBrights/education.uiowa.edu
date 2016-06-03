@@ -1,0 +1,5 @@
+$ui-bar-height: 64px;
+$branding-height: 61px;
+
+// Calculated measurements.
+$is_not_logged_in: $ui-bar-height + $branding-height;
