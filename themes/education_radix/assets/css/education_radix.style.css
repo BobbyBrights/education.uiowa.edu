@@ -8591,6 +8591,7 @@ h1, .h1 {
   border-bottom: 3px solid #ffcd00;
   color: #000000;
   display: inline-block;
+  font-family: "AvenirLT-Heavy";
   padding-bottom: 2rem;
   text-transform: uppercase;
   font-size: 2.25rem; }
@@ -8599,12 +8600,14 @@ h1, .h1 {
 
 h2, .h2 {
   color: #000000;
+  font-family: "AvenirLT-Heavy";
   margin-bottom: 0.75rem;
   margin-top: 2.25rem;
   font-size: 1.5rem; }
 
 h3, .h3 {
   color: #000000;
+  font-family: "AvenirLT-Heavy";
   margin-bottom: 0.75rem;
   margin-top: 2rem;
   text-transform: uppercase;
@@ -8612,12 +8615,14 @@ h3, .h3 {
 
 h4, .h4 {
   color: #000000;
+  font-family: "AvenirLT-Medium";
   margin-bottom: 0.75rem;
   margin-top: 1rem;
   font-size: 1.125rem; }
 
 h5, .h5 {
   color: #000000;
+  font-family: "AvenirLT-Heavy";
   margin-bottom: 0.75rem;
   margin-top: 1rem;
   font-size: 1.125rem; }
@@ -8627,13 +8632,15 @@ hr {
   border-top-width: 3pt; }
 
 a {
-  color: #0c9bd2; }
+  color: #0c9bd2;
+  font-family: "AvenirLT-Medium"; }
   a:hover, a:focus {
     color: #0977a2;
     text-decoration: none; }
 
 ul, ol {
   color: #000000;
+  font-family: "AvenirLT-Book";
   margin-top: 20px; }
   ul li, ol li {
     margin-bottom: 10px; }
@@ -8642,6 +8649,7 @@ ul, ol {
 
 body {
   color: #333333;
+  font-family: "AvenirLT-Light";
   line-height: 1.5;
   font-size: 1rem; }
 
