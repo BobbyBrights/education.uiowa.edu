@@ -23,7 +23,25 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <p><a href="#">Menu will go here.</a></p>
+          <div class="row">
+            <div class="col-sm-4">
+               <p><a href="#">Programs menu will go here.</a></p>
+            </div>
+            <div class="col-sm-4">
+               <p><a href="#">Research menu will go here.</a></p>
+            </div>
+            <div class="col-sm-4">
+               <p><a href="#">About menu will go here.</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <p><a href="#">Information For menu will go here.</a></p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+              <p><a href="#">News &amp; Events will go here.</a></p>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
           <p><a href="#">Social links will go here.</a></p>
