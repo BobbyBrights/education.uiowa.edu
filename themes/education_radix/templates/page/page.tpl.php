@@ -97,5 +97,18 @@
 
 <footer id="footer" class="footer" role="footer">
   <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+        logo
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+        links<br/>
+        <br/>
+        <a href="http://www.education.uiowa.edu/home/contact-the-webmaster">!!Report web site problems to the webmaster</a>
+      </div>
+      <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+      social media
+      </div>
+    </div>
   </div>
 </footer>
