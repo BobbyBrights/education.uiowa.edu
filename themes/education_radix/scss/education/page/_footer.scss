@@ -62,6 +62,14 @@
     }
 }
 #footer-logo {
+  background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/COLLEGE-web-white.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 240px 70px;
+  min-height: 70px;
+  min-width: 240px;
   margin-left:auto;margin-right:auto;
-  width:100%; max-width: 240px;
+  &:hover, &:focus {
+    background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/COLLEGE-web-yellow.png");
+  }
 }
