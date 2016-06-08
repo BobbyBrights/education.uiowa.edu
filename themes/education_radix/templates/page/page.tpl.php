@@ -22,7 +22,7 @@
   <div class="collapse" id="primaryMenu" role="navigation">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
           <div class="row">
             <div class="col-sm-4">
                <p><a href="#">Programs menu will go here.</a></p>
@@ -49,7 +49,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="cta-links">
             <h2 class="offscreen">Quick Links</h2>
             <?php print(l('Apply', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
