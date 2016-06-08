@@ -9145,7 +9145,7 @@ img {
     min-height: calc(100vh - (125px));
     height: calc(100vh - (125px));
     overflow-y: scroll; }
-  #primaryMenu .row {
+  #primaryMenu .row, #primaryMenu .paragraphs-item-events .view-content, .paragraphs-item-events #primaryMenu .view-content, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref {
     margin-bottom: 40px; }
   #primaryMenu a {
     color: #fff; }
