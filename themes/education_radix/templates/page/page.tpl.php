@@ -52,12 +52,9 @@
         <div class="col-md-4">
           <div class="cta-links">
             <h2 class="offscreen">Quick Links</h2>
-            <?php print(l('Apply', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
-            </br>
+            <?php print(l('Apply', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
             <?php print(l('Visit', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
-            </br>
             <?php print(l('Contact', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
-            </br>
             <?php print(l('Support the College', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
           </div>
           <div class="social-links">

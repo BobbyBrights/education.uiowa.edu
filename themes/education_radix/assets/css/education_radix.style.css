@@ -9131,6 +9131,15 @@ img {
     color: #fff; }
     #primaryMenu a:hover, #primaryMenu a:focus {
       color: #ffe100; }
+  #primaryMenu .btn-primary, #primaryMenu body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions #primaryMenu .btn:first-child, #primaryMenu .btn-long, #primaryMenu .more-link a, .more-link #primaryMenu a {
+    border-radius: 6px;
+    color: #333333;
+    display: block;
+    font-family: "AvenirLT-Heavy";
+    font-size: 1.125rem;
+    margin-bottom: 1rem; }
+    #primaryMenu .btn-primary:hover, #primaryMenu body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions #primaryMenu .btn:hover:first-child, #primaryMenu .btn-long:hover, #primaryMenu .more-link a:hover, .more-link #primaryMenu a:hover, #primaryMenu .btn-primary:focus, #primaryMenu body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions #primaryMenu .btn:focus:first-child, #primaryMenu .btn-long:focus, #primaryMenu .more-link a:focus, .more-link #primaryMenu a:focus {
+      color: #333333; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;

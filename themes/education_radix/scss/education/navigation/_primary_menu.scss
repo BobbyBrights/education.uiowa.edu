@@ -52,4 +52,17 @@
       color: $yellow;
     }
   }
+
+  .btn-primary {
+    border-radius: 6px;
+    color: $black_80;
+    display: block;
+    font-family: $avenir-85;
+    @include font-size(1.125);
+    margin-bottom: 1rem;
+
+    &:hover, &:focus {
+      color: $black_80;
+    }
+  }
 }
