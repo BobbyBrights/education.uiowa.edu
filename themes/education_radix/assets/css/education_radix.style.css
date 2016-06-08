@@ -9140,6 +9140,10 @@ img {
     margin-bottom: 1rem; }
     #primaryMenu .btn-primary:hover, #primaryMenu body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions #primaryMenu .btn:hover:first-child, #primaryMenu .btn-long:hover, #primaryMenu .more-link a:hover, .more-link #primaryMenu a:hover, #primaryMenu .btn-primary:focus, #primaryMenu body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions #primaryMenu .btn:focus:first-child, #primaryMenu .btn-long:focus, #primaryMenu .more-link a:focus, .more-link #primaryMenu a:focus {
       color: #333333; }
+  #primaryMenu .dark-background {
+    background-color: #000000;
+    border-radius: 4px;
+    padding: 20px; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;
