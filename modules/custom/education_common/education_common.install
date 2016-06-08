@@ -271,6 +271,7 @@ function education_common_update_7012() {
 
   variable_set('theme_education_radix_settings', $theme_settings);
 }
+<<<<<<< 984a2a73e534b914a7a1ae3e10bf13dedf6a692b
 /**
  * Enable education_pages.
  */
@@ -309,5 +310,12 @@ function education_common_update_7015() {
   // Empty cache now.
   if (function_exists('views_invalidate_cache')) {
     views_invalidate_cache();
+
+/**
+ * Enable education_audiences_views.
+ */
+function education_common_update_7016() {
+  if (!module_exists('education_audiences_views')) {
+    module_enable(array('education_audiences_views'));
   }
 }
