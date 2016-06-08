@@ -45,6 +45,7 @@
         </div>
         <div class="col-md-4">
           <div class="cta-links">
+            <h2 class="offscreen">Quick Links</h2>
             <?php print(l('Apply', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
             </br>
             <?php print(l('Visit', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
@@ -52,6 +53,16 @@
             <?php print(l('Contact', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
             </br>
             <?php print(l('Support the College', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
+          </div>
+          <div class="social-links">
+            <h2 class="offscreen">Connect with Us</h2>
+            <?php print(l('Facebook', 'https://www.facebook.com/UICollegeofEducation', array('attributes' => array('class' => array('facebook'))))); ?>
+            <?php print(l('Instagram', 'http://instagram.com/uicollegeofed', array('attributes' => array('class' => array('instagram'))))); ?>
+            <?php print(l('Twitter', 'https://twitter.com/UIowaEducation', array('attributes' => array('class' => array('twitter'))))); ?>
+            <?php print(l('LinkedIn', 'https://www.linkedin.com/in/uiowacollegeofeducation', array('attributes' => array('class' => array('linkedin'))))); ?>
+            <?php print(l('Pinterest', 'http://pinterest.com/uicoe', array('attributes' => array('class' => array('pinterest'))))); ?>
+            <?php print(l('YouTube', 'https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA', array('attributes' => array('class' => array('youtube'))))); ?>
+          </div>
           </div>
         </div>
       </div>
