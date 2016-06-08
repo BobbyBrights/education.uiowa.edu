@@ -44,13 +44,15 @@
           </div>
         </div>
         <div class="col-md-4">
-          <p><a href="#">Carrot cake bonbon halvah sesame snaps liquorice. Lollipop jelly beans soufflé sugar plum dragée. Halvah sweet tiramisu cake danish. Jujubes croissant cookie liquorice pastry jelly-o. Oat cake cookie dessert candy canes danish. Biscuit chocolate cake fruitcake liquorice sesame snaps dessert. Danish candy canes topping. Biscuit cookie sugar plum apple pie macaroon gummies gummies marzipan. Candy canes bear claw biscuit. Danish fruitcake halvah liquorice jujubes wafer cake biscuit. Chocolate tiramisu toffee cheesecake. Gummi bears jelly-o carrot cake pie caramels halvah carrot cake. Sweet roll wafer muffin carrot cake. Muffin sweet roll gingerbread tootsie roll chupa chups ice cream.
-
-Soufflé jelly beans icing pie. Tiramisu soufflé candy canes oat cake bonbon candy canes. Gummies gummies caramels pudding. Cake pastry fruitcake marshmallow gingerbread cupcake. Caramels cheesecake bonbon chocolate cake pie. Apple pie bonbon donut. Oat cake chocolate bar dessert gingerbread cheesecake jujubes. Croissant pie lollipop tart jelly beans. Jelly tootsie roll cheesecake carrot cake ice cream sweet roll wafer gingerbread. Caramels dragée candy canes. Ice cream candy canes apple pie bonbon icing cupcake lollipop. Dessert soufflé chocolate cake. Chupa chups cookie chocolate bar soufflé gingerbread biscuit chupa chups candy canes. Jelly beans cupcake halvah.
-
-Chupa chups ice cream lemon drops pie bonbon gummies chocolate bar. Cheesecake bear claw muffin jujubes. Sugar plum sweet cotton candy jelly beans jelly caramels. Cupcake cheesecake bonbon bear claw icing. Candy canes topping caramels gingerbread croissant muffin tart soufflé bear claw. Jelly-o sugar plum fruitcake tootsie roll sweet. Bonbon soufflé tiramisu dessert sugar plum croissant chocolate cake. Tiramisu marzipan gummi bears pie oat cake tootsie roll cookie cake. Marshmallow sesame snaps donut lemon drops topping. Dessert cake sesame snaps gummies gummies caramels apple pie topping. Tart dessert pie tootsie roll fruitcake pastry tiramisu cake. Muffin pudding tiramisu sweet roll chocolate topping marzipan gingerbread.
-
-</a></p>
+          <div class="cta-links">
+            <?php print(l('Apply', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
+            </br>
+            <?php print(l('Visit', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
+            </br>
+            <?php print(l('Contact', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
+            </br>
+            <?php print(l('Support the College', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
+          </div>
         </div>
       </div>
     </div>
