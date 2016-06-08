@@ -39,7 +39,10 @@
               <p><a href="#">Information For menu will go here.</a></p>
             </div>
             <div class="col-sm-4 col-sm-offset-2">
-              <p><a href="#">News &amp; Events will go here.</a></p>
+              <div class="news-events">
+                <h2><?php print(l('News & Events', 'home')); ?></h2>
+                <div class="todays-date"><p style="color: #fff;">The date of today will go here.</p></div>
+              </div>
             </div>
           </div>
         </div>
