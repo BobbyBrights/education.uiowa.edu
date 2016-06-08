@@ -9144,6 +9144,17 @@ img {
     background-color: #000000;
     border-radius: 4px;
     padding: 20px; }
+  #primaryMenu .section-heading {
+    color: #ffcd00;
+    font-family: "AvenirLT-Heavy";
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.5rem; }
+    #primaryMenu .section-heading a {
+      color: #ffcd00; }
+      #primaryMenu .section-heading a:hover, #primaryMenu .section-heading a:focus {
+        color: #fff; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;

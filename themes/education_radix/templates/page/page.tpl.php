@@ -37,13 +37,13 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="audiences dark-background">
-                <h2><?php print(l('Information for', 'home')); ?></h2>
+                <h2 class="section-heading"><?php print(l('Information for', 'home')); ?></h2>
                 <?php print render($audiences_list); ?>
               </div>
             </div>
             <div class="col-sm-4 col-sm-offset-2">
               <div class="news-events dark-background">
-                <h2><?php print(l('News & Events', 'home')); ?></h2>
+                <h2 class="section-heading"><?php print(l('News & Events', 'home')); ?></h2>
                 <?php print($date_today); ?>
               </div>
             </div>
