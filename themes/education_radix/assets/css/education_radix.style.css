@@ -8796,6 +8796,9 @@ p {
   display: block;
   width: 100%; }
 
+.collapsing {
+  transition: height 0.6s; }
+
 .event-date {
   background-color: #333333;
   border-radius: 4px;
@@ -9113,6 +9116,21 @@ img {
     color: #ffe100; }
     .primary-menu-toggle:hover .menu-icon, .primary-menu-toggle:focus .menu-icon {
       background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_yellow.png"); }
+
+#primaryMenu {
+  background-color: #333333;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+  #primaryMenu .container, #primaryMenu .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye #primaryMenu .pane-content, #primaryMenu .front .pane-social .pane-content, .front .pane-social #primaryMenu .pane-content, #primaryMenu .front .pane-tagline .pane-content, .front .pane-tagline #primaryMenu .pane-content, #primaryMenu #breadcrumb, #primaryMenu .page-node .edgy .field-name-body, .page-node .edgy #primaryMenu .field-name-body, #primaryMenu .entity-paragraphs-item.grey-border {
+    height: 100vh;
+    min-height: calc(100vh - (125px));
+    height: calc(100vh - (125px));
+    overflow-y: scroll; }
+  #primaryMenu a {
+    color: #fff; }
+    #primaryMenu a:hover, #primaryMenu a:focus {
+      color: #ffe100; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;
