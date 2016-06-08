@@ -95,4 +95,7 @@ function education_radix_process_page(&$variables) {
   $month = '<span class="month">' . date('M') . '</span>';
   $day = '<span class="day">' . date('j') . '</span>';
   $variables['date_today'] = '<div class="todays-date">' . $month . $day . '</div>';
+
+  // Get the listing of Audience terms.
+  $variables['audiences_list'] = views_embed_view('audiences', 'audiences_list_block');
 }

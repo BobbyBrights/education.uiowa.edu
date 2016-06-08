@@ -36,7 +36,10 @@
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <p><a href="#">Information For menu will go here.</a></p>
+              <div class="audiences">
+                <h2><?php print(l('Information for', 'home')); ?></h2>
+                <?php print render($audiences_list); ?>
+              </div>
             </div>
             <div class="col-sm-4 col-sm-offset-2">
               <div class="news-events">
