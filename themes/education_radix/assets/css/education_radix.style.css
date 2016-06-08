@@ -8627,9 +8627,6 @@ div.facultyDiv {
   overflow: hidden;
   outline: 0; }
 
-.collapsing {
-  transition: height 0.6s; }
-
 /**
  * A SASS port of jasny/boostrap-em.less.
  * @see https://gist.github.com/neil-h/631c5e848ba1f2ae92d1
@@ -9116,21 +9113,6 @@ img {
     color: #ffe100; }
     .primary-menu-toggle:hover .menu-icon, .primary-menu-toggle:focus .menu-icon {
       background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_yellow.png"); }
-
-#primaryMenu {
-  background-color: #333333;
-  position: fixed;
-  width: 100%;
-  z-index: 1; }
-  #primaryMenu .container {
-    height: 100vh;
-    min-height: calc(100vh - (125px));
-    height: calc(100vh - (125px));
-    overflow-y: scroll; }
-  #primaryMenu a {
-    color: #fff; }
-    #primaryMenu a:hover, #primaryMenu a:focus {
-      color: #ffcd00; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;

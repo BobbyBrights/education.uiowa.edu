@@ -90,4 +90,9 @@ function education_radix_process_page(&$variables) {
   if (isset($variables['header_classes_array'])) {
     $variables['header_classes'] = implode(' ', $variables['header_classes_array']);
   }
+
+  // Format today's date for the News & Events section of primary navigation.
+  $month = '<span class="month">' . date('M') . '</span>';
+  $day = '<span class="day">' . date('j') . '</span>';
+  $variables['date_today'] = '<div class="todays-date">' . $month . $day . '</div>';
 }

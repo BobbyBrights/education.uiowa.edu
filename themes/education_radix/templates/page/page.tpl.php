@@ -41,7 +41,7 @@
             <div class="col-sm-4 col-sm-offset-2">
               <div class="news-events">
                 <h2><?php print(l('News & Events', 'home')); ?></h2>
-                <div class="todays-date"><p style="color: #fff;">The date of today will go here.</p></div>
+                <?php print($date_today); ?>
               </div>
             </div>
           </div>
