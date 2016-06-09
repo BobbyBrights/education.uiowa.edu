@@ -106,8 +106,9 @@
         <br/>
         <br/>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-        links<br/>
+      <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+        <br/>
+        <a href="directory" ><div class="footer-button"><strong>Directory<strong></div></a>
         <br/>
       </div>
       <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
@@ -127,10 +128,9 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-        Directory
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-        <a href="http://www.education.uiowa.edu/home/contact-the-webmaster">!!Report web site problems to the webmaster</a>
+      <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+        <a href="webmaster">Report web site problems to the webmaster</a>
       </div>
       <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
       </div>
