@@ -90,6 +90,38 @@ function education_common_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_webform';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_webform';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_webform';
+  $strongarm->value = array(
+    0 => 'status',
+  );
+  $export['node_options_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_webform';
+  $strongarm->value = '1';
+  $export['node_preview_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_revision_delete_cron';
   $strongarm->value = '50';
   $export['node_revision_delete_cron'] = $strongarm;
@@ -100,6 +132,13 @@ function education_common_strongarm() {
   $strongarm->name = 'node_revision_delete_time';
   $strongarm->value = 'every_time';
   $export['node_revision_delete_time'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_webform';
+  $strongarm->value = 0;
+  $export['node_submitted_webform'] = $strongarm;
 
   return $export;
 }
