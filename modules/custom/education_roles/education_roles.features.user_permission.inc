@@ -353,6 +353,7 @@ function education_roles_user_default_permissions() {
     'name' => 'administer main-menu menu items',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'menu_admin_per_menu',
   );
@@ -380,8 +381,6 @@ function education_roles_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'menu',
   );
