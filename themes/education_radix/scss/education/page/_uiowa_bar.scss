@@ -1,0 +1,46 @@
+#ui-wrapper {
+  @include font-size(0.875);
+
+  #ui-logo a {
+    @include font-size(1.6);
+  }
+
+  #ui-search-toggle {
+    @include font-size(1.3);
+  }
+
+  #ui-search .ui-glyph-icon-ui-search {
+    @include font-size(1.25);
+  }
+
+  .uiowa-bar-dark & {
+    box-shadow: none;
+  }
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .form-item-search-terms {
+    .form-control {
+      height: auto;
+      line-height: normal;
+      @include box-shadow(none);
+    }
+  }
+
+  #edit-submit-search {
+    width: auto;
+    padding: 4px 8px;
+  }
+}
+
+#ui-global-footer {
+  @include font-size(0.875)
+
+  #ui-footer-logo a {
+    @include font-size(1.6875);
+  }
+}
