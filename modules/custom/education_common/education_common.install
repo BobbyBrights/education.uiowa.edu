@@ -285,3 +285,10 @@ function education_common_update_7013() {
     module_enable(array('hidden_captcha'));
   }
 }
+
+/**
+ * Enable WYSIWYG configuration forms.
+ */
+function education_common_update_7014() {
+  variable_set('sitenow_wysiwyg_disable_forms', 0);
+}
