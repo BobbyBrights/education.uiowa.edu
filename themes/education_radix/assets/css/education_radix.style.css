@@ -2867,51 +2867,59 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #333; }
 
-.btn-primary, body.maintenance-page .form-actions .btn:first-child {
+.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long {
   color: #fff;
   background-color: #428bca;
   border-color: #357ebd; }
-  .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-primary.focus, body.maintenance-page .form-actions .focus.btn:first-child {
+  .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .btn-primary.focus, body.maintenance-page .form-actions .focus.btn:first-child, .focus.btn-long {
     color: #fff;
     background-color: #3071a9;
     border-color: #193c5a; }
-  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child {
+  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover {
     color: #fff;
     background-color: #3071a9;
     border-color: #285e8e; }
-  .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-primary.active, body.maintenance-page .form-actions .active.btn:first-child,
+  .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active, .btn-primary.active, body.maintenance-page .form-actions .active.btn:first-child, .active.btn-long,
   .open > .btn-primary.dropdown-toggle, body.maintenance-page .form-actions
-  .open > .dropdown-toggle.btn:first-child {
+  .open > .dropdown-toggle.btn:first-child,
+  .open > .dropdown-toggle.btn-long {
     color: #fff;
     background-color: #3071a9;
     border-color: #285e8e; }
-    .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-primary:active.focus, body.maintenance-page .form-actions .btn:active.focus:first-child, .btn-primary.active:hover, body.maintenance-page .form-actions .active.btn:hover:first-child, .btn-primary.active:focus, body.maintenance-page .form-actions .active.btn:focus:first-child, .btn-primary.active.focus, body.maintenance-page .form-actions .active.focus.btn:first-child,
+    .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus, .btn-primary:active.focus, body.maintenance-page .form-actions .btn:active.focus:first-child, .btn-long:active.focus, .btn-primary.active:hover, body.maintenance-page .form-actions .active.btn:hover:first-child, .active.btn-long:hover, .btn-primary.active:focus, body.maintenance-page .form-actions .active.btn:focus:first-child, .active.btn-long:focus, .btn-primary.active.focus, body.maintenance-page .form-actions .active.focus.btn:first-child, .active.focus.btn-long,
     .open > .btn-primary.dropdown-toggle:hover, body.maintenance-page .form-actions
     .open > .dropdown-toggle.btn:hover:first-child,
+    .open > .dropdown-toggle.btn-long:hover,
     .open > .btn-primary.dropdown-toggle:focus, body.maintenance-page .form-actions
     .open > .dropdown-toggle.btn:focus:first-child,
+    .open > .dropdown-toggle.btn-long:focus,
     .open > .btn-primary.dropdown-toggle.focus, body.maintenance-page .form-actions
-    .open > .dropdown-toggle.focus.btn:first-child {
+    .open > .dropdown-toggle.focus.btn:first-child,
+    .open > .dropdown-toggle.focus.btn-long {
       color: #fff;
       background-color: #285e8e;
       border-color: #193c5a; }
-  .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-primary.active, body.maintenance-page .form-actions .active.btn:first-child,
+  .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active, .btn-primary.active, body.maintenance-page .form-actions .active.btn:first-child, .active.btn-long,
   .open > .btn-primary.dropdown-toggle, body.maintenance-page .form-actions
-  .open > .dropdown-toggle.btn:first-child {
+  .open > .dropdown-toggle.btn:first-child,
+  .open > .dropdown-toggle.btn-long {
     background-image: none; }
-  .btn-primary.disabled:hover, body.maintenance-page .form-actions .disabled.btn:hover:first-child, .btn-primary.disabled:focus, body.maintenance-page .form-actions .disabled.btn:focus:first-child, .btn-primary.disabled.focus, body.maintenance-page .form-actions .disabled.focus.btn:first-child, .btn-primary[disabled]:hover, body.maintenance-page .form-actions [disabled].btn:hover:first-child, .btn-primary[disabled]:focus, body.maintenance-page .form-actions [disabled].btn:focus:first-child, .btn-primary[disabled].focus, body.maintenance-page .form-actions [disabled].focus.btn:first-child,
+  .btn-primary.disabled:hover, body.maintenance-page .form-actions .disabled.btn:hover:first-child, .disabled.btn-long:hover, .btn-primary.disabled:focus, body.maintenance-page .form-actions .disabled.btn:focus:first-child, .disabled.btn-long:focus, .btn-primary.disabled.focus, body.maintenance-page .form-actions .disabled.focus.btn:first-child, .disabled.focus.btn-long, .btn-primary[disabled]:hover, body.maintenance-page .form-actions [disabled].btn:hover:first-child, [disabled].btn-long:hover, .btn-primary[disabled]:focus, body.maintenance-page .form-actions [disabled].btn:focus:first-child, [disabled].btn-long:focus, .btn-primary[disabled].focus, body.maintenance-page .form-actions [disabled].focus.btn:first-child, [disabled].focus.btn-long,
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions
   fieldset[disabled] .btn:hover:first-child,
+  fieldset[disabled] .btn-long:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions
   fieldset[disabled] .btn:focus:first-child,
+  fieldset[disabled] .btn-long:focus,
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] body.maintenance-page .form-actions .focus.btn:first-child, body.maintenance-page .form-actions
-  fieldset[disabled] .focus.btn:first-child {
+  fieldset[disabled] .focus.btn:first-child,
+  fieldset[disabled] .focus.btn-long {
     background-color: #428bca;
     border-color: #357ebd; }
-  .btn-primary .badge, body.maintenance-page .form-actions .btn:first-child .badge {
+  .btn-primary .badge, body.maintenance-page .form-actions .btn:first-child .badge, .btn-long .badge {
     color: #428bca;
     background-color: #fff; }
 
@@ -8536,7 +8544,7 @@ ul.dropdown-menu li {
   overflow: hidden;
   outline: 0; }
 
-.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child {
+.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active {
   background-color: #ffe100;
   border: none;
   color: #333333;
@@ -8544,9 +8552,13 @@ ul.dropdown-menu li {
   padding: 12px 20px 10px;
   text-transform: uppercase;
   white-space: normal; }
-  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child {
+  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus {
     background-color: #cccccc;
     color: #333333; }
+
+.btn-long {
+  display: block;
+  width: 100%; }
 
 /**
  * A SASS port of jasny/boostrap-em.less.
