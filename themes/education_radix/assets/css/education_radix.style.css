@@ -8485,6 +8485,11 @@ ul.dropdown-menu li {
 .views-exposed-form .views-reset-button {
   margin-top: 3px; }
 
+div.facultyDiv {
+  float: left;
+  text-align: center;
+  width: 200px; }
+
 /**
  * Global breakpoints.
  *
