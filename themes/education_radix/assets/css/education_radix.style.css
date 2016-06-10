@@ -8771,6 +8771,11 @@ p {
     width: auto;
     padding: 4px 8px; }
 
+#ui-global-footer {
+  font-size: 0.875rem; }
+  #ui-global-footer #ui-footer-logo a {
+    font-size: 1.6875rem; }
+
 .breadcrumb {
   background-color: transparent;
   border-radius: 0;

@@ -36,3 +36,11 @@
     padding: 4px 8px;
   }
 }
+
+#ui-global-footer {
+  @include font-size(0.875)
+
+  #ui-footer-logo a {
+    @include font-size(1.6875);
+  }
+}
