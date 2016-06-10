@@ -3,7 +3,7 @@
 /**
  * Create initial Audience terms.
  */
-function education_audiences_7001() {
+function education_audiences_update_7001() {
   // Add terms to the Audiences vocabulary.
   $vid = taxonomy_vocabulary_machine_name_load('audiences')->vid;
   $rank_terms = array(
