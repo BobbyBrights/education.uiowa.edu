@@ -21,6 +21,7 @@ dependencies[] = uiowa_favicon
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_base][] = body
+features[field_base][] = field_short_name
 features[menu_custom][] = main-menu
 features[menu_custom][] = management
 features[node][] = webform

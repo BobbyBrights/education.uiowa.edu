@@ -65,6 +65,7 @@ features[field_instance][] = node-program-field_program_overview_image
 features[field_instance][] = node-program-field_program_overview_text
 features[field_instance][] = node-program-field_program_phone_number
 features[field_instance][] = node-program-field_program_quick_links
+features[field_instance][] = node-program-field_short_name
 features[node][] = program
 features[variable][] = field_bundle_settings_node__program
 features[variable][] = menu_options_program

@@ -615,7 +615,7 @@ function education_academic_program_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_leader_person',
     'label' => 'Leader person',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'jquery_ui_multiselect' => array(
         'dividerLocation' => 0.5,
@@ -713,7 +713,7 @@ function education_academic_program_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_leading_text',
     'label' => 'Leading text',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 1,
       'user_register_form' => FALSE,
@@ -858,7 +858,7 @@ function education_academic_program_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_overview_text',
     'label' => 'Overview text',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 1,
       'user_register_form' => FALSE,
@@ -937,7 +937,7 @@ function education_academic_program_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program_quick_links',
     'label' => 'Quick links',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
@@ -970,8 +970,49 @@ function education_academic_program_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-program-field_short_name'.
+  $field_instances['node-program-field_short_name'] = array(
+    'bundle' => 'program',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Abbreviation or short name, used as short URL and for contextual filters.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_short_name',
+    'label' => 'Short name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('Abbreviation or short name, used as short URL and for contextual filters.');
   t('Brief extra information regarding who to be contact for what/when.');
   t('Building');
   t('Contact person');
@@ -998,6 +1039,7 @@ function education_academic_program_field_default_field_instances() {
   t('Room number for mailing address. If program doesn\'t have one, use its department\'s.');
   t('Select the College of Education department this program is part of.');
   t('Shared email accounts only');
+  t('Short name');
   t('Typically "Program Coordinator" is the leader of the program, but please indicate if the current holder of the title is Interim or if there is another temporary designation.');
   t('Will be deleted. Move content to the appropriate section below.');
 
