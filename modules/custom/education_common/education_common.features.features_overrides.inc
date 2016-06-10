@@ -13,7 +13,7 @@ function education_common_features_override_default_overrides() {
 
   // Exported overrides for: filter
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|0"] = 'btn-primary';
-  $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|2"] = 'btn-full';
+  $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|2"] = 'btn-long';
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|4"] = 'large-text';
 
   // Exported overrides for: wysiwyg

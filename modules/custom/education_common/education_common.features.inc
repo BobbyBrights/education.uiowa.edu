@@ -19,7 +19,7 @@ function education_common_ctools_plugin_api($module = NULL, $api = NULL) {
 function education_common_filter_default_formats_alter(&$data) {
   if (isset($data['filtered_html'])) {
     $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][0] = 'btn-primary'; /* WAS: 'plain-button' */
-    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][2] = 'btn-full'; /* WAS: 'small' */
+    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][2] = 'btn-long'; /* WAS: 'small' */
     $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][4] = 'large-text'; /* WAS: '' */
   }
 }
