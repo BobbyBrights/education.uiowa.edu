@@ -8,7 +8,7 @@ function education_radix_preprocess_html(&$vars) {
   $avenir_font = array(
     '#tag' => 'link',
     '#attributes' => array(
-      'href' => 'sites/education.uiowa.edu/themes/education_radix/assets/fonts/avenir/MyFontsWebfontsKit.css',
+      'href' => '/sites/education.uiowa.edu/themes/education_radix/assets/fonts/avenir/MyFontsWebfontsKit.css',
       'rel' => 'stylesheet',
       'type' => 'text/css',
     ),
