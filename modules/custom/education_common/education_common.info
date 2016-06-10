@@ -28,6 +28,7 @@ features[features_overrides][] = wysiwyg.filtered_html.settings|buttons|default|
 features[features_overrides][] = wysiwyg.filtered_html.settings|buttons|default|Styles
 features[features_overrides][] = wysiwyg.filtered_html.settings|stylesSet
 features[field_base][] = body
+features[field_base][] = field_short_name
 features[menu_custom][] = main-menu
 features[menu_custom][] = management
 features[node][] = webform

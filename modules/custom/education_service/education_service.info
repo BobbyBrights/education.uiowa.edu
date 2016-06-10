@@ -33,6 +33,7 @@ features[field_instance][] = node-service-field_service_leader_title
 features[field_instance][] = node-service-field_service_office_number
 features[field_instance][] = node-service-field_service_phone_number
 features[field_instance][] = node-service-field_service_url
+features[field_instance][] = node-service-field_short_name
 features[node][] = service
 features[variable][] = field_bundle_settings_node__service
 features[variable][] = menu_options_service
