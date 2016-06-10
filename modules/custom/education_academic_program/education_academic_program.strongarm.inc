@@ -19,13 +19,13 @@ function education_academic_program_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '47',
+          'weight' => '10',
         ),
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '45',
+          'weight' => '9',
         ),
       ),
       'display' => array(),

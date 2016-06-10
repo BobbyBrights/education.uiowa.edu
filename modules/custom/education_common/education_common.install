@@ -271,3 +271,17 @@ function education_common_update_7012() {
 
   variable_set('theme_education_radix_settings', $theme_settings);
 }
+/**
+ * Enable education_pages.
+ */
+function education_common_update_7013() {
+  if (!module_exists('webform')) {
+    module_enable(array('webform'));
+  }
+  if (!module_exists('webform_validation')) {
+    module_enable(array('webform_validation'));
+  }
+  if (!module_exists('hidden_captcha')) {
+    module_enable(array('hidden_captcha'));
+  }
+}
