@@ -13,6 +13,7 @@ function education_common_features_override_default_overrides() {
 
   // Exported overrides for: wysiwyg
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Maximize"] = 1;
+  $overrides["wysiwyg.filtered_html.settings|buttons|default|Styles"] = 1;
 
  return $overrides;
 }
