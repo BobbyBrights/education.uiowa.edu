@@ -8553,7 +8553,7 @@ pre {
     border-top: 1px solid transparent; } }
 
 h1, .h1 {
-  border-bottom: 3px solid #ffcd00;
+  border-bottom: 3px solid #ffe100;
   color: #000000;
   display: inline-block;
   font-family: "AvenirLT-Heavy";
@@ -8593,7 +8593,7 @@ h5, .h5 {
   font-size: 1.125rem; }
 
 hr {
-  border-color: #ffcd00;
+  border-color: #ffe100;
   border-top-width: 3pt; }
 
 a {
@@ -8627,9 +8627,9 @@ p {
   margin-bottom: 0;
   padding: 2rem 0; }
   #footer a {
-    color: #ffcd00; }
+    color: #ffe100; }
     #footer a:hover, #footer a:focus {
-      color: #cca400; }
+      color: #ccb400; }
 
 .footer-button {
   border: #999999 solid 1px;
@@ -8732,7 +8732,7 @@ p {
         background-color: #cccccc; }
 
 .region-sidebar-first .menu-block-wrapper {
-  background-color: #ffcd00;
+  background-color: #ffe100;
   padding: 20px; }
   @media (min-width: 992px) {
     .region-sidebar-first .menu-block-wrapper {
