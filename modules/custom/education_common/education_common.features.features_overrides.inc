@@ -14,6 +14,9 @@ function education_common_features_override_default_overrides() {
   // Exported overrides for: wysiwyg
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Maximize"] = 1;
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Styles"] = 1;
+  $overrides["wysiwyg.filtered_html.settings|stylesSet"] = 'Large text = p.large-text
+  Button = a.btn-primary
+  Long button = a.btn-long';
 
  return $overrides;
 }

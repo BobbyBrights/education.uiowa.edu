@@ -20,6 +20,9 @@ function education_common_wysiwyg_default_profiles_alter(&$data) {
   if (isset($data['filtered_html'])) {
     $data['filtered_html']['settings']['buttons']['default']['Maximize'] = 1; /* WAS: '' */
     $data['filtered_html']['settings']['buttons']['default']['Styles'] = 1; /* WAS: '' */
+    $data['filtered_html']['settings']['stylesSet'] = 'Large text = p.large-text
+    Button = a.btn-primary
+    Long button = a.btn-long'; /* WAS: '' */
   }
 }
 
