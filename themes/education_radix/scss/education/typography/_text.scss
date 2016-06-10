@@ -10,3 +10,8 @@ body {
 p {
   margin-bottom: 0.75rem;
 }
+
+.large-text {
+  font-family: $avenir-65;
+  @include font-size(1.5);
+}
