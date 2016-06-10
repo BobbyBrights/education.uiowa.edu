@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Create initial Audience terms.
+ */
+function education_audiences_7001() {
+  // Add terms to the Audiences vocabulary.
+  $vid = taxonomy_vocabulary_machine_name_load('audiences')->vid;
+  $rank_terms = array(
+    "Prospective Students",
+    "Current Students",
+    "International Students",
+    "Veterans",
+    "Alumni & Friends",
+    "Media",
+    "Faculty & Staff",
+  );
+  foreach ($rank_terms as $item) {
+    $term = new stdClass();
+    $term->name = $item;
+    $term->vid = $vid;
+    taxonomy_term_save($term);
+  }
+}
