@@ -14,6 +14,15 @@ function education_common_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_wysiwyg_default_profiles_alter().
+ */
+function education_common_wysiwyg_default_profiles_alter(&$data) {
+  if (isset($data['filtered_html'])) {
+    $data['filtered_html']['settings']['buttons']['default']['Maximize'] = 1; /* WAS: '' */
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function education_common_node_info() {
