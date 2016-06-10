@@ -8536,6 +8536,18 @@ ul.dropdown-menu li {
   overflow: hidden;
   outline: 0; }
 
+.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child {
+  background-color: #ffe100;
+  border: none;
+  color: #333333;
+  font-size: inherit;
+  padding: 12px 20px 10px;
+  text-transform: uppercase;
+  white-space: normal; }
+  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child {
+    background-color: #cccccc;
+    color: #333333; }
+
 /**
  * A SASS port of jasny/boostrap-em.less.
  * @see https://gist.github.com/neil-h/631c5e848ba1f2ae92d1
