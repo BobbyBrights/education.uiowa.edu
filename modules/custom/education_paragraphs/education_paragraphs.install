@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Install tasks.
+ */
+function education_paragraphs_install() {
+  // Create Callouts media folder.
+  $vid = taxonomy_vocabulary_machine_name_load('media_folders')->vid;
+
+  $new_term = new stdClass();
+  $new_term->name = 'Callouts';
+  $new_term->vid = $vid;
+
+  $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+  $tid = array_pop($parent)->tid;
+  $new_term->parent = $tid;
+
+  taxonomy_term_save($new_term);
+}
