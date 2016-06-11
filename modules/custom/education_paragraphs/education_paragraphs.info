@@ -1,0 +1,7 @@
+name = Education Paragraphs
+core = 7.x
+package = Education
+version = 7.x-1.0
+dependencies[] = paragraphs
+features[features_api][] = api:2
+project path = sites/education.uiowa.edu/modules/custom
