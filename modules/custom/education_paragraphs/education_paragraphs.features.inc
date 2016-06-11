@@ -14,6 +14,11 @@ function education_paragraphs_paragraphs_info() {
       'bundle' => 'callout',
       'locked' => '1',
     ),
+    'text' => array(
+      'name' => 'Text',
+      'bundle' => 'text',
+      'locked' => '1',
+    ),
   );
   return $items;
 }
