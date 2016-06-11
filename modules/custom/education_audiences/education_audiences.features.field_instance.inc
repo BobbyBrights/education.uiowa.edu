@@ -36,9 +36,11 @@ function education_audiences_field_default_field_instances() {
       'add_mode' => 'select',
       'allowed_bundles' => array(
         'callout' => 'callout',
+        'text' => 'text',
       ),
       'bundle_weights' => array(
         'callout' => 2,
+        'text' => -4,
       ),
       'default_edit_mode' => 'open',
       'title' => 'Content Block',
