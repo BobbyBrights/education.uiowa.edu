@@ -21,11 +21,11 @@ function education_degree_option_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Leading content',
-    'weight' => '7',
+    'weight' => '4',
     'children' => array(
       0 => 'field_degree_leading_text',
-      1 => 'field_degree_quick_links',
-      2 => 'field_degree_requirements',
+      1 => 'field_degree_requirements',
+      2 => 'field_degree_quick_links',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -51,7 +51,7 @@ function education_degree_option_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Overview',
-    'weight' => '8',
+    'weight' => '5',
     'children' => array(
       0 => 'field_degree_overview_text',
     ),
