@@ -25,6 +25,21 @@ function education_center_field_default_field_bases() {
     'type' => 'sitenow_map',
   );
 
+  // Exported field_base: 'field_center_email_address'.
+  $field_bases['field_center_email_address'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_center_email_address',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'email',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'email',
+  );
+
   // Exported field_base: 'field_center_fax_number'.
   $field_bases['field_center_fax_number'] = array(
     'active' => 1,
@@ -64,8 +79,8 @@ function education_center_field_default_field_bases() {
         ),
         'sort' => array(
           'direction' => 'ASC',
-          'field' => 'field_person_first_name:value',
-          'type' => 'field',
+          'property' => 'title',
+          'type' => 'property',
         ),
         'target_bundles' => array(
           'person' => 'person',

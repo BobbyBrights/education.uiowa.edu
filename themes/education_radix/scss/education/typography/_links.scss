@@ -2,6 +2,7 @@
 
 a {
   color: $blue;
+  font-family: $avenir-65;
 
   &:hover, &:focus {
     color: darken($blue, 10);

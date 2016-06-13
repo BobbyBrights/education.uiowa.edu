@@ -1,0 +1,18 @@
+.page-header {
+  border-bottom: none;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+// Background header images.
+#bg-image {
+  @include breakpoint($education-bg-image) {
+    height: 200px;
+  }
+}
+
+#content {
+  @include breakpoint($education-bg-image) {
+    padding-top: 20px;
+  }
+}

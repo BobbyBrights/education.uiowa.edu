@@ -98,6 +98,45 @@ function education_center_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-center-field_center_email_address'.
+  $field_instances['node-center-field_center_email_address'] = array(
+    'bundle' => 'center',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Shared email accounts only.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_center_email_address',
+    'label' => 'Email address',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-center-field_center_fax_number'.
   $field_instances['node-center-field_center_fax_number'] = array(
     'bundle' => 'center',
@@ -163,14 +202,32 @@ function education_center_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_center_leader_person',
     'label' => 'Leader person',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
       'weight' => 5,
     ),
   );
@@ -359,6 +416,7 @@ function education_center_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Building');
   t('Description');
+  t('Email address');
   t('Fax number');
   t('Leader person');
   t('Leader title');
@@ -366,6 +424,7 @@ function education_center_field_default_field_instances() {
   t('Office number');
   t('Phone number');
   t('Preferred or marketed web address for Center, could be a uiowa.edu or vanity address.');
+  t('Shared email accounts only.');
   t('Web Address');
 
   return $field_instances;

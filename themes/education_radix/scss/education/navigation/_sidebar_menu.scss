@@ -1,19 +1,22 @@
 .region-sidebar-first .menu-block-wrapper {
   background-color: $yellow;
   padding: 20px;
-  padding-bottom: 300px;
 
   @include breakpoint($education-bg-image) {
     margin-top: -30px;
+    min-height: 500px;
   }
 
   a {
-    color: $black;
-    text-transform: uppercase;
-    @include font-size(1.125);
+    @extend .h4;
+    margin: 0;
+    // Indent wrapped lines.
+    padding-left: 1.5rem;
+    text-indent: -0.5rem;
   }
 
- li ul a {
-    text-transform: none;
+  > ul > li > a { //Top-level links.
+    @extend .h3;
+    margin: 0;
   }
 }

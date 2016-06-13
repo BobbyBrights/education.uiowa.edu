@@ -1,0 +1,8 @@
+name = Sitenow Map Panes
+description = Ctools content panes for displaying maps from the University of Iowa.
+version = 7.x-1.3
+core = 7.x
+package = Sitenow
+dependencies[] = ctools
+dependencies[] = proj4js
+dependencies[] = field

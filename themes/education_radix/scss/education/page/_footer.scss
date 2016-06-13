@@ -1,0 +1,93 @@
+#footer {
+  background-color: $black;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 2rem 0;
+
+  a {
+    color: $yellow;
+
+    &:hover, &:focus {
+      color: darken($yellow, 10);
+    }
+  }
+}
+
+.footer-button {
+  border: $gray-light solid 1px;
+  border-radius: 3px;
+  height: 44px;
+  margin-left: auto; margin-right: auto;
+  padding: 10px 30px 10px 30px;
+  text-transform: uppercase;
+  width: 200px;
+    &:hover, &:focus {
+      background-color: $gray-light;
+      color: $black;
+    }
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-social
+{
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  float: left;
+  margin:10px 20px 10px 20px;
+  min-height: 60px;
+  min-width: 60px;
+}
+
+.footer-social-facebook{
+  background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/FACEBOOK%20icon%20web.png");
+    &:hover, &:focus {
+      background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/FACEBOOK%20icon%20yellow.png");
+    }
+}
+
+.footer-social-instagram{
+  background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/INSTAGRAM%20icon%20web.png");
+    &:hover, &:focus {
+      background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/INSTAGRAM%20icon%20yellow.png");
+    }
+}
+.footer-social-twitter{
+  background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/TWITTER%20icon%20web.png");
+    &:hover, &:focus {
+      background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/TWITTER%20icon%20yellow.png");
+    }
+}
+.footer-social-linkedin{
+  background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/LINKDIN%20icon%20web.png");
+    &:hover, &:focus {
+      background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/LINKDIN%20icon%20yellow.png");
+    }
+}
+.footer-social-pinterest{
+  background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/PINTEREST%20icon%20web.png");
+    &:hover, &:focus {
+      background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/PINTEREST%20icon%20yellow.png");
+    }
+}
+.footer-social-youtube{
+  background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/YOUTUBE%20icon%20web.png");
+    &:hover, &:focus {
+      background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/social-media/YOUTUBE%20icon%20yellow.png");
+    }
+}
+#footer-logo {
+  background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/COLLEGE-web-white.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 240px 70px;
+  min-height: 70px;
+  min-width: 240px;
+  margin-left:auto;margin-right:auto;
+  &:hover, &:focus {
+    background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/COLLEGE-web-yellow.png");
+  }
+}
