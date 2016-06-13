@@ -14,6 +14,30 @@ function education_common_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_filter_default_formats_alter().
+ */
+function education_common_filter_default_formats_alter(&$data) {
+  if (isset($data['filtered_html'])) {
+    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][0] = 'btn-primary'; /* WAS: 'plain-button' */
+    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][2] = 'btn-long'; /* WAS: 'small' */
+    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][4] = 'large-text'; /* WAS: '' */
+  }
+}
+
+/**
+ * Implements hook_wysiwyg_default_profiles_alter().
+ */
+function education_common_wysiwyg_default_profiles_alter(&$data) {
+  if (isset($data['filtered_html'])) {
+    $data['filtered_html']['settings']['buttons']['default']['Maximize'] = 1; /* WAS: '' */
+    $data['filtered_html']['settings']['buttons']['default']['Styles'] = 1; /* WAS: '' */
+    $data['filtered_html']['settings']['stylesSet'] = 'Large text = p.large-text
+    Button = a.btn-primary
+    Long button = a.btn-long'; /* WAS: '' */
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function education_common_node_info() {

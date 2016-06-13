@@ -133,7 +133,7 @@ function education_department_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 11,
+      'weight' => 7,
     ),
   );
 
@@ -189,7 +189,7 @@ function education_department_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -233,7 +233,7 @@ function education_department_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -312,7 +312,47 @@ function education_department_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 10,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-department-field_short_name'.
+  $field_instances['node-department-field_short_name'] = array(
+    'bundle' => 'department',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_short_name',
+    'label' => 'Short name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
     ),
   );
 
@@ -327,6 +367,7 @@ function education_department_field_default_field_instances() {
   t('Office number');
   t('Phone number');
   t('Room number of main office, part of campus mailing address.');
+  t('Short name');
 
   return $field_instances;
 }
