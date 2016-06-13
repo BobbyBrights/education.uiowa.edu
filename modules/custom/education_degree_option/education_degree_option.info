@@ -9,7 +9,6 @@ dependencies[] = education_common
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = field_group
-dependencies[] = link
 dependencies[] = metatag
 dependencies[] = options
 dependencies[] = strongarm

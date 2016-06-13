@@ -21,7 +21,7 @@ function education_academic_program_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact',
-    'weight' => '15',
+    'weight' => '13',
     'children' => array(
       0 => 'field_program_contact_person',
       1 => 'field_program_contact_title',
@@ -53,7 +53,7 @@ function education_academic_program_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Featured faculty',
-    'weight' => '14',
+    'weight' => '12',
     'children' => array(
       0 => 'field_program_faculty_2',
       1 => 'field_program_faculty_1',
@@ -83,7 +83,7 @@ function education_academic_program_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Leading content',
-    'weight' => '12',
+    'weight' => '10',
     'children' => array(
       0 => 'field_program_leading_text',
       1 => 'field_program_quick_links',
@@ -112,7 +112,7 @@ function education_academic_program_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Overview',
-    'weight' => '13',
+    'weight' => '11',
     'children' => array(
       0 => 'field_program_overview_text',
       1 => 'field_program_overview_image',
