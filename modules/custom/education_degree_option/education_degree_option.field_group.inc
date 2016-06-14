@@ -25,7 +25,7 @@ function education_degree_option_field_group_info() {
     'children' => array(
       0 => 'field_degree_leading_text',
       1 => 'field_degree_requirements',
-      2 => 'field_degree_quick_links',
+      2 => 'field_degree_leading_buttons',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

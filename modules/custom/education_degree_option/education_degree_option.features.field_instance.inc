@@ -105,6 +105,46 @@ function education_degree_option_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-degree-field_degree_leading_buttons'.
+  $field_instances['node-degree-field_degree_leading_buttons'] = array(
+    'bundle' => 'degree',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Create links like "Apply" and "Contact" adding style Button.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_degree_leading_buttons',
+    'label' => 'Leading buttons',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-degree-field_degree_leading_text'.
   $field_instances['node-degree-field_degree_leading_text'] = array(
     'bundle' => 'degree',
@@ -171,7 +211,7 @@ function education_degree_option_field_default_field_instances() {
     'label' => 'Overview text',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -237,52 +277,12 @@ function education_degree_option_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-degree-field_degree_quick_links'.
-  $field_instances['node-degree-field_degree_quick_links'] = array(
-    'bundle' => 'degree',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_degree_quick_links',
-    'label' => 'Quick links',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-degree-field_degree_requirements'.
   $field_instances['node-degree-field_degree_requirements'] = array(
     'bundle' => 'degree',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add link buttons for things like "Admission Requirements" "Application Process" "Program Requirements". Styling for these links will be provided.',
+    'description' => 'Add links for things like "Admission Requirements" "Application Process" "Program Requirements" using style Long button.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -360,12 +360,13 @@ function education_degree_option_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Academic program');
-  t('Add link buttons for things like "Admission Requirements" "Application Process" "Program Requirements". Styling for these links will be provided.');
+  t('Add links for things like "Admission Requirements" "Application Process" "Program Requirements" using style Long button.');
   t('Body');
+  t('Create links like "Apply" and "Contact" adding style Button.');
   t('Degree level');
+  t('Leading buttons');
   t('Leading text');
   t('Overview text');
-  t('Quick links');
   t('Requirements');
   t('Select all that apply');
   t('Short name');
