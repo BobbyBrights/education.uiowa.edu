@@ -689,6 +689,46 @@ function education_academic_program_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-program-field_program_leading_buttons'.
+  $field_instances['node-program-field_program_leading_buttons'] = array(
+    'bundle' => 'program',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Create links like "Apply" and "Contact" adding style Button.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_leading_buttons',
+    'label' => 'Leading buttons',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 61,
+    ),
+  );
+
   // Exported field_instance: 'node-program-field_program_leading_text'.
   $field_instances['node-program-field_program_leading_text'] = array(
     'bundle' => 'program',
@@ -913,46 +953,6 @@ function education_academic_program_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-program-field_program_quick_links'.
-  $field_instances['node-program-field_program_quick_links'] = array(
-    'bundle' => 'program',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 22,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_program_quick_links',
-    'label' => 'Quick links',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 61,
-    ),
-  );
-
   // Exported field_instance: 'node-program-field_short_name'.
   $field_instances['node-program-field_short_name'] = array(
     'bundle' => 'program',
@@ -1003,6 +1003,7 @@ function education_academic_program_field_default_field_instances() {
   t('Contact text');
   t('Contact title');
   t('Contact title2');
+  t('Create links like "Apply" and "Contact" adding style Button.');
   t('Department');
   t('Description');
   t('Email address');
@@ -1011,6 +1012,7 @@ function education_academic_program_field_default_field_instances() {
   t('Faculty 3');
   t('Leader person');
   t('Leader title');
+  t('Leading buttons');
   t('Leading text');
   t('Minimum size of 400 x 400px. Will be removed from display on mobile.');
   t('Most likely entries are "Program Coordinator" and "Graduate Assistant", but use the title given to the person on point to answer prospective student inquiries for the program.');
@@ -1018,7 +1020,6 @@ function education_academic_program_field_default_field_instances() {
   t('Overview image');
   t('Overview text');
   t('Phone number');
-  t('Quick links');
   t('Room number for mailing address. If program doesn\'t have one, use its department\'s.');
   t('Select the College of Education department this program is part of.');
   t('Shared email accounts only');

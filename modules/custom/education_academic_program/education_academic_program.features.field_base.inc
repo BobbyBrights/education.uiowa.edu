@@ -371,6 +371,25 @@ function education_academic_program_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_program_leading_buttons'.
+  $field_bases['field_program_leading_buttons'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_program_leading_buttons',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_program_leading_text'.
   $field_bases['field_program_leading_text'] = array(
     'active' => 1,
@@ -465,25 +484,6 @@ function education_academic_program_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'telephone',
-  );
-
-  // Exported field_base: 'field_program_quick_links'.
-  $field_bases['field_program_quick_links'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_program_quick_links',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_long',
   );
 
   return $field_bases;

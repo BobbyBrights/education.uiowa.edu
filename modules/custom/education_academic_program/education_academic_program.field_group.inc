@@ -86,7 +86,7 @@ function education_academic_program_field_group_info() {
     'weight' => '10',
     'children' => array(
       0 => 'field_program_leading_text',
-      1 => 'field_program_quick_links',
+      1 => 'field_program_leading_buttons',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
