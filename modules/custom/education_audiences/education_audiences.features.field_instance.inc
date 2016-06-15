@@ -62,48 +62,31 @@ function education_audiences_field_default_field_instances() {
     'bundle' => 'audiences',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Create links adding style <em>Long button</em>.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'link',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'link_default',
+        'type' => 'text_default',
         'weight' => 1,
       ),
     ),
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_audience_quick_links',
-    'label' => 'Quick links',
-    'required' => 0,
+    'label' => 'Leading buttons',
+    'required' => 1,
     'settings' => array(
-      'absolute_url' => 1,
-      'attributes' => array(
-        'class' => '',
-        'configurable_class' => 0,
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => 'default',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 0,
-      'rel_remove' => 'default',
-      'title' => 'required',
-      'title_label_use_field_label' => 0,
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
-      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
       'weight' => 3,
     ),
   );
@@ -111,7 +94,8 @@ function education_audiences_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Content blocks');
-  t('Quick links');
+  t('Create links adding style <em>Long button</em>.');
+  t('Leading buttons');
 
   return $field_instances;
 }
