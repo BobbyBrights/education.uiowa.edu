@@ -8702,6 +8702,9 @@ p {
   font-family: "AvenirLT-Medium";
   font-size: 1.5rem; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 #footer {
   background-color: #000000;
   color: #fff;
