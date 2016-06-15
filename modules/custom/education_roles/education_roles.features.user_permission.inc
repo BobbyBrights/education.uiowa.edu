@@ -1661,6 +1661,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit terms in audiences',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
