@@ -16,4 +16,11 @@ function education_radix_preprocess_page(&$variables) {
   if ($variables['page']['sidebar_first']) {
     $variables['content_width'] = (string)((int)$variables['content_width']-(int)$variables['sidebar_first_width']);
   }
+
+  // Remove content list from term pages.
+  if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))){
+    unset($variables['page']['content']['system_main']['nodes']);
+    unset($variables['page']['content']['system_main']['pager']);
+    unset($variables['page']['content']['system_main']['no_content']);
+  }
 }
