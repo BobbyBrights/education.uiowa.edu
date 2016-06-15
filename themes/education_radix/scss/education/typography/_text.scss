@@ -17,5 +17,6 @@ p {
 }
 
 .uppercase {
+  @extend .large-text;
   text-transform: uppercase;
 }
