@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Paragraphs feature.
+ */
+
+include_once 'education_paragraphs.features.inc';

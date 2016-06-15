@@ -1,3 +1,7 @@
+#breadcrumb {
+  @extend .container;
+}
+
 .breadcrumb {
   background-color: transparent;
   border-radius: 0;

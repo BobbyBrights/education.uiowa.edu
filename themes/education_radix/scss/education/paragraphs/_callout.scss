@@ -1,0 +1,11 @@
+.paragraphs-item-callout {
+  .paragraph-body {
+    margin-top: 40px;
+  }
+
+  &.grey-border {
+    @extend .container;
+    margin: 40px auto;
+    padding: 20px;
+  }
+}
