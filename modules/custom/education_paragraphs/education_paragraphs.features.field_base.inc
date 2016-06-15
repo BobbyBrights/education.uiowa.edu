@@ -10,6 +10,25 @@
 function education_paragraphs_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_callout_body'.
+  $field_bases['field_callout_body'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_callout_body',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_callout_image'.
   $field_bases['field_callout_image'] = array(
     'active' => 1,
@@ -32,33 +51,55 @@ function education_paragraphs_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_callout_link'.
-  $field_bases['field_callout_link'] = array(
+  // Exported field_base: 'field_callout_image_position'.
+  $field_bases['field_callout_image_position'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_callout_link',
-    'indexes' => array(),
+    'field_name' => 'field_callout_image_position',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
     'locked' => 0,
-    'module' => 'link',
+    'module' => 'list',
     'settings' => array(
-      'attributes' => array(
-        'class' => '',
-        'rel' => '',
-        'target' => 'default',
+      'allowed_values' => array(
+        'left' => 'Left',
+        'right' => 'Right',
       ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'title' => 'optional',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
+      'allowed_values_function' => '',
     ),
     'translatable' => 0,
-    'type' => 'link_field',
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_callout_style'.
+  $field_bases['field_callout_style'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_callout_style',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'grey-background' => 'Grey background',
+        'yellow-background' => 'Yellow background',
+        'grey-border' => 'Grey border',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_text_text'.
