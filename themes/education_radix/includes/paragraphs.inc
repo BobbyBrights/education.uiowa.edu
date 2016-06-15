@@ -22,6 +22,10 @@ function education_radix_preprocess_entity(&$variables) {
         break;
 
       case 'callout':
+        // Add background style classes.
+        if (!empty($variables['paragraphs_item']->field_callout_style)) {
+          $variables['classes_array'][] = $variables['field_callout_style'][0]['value'];
+        }
         // Set default image classes.
         $variables['image_classes_array'] = array('paragraph-image', 'col-sm-6');
         // Set default text classes.
