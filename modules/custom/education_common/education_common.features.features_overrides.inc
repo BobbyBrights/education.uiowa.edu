@@ -21,9 +21,9 @@ function education_common_features_override_default_overrides() {
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Maximize"] = 1;
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Styles"] = 1;
   $overrides["wysiwyg.filtered_html.settings|stylesSet"] = 'Large text = p.large-text
-      Large caps = p.uppercase
-      Button = a.btn-primary
-      Long button = a.btn-long';
+          Large caps = p.uppercase
+          Button = a.btn-primary
+          Long button = a.btn-long';
 
  return $overrides;
 }
