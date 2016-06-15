@@ -52,14 +52,7 @@
   <div id="bg-image" aria-hidden=true></div>
   <div id="main" class="main">
     <h1 class="offscreen title"><?php print $title; ?></h1>
-    <div class="row">
-      <?php if ($sidebar_first): ?>
-        <div id="sidebar-first" class="col-md-<?php print $sidebar_first_width; ?>" >
-          <?php print render($page['sidebar_first']); ?>
-        </div>
-      <?php endif; ?>
-
-      <div id="content" class="col-md-<?php print $content_width; ?>">
+      <div id="content">
         <?php if ($messages): ?>
           <div id="messages">
             <?php print $messages; ?>
