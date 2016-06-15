@@ -8860,6 +8860,9 @@ img {
   .region-sidebar-first .menu-block-wrapper > ul > li > a {
     margin: 0; }
 
+.paragraphs-item-callout .paragraph-body {
+  margin-top: 40px; }
+
 .entity-paragraphs-item {
   padding: 40px 0; }
 
