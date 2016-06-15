@@ -8555,6 +8555,9 @@ div.facultyDiv {
 .yellow-background {
   background-color: #ffe100; }
 
+.black-border {
+  border: 2px solid #333333; }
+
 .grey-border {
   border: 2px solid #cccccc;
   border-radius: 4px; }
@@ -8849,5 +8852,8 @@ p {
     text-indent: -0.5rem; }
   .region-sidebar-first .menu-block-wrapper > ul > li > a {
     margin: 0; }
+
+.entity-paragraphs-item {
+  padding: 40px 0; }
 
 /*# sourceMappingURL=education_radix.style.css.map */
