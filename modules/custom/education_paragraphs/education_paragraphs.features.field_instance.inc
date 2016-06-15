@@ -18,11 +18,11 @@ function education_paragraphs_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
