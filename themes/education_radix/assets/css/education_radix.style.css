@@ -8822,6 +8822,10 @@ p {
   #ui-global-footer #ui-footer-logo a {
     font-size: 1.6875rem; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .breadcrumb {
   background-color: transparent;
   border-radius: 0;
