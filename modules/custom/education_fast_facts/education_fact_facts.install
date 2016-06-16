@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Delete many fields from Fact Fact content type.
+ */
+function education_fact_facts_update_7001() {
+  $fields_to_delete = array(
+    'field_fastfact_text',
+    'field_fastfact_link',
+    'field_fastfact_affiliation',
+    'field_fastfact_audience',
+    'field_fastfact_expertise',
+    'field_fastfact_tags',
+  );
+
+  foreach ($fields_to_delete as $field_name) {
+    field_delete_field($field_name);
+  }
+
+  field_purge_batch(100);
+}
