@@ -15,7 +15,7 @@ function education_paragraphs_paragraphs_info() {
       'locked' => '1',
     ),
     'fast_fact' => array(
-      'name' => 'Fast Fact',
+      'name' => 'Fast Facts',
       'bundle' => 'fast_fact',
       'locked' => '1',
     ),
