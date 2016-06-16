@@ -107,6 +107,32 @@
         <br/>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+        <!-- Button trigger modal -->
+<a data-toggle="modal" data-target="#myModal"><div class="footer-button"><strong>Apply</strong></div></a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        <h2 class="modal-title" id="myModalLabel">Apply to the College</h2>
+      </div>
+      <div class="modal-body">
+        <p>Learn more about our programs...</p>
+        <button type="button" class="btn btn-primary btn-modal">Undergraduate</button>
+        <button type="button" class="btn btn-primary btn-modal">Graduate</button>
+        <button type="button" class="btn btn-primary btn-modal">Online</button>
+        <button type="button" class="btn btn-primary btn-modal">Licensure</button>
+        <button type="button" class="btn btn-primary btn-modal">Certificate</button>
+        <button type="button" class="btn btn-primary btn-modal">Endorsement</button>
+        <button type="button" class="btn btn-primary btn-modal">Professional Development</button>
+      </div>
+    <!--  <div class="modal-footer">
+    </div> -->
+    </div>
+  </div>
+</div>
         <br/>
         <a href="directory" ><div class="footer-button"><strong>Directory<strong></div></a>
         <br/>
