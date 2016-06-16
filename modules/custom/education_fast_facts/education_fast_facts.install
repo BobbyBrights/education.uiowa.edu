@@ -3,7 +3,7 @@
 /**
  * Field clean up for Fact Facts.
  */
-function education_fact_facts_update_7001() {
+function education_fast_facts_update_7001() {
   // Delete many fields from Fact Fact content type.
   $fields_to_delete = array(
     'field_fastfact_text',
