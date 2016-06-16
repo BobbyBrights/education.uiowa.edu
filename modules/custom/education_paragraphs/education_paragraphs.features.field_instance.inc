@@ -266,13 +266,21 @@ function education_paragraphs_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'inline_entity_form',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
+        'fields' => array(),
+        'type_settings' => array(
+          'allow_clone' => 0,
+          'allow_existing' => 1,
+          'allow_new' => 1,
+          'delete_references' => 0,
+          'label_plural' => 'Fast Facts',
+          'label_singular' => 'Fast Fact',
+          'match_operator' => 'CONTAINS',
+          'override_labels' => 1,
+        ),
       ),
-      'type' => 'entityreference_autocomplete',
+      'type' => 'inline_entity_form',
       'weight' => 1,
     ),
   );

@@ -5,6 +5,7 @@ version = 7.x-1.0
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = image
+dependencies[] = inline_entity_form
 dependencies[] = link
 dependencies[] = list
 dependencies[] = media
