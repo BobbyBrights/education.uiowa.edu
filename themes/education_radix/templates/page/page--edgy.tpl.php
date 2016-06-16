@@ -51,45 +51,36 @@
 <div id="main-wrapper">
   <div id="bg-image" aria-hidden=true></div>
   <div id="main" class="main">
-    <div class="container">
-      <h1 class="offscreen title"><?php print $title; ?></h1>
-      <div class="row">
-        <?php if ($sidebar_first): ?>
-          <div id="sidebar-first" class="col-md-<?php print $sidebar_first_width; ?>" >
-            <?php print render($page['sidebar_first']); ?>
+    <h1 class="offscreen title"><?php print $title; ?></h1>
+      <div id="content">
+        <?php if ($messages): ?>
+          <div id="messages">
+            <?php print $messages; ?>
           </div>
         <?php endif; ?>
-
-        <div id="content" class="col-md-<?php print $content_width; ?>">
-          <?php if ($messages): ?>
-            <div id="messages">
-              <?php print $messages; ?>
-            </div>
-          <?php endif; ?>
-          <?php if ($breadcrumb): ?>
-            <div id="breadcrumb" class="visible-desktop">
-              <?php print $breadcrumb; ?>
-            </div>
-          <?php endif; ?>
-          <div id="page-header">
-            <?php if ($title): ?>
-              <div class="page-header">
-                <div class="h1 title"><?php print $title; ?></div>
-              </div>
-            <?php endif; ?>
-            <?php if ($tabs): ?>
-              <div class="tabs">
-                <?php print render($tabs); ?>
-              </div>
-            <?php endif; ?>
-            <?php if ($action_links): ?>
-              <ul class="action-links">
-                <?php print render($action_links); ?>
-              </ul>
-            <?php endif; ?>
+        <?php if ($breadcrumb): ?>
+          <div id="breadcrumb" class="visible-desktop">
+            <?php print $breadcrumb; ?>
           </div>
-          <?php print render($page['content']); ?>
+        <?php endif; ?>
+        <div id="page-header">
+          <?php if ($title): ?>
+            <div class="page-header">
+              <div class="h1 title"><?php print $title; ?></div>
+            </div>
+          <?php endif; ?>
+          <?php if ($tabs): ?>
+            <div class="tabs">
+              <?php print render($tabs); ?>
+            </div>
+          <?php endif; ?>
+          <?php if ($action_links): ?>
+            <ul class="action-links">
+              <?php print render($action_links); ?>
+            </ul>
+          <?php endif; ?>
         </div>
+        <?php print render($page['content']); ?>
       </div>
     </div>
   </div> <!-- /#main -->
@@ -107,32 +98,6 @@
         <br/>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-        <!-- Button trigger modal -->
-<a data-toggle="modal" data-target="#myModal"><div class="footer-button"><strong>Apply</strong></div></a>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-  <div class="modal-dialog" role="document" >
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-        <h2 class="modal-title" id="myModalLabel">Apply to the College</h2>
-      </div>
-      <div class="modal-body">
-        <p>Learn more about our programs...</p>
-        <button type="button" class="btn btn-primary btn-modal">Undergraduate</button>
-        <button type="button" class="btn btn-primary btn-modal">Graduate</button>
-        <button type="button" class="btn btn-primary btn-modal">Online</button>
-        <button type="button" class="btn btn-primary btn-modal">Licensure</button>
-        <button type="button" class="btn btn-primary btn-modal">Certificate</button>
-        <button type="button" class="btn btn-primary btn-modal">Endorsement</button>
-        <button type="button" class="btn btn-primary btn-modal">Professional Development</button>
-      </div>
-    <!--  <div class="modal-footer">
-    </div> -->
-    </div>
-  </div>
-</div>
         <br/>
         <a href="directory" ><div class="footer-button"><strong>Directory<strong></div></a>
         <br/>

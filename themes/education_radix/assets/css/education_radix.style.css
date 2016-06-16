@@ -1500,24 +1500,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
+.container, #page-header, #breadcrumb, .paragraphs-item-callout.grey-border {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, .container:after {
+  .container:before, #page-header:before, #breadcrumb:before, .paragraphs-item-callout.grey-border:before, .container:after, #page-header:after, #breadcrumb:after, .paragraphs-item-callout.grey-border:after {
     content: " ";
     display: table; }
-  .container:after {
+  .container:after, #page-header:after, #breadcrumb:after, .paragraphs-item-callout.grey-border:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container {
+    .container, #page-header, #breadcrumb, .paragraphs-item-callout.grey-border {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container {
+    .container, #page-header, #breadcrumb, .paragraphs-item-callout.grey-border {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container {
+    .container, #page-header, #breadcrumb, .paragraphs-item-callout.grey-border {
       width: 1170px; } }
 
 .container-fluid {
@@ -1531,16 +1531,16 @@ pre {
   .container-fluid:after {
     clear: both; }
 
-.row {
+.row, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .row:after {
+  .row:before, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:before, .row:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
     content: " ";
     display: table; }
-  .row:after {
+  .row:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .paragraphs-item-fast-fact .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1809,7 +1809,7 @@ pre {
     margin-left: 100%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .paragraphs-item-fast-fact .field-item, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
     float: left; }
   .col-md-1 {
     width: 8.33333%; }
@@ -1817,7 +1817,7 @@ pre {
     width: 16.66667%; }
   .col-md-3 {
     width: 25%; }
-  .col-md-4 {
+  .col-md-4, .paragraphs-item-fast-fact .field-item {
     width: 33.33333%; }
   .col-md-5 {
     width: 41.66667%; }
@@ -1833,7 +1833,7 @@ pre {
     width: 83.33333%; }
   .col-md-11 {
     width: 91.66667%; }
-  .col-md-12, .calendar-calendar, .view .row > .list-group {
+  .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
     width: 100%; }
   .col-md-pull-0 {
     right: auto; }
@@ -3730,15 +3730,15 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header,
-.container > .navbar-collapse,
+.container > .navbar-header, #page-header > .navbar-header, #breadcrumb > .navbar-header, .paragraphs-item-callout.grey-border > .navbar-header,
+.container > .navbar-collapse, #page-header > .navbar-collapse, #breadcrumb > .navbar-collapse, .paragraphs-item-callout.grey-border > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header,
-    .container > .navbar-collapse,
+    .container > .navbar-header, #page-header > .navbar-header, #breadcrumb > .navbar-header, .paragraphs-item-callout.grey-border > .navbar-header,
+    .container > .navbar-collapse, #page-header > .navbar-collapse, #breadcrumb > .navbar-collapse, .paragraphs-item-callout.grey-border > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -3782,7 +3782,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand,
+    .navbar > .container .navbar-brand, .navbar > #page-header .navbar-brand, .navbar > #breadcrumb .navbar-brand, .navbar > .paragraphs-item-callout.grey-border .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
@@ -4307,18 +4307,18 @@ a.badge:hover, a.badge:focus {
     font-weight: 200; }
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron,
+  .container .jumbotron, #page-header .jumbotron, #breadcrumb .jumbotron, .paragraphs-item-callout.grey-border .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container {
+  .jumbotron .container, .jumbotron #page-header, .jumbotron #breadcrumb, .jumbotron .paragraphs-item-callout.grey-border {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron,
+      .container .jumbotron, #page-header .jumbotron, #breadcrumb .jumbotron, .paragraphs-item-callout.grey-border .jumbotron,
       .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
@@ -7992,12 +7992,26 @@ html.js fieldset.collapsed {
     #features-export-form .features-export-parent .features-export-list .form-item {
       float: none !important; }
 
-#panels-panel-context-edit-move .container,
-#panels-panel-context-edit-content .container {
+#panels-panel-context-edit-move .container, #panels-panel-context-edit-move #page-header, #panels-panel-context-edit-move #breadcrumb, #panels-panel-context-edit-move .paragraphs-item-callout.grey-border,
+#panels-panel-context-edit-content .container,
+#panels-panel-context-edit-content #page-header,
+#panels-panel-context-edit-content #breadcrumb,
+#panels-panel-context-edit-content .paragraphs-item-callout.grey-border {
   width: auto;
   padding: 0; }
-  #panels-panel-context-edit-move .container .row,
-  #panels-panel-context-edit-content .container .row {
+  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move #page-header .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .paragraphs-item-callout.grey-border .row, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #page-header .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #page-header .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .paragraphs-item-callout.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .paragraphs-item-callout.grey-border .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-content .container .row,
+  #panels-panel-context-edit-content #page-header .row,
+  #panels-panel-context-edit-content #breadcrumb .row,
+  #panels-panel-context-edit-content .paragraphs-item-callout.grey-border .row,
+  #panels-panel-context-edit-content .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
+  #panels-panel-context-edit-content .container .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-content #page-header .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
+  #panels-panel-context-edit-content #page-header .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-content #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
+  #panels-panel-context-edit-content #breadcrumb .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-content .paragraphs-item-callout.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
+  #panels-panel-context-edit-content .paragraphs-item-callout.grey-border .field-name-field-fact-fact-ref {
     margin-bottom: 20px; }
 
 .navbar-form .form-wrapper {
@@ -8017,8 +8031,8 @@ html.js fieldset.collapsed {
 .tabledrag-handle .handle {
   box-sizing: content-box; }
 
-.container .container,
-.container .container-fluid {
+.container .container, #page-header .container, #breadcrumb .container, .paragraphs-item-callout.grey-border .container, .container #page-header, #page-header #page-header, #breadcrumb #page-header, .paragraphs-item-callout.grey-border #page-header, .container #breadcrumb, #page-header #breadcrumb, #breadcrumb #breadcrumb, .paragraphs-item-callout.grey-border #breadcrumb, .container .paragraphs-item-callout.grey-border, #page-header .paragraphs-item-callout.grey-border, #breadcrumb .paragraphs-item-callout.grey-border, .paragraphs-item-callout.grey-border .paragraphs-item-callout.grey-border,
+.container .container-fluid, #page-header .container-fluid, #breadcrumb .container-fluid, .paragraphs-item-callout.grey-border .container-fluid {
   width: auto;
   margin-left: -15px;
   margin-right: -15px; }
@@ -8026,7 +8040,7 @@ html.js fieldset.collapsed {
 #footer {
   margin: 36px 0; }
 
-body.maintenance-page .container {
+body.maintenance-page .container, body.maintenance-page #page-header, body.maintenance-page #breadcrumb, body.maintenance-page .paragraphs-item-callout.grey-border {
   max-width: 970px !important; }
 
 body.maintenance-page .jumbotron {
@@ -8178,7 +8192,7 @@ body.ctools-modal-open {
 #modalContent #panopoly-form-widget-preview {
   width: 50%;
   float: right; }
-  #modalContent #panopoly-form-widget-preview .container {
+  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview #page-header, #modalContent #panopoly-form-widget-preview #breadcrumb, #modalContent #panopoly-form-widget-preview .paragraphs-item-callout.grey-border {
     width: auto; }
 
 ul.menu > li > ul.menu {
@@ -8268,7 +8282,7 @@ ul.nav > li.dropdown:after {
     float: none !important;
     margin: 0 0 10px !important; } }
 
-.panel-display > .row {
+.panel-display > .row, .paragraphs-item-fast-fact .panel-display > .field-name-field-fact-fact-ref {
   margin-bottom: 20px; }
 
 .panel-flexible .panel-separator {
@@ -8514,6 +8528,19 @@ div.facultyDiv {
   overflow: hidden;
   outline: 0; }
 
+.grey-background {
+  background-color: #cccccc; }
+
+.yellow-background {
+  background-color: #ffe100; }
+
+.black-border {
+  border: 2px solid #333333; }
+
+.grey-border {
+  border: 2px solid #cccccc;
+  border-radius: 4px; }
+
 .btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active {
   background-color: #ffe100;
   border: none;
@@ -8650,9 +8677,12 @@ body {
 p {
   margin-bottom: 0.75rem; }
 
-.large-text {
+.large-text, .uppercase {
   font-family: "AvenirLT-Medium";
   font-size: 1.5rem; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 #footer {
   background-color: #000000;
@@ -8731,6 +8761,21 @@ p {
   #footer-logo:hover, #footer-logo:focus {
     background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/COLLEGE-web-yellow.png"); }
 
+.btn-modal {
+  font-weight: bold;
+  margin: 10px;
+  width: 100%; }
+  @media (min-width: 992px) {
+    .btn-modal {
+      width: 45%; } }
+
+.close {
+  font-size: 36px; }
+
+.modal p {
+  color: #000000;
+  text-align: left; }
+
 .page-header {
   border-bottom: none;
   margin: 0;
@@ -8757,7 +8802,7 @@ p {
     font-size: 1.25rem; }
   .uiowa-bar-dark #ui-wrapper {
     box-shadow: none; }
-  #ui-wrapper .container {
+  #ui-wrapper .container, #ui-wrapper #page-header, #ui-wrapper #breadcrumb, #ui-wrapper .paragraphs-item-callout.grey-border {
     padding-top: 0;
     padding-bottom: 0;
     position: relative; }
@@ -8773,6 +8818,10 @@ p {
   font-size: 0.875rem; }
   #ui-global-footer #ui-footer-logo a {
     font-size: 1.6875rem; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 .breadcrumb {
   background-color: transparent;
@@ -8804,5 +8853,15 @@ p {
     text-indent: -0.5rem; }
   .region-sidebar-first .menu-block-wrapper > ul > li > a {
     margin: 0; }
+
+.paragraphs-item-callout .paragraph-body {
+  margin-top: 40px; }
+
+.paragraphs-item-callout.grey-border {
+  margin: 40px auto;
+  padding: 20px; }
+
+.entity-paragraphs-item {
+  padding: 40px 0; }
 
 /*# sourceMappingURL=education_radix.style.css.map */

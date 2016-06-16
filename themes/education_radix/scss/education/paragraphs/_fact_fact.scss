@@ -1,0 +1,9 @@
+.paragraphs-item-fast-fact {
+  .field-name-field-fact-fact-ref {
+    @extend .row;
+  }
+
+  .field-item {
+    @extend .col-md-4;
+  }
+}

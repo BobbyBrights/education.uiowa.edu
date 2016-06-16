@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Field clean up for Fact Facts.
+ */
+function education_fast_facts_update_7001() {
+  // Delete many fields from Fact Fact content type.
+  $fields_to_delete = array(
+    'field_fastfact_text',
+    'field_fastfact_link',
+    'field_fastfact_affiliation',
+    'field_fastfact_audience',
+    'field_fastfact_expertise',
+    'field_fastfact_tags',
+  );
+
+  foreach ($fields_to_delete as $field_name) {
+    field_delete_field($field_name);
+  }
+
+  field_purge_batch(100);
+
+  // Create Fast Facts media folder.
+  $vid = taxonomy_vocabulary_machine_name_load('media_folders')->vid;
+
+  $new_term = new stdClass();
+  $new_term->name = 'Fast Facts';
+  $new_term->vid = $vid;
+
+  $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+  $tid = array_pop($parent)->tid;
+  $new_term->parent = $tid;
+
+  taxonomy_term_save($new_term);
+}
