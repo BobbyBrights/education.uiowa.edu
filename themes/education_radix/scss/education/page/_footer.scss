@@ -93,11 +93,12 @@
 }
 
 .btn-modal {
+  font-weight: bold;
+  margin: 10px;
   width:100%;
   @include breakpoint($education-bg-image) {
   width:45%;
   }
-  margin: 10px;
 }
 .close {
   font-size: 36px;
