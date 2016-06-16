@@ -23,7 +23,7 @@ function education_fast_facts_node_info() {
       'base' => 'node_content',
       'description' => t('Impactful nugget of information. statement and/or image, not sentences.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Administrative title'),
       'help' => '',
     ),
   );
