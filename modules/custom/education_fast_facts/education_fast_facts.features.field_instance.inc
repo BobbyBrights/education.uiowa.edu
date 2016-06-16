@@ -169,7 +169,7 @@ function education_fast_facts_field_default_field_instances() {
   $field_instances['node-fast_fact-field_fastfact_icon'] = array(
     'bundle' => 'fast_fact',
     'deleted' => 0,
-    'description' => 'Icon image should be a PNG file with a transparent background and include any which is to appear differently than the capitalized summary text. Alt text must briefly describe image and fully state text.
+    'description' => 'Icon image should be a PNG file with a transparent background. Alt text must briefly describe image and fully state text.
 ',
     'display' => array(
       'default' => array(
@@ -191,15 +191,15 @@ function education_fast_facts_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_fastfact_icon',
-    'label' => 'Icon',
-    'required' => 0,
+    'label' => 'Image',
+    'required' => 1,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
-      'file_directory' => 'Fastfacts',
+      'file_directory' => 'images/fact_facts',
       'file_extensions' => 'png gif',
       'max_filesize' => '',
-      'max_resolution' => '',
+      'max_resolution' => '2000x2000',
       'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
@@ -386,9 +386,9 @@ function education_fast_facts_field_default_field_instances() {
   t('Affiliation');
   t('Area of Expertise');
   t('Audience');
-  t('Icon');
-  t('Icon image should be a PNG file with a transparent background and include any which is to appear differently than the capitalized summary text. Alt text must briefly describe image and fully state text.
+  t('Icon image should be a PNG file with a transparent background. Alt text must briefly describe image and fully state text.
 ');
+  t('Image');
   t('Link');
   t('Tags');
   t('Text');
