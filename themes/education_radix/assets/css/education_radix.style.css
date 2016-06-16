@@ -8761,6 +8761,20 @@ p {
   #footer-logo:hover, #footer-logo:focus {
     background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/COLLEGE-web-yellow.png"); }
 
+.btn-modal {
+  width: 100%;
+  margin: 10px; }
+  @media (min-width: 992px) {
+    .btn-modal {
+      width: 45%; } }
+
+.close {
+  font-size: 36px; }
+
+.modal p {
+  color: #000000;
+  text-align: left; }
+
 .page-header {
   border-bottom: none;
   margin: 0;
