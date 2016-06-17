@@ -10,6 +10,64 @@
 function education_paragraphs_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'paragraphs_item-announcements-field_announcements_view'.
+  $field_instances['paragraphs_item-announcements-field_announcements_view'] = array(
+    'bundle' => 'announcements',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'announcements|block',
+        'vargs' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_announcements_view',
+    'label' => 'Announcements view',
+    'required' => 1,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_user' => 0,
+        'announcements' => 'announcements',
+        'audiences' => 0,
+        'clone_of_administration_nodes' => 0,
+        'media_browser_plus' => 0,
+        'media_browser_plus_folders' => 0,
+        'scholarships' => 0,
+        'webform_analysis' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+      ),
+      'force_default' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-callout-field_callout_body'.
   $field_instances['paragraphs_item-callout-field_callout_body'] = array(
     'bundle' => 'callout',
@@ -327,6 +385,7 @@ function education_paragraphs_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Announcements view');
   t('Fact Facts');
   t('Image');
   t('Image position');

@@ -9,6 +9,11 @@
  */
 function education_paragraphs_paragraphs_info() {
   $items = array(
+    'announcements' => array(
+      'name' => 'Announcements',
+      'bundle' => 'announcements',
+      'locked' => '1',
+    ),
     'callout' => array(
       'name' => 'Callout',
       'bundle' => 'callout',
