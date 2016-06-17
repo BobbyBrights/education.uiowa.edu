@@ -292,3 +292,22 @@ function education_common_update_7013() {
 function education_common_update_7014() {
   variable_set('sitenow_wysiwyg_disable_forms', 0);
 }
+
+/**
+ * Disable Administration: Node view.
+ */
+function education_common_update_7015() {
+  // Grab list of views that are already disabled.
+  $views_status = variable_get('views_defaults', array());
+
+  // Add the view to be disabled to the list.
+  $views_status['admin_views_node'] = TRUE;
+
+  // Reset the variable with the new list.
+  variable_set('views_defaults', $views_status);
+
+  // Empty cache now.
+  if (function_exists('views_invalidate_cache')) {
+    views_invalidate_cache();
+  }
+}
