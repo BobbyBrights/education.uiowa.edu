@@ -96,7 +96,7 @@ function education_degree_option_field_default_field_bases() {
   // Exported field_base: 'field_degree_program'.
   $field_bases['field_degree_program'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_degree_program',
