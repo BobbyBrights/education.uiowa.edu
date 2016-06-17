@@ -14,6 +14,13 @@ function education_common_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function education_common_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_filter_default_formats_alter().
  */
 function education_common_filter_default_formats_alter(&$data) {
