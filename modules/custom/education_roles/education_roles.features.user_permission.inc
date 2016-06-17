@@ -172,6 +172,16 @@ function education_roles_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: 'add terms in announcement_categories'.
+  $permissions['add terms in announcement_categories'] = array(
+    'name' => 'add terms in announcement_categories',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
   // Exported permission: 'add terms in audiences'.
   $permissions['add terms in audiences'] = array(
     'name' => 'add terms in audiences',
@@ -1157,6 +1167,15 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in announcement_categories'.
+  $permissions['delete terms in announcement_categories'] = array(
+    'name' => 'delete terms in announcement_categories',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in audiences'.
   $permissions['delete terms in audiences'] = array(
     'name' => 'delete terms in audiences',
@@ -1651,6 +1670,16 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'webform',
+  );
+
+  // Exported permission: 'edit terms in announcement_categories'.
+  $permissions['edit terms in announcement_categories'] = array(
+    'name' => 'edit terms in announcement_categories',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in audiences'.
