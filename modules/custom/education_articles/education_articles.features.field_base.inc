@@ -65,30 +65,26 @@ function education_articles_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_article_type'.
-  $field_bases['field_article_type'] = array(
+  // Exported field_base: 'field_image'.
+  $field_bases['field_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_article_type',
+    'field_name' => 'field_image',
     'indexes' => array(
-      'value' => array(
-        0 => 'value',
+      'fid' => array(
+        0 => 'fid',
       ),
     ),
     'locked' => 0,
-    'module' => 'list',
+    'module' => 'image',
     'settings' => array(
-      'allowed_values' => array(
-        'story' => 'Story',
-        'publication' => 'Publication',
-        'announcement' => 'Announcement',
-      ),
-      'allowed_values_function' => '',
+      'default_image' => FALSE,
+      'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'list_text',
+    'type' => 'image',
   );
 
   return $field_bases;

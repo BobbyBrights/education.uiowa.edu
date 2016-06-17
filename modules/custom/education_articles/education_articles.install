@@ -4,9 +4,9 @@ function education_articles_install() {
 }
 
 /**
- * Delete QuickLinks fields from previous development trial.
+ * Delete tags and type fields from previous development.
  */
- function education_articles_update_7001() {
+function education_articles_update_7001() {
    // Delete fields.
   $fields_to_delete = array(
     'field_tags',
