@@ -161,6 +161,56 @@ function education_articles_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-article-field_article_type'.
+  $field_instances['node-article-field_article_type'] = array(
+    'bundle' => 'article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_article_type',
+    'label' => 'Type',
+    'required' => 1,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 41,
+    ),
+  );
+
   // Exported field_instance: 'node-article-field_image'.
   $field_instances['node-article-field_image'] = array(
     'bundle' => 'article',
@@ -275,6 +325,7 @@ function education_articles_field_default_field_instances() {
   t('Image');
   t('Source');
   t('Tags');
+  t('Type');
   t('Upload an image to go with this article.');
 
   return $field_instances;
