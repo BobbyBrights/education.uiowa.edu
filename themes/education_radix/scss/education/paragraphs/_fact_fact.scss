@@ -1,3 +1,5 @@
+$fast_facts_inline: $education-md-min;
+
 .paragraphs-item-fast-fact {
   .field-name-field-fact-fact-ref {
     @extend .row;
@@ -5,5 +7,10 @@
 
   .field-item {
     @extend .col-md-4;
+    margin-bottom: 20px;
+
+    @include breakpoint($fast_facts_inline) {
+      margin-bottom: 0;
+    }
   }
 }
