@@ -8544,11 +8544,15 @@ div.facultyDiv {
 .btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active {
   background-color: #ffe100;
   border: none;
+  border-radius: 3px;
   color: #333333;
   font-size: inherit;
   padding: 12px 20px 10px;
   text-transform: uppercase;
   white-space: normal; }
+  .yellow-background .btn-primary, .yellow-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .yellow-background .btn:first-child, .yellow-background .btn-long, .yellow-background .btn-primary:active, .yellow-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .yellow-background .btn:active:first-child, .yellow-background .btn-long:active {
+    background-color: #fff;
+    border: 1px solid #cccccc; }
   .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus {
     background-color: #cccccc;
     color: #333333; }

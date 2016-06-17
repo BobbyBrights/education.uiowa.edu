@@ -1,11 +1,17 @@
 .btn-primary, .btn-primary:active {
   background-color: $yellow;
   border: none;
+  border-radius: 3px;
   color: $black_80;
   font-size: inherit;
   padding: 12px 20px 10px;
   text-transform: uppercase;
   white-space: normal;
+
+  .yellow-background & {
+    background-color: #fff;
+    border: 1px solid $black_20;
+  }
 
   &:hover, &:focus {
     background-color: $black_20;
