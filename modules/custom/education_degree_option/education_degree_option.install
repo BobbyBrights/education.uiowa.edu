@@ -82,3 +82,19 @@ function education_degree_option_update_7002() {
     $new_term->weight = 5; //current weight of B.S.
     taxonomy_term_save($new_term);
 }
+
+/**
+ * Delete QuickLinks fields from previous development trial.
+ */
+ function education_degree_option_update_7003() {
+   // Delete fields.
+  $fields_to_delete = array(
+    'field_program_quick_links',
+    'field_degree_quick_links',
+  );
+  foreach ($fields_to_delete as $field_name) {
+    field_delete_field($field_name);
+  }
+  // Increase batch size for safe measure.
+  field_purge_batch(5);
+}
