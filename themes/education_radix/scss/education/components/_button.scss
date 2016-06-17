@@ -7,6 +7,11 @@
   text-transform: uppercase;
   white-space: normal;
 
+  .yellow-background & {
+    background-color: #fff;
+    border: 1px solid $black_20;
+  }
+
   &:hover, &:focus {
     background-color: $black_20;
     color: $black_80;
