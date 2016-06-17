@@ -95,5 +95,5 @@ function education_degree_option_update_7002() {
     field_delete_field($field_name);
   }
   // Increase batch size for safe measure.
-  field_purge_batch(5);
+  field_purge_batch(10);
 }

@@ -15,5 +15,5 @@ function education_academic_program_update_7001() {
     field_delete_field($field_name);
   }
   // Increase batch size for safe measure.
-  field_purge_batch(5);
+  field_purge_batch(10);
 }

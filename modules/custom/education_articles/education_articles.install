@@ -16,5 +16,5 @@ function education_articles_install() {
     field_delete_field($field_name);
   }
   // Increase batch size for safe measure.
-  field_purge_batch(5);
+  field_purge_batch(10);
 }
