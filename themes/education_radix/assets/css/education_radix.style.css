@@ -8544,6 +8544,7 @@ div.facultyDiv {
 .btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active {
   background-color: #ffe100;
   border: none;
+  border-radius: 3px;
   color: #333333;
   font-size: inherit;
   padding: 12px 20px 10px;
