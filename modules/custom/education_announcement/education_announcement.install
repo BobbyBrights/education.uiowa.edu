@@ -9,3 +9,22 @@ function education_announcement_update_7001() {
   // Increase batch size for safe measure.
   field_purge_batch(100);
 }
+
+function education_announcement_update_7002() {
+  // Create the initial Announcement Categories.
+  $new_terms = array(
+    'Honors & Awards',
+    'Publications',
+  );
+
+  // Load the announcement_categories vocabulary ID.
+  $vid = taxonomy_vocabulary_machine_name_load('announcement_categories')->vid;
+
+  // Create new terms from the $new_terms array.
+  foreach ($new_terms as $item) {
+    $new_term = new stdClass();
+    $new_term->name = $item;
+    $new_term->vid = $vid;
+    taxonomy_term_save($new_term);
+  }
+}
