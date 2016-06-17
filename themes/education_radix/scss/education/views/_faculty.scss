@@ -1,0 +1,13 @@
+
+.view-display-id-page_faculty_listing, .view-display-id-page_faculty_full_listing {
+  .views-row {
+    @extend .col-sm-3;
+  }
+  .views-row-odd, .views-row-even {
+    margin:20px;
+    text-align: center;
+    @include breakpoint($education-bg-image) {
+        text-align: left;
+      }
+  }
+}

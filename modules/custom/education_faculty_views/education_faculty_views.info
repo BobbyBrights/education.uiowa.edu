@@ -1,0 +1,12 @@
+name = Education Faculty Views
+description = Views for Faculty listing pages
+core = 7.x
+package = Education
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = education_person
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = faculty
+project path = sites/education.uiowa.edu/modules/custom
