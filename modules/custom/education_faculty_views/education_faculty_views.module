@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Faculty Views feature.
+ */
+
+include_once 'education_faculty_views.features.inc';
