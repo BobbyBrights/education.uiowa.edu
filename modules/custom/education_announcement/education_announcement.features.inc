@@ -23,7 +23,7 @@ function education_announcement_node_info() {
       'base' => 'node_content',
       'description' => t('Alert, statement, or short declaration. Will be shown in its entirety. Use Article if you want to provide more information.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Administrative title'),
       'help' => '',
     ),
   );
