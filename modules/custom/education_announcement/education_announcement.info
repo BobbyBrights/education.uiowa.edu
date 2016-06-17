@@ -24,10 +24,6 @@ features[field_instance][] = node-announcement-field_announcement_audience
 features[field_instance][] = node-announcement-field_announcement_categories
 features[node][] = announcement
 features[taxonomy][] = announcement_categories
-<<<<<<< 06e8654e5ce5f7a88644204b0ecd0b50b9154b88
-=======
-features[taxonomy][] = tags
->>>>>>> change name of vocabulary
 features[variable][] = field_bundle_settings_node__announcement
 features[variable][] = menu_options_announcement
 features[variable][] = menu_parent_announcement
