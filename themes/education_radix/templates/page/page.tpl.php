@@ -101,7 +101,7 @@
       <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
         <a href="http://education.uiowa.edu" title="The University of Iowa College of Education"><div id="footer-logo" ></div></a>
 
-        459 Lindquist Center North<br/>
+        N459 Lindquist Center<br/>
         Iowa City, IA 52242<br/>
         <br/>
         <br/>
