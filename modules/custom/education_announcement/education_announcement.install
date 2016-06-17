@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Delete Tags field from Announcement content type.
+ */
+function education_announcement_update_7001() {
+  // Delete field.
+  field_delete_field('field_announcement_tags');
+  // Increase batch size for safe measure.
+  field_purge_batch(100);
+}
