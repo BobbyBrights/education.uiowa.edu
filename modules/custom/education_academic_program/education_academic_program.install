@@ -1,0 +1,19 @@
+<?php
+
+function education_academic_program_install() {
+}
+
+/**
+ * Remove field_program_quick_links.
+ */
+function education_academic_program_update_7001() {
+   // Delete fields.
+  $fields_to_delete = array(
+    'field_program_quick_links',
+  );
+  foreach ($fields_to_delete as $field_name) {
+    field_delete_field($field_name);
+  }
+  // Increase batch size for safe measure.
+  field_purge_batch(5);
+}

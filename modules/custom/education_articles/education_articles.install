@@ -1,0 +1,20 @@
+<?php
+
+function education_articles_install() {
+}
+
+/**
+ * Delete QuickLinks fields from previous development trial.
+ */
+ function education_articles_update_7001() {
+   // Delete fields.
+  $fields_to_delete = array(
+    'field_tags',
+    'field_article_type',
+  );
+  foreach ($fields_to_delete as $field_name) {
+    field_delete_field($field_name);
+  }
+  // Increase batch size for safe measure.
+  field_purge_batch(5);
+}
