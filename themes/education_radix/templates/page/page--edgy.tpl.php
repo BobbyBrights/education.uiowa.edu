@@ -112,13 +112,11 @@
       </div>
       <div class="modal-body">
         <p>Learn more about our programs...</p>
-        <button type="button" class="btn btn-primary btn-modal">Undergraduate</button>
-        <button type="button" class="btn btn-primary btn-modal">Graduate</button>
-        <button type="button" class="btn btn-primary btn-modal">Online</button>
-        <button type="button" class="btn btn-primary btn-modal">Licensure</button>
-        <button type="button" class="btn btn-primary btn-modal">Certificate</button>
-        <button type="button" class="btn btn-primary btn-modal">Endorsement</button>
-        <button type="button" class="btn btn-primary btn-modal">Professional Development</button>
+        <a class="btn btn-primary btn-modal" href="/node/294" >Undergraduate</a>
+        <a class="btn btn-primary btn-modal" href="https://apply.admissions.uiowa.edu/admissions/graduate.page">Graduate</a>
+        <a class="btn btn-primary btn-modal" href="">Licensure, Certificate, &amp; Endorsement</a>
+        <a class="btn btn-primary btn-modal" href>Professional Development</a>
+        <a class="btn btn-primary btn-modal" href="">Online</a>
       </div>
     <!--  <div class="modal-footer">
     </div> -->

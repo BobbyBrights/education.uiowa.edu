@@ -91,14 +91,18 @@
     background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/COLLEGE-web-yellow.png");
   }
 }
-
+#myModal {
 .btn-modal {
+  color:$black;
   font-weight: bold;
   margin: 10px;
   width:100%;
+  &:hover, &:focus {
+    color: $black;
+    }
   @include breakpoint($education-bg-image) {
-  width:45%;
-  }
+    width:45%;
+    }
 }
 .close {
   font-size: 36px;
@@ -106,4 +110,5 @@
 .modal p {
   color:$black;
   text-align: left;
+}
 }
