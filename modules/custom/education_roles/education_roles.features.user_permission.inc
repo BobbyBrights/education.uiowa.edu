@@ -223,10 +223,7 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'add terms in tags'.
   $permissions['add terms in tags'] = array(
     'name' => 'add terms in tags',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy_access_fix',
   );
 
