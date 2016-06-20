@@ -20,11 +20,8 @@ function education_paragraphs_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'paragraphs_editor_preview' => array(
@@ -43,7 +40,7 @@ function education_paragraphs_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 1,
+        'enabled' => 0,
         'height' => 0,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
@@ -73,9 +70,8 @@ function education_paragraphs_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
@@ -94,7 +90,7 @@ function education_paragraphs_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 1,
+        'enabled' => 0,
         'height' => 0,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
@@ -145,7 +141,7 @@ function education_paragraphs_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 1,
+        'enabled' => 0,
         'height' => 0,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
@@ -171,7 +167,7 @@ function education_paragraphs_field_default_field_instances() {
     'bundle' => 'announcements',
     'default_value' => array(
       0 => array(
-        'vname' => 'announcements|block',
+        'vname' => 'announcements|announcements_paragraph',
         'vargs' => '',
       ),
     ),
