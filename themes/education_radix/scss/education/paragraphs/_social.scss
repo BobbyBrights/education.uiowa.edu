@@ -1,0 +1,23 @@
+.paragraphs-item-social {
+  background-color: $black-80;
+  color: #fff;
+
+  .social-title {
+    color: #fff;
+    @include font-size(2);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .social {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .social-icon {
+    @extend .footer-social;
+    display: inline-block;
+    float: none;
+  }
+}

@@ -8749,7 +8749,7 @@ p {
 .footer-center {
   text-align: center; }
 
-.footer-social {
+.footer-social, .paragraphs-item-social .social-icon {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 60px 60px;
@@ -8915,6 +8915,22 @@ img {
   .entity-paragraphs-item.grey-border {
     margin: 40px auto;
     padding: 20px; }
+
+.paragraphs-item-social {
+  background-color: #333333;
+  color: #fff; }
+  .paragraphs-item-social .social-title {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase; }
+  .paragraphs-item-social .social {
+    text-align: center;
+    margin-bottom: 0; }
+  .paragraphs-item-social .social-icon {
+    display: inline-block;
+    float: none; }
 
 .slogan {
   font-size: 2rem;
