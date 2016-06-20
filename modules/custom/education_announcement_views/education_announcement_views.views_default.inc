@@ -68,32 +68,58 @@ function education_announcement_views_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Categories (field_announcement_categories) */
-  $handler->display->display_options['arguments']['field_announcement_categories_tid']['id'] = 'field_announcement_categories_tid';
-  $handler->display->display_options['arguments']['field_announcement_categories_tid']['table'] = 'field_data_field_announcement_categories';
-  $handler->display->display_options['arguments']['field_announcement_categories_tid']['field'] = 'field_announcement_categories_tid';
-  $handler->display->display_options['arguments']['field_announcement_categories_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_announcement_categories_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_announcement_categories_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_announcement_categories_tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_announcement_categories_tid']['break_phrase'] = TRUE;
-  /* Contextual filter: Content: Audience (field_announcement_audience) */
-  $handler->display->display_options['arguments']['field_announcement_audience_tid']['id'] = 'field_announcement_audience_tid';
-  $handler->display->display_options['arguments']['field_announcement_audience_tid']['table'] = 'field_data_field_announcement_audience';
-  $handler->display->display_options['arguments']['field_announcement_audience_tid']['field'] = 'field_announcement_audience_tid';
-  $handler->display->display_options['arguments']['field_announcement_audience_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_announcement_audience_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_announcement_audience_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_announcement_audience_tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_announcement_audience_tid']['break_phrase'] = TRUE;
-  /* Contextual filter: Content: Affiliation (field_announcement_affiliation) */
+  /* Contextual filter: Announcement Categories */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['ui_name'] = 'Announcement Categories';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'announcement_categories' => 'announcement_categories',
+  );
+  $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'tids';
+  $handler->display->display_options['arguments']['tid']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = TRUE;
+  /* Contextual filter: Audiences */
+  $handler->display->display_options['arguments']['tid_1']['id'] = 'tid_1';
+  $handler->display->display_options['arguments']['tid_1']['table'] = 'taxonomy_index';
+  $handler->display->display_options['arguments']['tid_1']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid_1']['ui_name'] = 'Audiences';
+  $handler->display->display_options['arguments']['tid_1']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid_1']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid_1']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid_1']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid_1']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['tid_1']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid_1']['validate_options']['vocabularies'] = array(
+    'audiences' => 'audiences',
+  );
+  $handler->display->display_options['arguments']['tid_1']['validate_options']['type'] = 'tids';
+  $handler->display->display_options['arguments']['tid_1']['break_phrase'] = TRUE;
+  $handler->display->display_options['arguments']['tid_1']['reduce_duplicates'] = TRUE;
+  /* Contextual filter: Affiliations */
   $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['id'] = 'field_announcement_affiliation_target_id';
   $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['table'] = 'field_data_field_announcement_affiliation';
   $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['field'] = 'field_announcement_affiliation_target_id';
+  $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['ui_name'] = 'Affiliations';
   $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['validate']['type'] = 'node';
+  $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['validate_options']['types'] = array(
+    'program' => 'program',
+    'center' => 'center',
+    'department' => 'department',
+    'service' => 'service',
+  );
+  $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['validate_options']['nid_type'] = 'nids';
   $handler->display->display_options['arguments']['field_announcement_affiliation_target_id']['break_phrase'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
