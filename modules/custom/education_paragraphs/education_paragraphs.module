@@ -82,12 +82,23 @@ function education_paragraphs_entity_presave($entity, $type) {
  * Implements hook_field_extra_fields().
  */
 function education_paragraphs_field_extra_fields() {
-  $extra['paragraphs_item']['slogan'] = array(
-    'display' => array(
-      'extra_paragraph_slogan' => array(
-        'label' => t('Slogan'),
-        'description' => t('The slogan of the College of Education'),
-        'weight' => 99,
+  $extra['paragraphs_item'] = array(
+    'slogan' => array(
+      'display' => array(
+        'extra_paragraph_slogan' => array(
+          'label' => t('Slogan'),
+          'description' => t('The slogan of the College of Education'),
+          'weight' => 99,
+        ),
+      ),
+    ),
+    'social' => array(
+      'display' => array(
+        'extra_paragraph_social' => array(
+          'label' => t('Social media'),
+          'description' => t('Social media accounts of the College of Education'),
+          'weight' => 99,
+        ),
       ),
     ),
   );
@@ -100,20 +111,31 @@ function education_paragraphs_field_extra_fields() {
  */
 function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode, $langcode) {
   $extra = education_paragraphs_field_extra_fields();
-  $field_name = 'extra_paragraph_slogan';
 
   // Check that we're supporting the paragraph bundle being viewed.
-  if (empty($extra['paragraphs_item'][$paragraphs_item->bundle]['display'])) {
-    return;
-  }
+  switch ($paragraphs_item->bundle) {
+    case 'slogan':
+      $field_name = 'extra_paragraph_slogan';
+      _education_paragraphs_psuedo_field_visible($field_name, $view_mode, $paragraphs_item);
+      $slogan_markup = "<h2 class='offscreen slogan-title'>Tagline</h2><p class='slogan'>Leaders. Scholars. Innovators.</p>";
+      $paragraphs_item->content[$field_name]['#markup'] = $slogan_markup;
+      break;
 
-  // Check to make sure the field extra_department_news is visible
-  // in this view mode.
+    case 'social':
+      # code...
+      break;
+
+    default:
+      break;
+  }
+}
+
+/**
+ * Check to make sure that the field is visible in this view mode.
+ */
+function _education_paragraphs_psuedo_field_visible($field_name, $view_mode, $paragraphs_item) {
   $config = field_bundle_settings('paragraphs_item', $paragraphs_item->bundle);
   if (empty($config['extra_fields']['display'][$field_name][$view_mode]['visible'])) {
     return;
   }
-
-  $slogan_markup = "<h2 class='offscreen slogan-title'>Tagline</h2><p class='slogan'>Leaders. Scholars. Innovators.</p>";
-  $paragraphs_item->content[$field_name]['#markup'] = $slogan_markup;
 }
