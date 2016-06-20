@@ -25,7 +25,7 @@ function education_paragraphs_paragraphs_info() {
       'locked' => '1',
     ),
     'slogan' => array(
-      'name' => 'Slogan',
+      'name' => 'Tagline',
       'bundle' => 'slogan',
       'locked' => '1',
     ),
