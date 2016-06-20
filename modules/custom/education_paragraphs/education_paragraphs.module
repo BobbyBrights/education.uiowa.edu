@@ -7,6 +7,19 @@
 include_once 'education_paragraphs.features.inc';
 
 /**
+ * Implements hook_classy_paragraphs_list_options().
+ */
+function education_paragraphs_classy_paragraphs_list_options($options, $field, $instance) {
+  if ($field['field_name'] == 'field_paragraph_container_style') {
+    $options['grey-background'] = t('Grey Background');
+    $options['yellow-background'] = t('Yellow Background');
+    $options['grey-border'] = t('Grey Border');
+  }
+
+  return $options;
+}
+
+/**
  * Implements hook_field_widget_form_alter().
  */
 function education_paragraphs_field_widget_form_alter(&$element, &$form_state, $context) {
