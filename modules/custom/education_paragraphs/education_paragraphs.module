@@ -124,7 +124,31 @@ function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode,
     case 'social':
       $field_name = 'extra_paragraph_social';
       _education_paragraphs_psuedo_field_visible($field_name, $view_mode, $paragraphs_item);
-      $social_markup = "<h2 class='social-title'>Connect</h2><p class='social'>Social media accounts will be listed here.</p>";
+      $social_markup = "<h2 class='social-title'>Connect</h2><p class='clearfix social'>
+        <a role='link' title='Follow us on Facebook' href='https://www.facebook.com/UICollegeofEducation'>
+          <span class='offscreen'>Facebook</span>
+          <span class='social-icon footer-social-facebook' id='facebook-icon'></span>
+        </a>
+        <a role='link' title='Follow us on Instagram' href='http://instagram.com/uicollegeofed'>
+          <span class='offscreen'>Instagram</span>
+          <span class='social-icon footer-social-instagram' id='instagram-icon'></span>
+        </a>
+        <a role='link' title='Follow us on Twitter' href='https://twitter.com/UIowaEducation'>
+          <span class='offscreen'>Twitter</span>
+          <span class='social-icon footer-social-twitter' id='twitter-icon'></span>
+        </a>
+        <a role='link' title='Connect with us on LinkedIn' href='https://www.linkedin.com/in/uiowacollegeofeducation'>
+          <span class='offscreen'>LinkedIn</span>
+          <span class='social-icon footer-social-linkedin' id='linkdin-icon'></span>
+        </a>
+        <a role='link' title='Checkout out our boards on Pinterest' href='http://pinterest.com/uicoe/'>
+          <span class='offscreen'>Pinterest</span>
+          <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span></a>
+        <a role='link' title='Find our latest videos on YouTube' href='https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA'>
+          <span class='offscreen'>YouTube</span>
+          <span class='social-icon footer-social-youtube' id='youtube-icon'></span>
+        </a>
+      </p>";
       $paragraphs_item->content[$field_name]['#markup'] = $social_markup;
       break;
 
