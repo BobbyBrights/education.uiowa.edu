@@ -8916,6 +8916,11 @@ img {
     margin: 40px auto;
     padding: 20px; }
 
+.slogan {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center; }
+
 .view-display-id-page_faculty_listing .views-row-odd, .view-display-id-page_faculty_listing .views-row-even, .view-display-id-page_faculty_full_listing .views-row-odd, .view-display-id-page_faculty_full_listing .views-row-even {
   margin: 20px;
   text-align: center; }
