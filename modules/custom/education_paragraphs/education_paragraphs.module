@@ -114,6 +114,6 @@ function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode,
     return;
   }
 
-  $slogan_markup = "<h2 class='offscreen slogan-title'>Slogan</h2><p class='slogan'>Leaders. Scholars. Innovators.</p>";
+  $slogan_markup = "<h2 class='offscreen slogan-title'>Tagline</h2><p class='slogan'>Leaders. Scholars. Innovators.</p>";
   $paragraphs_item->content[$field_name]['#markup'] = $slogan_markup;
 }
