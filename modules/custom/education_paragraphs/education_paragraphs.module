@@ -55,9 +55,9 @@ function education_paragraphs_entity_presave($entity, $type) {
       $affiliations_nids[] = 'all';
     }
 
-    $categories_arg = '"' . implode(',', $announcement_categories_tids) . '"';
-    $audiences_arg = '"' . implode(',', $audiences_tids) . '"';
-    $affiliations_arg = '"' . implode(',', $affiliations_nids) . '"';
+    $categories_arg = '"' . implode('+', $announcement_categories_tids) . '"';
+    $audiences_arg = '"' . implode('+', $audiences_tids) . '"';
+    $affiliations_arg = '"' . implode('+', $affiliations_nids) . '"';
 
     $args = $categories_arg . '/' . $audiences_arg . '/' . $affiliations_arg;
 
