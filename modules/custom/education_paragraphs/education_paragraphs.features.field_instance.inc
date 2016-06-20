@@ -33,7 +33,7 @@ function education_paragraphs_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_announcement_affiliation',
-    'label' => 'Affiliation',
+    'label' => 'Affiliations',
     'required' => 0,
     'settings' => array(
       'jquery_ui_multiselect' => array(
@@ -83,7 +83,7 @@ function education_paragraphs_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_announcement_audience',
-    'label' => 'Audience',
+    'label' => 'Audiences',
     'required' => 0,
     'settings' => array(
       'jquery_ui_multiselect' => array(
@@ -536,9 +536,9 @@ function education_paragraphs_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Affiliation');
+  t('Affiliations');
   t('Announcements view');
-  t('Audience');
+  t('Audiences');
   t('Categories');
   t('Fact Facts');
   t('Image');
