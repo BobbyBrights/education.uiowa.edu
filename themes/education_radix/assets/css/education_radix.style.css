@@ -8934,6 +8934,9 @@ img {
 
 .slogan {
   font-size: 2rem;
+  font-family: 'Garamond', 'Georgia';
+  font-style: italic;
+  font-weight: bold;
   margin: 0;
   text-align: center; }
 
