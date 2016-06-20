@@ -17,3 +17,11 @@ function education_paragraphs_install() {
 
   taxonomy_term_save($new_term);
 }
+
+/**
+ * Delete field_callout_style.
+ */
+function education_paragraphs_update_7001() {
+  field_delete_field('field_callout_style');
+  field_purge_batch(100);
+}

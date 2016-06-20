@@ -5,3 +5,75 @@
  */
 
 include_once 'education_paragraphs.features.inc';
+
+/**
+ * Implements hook_classy_paragraphs_list_options().
+ */
+function education_paragraphs_classy_paragraphs_list_options($options, $field, $instance) {
+  if ($field['field_name'] == 'field_paragraph_container_style') {
+    $options['grey-background'] = t('Grey Background');
+    $options['yellow-background'] = t('Yellow Background');
+    $options['grey-border'] = t('Grey Border');
+  }
+
+  return $options;
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function education_paragraphs_field_widget_form_alter(&$element, &$form_state, $context) {
+  if ($context['field']['field_name'] == 'field_announcements_view') {
+    // Do not show the view name selector.
+    $element['vname']['#access'] = FALSE;
+
+    // Do not show the arguments field.
+    $element['vargs']['#access'] = FALSE;
+
+    // Do not show the token options.
+    $element['token_help']['#access'] = FALSE;
+  }
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function education_paragraphs_entity_presave($entity, $type) {
+  if ($type == 'paragraphs_item' && $entity->bundle == 'announcements') {
+    // Pass term and nid IDs as arguments to the Announcements paragraph view.
+    $announcement_categories_tids = array();
+    if (!empty($entity->field_announcement_categories['und'])) {
+      foreach($entity->field_announcement_categories['und'] as $delta) {
+        $announcement_categories_tids[] = $delta['tid'];
+      }
+    } else {
+      $announcement_categories_tids[] = 'all';
+    }
+
+    $audiences_tids = array();
+    if (!empty($entity->field_announcement_audience['und'])) {
+      foreach($entity->field_announcement_audience['und'] as $delta) {
+        $audiences_tids[] = $delta['tid'];
+      }
+    } else {
+      $audiences_tids[] = 'all';
+    }
+
+    $affiliations_nids = array();
+    if (!empty($entity->field_announcement_affiliation['und'])) {
+      foreach($entity->field_announcement_affiliation['und'] as $delta) {
+        $affiliations_nids[] = $delta['target_id'];
+      }
+    } else {
+      $affiliations_nids[] = 'all';
+    }
+
+    $categories_arg = '"' . implode('+', $announcement_categories_tids) . '"';
+    $audiences_arg = '"' . implode('+', $audiences_tids) . '"';
+    $affiliations_arg = '"' . implode('+', $affiliations_nids) . '"';
+
+    $args = $categories_arg . '/' . $audiences_arg . '/' . $affiliations_arg;
+
+    $entity->field_announcements_view[LANGUAGE_NONE][0]['vargs'] = $args;
+  }
+}
