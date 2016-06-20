@@ -24,6 +24,11 @@ function education_paragraphs_paragraphs_info() {
       'bundle' => 'fast_fact',
       'locked' => '1',
     ),
+    'slogan' => array(
+      'name' => 'Slogan',
+      'bundle' => 'slogan',
+      'locked' => '1',
+    ),
     'text' => array(
       'name' => 'Text',
       'bundle' => 'text',
