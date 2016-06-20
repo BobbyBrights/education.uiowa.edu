@@ -39,6 +39,7 @@ function education_audiences_field_default_field_instances() {
         'callout' => 'callout',
         'fast_fact' => 'fast_fact',
         'slogan' => 'slogan',
+        'social' => 'social',
         'text' => 'text',
       ),
       'bundle_weights' => array(
@@ -46,6 +47,7 @@ function education_audiences_field_default_field_instances() {
         'callout' => 2,
         'fast_fact' => 5,
         'slogan' => -10,
+        'social' => -12,
         'text' => -4,
       ),
       'default_edit_mode' => 'open',
