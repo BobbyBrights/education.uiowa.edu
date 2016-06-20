@@ -42,5 +42,6 @@ features[paragraphs][] = announcements
 features[paragraphs][] = callout
 features[paragraphs][] = fast_fact
 features[paragraphs][] = slogan
+features[paragraphs][] = social
 features[paragraphs][] = text
 project path = sites/education.uiowa.edu/modules/custom

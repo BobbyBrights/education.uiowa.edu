@@ -29,6 +29,11 @@ function education_paragraphs_paragraphs_info() {
       'bundle' => 'slogan',
       'locked' => '1',
     ),
+    'social' => array(
+      'name' => 'Social media',
+      'bundle' => 'social',
+      'locked' => '1',
+    ),
     'text' => array(
       'name' => 'Text',
       'bundle' => 'text',

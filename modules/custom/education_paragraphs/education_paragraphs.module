@@ -122,7 +122,10 @@ function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode,
       break;
 
     case 'social':
-      # code...
+      $field_name = 'extra_paragraph_social';
+      _education_paragraphs_psuedo_field_visible($field_name, $view_mode, $paragraphs_item);
+      $social_markup = "<h2 class='social-title'>Connect</h2><p class='social'>Social media accounts will be listed here.</p>";
+      $paragraphs_item->content[$field_name]['#markup'] = $social_markup;
       break;
 
     default:
