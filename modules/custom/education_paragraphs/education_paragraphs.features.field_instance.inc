@@ -16,7 +16,7 @@ function education_paragraphs_field_default_field_instances() {
     'bundle' => 'announcements',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select which affiliations to display Announcements for. If no affiliations are selected, Announcements with any affiliation will be included in the listing.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -66,7 +66,7 @@ function education_paragraphs_field_default_field_instances() {
     'bundle' => 'announcements',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select which audiences to display Announcements for. If no audiences are selected, Announcements for all audiences will be included in the listing.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -116,7 +116,7 @@ function education_paragraphs_field_default_field_instances() {
     'bundle' => 'announcements',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select which categories of Announcements to display. If no categories are selected, Announcements from all categories will be included in the listing.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -543,6 +543,9 @@ function education_paragraphs_field_default_field_instances() {
   t('Fact Facts');
   t('Image');
   t('Image position');
+  t('Select which affiliations to display Announcements for. If no affiliations are selected, Announcements with any affiliation will be included in the listing.');
+  t('Select which audiences to display Announcements for. If no audiences are selected, Announcements for all audiences will be included in the listing.');
+  t('Select which categories of Announcements to display. If no categories are selected, Announcements from all categories will be included in the listing.');
   t('Style');
   t('Text');
 
