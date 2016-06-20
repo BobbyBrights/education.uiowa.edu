@@ -1500,24 +1500,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, #page-header, #breadcrumb, .paragraphs-item-callout.grey-border, .entity-paragraphs-item.grey-border {
+.container, #page-header, #breadcrumb, .entity-paragraphs-item.grey-border {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, #page-header:before, #breadcrumb:before, .paragraphs-item-callout.grey-border:before, .entity-paragraphs-item.grey-border:before, .container:after, #page-header:after, #breadcrumb:after, .paragraphs-item-callout.grey-border:after, .entity-paragraphs-item.grey-border:after {
+  .container:before, #page-header:before, #breadcrumb:before, .entity-paragraphs-item.grey-border:before, .container:after, #page-header:after, #breadcrumb:after, .entity-paragraphs-item.grey-border:after {
     content: " ";
     display: table; }
-  .container:after, #page-header:after, #breadcrumb:after, .paragraphs-item-callout.grey-border:after, .entity-paragraphs-item.grey-border:after {
+  .container:after, #page-header:after, #breadcrumb:after, .entity-paragraphs-item.grey-border:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container, #page-header, #breadcrumb, .paragraphs-item-callout.grey-border, .entity-paragraphs-item.grey-border {
+    .container, #page-header, #breadcrumb, .entity-paragraphs-item.grey-border {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container, #page-header, #breadcrumb, .paragraphs-item-callout.grey-border, .entity-paragraphs-item.grey-border {
+    .container, #page-header, #breadcrumb, .entity-paragraphs-item.grey-border {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container, #page-header, #breadcrumb, .paragraphs-item-callout.grey-border, .entity-paragraphs-item.grey-border {
+    .container, #page-header, #breadcrumb, .entity-paragraphs-item.grey-border {
       width: 1170px; } }
 
 .container-fluid {
@@ -3730,15 +3730,15 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, #page-header > .navbar-header, #breadcrumb > .navbar-header, .paragraphs-item-callout.grey-border > .navbar-header, .entity-paragraphs-item.grey-border > .navbar-header,
-.container > .navbar-collapse, #page-header > .navbar-collapse, #breadcrumb > .navbar-collapse, .paragraphs-item-callout.grey-border > .navbar-collapse, .entity-paragraphs-item.grey-border > .navbar-collapse,
+.container > .navbar-header, #page-header > .navbar-header, #breadcrumb > .navbar-header, .entity-paragraphs-item.grey-border > .navbar-header,
+.container > .navbar-collapse, #page-header > .navbar-collapse, #breadcrumb > .navbar-collapse, .entity-paragraphs-item.grey-border > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header, #page-header > .navbar-header, #breadcrumb > .navbar-header, .paragraphs-item-callout.grey-border > .navbar-header, .entity-paragraphs-item.grey-border > .navbar-header,
-    .container > .navbar-collapse, #page-header > .navbar-collapse, #breadcrumb > .navbar-collapse, .paragraphs-item-callout.grey-border > .navbar-collapse, .entity-paragraphs-item.grey-border > .navbar-collapse,
+    .container > .navbar-header, #page-header > .navbar-header, #breadcrumb > .navbar-header, .entity-paragraphs-item.grey-border > .navbar-header,
+    .container > .navbar-collapse, #page-header > .navbar-collapse, #breadcrumb > .navbar-collapse, .entity-paragraphs-item.grey-border > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -3782,7 +3782,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand, .navbar > #page-header .navbar-brand, .navbar > #breadcrumb .navbar-brand, .navbar > .paragraphs-item-callout.grey-border .navbar-brand, .navbar > .entity-paragraphs-item.grey-border .navbar-brand,
+    .navbar > .container .navbar-brand, .navbar > #page-header .navbar-brand, .navbar > #breadcrumb .navbar-brand, .navbar > .entity-paragraphs-item.grey-border .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
@@ -4307,18 +4307,18 @@ a.badge:hover, a.badge:focus {
     font-weight: 200; }
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron, #page-header .jumbotron, #breadcrumb .jumbotron, .paragraphs-item-callout.grey-border .jumbotron, .entity-paragraphs-item.grey-border .jumbotron,
+  .container .jumbotron, #page-header .jumbotron, #breadcrumb .jumbotron, .entity-paragraphs-item.grey-border .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container, .jumbotron #page-header, .jumbotron #breadcrumb, .jumbotron .paragraphs-item-callout.grey-border, .jumbotron .entity-paragraphs-item.grey-border {
+  .jumbotron .container, .jumbotron #page-header, .jumbotron #breadcrumb, .jumbotron .entity-paragraphs-item.grey-border {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron, #page-header .jumbotron, #breadcrumb .jumbotron, .paragraphs-item-callout.grey-border .jumbotron, .entity-paragraphs-item.grey-border .jumbotron,
+      .container .jumbotron, #page-header .jumbotron, #breadcrumb .jumbotron, .entity-paragraphs-item.grey-border .jumbotron,
       .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
@@ -8027,19 +8027,17 @@ html.js fieldset.collapsed {
     #features-export-form .features-export-parent .features-export-list .form-item {
       float: none !important; }
 
-#panels-panel-context-edit-move .container, #panels-panel-context-edit-move #page-header, #panels-panel-context-edit-move #breadcrumb, #panels-panel-context-edit-move .paragraphs-item-callout.grey-border, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border,
+#panels-panel-context-edit-move .container, #panels-panel-context-edit-move #page-header, #panels-panel-context-edit-move #breadcrumb, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border,
 #panels-panel-context-edit-content .container,
 #panels-panel-context-edit-content #page-header,
 #panels-panel-context-edit-content #breadcrumb,
-#panels-panel-context-edit-content .paragraphs-item-callout.grey-border,
 #panels-panel-context-edit-content .entity-paragraphs-item.grey-border {
   width: auto;
   padding: 0; }
-  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move #page-header .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .paragraphs-item-callout.grey-border .row, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .row, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #page-header .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #page-header .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .paragraphs-item-callout.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .paragraphs-item-callout.grey-border .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move #page-header .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .row, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #page-header .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #page-header .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content .container .row,
   #panels-panel-context-edit-content #page-header .row,
   #panels-panel-context-edit-content #breadcrumb .row,
-  #panels-panel-context-edit-content .paragraphs-item-callout.grey-border .row,
   #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .row,
   #panels-panel-context-edit-content .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
   #panels-panel-context-edit-content .container .field-name-field-fact-fact-ref,
@@ -8047,8 +8045,6 @@ html.js fieldset.collapsed {
   #panels-panel-context-edit-content #page-header .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
   #panels-panel-context-edit-content #breadcrumb .field-name-field-fact-fact-ref,
-  #panels-panel-context-edit-content .paragraphs-item-callout.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
-  #panels-panel-context-edit-content .paragraphs-item-callout.grey-border .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
   #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref {
     margin-bottom: 20px; }
@@ -8070,8 +8066,8 @@ html.js fieldset.collapsed {
 .tabledrag-handle .handle {
   box-sizing: content-box; }
 
-.container .container, #page-header .container, #breadcrumb .container, .paragraphs-item-callout.grey-border .container, .entity-paragraphs-item.grey-border .container, .container #page-header, #page-header #page-header, #breadcrumb #page-header, .paragraphs-item-callout.grey-border #page-header, .entity-paragraphs-item.grey-border #page-header, .container #breadcrumb, #page-header #breadcrumb, #breadcrumb #breadcrumb, .paragraphs-item-callout.grey-border #breadcrumb, .entity-paragraphs-item.grey-border #breadcrumb, .container .paragraphs-item-callout.grey-border, #page-header .paragraphs-item-callout.grey-border, #breadcrumb .paragraphs-item-callout.grey-border, .paragraphs-item-callout.grey-border .paragraphs-item-callout.grey-border, .entity-paragraphs-item.grey-border .paragraphs-item-callout.grey-border, .container .entity-paragraphs-item.grey-border, #page-header .entity-paragraphs-item.grey-border, #breadcrumb .entity-paragraphs-item.grey-border, .paragraphs-item-callout.grey-border .entity-paragraphs-item.grey-border, .entity-paragraphs-item.grey-border .entity-paragraphs-item.grey-border,
-.container .container-fluid, #page-header .container-fluid, #breadcrumb .container-fluid, .paragraphs-item-callout.grey-border .container-fluid, .entity-paragraphs-item.grey-border .container-fluid {
+.container .container, #page-header .container, #breadcrumb .container, .entity-paragraphs-item.grey-border .container, .container #page-header, #page-header #page-header, #breadcrumb #page-header, .entity-paragraphs-item.grey-border #page-header, .container #breadcrumb, #page-header #breadcrumb, #breadcrumb #breadcrumb, .entity-paragraphs-item.grey-border #breadcrumb, .container .entity-paragraphs-item.grey-border, #page-header .entity-paragraphs-item.grey-border, #breadcrumb .entity-paragraphs-item.grey-border, .entity-paragraphs-item.grey-border .entity-paragraphs-item.grey-border,
+.container .container-fluid, #page-header .container-fluid, #breadcrumb .container-fluid, .entity-paragraphs-item.grey-border .container-fluid {
   width: auto;
   margin-left: -15px;
   margin-right: -15px; }
@@ -8079,7 +8075,7 @@ html.js fieldset.collapsed {
 #footer {
   margin: 36px 0; }
 
-body.maintenance-page .container, body.maintenance-page #page-header, body.maintenance-page #breadcrumb, body.maintenance-page .paragraphs-item-callout.grey-border, body.maintenance-page .entity-paragraphs-item.grey-border {
+body.maintenance-page .container, body.maintenance-page #page-header, body.maintenance-page #breadcrumb, body.maintenance-page .entity-paragraphs-item.grey-border {
   max-width: 970px !important; }
 
 body.maintenance-page .jumbotron {
@@ -8231,7 +8227,7 @@ body.ctools-modal-open {
 #modalContent #panopoly-form-widget-preview {
   width: 50%;
   float: right; }
-  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview #page-header, #modalContent #panopoly-form-widget-preview #breadcrumb, #modalContent #panopoly-form-widget-preview .paragraphs-item-callout.grey-border, #modalContent #panopoly-form-widget-preview .entity-paragraphs-item.grey-border {
+  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview #page-header, #modalContent #panopoly-form-widget-preview #breadcrumb, #modalContent #panopoly-form-widget-preview .entity-paragraphs-item.grey-border {
     width: auto; }
 
 ul.menu > li > ul.menu {
@@ -8848,7 +8844,7 @@ p {
     font-size: 1.25rem; }
   .uiowa-bar-dark #ui-wrapper {
     box-shadow: none; }
-  #ui-wrapper .container, #ui-wrapper #page-header, #ui-wrapper #breadcrumb, #ui-wrapper .paragraphs-item-callout.grey-border, #ui-wrapper .entity-paragraphs-item.grey-border {
+  #ui-wrapper .container, #ui-wrapper #page-header, #ui-wrapper #breadcrumb, #ui-wrapper .entity-paragraphs-item.grey-border {
     padding-top: 0;
     padding-bottom: 0;
     position: relative; }
@@ -8907,10 +8903,6 @@ img {
 
 .paragraphs-item-callout .paragraph-body {
   margin-top: 40px; }
-
-.paragraphs-item-callout.grey-border {
-  margin: 40px auto;
-  padding: 20px; }
 
 .paragraphs-item-fast-fact .field-item {
   margin-bottom: 20px; }

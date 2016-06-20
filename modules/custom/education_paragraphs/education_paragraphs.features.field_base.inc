@@ -112,32 +112,6 @@ function education_paragraphs_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_callout_style'.
-  $field_bases['field_callout_style'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_callout_style',
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'grey-background' => 'Grey background',
-        'yellow-background' => 'Yellow background',
-        'grey-border' => 'Grey border',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
-  );
-
   // Exported field_base: 'field_fact_fact_ref'.
   $field_bases['field_fact_fact_ref'] = array(
     'active' => 1,

@@ -460,8 +460,9 @@ function education_paragraphs_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-callout-field_callout_style'.
-  $field_instances['paragraphs_item-callout-field_callout_style'] = array(
+  // Exported field_instance:
+  // 'paragraphs_item-callout-field_paragraph_container_style'.
+  $field_instances['paragraphs_item-callout-field_paragraph_container_style'] = array(
     'bundle' => 'callout',
     'default_value' => NULL,
     'deleted' => 0,
@@ -472,7 +473,7 @@ function education_paragraphs_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -482,23 +483,10 @@ function education_paragraphs_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_callout_style',
-    'label' => 'Style',
+    'field_name' => 'field_paragraph_container_style',
+    'label' => 'Container Style',
     'required' => 0,
     'settings' => array(
-      'jquery_ui_multiselect' => array(
-        'dividerLocation' => 0.5,
-        'doubleClickable' => 1,
-        'dragToAdd' => 1,
-        'enabled' => 0,
-        'height' => 0,
-        'includeAddAll' => 1,
-        'includeRemoveAll' => 1,
-        'searchable' => 1,
-        'selectedContainerOnLeft' => 1,
-        'sortable' => 1,
-        'width' => 0,
-      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -506,7 +494,7 @@ function education_paragraphs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -630,7 +618,6 @@ function education_paragraphs_field_default_field_instances() {
   t('Select which affiliations to display Announcements for. If no affiliations are selected, Announcements with any affiliation will be included in the listing.');
   t('Select which audiences to display Announcements for. If no audiences are selected, Announcements for all audiences will be included in the listing.');
   t('Select which categories of Announcements to display. If no categories are selected, Announcements from all categories will be included in the listing.');
-  t('Style');
   t('Text');
 
   return $field_instances;
