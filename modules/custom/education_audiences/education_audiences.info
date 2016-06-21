@@ -29,7 +29,4 @@ features[field_instance][] = taxonomy_term-audiences-field_audience_contact_text
 features[field_instance][] = taxonomy_term-audiences-field_audience_paragraphs
 features[field_instance][] = taxonomy_term-audiences-field_audience_quick_links
 features[taxonomy][] = audiences
-features_exclude[field_group][group_audience_contacts|taxonomy_term|audiences|form] = group_audience_contacts|taxonomy_term|audiences|form
-features_exclude[field_group][group_audience_contact|taxonomy_term|audiences|default] = group_audience_contact|taxonomy_term|audiences|default
-features_exclude[field_group][group_audience_contact|taxonomy_term|audiences|form] = group_audience_contact|taxonomy_term|audiences|form
 project path = sites/education.uiowa.edu/modules/custom
