@@ -3,18 +3,20 @@
   .attachement_faculty_staff_view {
     @extend .large-text;
   }
-  .views-row {
-    @extend .col-sm-3;
-  }
+
   .views-row-odd, .views-row-even {
-    margin:20px;
+    a {
+      display: block;
+      line-height: 2em;
+    }
+    line-height: 2em;
     text-align: center;
     @include breakpoint($education-bg-image) {
         text-align: left;
       }
   }
-  .views-field-field-person-last-name {
-
+  .views-field-field-person-last-name, .views-field-field-person-email, .views-field-field-person-phone-number {
+      @extend .col-sm-4;
   }
   .views-field-field-person-email, .views-field-field-person-phone-number {
     display: hidden;
@@ -24,5 +26,8 @@
         display: visible;
         visibility: visible;
       }
+  }
+  .views-row-even {
+    background-color: $black_20;
   }
 }
