@@ -167,6 +167,25 @@ function education_pages_default_page_manager_pages() {
   $display->uuid = '8a0679e3-c83f-46d3-9be1-9748af3ead29';
   $display->content = array();
   $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-3304a4ad-7b27-4465-a664-90b24ecee692';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'education_person_views-panel_pane_faculty_staff_view';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '3304a4ad-7b27-4465-a664-90b24ecee692';
+    $display->content['new-3304a4ad-7b27-4465-a664-90b24ecee692'] = $pane;
+    $display->panels['middle'][0] = 'new-3304a4ad-7b27-4465-a664-90b24ecee692';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
