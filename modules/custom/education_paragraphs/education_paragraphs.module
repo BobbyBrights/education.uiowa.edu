@@ -210,7 +210,7 @@ function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode,
  * Implements hook_field_group_pre_render().
  */
 function education_paragraphs_field_group_pre_render_alter(&$element, $group, &$form) {
-  if ($group->group_name == 'group_audience_contact') {
+  if ($group->group_name == 'group_audience_contact' && $group->identifier == 'group_audience_contact|taxonomy_term|audiences|default') {
     $element['#prefix'] = '<div id="audience-contact-info" class="container grey-background"><h2 id="contact" class="contact-title"><span>Contact</span></h2><div class="row">';
     $element['#suffix'] = '</div></div>';
   }
