@@ -2,6 +2,7 @@ name = Education Events Views
 core = 7.x
 package = Education
 version = 7.x-1.0
+dependencies[] = date_views
 dependencies[] = education_events
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
