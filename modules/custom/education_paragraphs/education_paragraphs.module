@@ -162,7 +162,7 @@ function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode,
  */
 function education_paragraphs_field_group_pre_render_alter(&$element, $group, &$form) {
   if ($group->group_name == 'group_audience_contact') {
-    $element['#prefix'] = '<div id="audience-contact-info" class="container grey-background"><h2 class="contact-title"><span>Contact</span></h2><div class="row">';
+    $element['#prefix'] = '<div id="audience-contact-info" class="container grey-background"><h2 id="contact" class="contact-title"><span>Contact</span></h2><div class="row">';
     $element['#suffix'] = '</div></div>';
   }
 }
