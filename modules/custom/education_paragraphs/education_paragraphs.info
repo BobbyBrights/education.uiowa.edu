@@ -37,6 +37,7 @@ features[field_instance][] = paragraphs_item-callout-field_callout_image_positio
 features[field_instance][] = paragraphs_item-callout-field_paragraph_container_style
 features[field_instance][] = paragraphs_item-fast_fact-field_fact_fact_ref
 features[field_instance][] = paragraphs_item-slogan-field_paragraph_container_style
+features[field_instance][] = paragraphs_item-text-field_paragraph_container_style
 features[field_instance][] = paragraphs_item-text-field_text_text
 features[paragraphs][] = announcements
 features[paragraphs][] = callout
