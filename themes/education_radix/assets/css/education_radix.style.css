@@ -8566,44 +8566,6 @@ div.facultyDiv {
   overflow: hidden;
   outline: 0; }
 
-.grey-background, .paragraphs-item-events {
-  background-color: #cccccc; }
-
-.yellow-background {
-  background-color: #ffe100; }
-
-.black-border {
-  border: 2px solid #333333; }
-
-.grey-border {
-  border: 2px solid #cccccc;
-  border-radius: 4px; }
-
-.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active {
-  background-color: #ffe100;
-  border: none;
-  border-radius: 3px;
-  color: #333333;
-  font-size: inherit;
-  padding: 12px 20px 10px;
-  text-transform: uppercase;
-  white-space: normal; }
-  .yellow-background .btn-primary, .yellow-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .yellow-background .btn:first-child, .yellow-background .btn-long, .yellow-background .btn-primary:active, .yellow-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .yellow-background .btn:active:first-child, .yellow-background .btn-long:active {
-    background-color: #fff;
-    border: 1px solid #cccccc; }
-  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus {
-    background-color: #cccccc;
-    color: #333333; }
-  .grey-background .btn-primary, .paragraphs-item-events .btn-primary, .grey-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .grey-background .btn:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:first-child, .grey-background .btn-long, .paragraphs-item-events .btn-long, .grey-background .btn-primary:active, .paragraphs-item-events .btn-primary:active, .grey-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .grey-background .btn:active:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:first-child, .grey-background .btn-long:active, .paragraphs-item-events .btn-long:active {
-    color: #333333; }
-    .grey-background .btn-primary:hover, .paragraphs-item-events .btn-primary:hover, .grey-background body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:hover:first-child, .grey-background .btn-long:hover, .paragraphs-item-events .btn-long:hover, .grey-background .btn-primary:focus, .paragraphs-item-events .btn-primary:focus, .grey-background body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:focus:first-child, .grey-background .btn-long:focus, .paragraphs-item-events .btn-long:focus, .grey-background .btn-primary:active:hover, .paragraphs-item-events .btn-primary:active:hover, .grey-background body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:active:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:hover:first-child, .grey-background .btn-long:active:hover, .paragraphs-item-events .btn-long:active:hover, .grey-background .btn-primary:active:focus, .paragraphs-item-events .btn-primary:active:focus, .grey-background body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:active:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:focus:first-child, .grey-background .btn-long:active:focus, .paragraphs-item-events .btn-long:active:focus {
-      background-color: #fff;
-      color: #333333; }
-
-.btn-long {
-  display: block;
-  width: 100%; }
-
 /**
  * A SASS port of jasny/boostrap-em.less.
  * @see https://gist.github.com/neil-h/631c5e848ba1f2ae92d1
@@ -8734,6 +8696,62 @@ p {
 
 .uppercase {
   text-transform: uppercase; }
+
+.grey-background, .paragraphs-item-events {
+  background-color: #cccccc; }
+
+.yellow-background {
+  background-color: #ffe100; }
+
+.black-border {
+  border: 2px solid #333333; }
+
+.grey-border {
+  border: 2px solid #cccccc;
+  border-radius: 4px; }
+
+.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active {
+  background-color: #ffe100;
+  border: none;
+  border-radius: 3px;
+  color: #333333;
+  font-size: inherit;
+  padding: 12px 20px 10px;
+  text-transform: uppercase;
+  white-space: normal; }
+  .yellow-background .btn-primary, .yellow-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .yellow-background .btn:first-child, .yellow-background .btn-long, .yellow-background .btn-primary:active, .yellow-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .yellow-background .btn:active:first-child, .yellow-background .btn-long:active {
+    background-color: #fff;
+    border: 1px solid #cccccc; }
+  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus {
+    background-color: #cccccc;
+    color: #333333; }
+  .grey-background .btn-primary, .paragraphs-item-events .btn-primary, .grey-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .grey-background .btn:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:first-child, .grey-background .btn-long, .paragraphs-item-events .btn-long, .grey-background .btn-primary:active, .paragraphs-item-events .btn-primary:active, .grey-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .grey-background .btn:active:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:first-child, .grey-background .btn-long:active, .paragraphs-item-events .btn-long:active {
+    color: #333333; }
+    .grey-background .btn-primary:hover, .paragraphs-item-events .btn-primary:hover, .grey-background body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:hover:first-child, .grey-background .btn-long:hover, .paragraphs-item-events .btn-long:hover, .grey-background .btn-primary:focus, .paragraphs-item-events .btn-primary:focus, .grey-background body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:focus:first-child, .grey-background .btn-long:focus, .paragraphs-item-events .btn-long:focus, .grey-background .btn-primary:active:hover, .paragraphs-item-events .btn-primary:active:hover, .grey-background body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:active:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:hover:first-child, .grey-background .btn-long:active:hover, .paragraphs-item-events .btn-long:active:hover, .grey-background .btn-primary:active:focus, .paragraphs-item-events .btn-primary:active:focus, .grey-background body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:active:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:focus:first-child, .grey-background .btn-long:active:focus, .paragraphs-item-events .btn-long:active:focus {
+      background-color: #fff;
+      color: #333333; }
+
+.btn-long {
+  display: block;
+  width: 100%; }
+
+.event-date {
+  background-color: #333333;
+  border-radius: 4px;
+  color: #fff;
+  margin: 20px;
+  padding: 20px; }
+  .event-date .month {
+    border-bottom: 3px solid #ffe100;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase; }
+  .event-date .day {
+    display: block;
+    font-family: "AvenirLT-Black";
+    font-size: 2.5rem;
+    text-align: center; }
 
 #footer {
   background-color: #000000;
