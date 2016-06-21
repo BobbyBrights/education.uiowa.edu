@@ -1540,7 +1540,7 @@ pre {
   .row:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-md-4, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
 #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group, .col-lg-12 {
   position: relative;
   min-height: 1px;
@@ -1810,7 +1810,7 @@ pre {
     margin-left: 100%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
   #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
     float: left; }
   .col-md-1 {
@@ -1819,7 +1819,7 @@ pre {
     width: 16.66667%; }
   .col-md-3 {
     width: 25%; }
-  .col-md-4, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
+  .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
   #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item {
     width: 33.33333%; }
   .col-md-5 {
@@ -4416,6 +4416,12 @@ a.thumbnail.active {
   .alert-danger .alert-link {
     color: #843534; }
 
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0; }
+  to {
+    background-position: 0 0; } }
+
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
@@ -4449,6 +4455,7 @@ a.thumbnail.active {
 
 .progress.active .progress-bar,
 .progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite; }
 
 .progress-bar-success {
@@ -5099,9 +5106,13 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0; }
   .modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
     transform: translate(0, -25%);
-    transition: transform 0.3s ease-out; }
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
   .modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
 
 .modal-open .modal {
@@ -5444,18 +5455,25 @@ button.close {
       line-height: 1; }
     @media all and (transform-3d), (-webkit-transform-3d) {
       .carousel-inner > .item {
+        transition: -webkit-transform 0.6s ease-in-out;
         transition: transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        -webkit-perspective: 1000px;
         -ms-perspective: 1000px;
         -o-perspective: 1000px;
         perspective: 1000px; }
         .carousel-inner > .item.next, .carousel-inner > .item.active.right {
+          -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
           left: 0; }
         .carousel-inner > .item.prev, .carousel-inner > .item.active.left {
+          -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
           left: 0; }
         .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right, .carousel-inner > .item.active {
+          -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
           left: 0; } }
   .carousel-inner > .active,
@@ -5902,35 +5920,52 @@ button.close {
   margin-left: .3em; }
 
 .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
 
 .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
 
 @keyframes fa-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 :root .fa-rotate-90,
@@ -8531,7 +8566,7 @@ div.facultyDiv {
   overflow: hidden;
   outline: 0; }
 
-.grey-background {
+.grey-background, .paragraphs-item-events {
   background-color: #cccccc; }
 
 .yellow-background {
@@ -8559,9 +8594,9 @@ div.facultyDiv {
   .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus {
     background-color: #cccccc;
     color: #333333; }
-  .grey-background .btn-primary, .grey-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .grey-background .btn:first-child, .grey-background .btn-long, .grey-background .btn-primary:active, .grey-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .grey-background .btn:active:first-child, .grey-background .btn-long:active {
+  .grey-background .btn-primary, .paragraphs-item-events .btn-primary, .grey-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .grey-background .btn:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:first-child, .grey-background .btn-long, .paragraphs-item-events .btn-long, .grey-background .btn-primary:active, .paragraphs-item-events .btn-primary:active, .grey-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .grey-background .btn:active:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:first-child, .grey-background .btn-long:active, .paragraphs-item-events .btn-long:active {
     color: #333333; }
-    .grey-background .btn-primary:hover, .grey-background body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:hover:first-child, .grey-background .btn-long:hover, .grey-background .btn-primary:focus, .grey-background body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:focus:first-child, .grey-background .btn-long:focus, .grey-background .btn-primary:active:hover, .grey-background body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:active:hover:first-child, .grey-background .btn-long:active:hover, .grey-background .btn-primary:active:focus, .grey-background body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:active:focus:first-child, .grey-background .btn-long:active:focus {
+    .grey-background .btn-primary:hover, .paragraphs-item-events .btn-primary:hover, .grey-background body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:hover:first-child, .grey-background .btn-long:hover, .paragraphs-item-events .btn-long:hover, .grey-background .btn-primary:focus, .paragraphs-item-events .btn-primary:focus, .grey-background body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:focus:first-child, .grey-background .btn-long:focus, .paragraphs-item-events .btn-long:focus, .grey-background .btn-primary:active:hover, .paragraphs-item-events .btn-primary:active:hover, .grey-background body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:active:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:hover:first-child, .grey-background .btn-long:active:hover, .paragraphs-item-events .btn-long:active:hover, .grey-background .btn-primary:active:focus, .paragraphs-item-events .btn-primary:active:focus, .grey-background body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:active:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:focus:first-child, .grey-background .btn-long:active:focus, .paragraphs-item-events .btn-long:active:focus {
       background-color: #fff;
       color: #333333; }
 
@@ -8670,9 +8705,9 @@ a {
   a:hover, a:focus {
     color: #0977a2;
     text-decoration: none; }
-  .grey-background a {
+  .grey-background a, .paragraphs-item-events a {
     color: #0977a2; }
-    .grey-background a:hover, .grey-background a:focus {
+    .grey-background a:hover, .paragraphs-item-events a:hover, .grey-background a:focus, .paragraphs-item-events a:focus {
       color: #065472; }
 
 ul, ol {
