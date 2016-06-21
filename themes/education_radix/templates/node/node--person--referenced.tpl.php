@@ -23,9 +23,11 @@
       hide($content['links']);
 
       // Combine office number and building name.
-      $building = $content['field_person_building'][0]['sitenow_map_row']['content']['#markup'];
-      hide($content['field_person_building']);
-      $content['field_person_office_number'][0]['#markup'] .= ' ' . $building;
+      if (!empty($content['field_person_building']) && !empty($content['field_person_office_number'])) {
+        $building = $content['field_person_building'][0]['sitenow_map_row']['content']['#markup'];
+        hide($content['field_person_building']);
+        $content['field_person_office_number'][0]['#markup'] .= ' ' . $building;
+      }
 
       print render($content);
     ?>
