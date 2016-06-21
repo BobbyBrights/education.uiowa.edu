@@ -76,16 +76,6 @@ function education_events_views_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Affiliations */
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['id'] = 'field_event_affiliations_target_id';
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['table'] = 'field_data_field_event_affiliations';
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['field'] = 'field_event_affiliations_target_id';
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['ui_name'] = 'Affiliations';
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['break_phrase'] = TRUE;
   /* Contextual filter: Audiences */
   $handler->display->display_options['arguments']['field_event_audience_tid']['id'] = 'field_event_audience_tid';
   $handler->display->display_options['arguments']['field_event_audience_tid']['table'] = 'field_data_field_event_audience';
@@ -96,6 +86,16 @@ function education_events_views_views_default_views() {
   $handler->display->display_options['arguments']['field_event_audience_tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_event_audience_tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['field_event_audience_tid']['break_phrase'] = TRUE;
+  /* Contextual filter: Affiliations */
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['id'] = 'field_event_affiliations_target_id';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['table'] = 'field_data_field_event_affiliations';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['field'] = 'field_event_affiliations_target_id';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['ui_name'] = 'Affiliations';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['break_phrase'] = TRUE;
   $export['events'] = $view;
 
   return $export;
