@@ -26,7 +26,7 @@ function education_audiences_field_default_field_instances() {
           'view_mode' => 'referenced',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'taxonomy_term',
@@ -58,7 +58,7 @@ function education_audiences_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 2,
     ),
   );
 
@@ -75,7 +75,7 @@ function education_audiences_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'taxonomy_term',
@@ -93,7 +93,7 @@ function education_audiences_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 3,
     ),
   );
 
