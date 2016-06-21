@@ -19,6 +19,7 @@ features[field_base][] = field_audience_contact_person
 features[field_base][] = field_audience_contact_text
 features[field_base][] = field_audience_paragraphs
 features[field_base][] = field_audience_quick_links
+features[field_group][] = group_audience_contacts|taxonomy_term|audiences|form
 features[field_group][] = group_audience_contact|taxonomy_term|audiences|default
 features[field_group][] = group_audience_contact|taxonomy_term|audiences|form
 features[field_group][] = group_audience_fields|taxonomy_term|audiences|form
