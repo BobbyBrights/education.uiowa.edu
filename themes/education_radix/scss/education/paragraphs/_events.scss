@@ -1,8 +1,21 @@
 .paragraphs-item-events {
   @extend .grey-background;
 
+  .events-list-title {
+    @include font-size(2);
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   .views-row {
     @extend .col-md-4;
     text-align: center;
+  }
+
+  .views-field-title {
+    @include font-size(1.2);
+    margin: 0 auto;
+    max-width: 10rem;
   }
 }

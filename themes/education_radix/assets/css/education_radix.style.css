@@ -8667,10 +8667,6 @@ a {
   a:hover, a:focus {
     color: #0977a2;
     text-decoration: none; }
-  .grey-background a, .paragraphs-item-events a {
-    color: #0977a2; }
-    .grey-background a:hover, .paragraphs-item-events a:hover, .grey-background a:focus, .paragraphs-item-events a:focus {
-      color: #065472; }
 
 ul, ol {
   color: #000000;
@@ -8699,6 +8695,10 @@ p {
 
 .grey-background, .paragraphs-item-events {
   background-color: #cccccc; }
+  .grey-background a, .paragraphs-item-events a {
+    color: #0977a2; }
+    .grey-background a:hover, .paragraphs-item-events a:hover, .grey-background a:focus, .paragraphs-item-events a:focus {
+      color: #065472; }
 
 .yellow-background {
   background-color: #ffe100; }
@@ -8739,7 +8739,8 @@ p {
   background-color: #333333;
   border-radius: 4px;
   color: #fff;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 10rem;
   padding: 20px; }
   .event-date .month {
     border-bottom: 3px solid #ffe100;
@@ -8946,8 +8947,19 @@ img {
 .paragraphs-item-callout .paragraph-body {
   margin-top: 40px; }
 
+.paragraphs-item-events .events-list-title {
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase; }
+
 .paragraphs-item-events .views-row {
   text-align: center; }
+
+.paragraphs-item-events .views-field-title {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 10rem; }
 
 .paragraphs-item-fast-fact .field-item {
   margin-bottom: 20px; }
