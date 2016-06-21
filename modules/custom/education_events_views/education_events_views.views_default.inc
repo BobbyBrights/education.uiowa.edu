@@ -149,6 +149,10 @@ function education_events_views_views_default_views() {
   $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['field_event_affiliations_target_id']['break_phrase'] = TRUE;
+
+  /* Display: Landing Page */
+  $handler = $view->new_display('page', 'Landing Page', 'page_1');
+  $handler->display->display_options['path'] = 'events';
   $export['events'] = $view;
 
   return $export;
