@@ -8,12 +8,4 @@ a {
     color: darken($blue, 10);
     text-decoration: none;
   }
-
-  .grey-background & {
-    color: darken($blue, 10);
-
-    &:hover, &:focus {
-      color: darken($blue, 20);
-    }
-  }
 }

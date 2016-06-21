@@ -19,6 +19,11 @@ function education_paragraphs_paragraphs_info() {
       'bundle' => 'callout',
       'locked' => '1',
     ),
+    'events' => array(
+      'name' => 'Events',
+      'bundle' => 'events',
+      'locked' => '1',
+    ),
     'fast_fact' => array(
       'name' => 'Fast Facts',
       'bundle' => 'fast_fact',

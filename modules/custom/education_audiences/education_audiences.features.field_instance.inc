@@ -124,6 +124,7 @@ function education_audiences_field_default_field_instances() {
       'allowed_bundles' => array(
         'announcements' => 'announcements',
         'callout' => 'callout',
+        'events' => 'events',
         'fast_fact' => 'fast_fact',
         'slogan' => 'slogan',
         'social' => 'social',
@@ -132,6 +133,7 @@ function education_audiences_field_default_field_instances() {
       'bundle_weights' => array(
         'announcements' => 7,
         'callout' => 2,
+        'events' => 11,
         'fast_fact' => 5,
         'slogan' => -10,
         'social' => -12,
