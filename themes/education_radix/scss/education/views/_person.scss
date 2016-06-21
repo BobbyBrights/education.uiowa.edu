@@ -1,0 +1,28 @@
+
+.view-display-id-panel_pane_faculty_staff_view {
+  .attachement_faculty_staff_view {
+    @extend .large-text;
+  }
+  .views-row {
+    @extend .col-sm-3;
+  }
+  .views-row-odd, .views-row-even {
+    margin:20px;
+    text-align: center;
+    @include breakpoint($education-bg-image) {
+        text-align: left;
+      }
+  }
+  .views-field-field-person-last-name {
+
+  }
+  .views-field-field-person-email, .views-field-field-person-phone-number {
+    display: hidden;
+    visibility: hidden;
+
+    @include breakpoint($education-bg-image) {
+        display: visible;
+        visibility: visible;
+      }
+  }
+}
