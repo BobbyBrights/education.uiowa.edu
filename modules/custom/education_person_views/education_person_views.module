@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Person Views feature.
+ */
+
+include_once 'education_person_views.features.inc';
