@@ -8946,6 +8946,9 @@ img {
 .paragraphs-item-callout .paragraph-body {
   margin-top: 40px; }
 
+.paragraphs-item-events .views-row {
+  text-align: center; }
+
 .paragraphs-item-fast-fact .field-item {
   margin-bottom: 20px; }
   @media (min-width: 992px) {
