@@ -1531,17 +1531,17 @@ pre {
   .container-fluid:after {
     clear: both; }
 
-.row, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref {
+.row, .paragraphs-item-events .view-content, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:before, .row:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
+  .row:before, .paragraphs-item-events .view-content:before, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:before, .row:after, .paragraphs-item-events .view-content:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
     content: " ";
     display: table; }
-  .row:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
+  .row:after, .paragraphs-item-events .view-content:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
     clear: both; }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
-#audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group, .col-lg-12 {
+#audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1811,7 +1811,7 @@ pre {
 
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
-  #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
+  #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
     float: left; }
   .col-md-1 {
     width: 8.33333%; }
@@ -1836,7 +1836,7 @@ pre {
     width: 83.33333%; }
   .col-md-11 {
     width: 91.66667%; }
-  .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
+  .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
     width: 100%; }
   .col-md-pull-0 {
     right: auto; }
@@ -2870,59 +2870,70 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #333; }
 
-.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long {
+.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .more-link a {
   color: #fff;
   background-color: #428bca;
   border-color: #357ebd; }
-  .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .btn-primary.focus, body.maintenance-page .form-actions .focus.btn:first-child, .focus.btn-long {
+  .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .more-link a:focus, .btn-primary.focus, body.maintenance-page .form-actions .focus.btn:first-child, .focus.btn-long, .more-link a.focus {
     color: #fff;
     background-color: #3071a9;
     border-color: #193c5a; }
-  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover {
+  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover, .more-link a:hover {
     color: #fff;
     background-color: #3071a9;
     border-color: #285e8e; }
-  .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active, .btn-primary.active, body.maintenance-page .form-actions .active.btn:first-child, .active.btn-long,
+  .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active, .more-link a:active, .btn-primary.active, body.maintenance-page .form-actions .active.btn:first-child, .active.btn-long, .more-link a.active,
   .open > .btn-primary.dropdown-toggle, body.maintenance-page .form-actions
   .open > .dropdown-toggle.btn:first-child,
-  .open > .dropdown-toggle.btn-long {
+  .open > .dropdown-toggle.btn-long, .more-link
+  .open > a.dropdown-toggle {
     color: #fff;
     background-color: #3071a9;
     border-color: #285e8e; }
-    .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus, .btn-primary:active.focus, body.maintenance-page .form-actions .btn:active.focus:first-child, .btn-long:active.focus, .btn-primary.active:hover, body.maintenance-page .form-actions .active.btn:hover:first-child, .active.btn-long:hover, .btn-primary.active:focus, body.maintenance-page .form-actions .active.btn:focus:first-child, .active.btn-long:focus, .btn-primary.active.focus, body.maintenance-page .form-actions .active.focus.btn:first-child, .active.focus.btn-long,
+    .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .more-link a:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus, .more-link a:active:focus, .btn-primary:active.focus, body.maintenance-page .form-actions .btn:active.focus:first-child, .btn-long:active.focus, .more-link a:active.focus, .btn-primary.active:hover, body.maintenance-page .form-actions .active.btn:hover:first-child, .active.btn-long:hover, .more-link a.active:hover, .btn-primary.active:focus, body.maintenance-page .form-actions .active.btn:focus:first-child, .active.btn-long:focus, .more-link a.active:focus, .btn-primary.active.focus, body.maintenance-page .form-actions .active.focus.btn:first-child, .active.focus.btn-long, .more-link a.active.focus,
     .open > .btn-primary.dropdown-toggle:hover, body.maintenance-page .form-actions
     .open > .dropdown-toggle.btn:hover:first-child,
-    .open > .dropdown-toggle.btn-long:hover,
+    .open > .dropdown-toggle.btn-long:hover, .more-link
+    .open > a.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus, body.maintenance-page .form-actions
     .open > .dropdown-toggle.btn:focus:first-child,
-    .open > .dropdown-toggle.btn-long:focus,
+    .open > .dropdown-toggle.btn-long:focus, .more-link
+    .open > a.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus, body.maintenance-page .form-actions
     .open > .dropdown-toggle.focus.btn:first-child,
-    .open > .dropdown-toggle.focus.btn-long {
+    .open > .dropdown-toggle.focus.btn-long, .more-link
+    .open > a.dropdown-toggle.focus {
       color: #fff;
       background-color: #285e8e;
       border-color: #193c5a; }
-  .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active, .btn-primary.active, body.maintenance-page .form-actions .active.btn:first-child, .active.btn-long,
+  .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active, .more-link a:active, .btn-primary.active, body.maintenance-page .form-actions .active.btn:first-child, .active.btn-long, .more-link a.active,
   .open > .btn-primary.dropdown-toggle, body.maintenance-page .form-actions
   .open > .dropdown-toggle.btn:first-child,
-  .open > .dropdown-toggle.btn-long {
+  .open > .dropdown-toggle.btn-long, .more-link
+  .open > a.dropdown-toggle {
     background-image: none; }
-  .btn-primary.disabled:hover, body.maintenance-page .form-actions .disabled.btn:hover:first-child, .disabled.btn-long:hover, .btn-primary.disabled:focus, body.maintenance-page .form-actions .disabled.btn:focus:first-child, .disabled.btn-long:focus, .btn-primary.disabled.focus, body.maintenance-page .form-actions .disabled.focus.btn:first-child, .disabled.focus.btn-long, .btn-primary[disabled]:hover, body.maintenance-page .form-actions [disabled].btn:hover:first-child, [disabled].btn-long:hover, .btn-primary[disabled]:focus, body.maintenance-page .form-actions [disabled].btn:focus:first-child, [disabled].btn-long:focus, .btn-primary[disabled].focus, body.maintenance-page .form-actions [disabled].focus.btn:first-child, [disabled].focus.btn-long,
+  .btn-primary.disabled:hover, body.maintenance-page .form-actions .disabled.btn:hover:first-child, .disabled.btn-long:hover, .more-link a.disabled:hover, .btn-primary.disabled:focus, body.maintenance-page .form-actions .disabled.btn:focus:first-child, .disabled.btn-long:focus, .more-link a.disabled:focus, .btn-primary.disabled.focus, body.maintenance-page .form-actions .disabled.focus.btn:first-child, .disabled.focus.btn-long, .more-link a.disabled.focus, .btn-primary[disabled]:hover, body.maintenance-page .form-actions [disabled].btn:hover:first-child, [disabled].btn-long:hover, .more-link a[disabled]:hover, .btn-primary[disabled]:focus, body.maintenance-page .form-actions [disabled].btn:focus:first-child, [disabled].btn-long:focus, .more-link a[disabled]:focus, .btn-primary[disabled].focus, body.maintenance-page .form-actions [disabled].focus.btn:first-child, [disabled].focus.btn-long, .more-link a[disabled].focus,
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions
   fieldset[disabled] .btn:hover:first-child,
   fieldset[disabled] .btn-long:hover,
+  fieldset[disabled] .more-link a:hover, .more-link
+  fieldset[disabled] a:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions
   fieldset[disabled] .btn:focus:first-child,
   fieldset[disabled] .btn-long:focus,
+  fieldset[disabled] .more-link a:focus, .more-link
+  fieldset[disabled] a:focus,
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] body.maintenance-page .form-actions .focus.btn:first-child, body.maintenance-page .form-actions
   fieldset[disabled] .focus.btn:first-child,
-  fieldset[disabled] .focus.btn-long {
+  fieldset[disabled] .focus.btn-long,
+  fieldset[disabled] .more-link a.focus, .more-link
+  fieldset[disabled] a.focus {
     background-color: #428bca;
     border-color: #357ebd; }
-  .btn-primary .badge, body.maintenance-page .form-actions .btn:first-child .badge, .btn-long .badge {
+  .btn-primary .badge, body.maintenance-page .form-actions .btn:first-child .badge, .btn-long .badge, .more-link a .badge {
     color: #428bca;
     background-color: #fff; }
 
@@ -8037,11 +8048,19 @@ html.js fieldset.collapsed {
 #panels-panel-context-edit-content .entity-paragraphs-item.grey-border {
   width: auto;
   padding: 0; }
-  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move #page-header .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .row, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #page-header .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #page-header .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move #page-header .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .row, #panels-panel-context-edit-move .container .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .container .view-content, #panels-panel-context-edit-move #page-header .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move #page-header .view-content, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move #breadcrumb .view-content, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .view-content, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #page-header .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #page-header .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content .container .row,
   #panels-panel-context-edit-content #page-header .row,
   #panels-panel-context-edit-content #breadcrumb .row,
   #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .row,
+  #panels-panel-context-edit-content .container .paragraphs-item-events .view-content, .paragraphs-item-events
+  #panels-panel-context-edit-content .container .view-content,
+  #panels-panel-context-edit-content #page-header .paragraphs-item-events .view-content, .paragraphs-item-events
+  #panels-panel-context-edit-content #page-header .view-content,
+  #panels-panel-context-edit-content #breadcrumb .paragraphs-item-events .view-content, .paragraphs-item-events
+  #panels-panel-context-edit-content #breadcrumb .view-content,
+  #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .paragraphs-item-events .view-content, .paragraphs-item-events
+  #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .view-content,
   #panels-panel-context-edit-content .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
   #panels-panel-context-edit-content .container .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content #page-header .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
@@ -8320,7 +8339,7 @@ ul.nav > li.dropdown:after {
     float: none !important;
     margin: 0 0 10px !important; } }
 
-.panel-display > .row, .paragraphs-item-fast-fact .panel-display > .field-name-field-fact-fact-ref {
+.panel-display > .row, .paragraphs-item-events .panel-display > .view-content, .paragraphs-item-fast-fact .panel-display > .field-name-field-fact-fact-ref {
   margin-bottom: 20px; }
 
 .panel-flexible .panel-separator {
@@ -8710,7 +8729,7 @@ p {
   border: 2px solid #cccccc;
   border-radius: 4px; }
 
-.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active {
+.btn-primary, body.maintenance-page .form-actions .btn:first-child, .btn-long, .more-link a, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, .btn-long:active, .more-link a:active {
   background-color: #ffe100;
   border: none;
   border-radius: 3px;
@@ -8719,15 +8738,15 @@ p {
   padding: 12px 20px 10px;
   text-transform: uppercase;
   white-space: normal; }
-  .yellow-background .btn-primary, .yellow-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .yellow-background .btn:first-child, .yellow-background .btn-long, .yellow-background .btn-primary:active, .yellow-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .yellow-background .btn:active:first-child, .yellow-background .btn-long:active {
+  .yellow-background .btn-primary, .yellow-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .yellow-background .btn:first-child, .yellow-background .btn-long, .yellow-background .more-link a, .more-link .yellow-background a, .yellow-background .btn-primary:active, .yellow-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .yellow-background .btn:active:first-child, .yellow-background .btn-long:active, .yellow-background .more-link a:active, .more-link .yellow-background a:active {
     background-color: #fff;
     border: 1px solid #cccccc; }
-  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus {
+  .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, .btn-long:hover, .more-link a:hover, .btn-primary:focus, body.maintenance-page .form-actions .btn:focus:first-child, .btn-long:focus, .more-link a:focus, .btn-primary:active:hover, body.maintenance-page .form-actions .btn:active:hover:first-child, .btn-long:active:hover, .more-link a:active:hover, .btn-primary:active:focus, body.maintenance-page .form-actions .btn:active:focus:first-child, .btn-long:active:focus, .more-link a:active:focus {
     background-color: #cccccc;
     color: #333333; }
-  .grey-background .btn-primary, .paragraphs-item-events .btn-primary, .grey-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .grey-background .btn:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:first-child, .grey-background .btn-long, .paragraphs-item-events .btn-long, .grey-background .btn-primary:active, .paragraphs-item-events .btn-primary:active, .grey-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .grey-background .btn:active:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:first-child, .grey-background .btn-long:active, .paragraphs-item-events .btn-long:active {
+  .grey-background .btn-primary, .paragraphs-item-events .btn-primary, .grey-background body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .grey-background .btn:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:first-child, .grey-background .btn-long, .paragraphs-item-events .btn-long, .grey-background .more-link a, .more-link .grey-background a, .paragraphs-item-events .more-link a, .more-link .paragraphs-item-events a, .grey-background .btn-primary:active, .paragraphs-item-events .btn-primary:active, .grey-background body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .grey-background .btn:active:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:first-child, .grey-background .btn-long:active, .paragraphs-item-events .btn-long:active, .grey-background .more-link a:active, .more-link .grey-background a:active, .paragraphs-item-events .more-link a:active, .more-link .paragraphs-item-events a:active {
     color: #333333; }
-    .grey-background .btn-primary:hover, .paragraphs-item-events .btn-primary:hover, .grey-background body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:hover:first-child, .grey-background .btn-long:hover, .paragraphs-item-events .btn-long:hover, .grey-background .btn-primary:focus, .paragraphs-item-events .btn-primary:focus, .grey-background body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:focus:first-child, .grey-background .btn-long:focus, .paragraphs-item-events .btn-long:focus, .grey-background .btn-primary:active:hover, .paragraphs-item-events .btn-primary:active:hover, .grey-background body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:active:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:hover:first-child, .grey-background .btn-long:active:hover, .paragraphs-item-events .btn-long:active:hover, .grey-background .btn-primary:active:focus, .paragraphs-item-events .btn-primary:active:focus, .grey-background body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:active:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:focus:first-child, .grey-background .btn-long:active:focus, .paragraphs-item-events .btn-long:active:focus {
+    .grey-background .btn-primary:hover, .paragraphs-item-events .btn-primary:hover, .grey-background body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:hover:first-child, .grey-background .btn-long:hover, .paragraphs-item-events .btn-long:hover, .grey-background .more-link a:hover, .more-link .grey-background a:hover, .paragraphs-item-events .more-link a:hover, .more-link .paragraphs-item-events a:hover, .grey-background .btn-primary:focus, .paragraphs-item-events .btn-primary:focus, .grey-background body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:focus:first-child, .grey-background .btn-long:focus, .paragraphs-item-events .btn-long:focus, .grey-background .more-link a:focus, .more-link .grey-background a:focus, .paragraphs-item-events .more-link a:focus, .more-link .paragraphs-item-events a:focus, .grey-background .btn-primary:active:hover, .paragraphs-item-events .btn-primary:active:hover, .grey-background body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .grey-background .btn:active:hover:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:hover:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:hover:first-child, .grey-background .btn-long:active:hover, .paragraphs-item-events .btn-long:active:hover, .grey-background .more-link a:active:hover, .more-link .grey-background a:active:hover, .paragraphs-item-events .more-link a:active:hover, .more-link .paragraphs-item-events a:active:hover, .grey-background .btn-primary:active:focus, .paragraphs-item-events .btn-primary:active:focus, .grey-background body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .grey-background .btn:active:focus:first-child, .paragraphs-item-events body.maintenance-page .form-actions .btn:active:focus:first-child, body.maintenance-page .form-actions .paragraphs-item-events .btn:active:focus:first-child, .grey-background .btn-long:active:focus, .paragraphs-item-events .btn-long:active:focus, .grey-background .more-link a:active:focus, .more-link .grey-background a:active:focus, .paragraphs-item-events .more-link a:active:focus, .more-link .paragraphs-item-events a:active:focus {
       background-color: #fff;
       color: #333333; }
 
@@ -9009,7 +9028,7 @@ img {
       margin-left: -15px;
       padding: 8px 20px 5px 40px;
       text-transform: uppercase; }
-  #audience-contact-info .row, #audience-contact-info .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #audience-contact-info .field-name-field-fact-fact-ref {
+  #audience-contact-info .row, #audience-contact-info .paragraphs-item-events .view-content, .paragraphs-item-events #audience-contact-info .view-content, #audience-contact-info .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #audience-contact-info .field-name-field-fact-fact-ref {
     margin-top: 40px; }
   #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
   #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item {

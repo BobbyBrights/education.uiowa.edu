@@ -8,6 +8,10 @@
     text-transform: uppercase;
   }
 
+  .view-content {
+    @extend .row;
+  }
+
   .views-row {
     @extend .col-md-4;
     text-align: center;
