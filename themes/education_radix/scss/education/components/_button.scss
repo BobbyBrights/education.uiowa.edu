@@ -17,6 +17,12 @@
     background-color: $black_20;
     color: $black_80;
   }
+
+  .grey-background & {
+    &:hover, &:focus {
+      background-color: #fff;
+    }
+  }
 }
 
 .btn-long {

@@ -1,3 +1,32 @@
+$contacts-inline: $education-md-min;
+
 #audience-contact-info {
   background-color: $black-20;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  .contact-title {
+    margin: 0;
+
+    span {
+      background-color: $black-80;
+      color: #fff;
+      margin-left: -15px;
+      padding: 8px 20px 5px 40px;
+      text-transform: uppercase;
+    }
+  }
+
+  .row {
+    margin-top: 40px;
+  }
+
+  .field-item {
+    @extend .col-md-4;
+    margin-bottom: 20px;
+
+    @include breakpoint($contacts-inline) {
+      margin-bottom: 0;
+    }
+  }
 }
