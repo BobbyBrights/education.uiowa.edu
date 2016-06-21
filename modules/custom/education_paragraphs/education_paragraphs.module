@@ -158,6 +158,16 @@ function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode,
 }
 
 /**
+ * Implements hook_field_group_pre_render().
+ */
+function education_paragraphs_field_group_pre_render_alter(&$element, $group, &$form) {
+  if ($group->group_name == 'group_audience_contact') {
+    $element['#prefix'] = '<div id="audience-contact-info" class="container grey-background"><h2 class="contact-title"><span>Contact</span></h2><div class="row">';
+    $element['#suffix'] = '</div></div>';
+  }
+}
+
+/**
  * Check to make sure that the field is visible in this view mode.
  */
 function _education_paragraphs_psuedo_field_visible($field_name, $view_mode, $paragraphs_item) {

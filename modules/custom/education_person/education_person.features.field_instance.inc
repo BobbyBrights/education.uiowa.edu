@@ -24,6 +24,12 @@ function education_person_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'referenced' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -70,6 +76,12 @@ function education_person_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 10,
+      ),
+      'referenced' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -120,6 +132,12 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 6,
+      ),
+      'referenced' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -184,6 +202,13 @@ function education_person_field_default_field_instances() {
         'type' => 'sitenow_map_formatter_abbr',
         'weight' => 12,
       ),
+      'referenced' => array(
+        'label' => 'above',
+        'module' => 'sitenow_maps',
+        'settings' => array(),
+        'type' => 'sitenow_map_formatter_name',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -215,6 +240,13 @@ function education_person_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 4,
+      ),
+      'referenced' => array(
         'label' => 'above',
         'module' => 'email',
         'settings' => array(),
@@ -259,6 +291,12 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 9,
+      ),
+      'referenced' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -310,6 +348,12 @@ function education_person_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'referenced' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -351,6 +395,12 @@ function education_person_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 5,
+      ),
+      'referenced' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -407,6 +457,12 @@ function education_person_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'referenced' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -446,6 +502,13 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 11,
+      ),
+      'referenced' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -487,6 +550,15 @@ function education_person_field_default_field_instances() {
         'type' => 'text_plain',
         'weight' => 7,
       ),
+      'referenced' => array(
+        'label' => 'above',
+        'module' => 'telephone',
+        'settings' => array(
+          'title' => '',
+        ),
+        'type' => 'telephone_link',
+        'weight' => 3,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -525,6 +597,12 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 8,
+      ),
+      'referenced' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -575,6 +653,13 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
+      ),
+      'referenced' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',

@@ -11,6 +11,93 @@ function education_audiences_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
+  // 'taxonomy_term-audiences-field_audience_contact_person'.
+  $field_instances['taxonomy_term-audiences-field_audience_contact_person'] = array(
+    'bundle' => 'audiences',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Reference up to 2 people (Person content type) who are points of contact.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 1,
+          'view_mode' => 'referenced',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_audience_contact_person',
+    'label' => 'People',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'taxonomy_term-audiences-field_audience_contact_text'.
+  $field_instances['taxonomy_term-audiences-field_audience_contact_text'] = array(
+    'bundle' => 'audiences',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'A free-form text area for contact information.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_audience_contact_text',
+    'label' => 'Text',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
   // 'taxonomy_term-audiences-field_audience_paragraphs'.
   $field_instances['taxonomy_term-audiences-field_audience_paragraphs'] = array(
     'bundle' => 'audiences',
@@ -101,9 +188,13 @@ function education_audiences_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A free-form text area for contact information.');
   t('Content blocks');
   t('Create links adding style <em>Long button</em>.');
   t('Leading buttons');
+  t('People');
+  t('Reference up to 2 people (Person content type) who are points of contact.');
+  t('Text');
 
   return $field_instances;
 }
