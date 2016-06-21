@@ -21,12 +21,15 @@ $contacts-inline: $education-md-min;
     margin-top: 40px;
   }
 
-  .field-item {
-    @extend .col-md-4;
-    margin-bottom: 20px;
+  .field-name-field-audience-contact-person,
+  .field-name-field-audience-contact-text {
+    > .field-items > .field-item {
+      @extend .col-md-4;
+      margin-bottom: 40px;
 
-    @include breakpoint($contacts-inline) {
-      margin-bottom: 0;
+      @include breakpoint($contacts-inline) {
+        margin-bottom: 0;
+      }
     }
   }
 }

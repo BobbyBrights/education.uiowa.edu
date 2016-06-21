@@ -1,0 +1,11 @@
+.node-person-referenced {
+  h3 {
+    margin-top: 0;
+  }
+
+  .field-label {
+    @include offscreen;
+  }
+
+  text-align: center;
+}

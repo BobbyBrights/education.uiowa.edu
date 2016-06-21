@@ -19,8 +19,11 @@
   }
 
   .grey-background & {
+    color: $black_80;
+
     &:hover, &:focus {
       background-color: #fff;
+      color: $black_80;
     }
   }
 }
