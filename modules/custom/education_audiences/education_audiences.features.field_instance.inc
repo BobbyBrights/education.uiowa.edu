@@ -22,9 +22,10 @@ function education_audiences_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 1,
+          'view_mode' => 'referenced',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 3,
       ),
     ),
