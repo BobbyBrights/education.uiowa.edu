@@ -509,7 +509,7 @@ function education_paragraphs_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -543,7 +543,7 @@ function education_paragraphs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -558,7 +558,7 @@ function education_paragraphs_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -592,7 +592,51 @@ function education_paragraphs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-events-field_events_heading'.
+  $field_instances['paragraphs_item-events-field_events_heading'] = array(
+    'bundle' => 'events',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Upcoming Events',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Provide a custom heading for the list of Events.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_events_heading',
+    'label' => 'Heading',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 0,
     ),
   );
 
@@ -613,7 +657,7 @@ function education_paragraphs_field_default_field_instances() {
         'module' => 'viewfield',
         'settings' => array(),
         'type' => 'viewfield_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -650,7 +694,7 @@ function education_paragraphs_field_default_field_instances() {
       'module' => 'viewfield',
       'settings' => array(),
       'type' => 'viewfield_select',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 
@@ -851,6 +895,7 @@ function education_paragraphs_field_default_field_instances() {
   t('Image');
   t('Image position');
   t('Provide a custom heading for the list of Announcements. Eg., "Honors & Awards", "Publications".');
+  t('Provide a custom heading for the list of Events.');
   t('Select which affiliations to display Announcements for. If no affiliations are selected, Announcements with any affiliation will be included in the listing.');
   t('Select which audiences to display Announcements for. If no audiences are selected, Announcements for all audiences will be included in the listing.');
   t('Select which categories of Announcements to display. If no categories are selected, Announcements from all categories will be included in the listing.');
