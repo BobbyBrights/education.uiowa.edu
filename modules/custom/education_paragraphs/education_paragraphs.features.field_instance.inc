@@ -546,7 +546,7 @@ function education_paragraphs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -596,7 +596,65 @@ function education_paragraphs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-events-field_events_view'.
+  $field_instances['paragraphs_item-events-field_events_view'] = array(
+    'bundle' => 'events',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'events|events_paragraph_block',
+        'vargs' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_events_view',
+    'label' => 'View',
+    'required' => 1,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_user' => 0,
+        'announcements' => 0,
+        'audiences' => 0,
+        'clone_of_administration_nodes' => 0,
+        'events' => 'events',
+        'media_browser_plus' => 0,
+        'media_browser_plus_folders' => 0,
+        'scholarships' => 0,
+        'webform_analysis' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+      ),
+      'force_default' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 0,
     ),
   );
 
@@ -801,6 +859,7 @@ function education_paragraphs_field_default_field_instances() {
   t('Select which audiences to display Announcements for. If no audiences are selected, Announcements for all audiences will be included in the listing.');
   t('Select which categories of Announcements to display. If no categories are selected, Announcements from all categories will be included in the listing.');
   t('Text');
+  t('View');
 
   return $field_instances;
 }
