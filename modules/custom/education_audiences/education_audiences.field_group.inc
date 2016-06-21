@@ -13,6 +13,38 @@ function education_audiences_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_audience_contact|taxonomy_term|audiences|default';
+  $field_group->group_name = 'group_audience_contact';
+  $field_group->entity_type = 'taxonomy_term';
+  $field_group->bundle = 'audiences';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Contact info',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_audience_contact_person',
+      1 => 'field_audience_contact_text',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => '',
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_audience_contact|taxonomy_term|audiences|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_audience_contact|taxonomy_term|audiences|form';
   $field_group->group_name = 'group_audience_contact';
   $field_group->entity_type = 'taxonomy_term';
