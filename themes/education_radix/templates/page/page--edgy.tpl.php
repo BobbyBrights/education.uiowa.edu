@@ -49,39 +49,47 @@
 </header>
 
 <div id="main-wrapper">
-  <div id="bg-image" aria-hidden=true></div>
   <div id="main" class="main">
-    <h1 class="offscreen title"><?php print $title; ?></h1>
-      <div id="content">
+    <div id="page-header">
+        <?php if ($title): ?>
+          <div class="<?php print $header_classes; ?>"<?php print $header_attributes; ?>>
+            <div class="container">
+              <div class="header-content">
+                <?php if ($breadcrumb): ?>
+                  <div id="breadcrumb" class="visible-desktop">
+                    <?php print $breadcrumb; ?>
+                  </div>
+                <?php endif; ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              </div>
+              <?php if (!empty($header_image_tall)): ?>
+                <?php print render($header_image_tall); ?>
+              <?php endif; ?>
+            </div>
+          </div>
+        <?php endif; ?>
+      </div>
+      <div class="container">
         <?php if ($messages): ?>
           <div id="messages">
             <?php print $messages; ?>
           </div>
         <?php endif; ?>
-        <?php if ($breadcrumb): ?>
-          <div id="breadcrumb" class="visible-desktop">
-            <?php print $breadcrumb; ?>
+        <?php if ($tabs): ?>
+          <div class="tabs">
+            <?php print render($tabs); ?>
           </div>
         <?php endif; ?>
-        <div id="page-header">
-          <?php if ($title): ?>
-            <div class="page-header">
-              <div class="h1 title"><?php print $title; ?></div>
-            </div>
-          <?php endif; ?>
-          <?php if ($tabs): ?>
-            <div class="tabs">
-              <?php print render($tabs); ?>
-            </div>
-          <?php endif; ?>
-          <?php if ($action_links): ?>
-            <ul class="action-links">
-              <?php print render($action_links); ?>
-            </ul>
-          <?php endif; ?>
-        </div>
-        <?php print render($page['content']); ?>
+        <?php if ($action_links): ?>
+          <ul class="action-links">
+            <?php print render($action_links); ?>
+          </ul>
+        <?php endif; ?>
       </div>
+    </div> <!-- /#page-header -->
+
+    <div id="content" class="edgy">
+      <?php print render($page['content']); ?>
     </div>
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
