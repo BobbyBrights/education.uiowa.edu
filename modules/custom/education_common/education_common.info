@@ -17,6 +17,7 @@ dependencies[] = menu
 dependencies[] = menu_block
 dependencies[] = menu_link_weight
 dependencies[] = node_revision_delete
+dependencies[] = picture
 dependencies[] = sitenow_wysiwyg
 dependencies[] = strongarm
 dependencies[] = text

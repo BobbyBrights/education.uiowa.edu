@@ -21,7 +21,7 @@ function education_audiences_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact info',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_audience_contact_person',
       1 => 'field_audience_contact_text',

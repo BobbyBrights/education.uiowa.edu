@@ -50,11 +50,11 @@
 
 <div id="main-wrapper">
   <div id="main" class="main">
-    <div id="page-header">
+    <div id="page-header" class="edgy">
         <?php if ($title): ?>
           <div class="<?php print $header_classes; ?>">
-            <div class="container">
-              <div class="header-content">
+            <div class="header-content">
+              <div class="container">
                 <?php if ($breadcrumb): ?>
                   <div id="breadcrumb" class="visible-desktop">
                     <?php print $breadcrumb; ?>
@@ -62,10 +62,10 @@
                 <?php endif; ?>
                 <h1 class="title"><?php print $title; ?></h1>
               </div>
-              <?php if (!empty($header_image_tall)): ?>
-                <?php print render($header_image_tall); ?>
-              <?php endif; ?>
             </div>
+            <?php if (!empty($header_image_tall)): ?>
+              <?php print render($header_image_tall); ?>
+            <?php endif; ?>
           </div>
         <?php endif; ?>
       </div>
