@@ -50,13 +50,15 @@
   <?php endif; ?>
 
   <div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <?php print render($content['description']); ?>
-        </div>
-        <div class="col-md-4">
-          <?php print render($content['field_audience_quick_links']); ?>
+    <div class="leading-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <?php print render($content['description']); ?>
+          </div>
+          <div class="col-md-4">
+            <?php print render($content['field_audience_quick_links']); ?>
+          </div>
         </div>
       </div>
     </div>

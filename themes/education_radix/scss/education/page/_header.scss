@@ -35,9 +35,3 @@
     height: 200px;
   }
 }
-
-#content {
-  @include breakpoint($education-bg-image) {
-    padding-top: 20px;
-  }
-}

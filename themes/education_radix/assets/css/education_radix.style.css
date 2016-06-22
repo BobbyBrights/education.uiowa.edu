@@ -8888,10 +8888,6 @@ p {
   #bg-image {
     height: 200px; } }
 
-@media (min-width: 992px) {
-  #content {
-    padding-top: 20px; } }
-
 #sidebar-first {
   margin-bottom: 36px; }
 
@@ -9048,6 +9044,9 @@ img {
       #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
       #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item {
         margin-bottom: 0; } }
+
+.page-taxonomy-term .vocabulary-audiences .leading-text {
+  padding: 40px 0; }
 
 .view-display-id-page_faculty_listing .views-row-odd, .view-display-id-page_faculty_listing .views-row-even, .view-display-id-page_faculty_full_listing .views-row-odd, .view-display-id-page_faculty_full_listing .views-row-even {
   margin: 20px;
