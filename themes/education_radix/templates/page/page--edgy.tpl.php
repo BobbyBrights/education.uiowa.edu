@@ -52,7 +52,7 @@
   <div id="main" class="main">
     <div id="page-header">
         <?php if ($title): ?>
-          <div class="<?php print $header_classes; ?>"<?php print $header_attributes; ?>>
+          <div class="<?php print $header_classes; ?>">
             <div class="container">
               <div class="header-content">
                 <?php if ($breadcrumb): ?>
