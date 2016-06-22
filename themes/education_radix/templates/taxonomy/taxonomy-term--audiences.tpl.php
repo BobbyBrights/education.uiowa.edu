@@ -41,6 +41,8 @@
  * @ingroup themeable
  */
 ?>
+<?php hide($content['field_header_image_tall']); ?>
+
 <div id="taxonomy-term-<?php print $term->tid; ?>" class="<?php print $classes; ?>">
 
   <?php if (!$page): ?>
