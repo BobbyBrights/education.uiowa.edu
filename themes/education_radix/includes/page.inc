@@ -60,5 +60,7 @@ function education_radix_preprocess_page(&$variables) {
  * Implements hook_process_page().
  */
 function education_radix_process_page(&$variables) {
-  $variables['header_classes'] = implode(' ', $variables['header_classes_array']);
+  if (isset($variables['header_classes_array'])) {
+    $variables['header_classes'] = implode(' ', $variables['header_classes_array']);
+  }
 }
