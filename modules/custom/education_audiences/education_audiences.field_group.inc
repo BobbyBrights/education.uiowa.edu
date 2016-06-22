@@ -21,7 +21,7 @@ function education_audiences_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact info',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_audience_contact_person',
       1 => 'field_audience_contact_text',
@@ -166,8 +166,10 @@ function education_audiences_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'field_audience_quick_links',
-      1 => 'name',
-      2 => 'description',
+      1 => 'field_header_image_tall',
+      2 => 'field_header_type',
+      3 => 'name',
+      4 => 'description',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

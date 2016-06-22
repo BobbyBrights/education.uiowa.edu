@@ -282,6 +282,15 @@ function education_roles_user_default_permissions() {
     'module' => 'block',
   );
 
+  // Exported permission: 'administer breakpoints'.
+  $permissions['administer breakpoints'] = array(
+    'name' => 'administer breakpoints',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'breakpoints',
+  );
+
   // Exported permission: 'administer ckeditor link'.
   $permissions['administer ckeditor link'] = array(
     'name' => 'administer ckeditor link',
@@ -372,6 +381,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'menu_admin_per_menu',
+  );
+
+  // Exported permission: 'administer manualcrop settings'.
+  $permissions['administer manualcrop settings'] = array(
+    'name' => 'administer manualcrop settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'manualcrop',
   );
 
   // Exported permission: 'administer media browser'.
@@ -491,6 +509,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'administer pictures'.
+  $permissions['administer pictures'] = array(
+    'name' => 'administer pictures',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'picture',
   );
 
   // Exported permission: 'administer robots.txt'.
@@ -1843,6 +1870,17 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
+  );
+
+  // Exported permission: 'use manualcrop'.
+  $permissions['use manualcrop'] = array(
+    'name' => 'use manualcrop',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'manualcrop',
   );
 
   // Exported permission: 'use media wysiwyg'.

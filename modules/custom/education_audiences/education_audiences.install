@@ -22,3 +22,16 @@ function education_audiences_update_7001() {
     taxonomy_term_save($term);
   }
 }
+
+/**
+ * Create media folder for tall header images.
+ */
+function education_audiences_update_7002() {
+  $vid = taxonomy_vocabulary_machine_name_load('media_folders')->vid;
+  $new_term->name = 'Tall';
+  $new_term->vid = $vid;
+  $parent = taxonomy_get_term_by_name('Headers', 'media_folders');
+  $tid = array_pop($parent)->tid;
+  $new_term->parent = $tid;
+  taxonomy_term_save($new_term);
+}
