@@ -167,8 +167,9 @@ function education_audiences_field_group_info() {
     'children' => array(
       0 => 'field_audience_quick_links',
       1 => 'field_header_image_tall',
-      2 => 'name',
-      3 => 'description',
+      2 => 'field_header_type',
+      3 => 'name',
+      4 => 'description',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

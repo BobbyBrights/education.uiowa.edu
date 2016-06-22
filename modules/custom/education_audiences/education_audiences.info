@@ -34,5 +34,6 @@ features[field_instance][] = taxonomy_term-audiences-field_audience_contact_text
 features[field_instance][] = taxonomy_term-audiences-field_audience_paragraphs
 features[field_instance][] = taxonomy_term-audiences-field_audience_quick_links
 features[field_instance][] = taxonomy_term-audiences-field_header_image_tall
+features[field_instance][] = taxonomy_term-audiences-field_header_type
 features[taxonomy][] = audiences
 project path = sites/education.uiowa.edu/modules/custom

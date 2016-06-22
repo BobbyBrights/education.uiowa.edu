@@ -184,7 +184,7 @@ function education_audiences_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -243,6 +243,54 @@ function education_audiences_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-audiences-field_header_type'.
+  $field_instances['taxonomy_term-audiences-field_header_type'] = array(
+    'bundle' => 'audiences',
+    'default_value' => array(
+      0 => array(
+        'value' => 'tall_image',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_header_type',
+    'label' => 'Header type',
+    'required' => 1,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
       'weight' => 2,
     ),
   );
@@ -252,6 +300,7 @@ function education_audiences_field_default_field_instances() {
   t('A free-form text area for contact information.');
   t('Content blocks');
   t('Create links adding style <em>Long button</em>.');
+  t('Header type');
   t('Leading buttons');
   t('People');
   t('Reference up to 2 people (Person content type) who are points of contact.');
