@@ -33,5 +33,6 @@
 #bg-image {
   @include breakpoint($education-bg-image) {
     height: 200px;
+    margin-bottom: 20px;
   }
 }
