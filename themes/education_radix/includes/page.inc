@@ -19,6 +19,38 @@ function education_radix_preprocess_page(&$variables) {
     $variables['content_width'] = (string)((int)$variables['content_width']-(int)$variables['sidebar_first_width']);
   }
 
+  if (!empty($variables['node'])) {
+    $wrapper = entity_metadata_wrapper('node', $variables['node']);
+
+    // Get value of the header type field if there is one.
+    if (isset($wrapper->field_header_type)) {
+      $header_type = $wrapper->field_header_type->value();
+    }
+
+    if (!empty($header_type)) {
+      // Add header type as a class to the header.
+      $variables['header_classes_array'][] = drupal_clean_css_identifier($header_type);
+
+      switch ($header_type) {
+        case 'short_image':
+          dpm('header style is short image');
+          break;
+
+        case 'tall_image':
+          $header_image = $wrapper->field_header_image_tall->value();
+          if (!empty($header_image)) {
+            $header_image_tall = field_view_field('node', $variables['node'], 'field_header_image_tall', $display = 'default', $langcode = NULL);
+            $variables['header_image_tall'] = $header_image_tall;
+          }
+          // Switch page template.
+          $variables['theme_hook_suggestions'][] = 'page__edgy';
+          break;
+
+        default:
+          break;
+      }
+    }
+  }
 
   if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
     // Remove content list from term pages.
