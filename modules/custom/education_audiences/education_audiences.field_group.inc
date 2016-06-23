@@ -53,7 +53,7 @@ function education_audiences_field_group_info() {
   $field_group->parent_name = 'group_audience_fields';
   $field_group->data = array(
     'label' => 'Contact info',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(
       0 => 'field_audience_contact_person',
       1 => 'field_audience_contact_text',
@@ -86,6 +86,7 @@ function education_audiences_field_group_info() {
       0 => 'group_audiences_heading',
       1 => 'group_audience_paragraphs',
       2 => 'group_audience_contact',
+      3 => 'group_audience_leading',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -97,6 +98,34 @@ function education_audiences_field_group_info() {
     ),
   );
   $field_groups['group_audience_fields|taxonomy_term|audiences|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_audience_leading|taxonomy_term|audiences|form';
+  $field_group->group_name = 'group_audience_leading';
+  $field_group->entity_type = 'taxonomy_term';
+  $field_group->bundle = 'audiences';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_audience_fields';
+  $field_group->data = array(
+    'label' => 'Leading content',
+    'weight' => '9',
+    'children' => array(
+      0 => 'field_audience_quick_links',
+      1 => 'description',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-audience-leading field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_audience_leading|taxonomy_term|audiences|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -136,7 +165,7 @@ function education_audiences_field_group_info() {
   $field_group->parent_name = 'group_audience_fields';
   $field_group->data = array(
     'label' => 'Content blocks',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
       0 => 'field_audience_paragraphs',
     ),
@@ -165,11 +194,9 @@ function education_audiences_field_group_info() {
     'label' => 'Heading',
     'weight' => '8',
     'children' => array(
-      0 => 'field_audience_quick_links',
-      1 => 'field_header_image_tall',
-      2 => 'field_header_type',
-      3 => 'name',
-      4 => 'description',
+      0 => 'field_header_image_tall',
+      1 => 'field_header_type',
+      2 => 'name',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -189,6 +216,7 @@ function education_audiences_field_group_info() {
   t('Content blocks');
   t('Fields');
   t('Heading');
+  t('Leading content');
   t('Metadata');
 
   return $field_groups;
