@@ -61,3 +61,10 @@ function education_audiences_update_7003() {
     }
   }
 }
+
+/**
+ * Re-run update 7003.
+ */
+function education_audiences_update_7004() {
+  education_audiences_update_7003();
+}
