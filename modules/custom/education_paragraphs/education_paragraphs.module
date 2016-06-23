@@ -5,3 +5,223 @@
  */
 
 include_once 'education_paragraphs.features.inc';
+
+/**
+ * Implements hook_classy_paragraphs_list_options().
+ */
+function education_paragraphs_classy_paragraphs_list_options($options, $field, $instance) {
+  if ($field['field_name'] == 'field_paragraph_container_style') {
+    $options['grey-background'] = t('Grey Background');
+    $options['yellow-background'] = t('Yellow Background');
+    $options['grey-border'] = t('Grey Border');
+  }
+
+  return $options;
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function education_paragraphs_field_widget_form_alter(&$element, &$form_state, $context) {
+  switch ($context['field']['field_name']) {
+    case 'field_announcements_view':
+      // Do not show the view name selector.
+      $element['vname']['#access'] = FALSE;
+
+      // Do not show the arguments field.
+      $element['vargs']['#access'] = FALSE;
+
+      // Do not show the token options.
+      $element['token_help']['#access'] = FALSE;
+      break;
+
+    case 'field_events_view':
+      // Do not show the view name selector.
+      $element['vname']['#access'] = FALSE;
+
+      // Do not show the arguments field.
+      $element['vargs']['#access'] = FALSE;
+
+      // Do not show the token options.
+      $element['token_help']['#access'] = FALSE;
+      break;
+
+    default:
+      break;
+  }
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function education_paragraphs_entity_presave($entity, $type) {
+  if ($type == 'paragraphs_item') {
+    switch ($entity->bundle) {
+      case 'announcements':
+        // Pass term and nid IDs as arguments to the Announcements paragraph view.
+        $announcement_categories_tids = array();
+        if (!empty($entity->field_announcement_categories['und'])) {
+          foreach($entity->field_announcement_categories['und'] as $delta) {
+            $announcement_categories_tids[] = $delta['tid'];
+          }
+        } else {
+          $announcement_categories_tids[] = 'all';
+        }
+
+        $audiences_tids = array();
+        if (!empty($entity->field_announcement_audience['und'])) {
+          foreach($entity->field_announcement_audience['und'] as $delta) {
+            $audiences_tids[] = $delta['tid'];
+          }
+        } else {
+          $audiences_tids[] = 'all';
+        }
+
+        $affiliations_nids = array();
+        if (!empty($entity->field_announcement_affiliation['und'])) {
+          foreach($entity->field_announcement_affiliation['und'] as $delta) {
+            $affiliations_nids[] = $delta['target_id'];
+          }
+        } else {
+          $affiliations_nids[] = 'all';
+        }
+
+        $categories_arg = '"' . implode('+', $announcement_categories_tids) . '"';
+        $audiences_arg = '"' . implode('+', $audiences_tids) . '"';
+        $affiliations_arg = '"' . implode('+', $affiliations_nids) . '"';
+
+        $args = $categories_arg . '/' . $audiences_arg . '/' . $affiliations_arg;
+
+        $entity->field_announcements_view[LANGUAGE_NONE][0]['vargs'] = $args;
+        break;
+
+      case 'events':
+        $audiences_tids = array();
+        if (!empty($entity->field_event_audience['und'])) {
+          foreach($entity->field_event_audience['und'] as $delta) {
+            $audiences_tids[] = $delta['tid'];
+          }
+        } else {
+          $audiences_tids[] = 'all';
+        }
+
+        $affiliations_nids = array();
+        if (!empty($entity->field_event_affiliation['und'])) {
+          foreach($entity->field_event_affiliation['und'] as $delta) {
+            $affiliations_nids[] = $delta['target_id'];
+          }
+        } else {
+          $affiliations_nids[] = 'all';
+        }
+
+        $audiences_arg = '"' . implode('+', $audiences_tids) . '"';
+        $affiliations_arg = '"' . implode('+', $affiliations_nids) . '"';
+
+        $args = $audiences_arg . '/' . $affiliations_arg;
+
+        $entity->field_events_view[LANGUAGE_NONE][0]['vargs'] = $args;
+
+      default:
+        break;
+    }
+  }
+}
+
+/**
+ * Implements hook_field_extra_fields().
+ */
+function education_paragraphs_field_extra_fields() {
+  $extra['paragraphs_item'] = array(
+    'slogan' => array(
+      'display' => array(
+        'extra_paragraph_slogan' => array(
+          'label' => t('Slogan'),
+          'description' => t('The slogan of the College of Education'),
+          'weight' => 99,
+        ),
+      ),
+    ),
+    'social' => array(
+      'display' => array(
+        'extra_paragraph_social' => array(
+          'label' => t('Social media'),
+          'description' => t('Social media accounts of the College of Education'),
+          'weight' => 99,
+        ),
+      ),
+    ),
+  );
+
+  return $extra;
+}
+
+/**
+ * Implements hook_paragraphs_item_view().
+ */
+function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode, $langcode) {
+  $extra = education_paragraphs_field_extra_fields();
+
+  // Check that we're supporting the paragraph bundle being viewed.
+  switch ($paragraphs_item->bundle) {
+    case 'slogan':
+      $field_name = 'extra_paragraph_slogan';
+      _education_paragraphs_psuedo_field_visible($field_name, $view_mode, $paragraphs_item);
+      $slogan_markup = "<h2 class='offscreen slogan-title'>Tagline</h2><p class='slogan'>Leaders. Scholars. Innovators.</p>";
+      $paragraphs_item->content[$field_name]['#markup'] = $slogan_markup;
+      break;
+
+    case 'social':
+      $field_name = 'extra_paragraph_social';
+      _education_paragraphs_psuedo_field_visible($field_name, $view_mode, $paragraphs_item);
+      $social_markup = "<h2 class='social-title'>Connect</h2><p class='clearfix social'>
+        <a role='link' title='Follow us on Facebook' href='https://www.facebook.com/UICollegeofEducation'>
+          <span class='offscreen'>Facebook</span>
+          <span class='social-icon footer-social-facebook' id='facebook-icon'></span>
+        </a>
+        <a role='link' title='Follow us on Instagram' href='http://instagram.com/uicollegeofed'>
+          <span class='offscreen'>Instagram</span>
+          <span class='social-icon footer-social-instagram' id='instagram-icon'></span>
+        </a>
+        <a role='link' title='Follow us on Twitter' href='https://twitter.com/UIowaEducation'>
+          <span class='offscreen'>Twitter</span>
+          <span class='social-icon footer-social-twitter' id='twitter-icon'></span>
+        </a>
+        <a role='link' title='Connect with us on LinkedIn' href='https://www.linkedin.com/in/uiowacollegeofeducation'>
+          <span class='offscreen'>LinkedIn</span>
+          <span class='social-icon footer-social-linkedin' id='linkdin-icon'></span>
+        </a>
+        <a role='link' title='Checkout out our boards on Pinterest' href='http://pinterest.com/uicoe/'>
+          <span class='offscreen'>Pinterest</span>
+          <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span></a>
+        <a role='link' title='Find our latest videos on YouTube' href='https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA'>
+          <span class='offscreen'>YouTube</span>
+          <span class='social-icon footer-social-youtube' id='youtube-icon'></span>
+        </a>
+      </p>";
+      $paragraphs_item->content[$field_name]['#markup'] = $social_markup;
+      break;
+
+    default:
+      break;
+  }
+}
+
+/**
+ * Implements hook_field_group_pre_render().
+ */
+function education_paragraphs_field_group_pre_render_alter(&$element, $group, &$form) {
+  if ($group->group_name == 'group_audience_contact' && $group->identifier == 'group_audience_contact|taxonomy_term|audiences|default') {
+    $element['#prefix'] = '<div id="audience-contact-info" class="container grey-background"><h2 id="contact" class="contact-title"><span>Contact</span></h2><div class="row">';
+    $element['#suffix'] = '</div></div>';
+  }
+}
+
+/**
+ * Check to make sure that the field is visible in this view mode.
+ */
+function _education_paragraphs_psuedo_field_visible($field_name, $view_mode, $paragraphs_item) {
+  $config = field_bundle_settings('paragraphs_item', $paragraphs_item->bundle);
+  if (empty($config['extra_fields']['display'][$field_name][$view_mode]['visible'])) {
+    return;
+  }
+}

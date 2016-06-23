@@ -22,3 +22,42 @@ function education_audiences_update_7001() {
     taxonomy_term_save($term);
   }
 }
+
+/**
+ * Create media folder for tall header images.
+ */
+function education_audiences_update_7002() {
+  $vid = taxonomy_vocabulary_machine_name_load('media_folders')->vid;
+  $new_term->name = 'Tall';
+  $new_term->vid = $vid;
+  $parent = taxonomy_get_term_by_name('Headers', 'media_folders');
+  $tid = array_pop($parent)->tid;
+  $new_term->parent = $tid;
+  taxonomy_term_save($new_term);
+}
+
+/**
+ * Set Header Type of existing Audience terms.
+ */
+function education_audiences_update_7003() {
+  $entity_type = 'taxonomy_term';
+  $field_name = 'field_header_type';
+  $bundle_name = 'audiences';
+
+  $field_instance = field_info_instance($entity_type, $field_name, $bundle_name);
+  $entities = entity_load($entity_type);
+
+  if (isset($field_instance['default_value'])) {
+    $default_value = $field_instance['default_value'][0]['value'];
+    $field_info = field_info_field($field_name);
+
+    foreach ($entities as $entity) {
+      $lang = $field_info['translatable'] ? entity_language($entity_type, $entity) : LANGUAGE_NONE;
+
+      if (empty($entity->{$field_name})) {
+        $entity->{$field_name}[$lang][0]['value'] = $default_value;
+        field_attach_update($entity_type, $entity);
+      }
+    }
+  }
+}

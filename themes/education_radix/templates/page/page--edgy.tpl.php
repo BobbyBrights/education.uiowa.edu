@@ -49,42 +49,51 @@
 </header>
 
 <div id="main-wrapper">
-  <div id="bg-image" aria-hidden=true></div>
   <div id="main" class="main">
-    <h1 class="offscreen title"><?php print $title; ?></h1>
-      <div id="content">
+    <div id="page-header" class="edgy">
+        <?php if ($title): ?>
+          <div class="<?php print $header_classes; ?>">
+            <div class="header-content">
+              <div class="container">
+                <?php if ($breadcrumb): ?>
+                  <div id="breadcrumb" class="visible-desktop">
+                    <?php print $breadcrumb; ?>
+                  </div>
+                <?php endif; ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              </div>
+            </div>
+            <?php if (!empty($header_image_tall)): ?>
+              <?php print render($header_image_tall); ?>
+            <?php endif; ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <div class="container">
         <?php if ($messages): ?>
           <div id="messages">
             <?php print $messages; ?>
           </div>
         <?php endif; ?>
-        <?php if ($breadcrumb): ?>
-          <div id="breadcrumb" class="visible-desktop">
-            <?php print $breadcrumb; ?>
+        <?php if ($tabs): ?>
+          <div class="tabs">
+            <?php print render($tabs); ?>
           </div>
         <?php endif; ?>
-        <div id="page-header">
-          <?php if ($title): ?>
-            <div class="page-header">
-              <div class="h1 title"><?php print $title; ?></div>
-            </div>
-          <?php endif; ?>
-          <?php if ($tabs): ?>
-            <div class="tabs">
-              <?php print render($tabs); ?>
-            </div>
-          <?php endif; ?>
-          <?php if ($action_links): ?>
-            <ul class="action-links">
-              <?php print render($action_links); ?>
-            </ul>
-          <?php endif; ?>
-        </div>
-        <?php print render($page['content']); ?>
+        <?php if ($action_links): ?>
+          <ul class="action-links">
+            <?php print render($action_links); ?>
+          </ul>
+        <?php endif; ?>
       </div>
+    </div> <!-- /#page-header -->
+
+    <div id="content" class="edgy">
+      <?php print render($page['content']); ?>
     </div>
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
+
 
 <footer id="footer" class="footer" role="footer">
   <div class="container">
@@ -92,12 +101,36 @@
       <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
         <a href="http://education.uiowa.edu" title="The University of Iowa College of Education"><div id="footer-logo" ></div></a>
 
-        459 Lindquist Center North<br/>
+        N459 Lindquist Center<br/>
         Iowa City, IA 52242<br/>
         <br/>
         <br/>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+        <!-- Button trigger modal -->
+<a data-toggle="modal" data-target="#myModal"><div class="footer-button"><strong>Apply</strong></div></a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        <h2 class="modal-title" id="myModalLabel">Apply to the College</h2>
+      </div>
+      <div class="modal-body">
+        <p>Learn more about our programs...</p>
+        <a class="btn btn-primary btn-modal" href="/node/294" >Undergraduate</a>
+        <a class="btn btn-primary btn-modal" href="https://apply.admissions.uiowa.edu/admissions/graduate.page">Graduate</a>
+        <a class="btn btn-primary btn-modal" href="">Licensure, Certificate, &amp; Endorsement</a>
+        <a class="btn btn-primary btn-modal" href>Professional Development</a>
+        <a class="btn btn-primary btn-modal" href="">Online</a>
+      </div>
+    <!--  <div class="modal-footer">
+    </div> -->
+    </div>
+  </div>
+</div>
         <br/>
         <a href="directory" ><div class="footer-button"><strong>Directory<strong></div></a>
         <br/>

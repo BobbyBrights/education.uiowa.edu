@@ -172,6 +172,16 @@ function education_roles_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: 'add terms in announcement_categories'.
+  $permissions['add terms in announcement_categories'] = array(
+    'name' => 'add terms in announcement_categories',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy_access_fix',
+  );
+
   // Exported permission: 'add terms in audiences'.
   $permissions['add terms in audiences'] = array(
     'name' => 'add terms in audiences',
@@ -223,10 +233,7 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'add terms in tags'.
   $permissions['add terms in tags'] = array(
     'name' => 'add terms in tags',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy_access_fix',
   );
 
@@ -273,6 +280,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'block',
+  );
+
+  // Exported permission: 'administer breakpoints'.
+  $permissions['administer breakpoints'] = array(
+    'name' => 'administer breakpoints',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'breakpoints',
   );
 
   // Exported permission: 'administer ckeditor link'.
@@ -365,6 +381,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'menu_admin_per_menu',
+  );
+
+  // Exported permission: 'administer manualcrop settings'.
+  $permissions['administer manualcrop settings'] = array(
+    'name' => 'administer manualcrop settings',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'manualcrop',
   );
 
   // Exported permission: 'administer media browser'.
@@ -484,6 +509,15 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'administer pictures'.
+  $permissions['administer pictures'] = array(
+    'name' => 'administer pictures',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'picture',
   );
 
   // Exported permission: 'administer robots.txt'.
@@ -1130,6 +1164,15 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in announcement_categories'.
+  $permissions['delete terms in announcement_categories'] = array(
+    'name' => 'delete terms in announcement_categories',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in audiences'.
   $permissions['delete terms in audiences'] = array(
     'name' => 'delete terms in audiences',
@@ -1606,6 +1649,16 @@ function education_roles_user_default_permissions() {
     'module' => 'webform',
   );
 
+  // Exported permission: 'edit terms in announcement_categories'.
+  $permissions['edit terms in announcement_categories'] = array(
+    'name' => 'edit terms in announcement_categories',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit terms in audiences'.
   $permissions['edit terms in audiences'] = array(
     'name' => 'edit terms in audiences',
@@ -1767,6 +1820,17 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
+  );
+
+  // Exported permission: 'use manualcrop'.
+  $permissions['use manualcrop'] = array(
+    'name' => 'use manualcrop',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'manualcrop',
   );
 
   // Exported permission: 'use media wysiwyg'.

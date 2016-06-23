@@ -51,7 +51,7 @@ function education_announcement_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 1,
     ),
   );
 
@@ -104,7 +104,7 @@ function education_announcement_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 3,
     ),
   );
 
@@ -154,12 +154,12 @@ function education_announcement_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 15,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_tags'.
-  $field_instances['node-announcement-field_announcement_tags'] = array(
+  // Exported field_instance: 'node-announcement-field_announcement_categories'.
+  $field_instances['node-announcement-field_announcement_categories'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
     'deleted' => 0,
@@ -170,7 +170,7 @@ function education_announcement_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -180,9 +180,9 @@ function education_announcement_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_announcement_tags',
-    'label' => 'Tags',
-    'required' => 0,
+    'field_name' => 'field_announcement_categories',
+    'label' => 'Categories',
+    'required' => 1,
     'settings' => array(
       'jquery_ui_multiselect' => array(
         'dividerLocation' => 0.5,
@@ -200,14 +200,11 @@ function education_announcement_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 10,
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
     ),
   );
 
@@ -216,7 +213,7 @@ function education_announcement_field_default_field_instances() {
   t('Affiliation');
   t('Audience');
   t('Body');
-  t('Tags');
+  t('Categories');
 
   return $field_instances;
 }

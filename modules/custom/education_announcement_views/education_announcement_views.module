@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Announcement Views feature.
+ */
+
+include_once 'education_announcement_views.features.inc';

@@ -167,6 +167,55 @@ function education_pages_default_page_manager_pages() {
   $display->uuid = '8a0679e3-c83f-46d3-9be1-9748af3ead29';
   $display->content = array();
   $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-cba06cd4-37d2-4332-bde6-00ae264d4d03';
+    $pane->panel = 'middle';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Directory buttons',
+      'title' => '',
+      'body' => '<p><a class="btn-long">Offices and Centers</a></p>
+
+<p><a class="btn-long">Programs and Departments</a></p>
+
+<h2>Faculty and Staff</h2>
+',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'cba06cd4-37d2-4332-bde6-00ae264d4d03';
+    $display->content['new-cba06cd4-37d2-4332-bde6-00ae264d4d03'] = $pane;
+    $display->panels['middle'][0] = 'new-cba06cd4-37d2-4332-bde6-00ae264d4d03';
+    $pane = new stdClass();
+    $pane->pid = 'new-3304a4ad-7b27-4465-a664-90b24ecee692';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'education_person_views-panel_pane_faculty_staff_view';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '3304a4ad-7b27-4465-a664-90b24ecee692';
+    $display->content['new-3304a4ad-7b27-4465-a664-90b24ecee692'] = $pane;
+    $display->panels['middle'][1] = 'new-3304a4ad-7b27-4465-a664-90b24ecee692';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

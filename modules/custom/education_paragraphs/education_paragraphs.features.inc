@@ -9,14 +9,34 @@
  */
 function education_paragraphs_paragraphs_info() {
   $items = array(
+    'announcements' => array(
+      'name' => 'Announcements',
+      'bundle' => 'announcements',
+      'locked' => '1',
+    ),
     'callout' => array(
       'name' => 'Callout',
       'bundle' => 'callout',
       'locked' => '1',
     ),
+    'events' => array(
+      'name' => 'Events',
+      'bundle' => 'events',
+      'locked' => '1',
+    ),
     'fast_fact' => array(
       'name' => 'Fast Facts',
       'bundle' => 'fast_fact',
+      'locked' => '1',
+    ),
+    'slogan' => array(
+      'name' => 'Tagline',
+      'bundle' => 'slogan',
+      'locked' => '1',
+    ),
+    'social' => array(
+      'name' => 'Social media',
+      'bundle' => 'social',
       'locked' => '1',
     ),
     'text' => array(

@@ -75,13 +75,13 @@ function education_announcement_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_announcement_tags'.
-  $field_bases['field_announcement_tags'] = array(
+  // Exported field_base: 'field_announcement_categories'.
+  $field_bases['field_announcement_categories'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_announcement_tags',
+    'field_name' => 'field_announcement_categories',
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -92,7 +92,7 @@ function education_announcement_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'tags',
+          'vocabulary' => 'announcement_categories',
           'parent' => 0,
         ),
       ),

@@ -5,3 +5,13 @@
  */
 
 include_once 'education_common.features.inc';
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function education_common_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['referenced'] = array(
+    'label' => t('Reference'),
+    'custom settings' => FALSE,
+  );
+}

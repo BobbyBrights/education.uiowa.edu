@@ -1,0 +1,17 @@
+
+.view-display-id-education_events_landing_page_view , .view-display-id-education_events_filtered_page_view, .view-display-id-education_events_affiliation_page_view {
+  .views-field-title {
+    @extend .large-text;
+  }
+  .views-row-even, .views-row-odd {
+    margin:10px;
+    padding:10px;
+  }
+  .views-row-even {
+    border: solid 2px $black_20;
+    border-radius: 3px;
+  }
+  .views-field-body {
+    margin-left: 10px;
+  }
+}
