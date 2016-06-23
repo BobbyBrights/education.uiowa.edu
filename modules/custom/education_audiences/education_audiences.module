@@ -11,5 +11,5 @@ include_once 'education_audiences.features.inc';
  */
 function education_audiences_form_taxonomy_form_term_alter(&$form, &$form_state, $form_id) {
   // Disable the Header Type field.
-  $form['field_header_type']['#access'] = FALSE;
+  $form['field_header_type']['#disabled'] = TRUE;
 }

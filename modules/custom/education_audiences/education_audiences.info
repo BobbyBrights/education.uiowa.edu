@@ -26,6 +26,7 @@ features[field_base][] = field_audience_quick_links
 features[field_group][] = group_audience_contact|taxonomy_term|audiences|default
 features[field_group][] = group_audience_contact|taxonomy_term|audiences|form
 features[field_group][] = group_audience_fields|taxonomy_term|audiences|form
+features[field_group][] = group_audience_leading|taxonomy_term|audiences|form
 features[field_group][] = group_audience_metadata|taxonomy_term|audiences|form
 features[field_group][] = group_audience_paragraphs|taxonomy_term|audiences|form
 features[field_group][] = group_audiences_heading|taxonomy_term|audiences|form
