@@ -13,6 +13,33 @@ function education_page_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_page_body|node|page|form';
+  $field_group->group_name = 'group_page_body';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'page';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_page_fields';
+  $field_group->data = array(
+    'label' => 'Body',
+    'weight' => '6',
+    'children' => array(
+      0 => 'body',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-page-body field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_page_body|node|page|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_page_fields|node|page|form';
   $field_group->group_name = 'group_page_fields';
   $field_group->entity_type = 'node';
@@ -23,8 +50,8 @@ function education_page_field_group_info() {
     'label' => 'Fields',
     'weight' => '0',
     'children' => array(
-      0 => 'body',
-      1 => 'group_page_heading',
+      0 => 'group_page_heading',
+      1 => 'group_page_body',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -68,6 +95,7 @@ function education_page_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Body');
   t('Fields');
   t('Heading');
 
