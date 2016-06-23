@@ -39,8 +39,15 @@ function education_page_update_7001(&$sandbox) {
       // Increment "current" by 1.
       $sandbox['current']++;
     }
-  }
 
-  // Set the value for finished. If current == total then finished will be 1, signifying we are done.
-  $sandbox['#finished'] = ($sandbox['current'] / $sandbox['total']);
+    // Set the value for finished. If current == total then finished will be 1, signifying we are done.
+    $sandbox['#finished'] = ($sandbox['current'] / $sandbox['total']);
+
+    if ($sandbox['#finished'] == 1) {
+      return format_plural($sandbox['total'], '1 node updated', '@count nodes have been updated.');
+    }
+  }
+  else {
+    throw new DrupalUpdateException('The default value of the field instance is not set.');
+  }
 }
