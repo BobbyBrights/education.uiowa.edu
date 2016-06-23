@@ -43,6 +43,10 @@ function education_events_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
   /* Sort criterion: Content: Date -  start date (field_event_date) */
   $handler->display->display_options['sorts']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['sorts']['field_event_date_value']['table'] = 'field_data_field_event_date';
@@ -65,7 +69,7 @@ function education_events_views_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value2']['id'] = 'field_event_date_value2';
   $handler->display->display_options['filters']['field_event_date_value2']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value2']['field'] = 'field_event_date_value2';
-  $handler->display->display_options['filters']['field_event_date_value2']['operator'] = '<=';
+  $handler->display->display_options['filters']['field_event_date_value2']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_date_value2']['granularity'] = 'minute';
   $handler->display->display_options['filters']['field_event_date_value2']['default_date'] = 'now';
 
@@ -158,8 +162,113 @@ function education_events_views_views_default_views() {
   $handler->display->display_options['arguments']['field_event_affiliations_target_id']['break_phrase'] = TRUE;
 
   /* Display: Landing Page */
-  $handler = $view->new_display('page', 'Landing Page', 'page_1');
+  $handler = $view->new_display('page', 'Landing Page', 'education_events_landing_page_view');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Upcoming Events';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '100',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['path'] = 'events';
+
+  /* Display: Filtered Page */
+  $handler = $view->new_display('page', 'Filtered Page', 'education_events_filtered_page_view');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Upcoming Events';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '100',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Field: Affiliations (field_event_affiliations) */
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['id'] = 'field_event_affiliations_target_id';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['table'] = 'field_data_field_event_affiliations';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['field'] = 'field_event_affiliations_target_id';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['break_phrase'] = TRUE;
+  /* Contextual filter: Field: Audiences (field_event_audience) */
+  $handler->display->display_options['arguments']['field_event_audience_tid']['id'] = 'field_event_audience_tid';
+  $handler->display->display_options['arguments']['field_event_audience_tid']['table'] = 'field_data_field_event_audience';
+  $handler->display->display_options['arguments']['field_event_audience_tid']['field'] = 'field_event_audience_tid';
+  $handler->display->display_options['arguments']['field_event_audience_tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_event_audience_tid']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_event_audience_tid']['default_argument_options']['index'] = '1';
+  $handler->display->display_options['arguments']['field_event_audience_tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_event_audience_tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_event_audience_tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['path'] = 'events/%/%';
+
+  /* Display: By Affiliation Page */
+  $handler = $view->new_display('page', 'By Affiliation Page', 'education_events_affiliation_page_view');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Upcoming Events';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '100',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Field: Affiliations (field_event_affiliations) */
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['id'] = 'field_event_affiliations_target_id';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['table'] = 'field_data_field_event_affiliations';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['field'] = 'field_event_affiliations_target_id';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['path'] = 'events/for/%';
   $export['events'] = $view;
 
   return $export;
