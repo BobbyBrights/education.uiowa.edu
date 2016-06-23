@@ -31,23 +31,14 @@ function education_radix_preprocess_page(&$variables) {
       // Add header type as a class to the header.
       $variables['header_classes_array'][] = drupal_clean_css_identifier($header_type);
 
-      switch ($header_type) {
-        case 'short_image':
-          dpm('header style is short image');
-          break;
-
-        case 'tall_image':
-          $header_image = $wrapper->field_header_image_tall->value();
-          if (!empty($header_image)) {
-            $header_image_tall = field_view_field('node', $variables['node'], 'field_header_image_tall', $display = 'default', $langcode = NULL);
-            $variables['header_image_tall'] = $header_image_tall;
-          }
-          // Switch page template.
-          $variables['theme_hook_suggestions'][] = 'page__edgy';
-          break;
-
-        default:
-          break;
+      if ($header_type == 'tall_image') {
+        $header_image = $wrapper->field_header_image_tall->value();
+        if (!empty($header_image)) {
+          $header_image_tall = field_view_field('node', $variables['node'], 'field_header_image_tall', $display = 'default', $langcode = NULL);
+          $variables['header_image_tall'] = $header_image_tall;
+        }
+        // Switch page template.
+        $variables['theme_hook_suggestions'][] = 'page__edgy';
       }
     }
   }

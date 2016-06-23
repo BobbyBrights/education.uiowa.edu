@@ -8898,7 +8898,8 @@ p {
 
 @media (min-width: 992px) {
   #bg-image {
-    height: 200px; } }
+    height: 200px;
+    margin-bottom: 20px; } }
 
 #sidebar-first {
   margin-bottom: 36px; }
@@ -8956,7 +8957,7 @@ img {
   padding: 20px; }
   @media (min-width: 992px) {
     .region-sidebar-first .menu-block-wrapper {
-      margin-top: -30px;
+      margin-top: -50px;
       min-height: 500px; } }
   .region-sidebar-first .menu-block-wrapper a {
     margin: 0;
