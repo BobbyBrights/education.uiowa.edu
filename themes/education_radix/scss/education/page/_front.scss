@@ -45,4 +45,13 @@
       text-transform: uppercase;
     }
   }
+
+  .pane-tagline {
+    background-color: $black_20;
+    padding: 40px 0;
+
+    .pane-content {
+      @extend .container;
+    }
+  }
 }
