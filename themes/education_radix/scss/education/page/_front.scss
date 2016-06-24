@@ -54,4 +54,72 @@
       @extend .container;
     }
   }
+
+  .callout-text-wrapper {
+    padding: 40px 0;
+
+    .container {
+      max-width: 800px;
+    }
+  }
+
+  .callout-text {
+    font-family: $avenir-85;
+    @include font-size(1.2);
+    text-align: center;
+  }
+
+  .callout-image-wrapper .container {
+    height: 400px;
+    position: relative;
+    text-align: center;
+  }
+
+  .btn-homepage-callout {
+    border-radius: 0;
+    border: 4px solid $black_80;
+    color: $black_80;
+    @include font-size(2);
+    margin-top: 100px;
+    padding: 2rem 1rem;
+    text-transform: uppercase;
+
+    @include breakpoint($education-md-min) {
+      @include font-size(3);
+    }
+
+    &:hover, &:focus {
+      background-color: #fff;
+    }
+
+    &.btn-position-right {
+      @include breakpoint($education-sm-min) {
+        position: absolute;
+        right: 40px;
+      }
+    }
+
+    &.btn-position-bottom-left {
+      @include breakpoint($education-sm-min) {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+      }
+    }
+
+    &.btn-position-top-right {
+      @include breakpoint($education-sm-min) {
+        margin-top: 0;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+      }
+    }
+  }
+
+  .pane-callout-programs,
+  .pane-callout-research,
+  .pane-callout-leadership {
+    margin-top: 40px;
+  }
 }
