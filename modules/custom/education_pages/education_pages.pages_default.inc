@@ -57,6 +57,29 @@ function education_pages_default_page_manager_pages() {
   $display->uuid = '9071e002-a8a6-4da3-a19c-cc1bc3a7be30';
   $display->content = array();
   $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-3e9ca902-049d-452f-86c3-6663817c1300';
+    $pane->panel = 'middle';
+    $pane->type = 'become_a_hawkeye';
+    $pane->subtype = 'become_a_hawkeye';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '3e9ca902-049d-452f-86c3-6663817c1300';
+    $display->content['new-3e9ca902-049d-452f-86c3-6663817c1300'] = $pane;
+    $display->panels['middle'][0] = 'new-3e9ca902-049d-452f-86c3-6663817c1300';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -71,7 +94,10 @@ function education_pages_default_page_manager_pages() {
   $page->admin_title = 'News';
   $page->admin_description = '';
   $page->path = 'news';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -126,7 +152,10 @@ function education_pages_default_page_manager_pages() {
   $page->admin_title = 'People Directory';
   $page->admin_description = '';
   $page->path = 'directory';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -230,7 +259,10 @@ function education_pages_default_page_manager_pages() {
   $page->admin_title = 'Scholarships';
   $page->admin_description = '';
   $page->path = 'scholarships';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
