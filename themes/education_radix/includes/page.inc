@@ -8,8 +8,6 @@
  * Implements template_preprocess_page().
  */
 function education_radix_preprocess_page(&$variables) {
-  //dpm($variables);
-
   $variables['sidebar_first'] = $variables['page']['sidebar_first'];
 
   $variables['sidebar_first_width'] = '3';
