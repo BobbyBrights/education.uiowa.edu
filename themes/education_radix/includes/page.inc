@@ -75,6 +75,12 @@ function education_radix_preprocess_page(&$variables) {
       $variables['theme_hook_suggestions'][] = 'page__edgy';
     }
   }
+
+  // Front page configuration.
+  if ($variables['is_front']) {
+    // Make this page full width.
+    $variables['theme_hook_suggestions'][] = 'page__edgy';
+  }
 }
 
 /**
