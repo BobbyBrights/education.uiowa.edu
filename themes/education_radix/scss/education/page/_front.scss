@@ -29,4 +29,20 @@
       }
     }
   }
+
+  .pane-social {
+    @extend .paragraphs-item-social;
+    padding: 40px 0;
+
+    .pane-content {
+      @extend .container;
+    }
+
+    .social-hashtag {
+      font-family: $avenir-65;
+      @include font-size(1.5);
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 }
