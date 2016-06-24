@@ -51,10 +51,9 @@ function callout_programs_edit_form_submit($form, &$form_state) {
  * See ctools_plugin_examples for more advanced info.
  */
 function callout_programs_render($subtype, $conf, $panel_args, $context = NULL) {
+  $background_image = drupal_get_path('module', 'education_pages') . '/images/programs.jpg';
   $block = new stdClass();
-
   $block->title = '';
-
   $block->content = array(
     '#prefix' => '<div class="callout-wrapper">',
     'heading' => array(
@@ -63,13 +62,16 @@ function callout_programs_render($subtype, $conf, $panel_args, $context = NULL) 
       '#suffix' => '</h2>',
     ),
     'link' => array(
-      '#prefix' => '<div class="callout-image-wrapper yellow-background"><div class="container">',
+      '#prefix' => '<div class="callout-image-wrapper yellow-background"><div class="container" style="background: url(' . $background_image . ') no-repeat center center; background-size: cover;">',
       '#suffix' => '</div></div>',
       '#theme' => 'link',
-        '#text' => t('Top-ranked Programs'),
+        '#text' => t('Top-ranked </br> Programs »'),
         '#path' => 'programs',
         '#options' => array(
-          'attributes' => array('class' => array('btn', 'btn-homepage-callout', 'btn-position-right')),
+          'attributes' => array(
+            'class' => array('btn', 'btn-homepage-callout', 'btn-position-right'),
+          ),
+          'html' => TRUE,
         ),
     ),
     'text' => array(

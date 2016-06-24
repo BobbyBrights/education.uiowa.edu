@@ -8953,6 +8953,29 @@ p {
   font-size: 1.2rem;
   text-align: center; }
 
+.front .callout-image-wrapper .container, .front .callout-image-wrapper .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .callout-image-wrapper .pane-content, .front .callout-image-wrapper .pane-social .pane-content, .front .pane-social .callout-image-wrapper .pane-content, .front .callout-image-wrapper .pane-tagline .pane-content, .front .pane-tagline .callout-image-wrapper .pane-content, .front .callout-image-wrapper #breadcrumb, .front .callout-image-wrapper .page-node .edgy .field-name-body, .page-node .edgy .front .callout-image-wrapper .field-name-body, .front .callout-image-wrapper .entity-paragraphs-item.grey-border {
+  height: 400px;
+  position: relative;
+  text-align: center; }
+
+.front .btn-homepage-callout {
+  border-radius: 0;
+  border: 4px solid #333333;
+  color: #333333;
+  font-size: 2rem;
+  margin-top: 100px;
+  padding: 2rem 1rem;
+  text-transform: uppercase; }
+  @media (min-width: 992px) {
+    .front .btn-homepage-callout {
+      font-size: 3rem; } }
+  .front .btn-homepage-callout:hover, .front .btn-homepage-callout:focus {
+    background-color: #fff; }
+  @media (min-width: 768px) {
+    .front .btn-homepage-callout.btn-position-right {
+      position: absolute;
+      right: 0; } }
+
 .tall-image {
   position: relative; }
   .tall-image img {
