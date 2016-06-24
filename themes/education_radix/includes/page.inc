@@ -8,8 +8,6 @@
  * Implements template_preprocess_page().
  */
 function education_radix_preprocess_page(&$variables) {
-  //dpm($variables);
-
   $variables['sidebar_first'] = $variables['page']['sidebar_first'];
 
   $variables['sidebar_first_width'] = '3';
@@ -76,6 +74,12 @@ function education_radix_preprocess_page(&$variables) {
       // Provide theme suggestion for Audiences terms.
       $variables['theme_hook_suggestions'][] = 'page__edgy';
     }
+  }
+
+  // Front page configuration.
+  if ($variables['is_front']) {
+    // Make this page full width.
+    $variables['theme_hook_suggestions'][] = 'page__edgy';
   }
 }
 
