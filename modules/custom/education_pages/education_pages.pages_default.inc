@@ -127,10 +127,10 @@ function education_pages_default_page_manager_pages() {
     $display->content['new-54cb487d-d629-4d69-a66a-26bd40ca9929'] = $pane;
     $display->panels['middle'][2] = 'new-54cb487d-d629-4d69-a66a-26bd40ca9929';
     $pane = new stdClass();
-    $pane->pid = 'new-99c93ad5-289a-49ba-8511-f2538c81b3f3';
+    $pane->pid = 'new-49b1eb8e-9ed6-4bb4-951d-59fb2c383a74';
     $pane->panel = 'middle';
-    $pane->type = 'callout_reasearch';
-    $pane->subtype = 'callout_reasearch';
+    $pane->type = 'callout_research';
+    $pane->subtype = 'callout_research';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -146,9 +146,9 @@ function education_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '99c93ad5-289a-49ba-8511-f2538c81b3f3';
-    $display->content['new-99c93ad5-289a-49ba-8511-f2538c81b3f3'] = $pane;
-    $display->panels['middle'][3] = 'new-99c93ad5-289a-49ba-8511-f2538c81b3f3';
+    $pane->uuid = '49b1eb8e-9ed6-4bb4-951d-59fb2c383a74';
+    $display->content['new-49b1eb8e-9ed6-4bb4-951d-59fb2c383a74'] = $pane;
+    $display->panels['middle'][3] = 'new-49b1eb8e-9ed6-4bb4-951d-59fb2c383a74';
     $pane = new stdClass();
     $pane->pid = 'new-dce9d1e5-d608-4e0e-9406-09d1b4af7e4e';
     $pane->panel = 'middle';
