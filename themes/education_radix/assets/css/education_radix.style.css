@@ -1500,24 +1500,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, #breadcrumb, .page-node .edgy .field-name-body, .entity-paragraphs-item.grey-border {
+.container, .front .pane-become-a-hawkeye .pane-content, .front .pane-social .pane-content, .front .pane-tagline .pane-content, #breadcrumb, .page-node .edgy .field-name-body, .entity-paragraphs-item.grey-border {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, #breadcrumb:before, .page-node .edgy .field-name-body:before, .entity-paragraphs-item.grey-border:before, .container:after, #breadcrumb:after, .page-node .edgy .field-name-body:after, .entity-paragraphs-item.grey-border:after {
+  .container:before, .front .pane-become-a-hawkeye .pane-content:before, .front .pane-social .pane-content:before, .front .pane-tagline .pane-content:before, #breadcrumb:before, .page-node .edgy .field-name-body:before, .entity-paragraphs-item.grey-border:before, .container:after, .front .pane-become-a-hawkeye .pane-content:after, .front .pane-social .pane-content:after, .front .pane-tagline .pane-content:after, #breadcrumb:after, .page-node .edgy .field-name-body:after, .entity-paragraphs-item.grey-border:after {
     content: " ";
     display: table; }
-  .container:after, #breadcrumb:after, .page-node .edgy .field-name-body:after, .entity-paragraphs-item.grey-border:after {
+  .container:after, .front .pane-become-a-hawkeye .pane-content:after, .front .pane-social .pane-content:after, .front .pane-tagline .pane-content:after, #breadcrumb:after, .page-node .edgy .field-name-body:after, .entity-paragraphs-item.grey-border:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container, #breadcrumb, .page-node .edgy .field-name-body, .entity-paragraphs-item.grey-border {
+    .container, .front .pane-become-a-hawkeye .pane-content, .front .pane-social .pane-content, .front .pane-tagline .pane-content, #breadcrumb, .page-node .edgy .field-name-body, .entity-paragraphs-item.grey-border {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container, #breadcrumb, .page-node .edgy .field-name-body, .entity-paragraphs-item.grey-border {
+    .container, .front .pane-become-a-hawkeye .pane-content, .front .pane-social .pane-content, .front .pane-tagline .pane-content, #breadcrumb, .page-node .edgy .field-name-body, .entity-paragraphs-item.grey-border {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container, #breadcrumb, .page-node .edgy .field-name-body, .entity-paragraphs-item.grey-border {
+    .container, .front .pane-become-a-hawkeye .pane-content, .front .pane-social .pane-content, .front .pane-tagline .pane-content, #breadcrumb, .page-node .edgy .field-name-body, .entity-paragraphs-item.grey-border {
       width: 1170px; } }
 
 .container-fluid {
@@ -3744,15 +3744,15 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, #breadcrumb > .navbar-header, .page-node .edgy .field-name-body > .navbar-header, .entity-paragraphs-item.grey-border > .navbar-header,
-.container > .navbar-collapse, #breadcrumb > .navbar-collapse, .page-node .edgy .field-name-body > .navbar-collapse, .entity-paragraphs-item.grey-border > .navbar-collapse,
+.container > .navbar-header, .front .pane-become-a-hawkeye .pane-content > .navbar-header, .front .pane-social .pane-content > .navbar-header, .front .pane-tagline .pane-content > .navbar-header, #breadcrumb > .navbar-header, .page-node .edgy .field-name-body > .navbar-header, .entity-paragraphs-item.grey-border > .navbar-header,
+.container > .navbar-collapse, .front .pane-become-a-hawkeye .pane-content > .navbar-collapse, .front .pane-social .pane-content > .navbar-collapse, .front .pane-tagline .pane-content > .navbar-collapse, #breadcrumb > .navbar-collapse, .page-node .edgy .field-name-body > .navbar-collapse, .entity-paragraphs-item.grey-border > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header, #breadcrumb > .navbar-header, .page-node .edgy .field-name-body > .navbar-header, .entity-paragraphs-item.grey-border > .navbar-header,
-    .container > .navbar-collapse, #breadcrumb > .navbar-collapse, .page-node .edgy .field-name-body > .navbar-collapse, .entity-paragraphs-item.grey-border > .navbar-collapse,
+    .container > .navbar-header, .front .pane-become-a-hawkeye .pane-content > .navbar-header, .front .pane-social .pane-content > .navbar-header, .front .pane-tagline .pane-content > .navbar-header, #breadcrumb > .navbar-header, .page-node .edgy .field-name-body > .navbar-header, .entity-paragraphs-item.grey-border > .navbar-header,
+    .container > .navbar-collapse, .front .pane-become-a-hawkeye .pane-content > .navbar-collapse, .front .pane-social .pane-content > .navbar-collapse, .front .pane-tagline .pane-content > .navbar-collapse, #breadcrumb > .navbar-collapse, .page-node .edgy .field-name-body > .navbar-collapse, .entity-paragraphs-item.grey-border > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -3796,7 +3796,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand, .navbar > #breadcrumb .navbar-brand, .page-node .edgy .navbar > .field-name-body .navbar-brand, .navbar > .entity-paragraphs-item.grey-border .navbar-brand,
+    .navbar > .container .navbar-brand, .front .pane-become-a-hawkeye .navbar > .pane-content .navbar-brand, .front .pane-social .navbar > .pane-content .navbar-brand, .front .pane-tagline .navbar > .pane-content .navbar-brand, .navbar > #breadcrumb .navbar-brand, .page-node .edgy .navbar > .field-name-body .navbar-brand, .navbar > .entity-paragraphs-item.grey-border .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
@@ -4321,18 +4321,18 @@ a.badge:hover, a.badge:focus {
     font-weight: 200; }
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron, #breadcrumb .jumbotron, .page-node .edgy .field-name-body .jumbotron, .entity-paragraphs-item.grey-border .jumbotron,
+  .container .jumbotron, .front .pane-become-a-hawkeye .pane-content .jumbotron, .front .pane-social .pane-content .jumbotron, .front .pane-tagline .pane-content .jumbotron, #breadcrumb .jumbotron, .page-node .edgy .field-name-body .jumbotron, .entity-paragraphs-item.grey-border .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container, .jumbotron #breadcrumb, .jumbotron .page-node .edgy .field-name-body, .page-node .edgy .jumbotron .field-name-body, .jumbotron .entity-paragraphs-item.grey-border {
+  .jumbotron .container, .jumbotron .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .jumbotron .pane-content, .jumbotron .front .pane-social .pane-content, .front .pane-social .jumbotron .pane-content, .jumbotron .front .pane-tagline .pane-content, .front .pane-tagline .jumbotron .pane-content, .jumbotron #breadcrumb, .jumbotron .page-node .edgy .field-name-body, .page-node .edgy .jumbotron .field-name-body, .jumbotron .entity-paragraphs-item.grey-border {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron, #breadcrumb .jumbotron, .page-node .edgy .field-name-body .jumbotron, .entity-paragraphs-item.grey-border .jumbotron,
+      .container .jumbotron, .front .pane-become-a-hawkeye .pane-content .jumbotron, .front .pane-social .pane-content .jumbotron, .front .pane-tagline .pane-content .jumbotron, #breadcrumb .jumbotron, .page-node .edgy .field-name-body .jumbotron, .entity-paragraphs-item.grey-border .jumbotron,
       .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
@@ -4427,6 +4427,12 @@ a.thumbnail.active {
   .alert-danger .alert-link {
     color: #843534; }
 
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0; }
+  to {
+    background-position: 0 0; } }
+
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
@@ -4460,6 +4466,7 @@ a.thumbnail.active {
 
 .progress.active .progress-bar,
 .progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite; }
 
 .progress-bar-success {
@@ -5110,9 +5117,13 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0; }
   .modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
     transform: translate(0, -25%);
-    transition: transform 0.3s ease-out; }
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
   .modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
 
 .modal-open .modal {
@@ -5455,18 +5466,25 @@ button.close {
       line-height: 1; }
     @media all and (transform-3d), (-webkit-transform-3d) {
       .carousel-inner > .item {
+        transition: -webkit-transform 0.6s ease-in-out;
         transition: transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        -webkit-perspective: 1000px;
         -ms-perspective: 1000px;
         -o-perspective: 1000px;
         perspective: 1000px; }
         .carousel-inner > .item.next, .carousel-inner > .item.active.right {
+          -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
           left: 0; }
         .carousel-inner > .item.prev, .carousel-inner > .item.active.left {
+          -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
           left: 0; }
         .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right, .carousel-inner > .item.active {
+          -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
           left: 0; } }
   .carousel-inner > .active,
@@ -5913,35 +5931,52 @@ button.close {
   margin-left: .3em; }
 
 .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
 
 .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
 
 @keyframes fa-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 :root .fa-rotate-90,
@@ -8006,22 +8041,46 @@ html.js fieldset.collapsed {
     #features-export-form .features-export-parent .features-export-list .form-item {
       float: none !important; }
 
-#panels-panel-context-edit-move .container, #panels-panel-context-edit-move #breadcrumb, #panels-panel-context-edit-move .page-node .edgy .field-name-body, .page-node .edgy #panels-panel-context-edit-move .field-name-body, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border,
+#panels-panel-context-edit-move .container, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content, #panels-panel-context-edit-move .front .pane-social .pane-content, .front .pane-social #panels-panel-context-edit-move .pane-content, #panels-panel-context-edit-move .front .pane-tagline .pane-content, .front .pane-tagline #panels-panel-context-edit-move .pane-content, #panels-panel-context-edit-move #breadcrumb, #panels-panel-context-edit-move .page-node .edgy .field-name-body, .page-node .edgy #panels-panel-context-edit-move .field-name-body, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border,
 #panels-panel-context-edit-content .container,
+#panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye
+#panels-panel-context-edit-content .pane-content,
+#panels-panel-context-edit-content .front .pane-social .pane-content, .front .pane-social
+#panels-panel-context-edit-content .pane-content,
+#panels-panel-context-edit-content .front .pane-tagline .pane-content, .front .pane-tagline
+#panels-panel-context-edit-content .pane-content,
 #panels-panel-context-edit-content #breadcrumb,
 #panels-panel-context-edit-content .page-node .edgy .field-name-body, .page-node .edgy
 #panels-panel-context-edit-content .field-name-body,
 #panels-panel-context-edit-content .entity-paragraphs-item.grey-border {
   width: auto;
   padding: 0; }
-  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .page-node .edgy .field-name-body .row, .page-node .edgy #panels-panel-context-edit-move .field-name-body .row, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .row, #panels-panel-context-edit-move .container .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .container .view-content, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move #breadcrumb .view-content, #panels-panel-context-edit-move .page-node .edgy .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .page-node .edgy .field-name-body .view-content, .page-node .edgy #panels-panel-context-edit-move .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events .page-node .edgy #panels-panel-context-edit-move .field-name-body .view-content, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .view-content, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .page-node .edgy .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .page-node .edgy .field-name-body .field-name-field-fact-fact-ref, .page-node .edgy #panels-panel-context-edit-move .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .page-node .edgy #panels-panel-context-edit-move .field-name-body .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .row, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move .front .pane-social .pane-content .row, .front .pane-social #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move .front .pane-tagline .pane-content .row, .front .pane-tagline #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .page-node .edgy .field-name-body .row, .page-node .edgy #panels-panel-context-edit-move .field-name-body .row, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .row, #panels-panel-context-edit-move .container .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .container .view-content, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .view-content, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move .front .pane-social .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-social .pane-content .view-content, .front .pane-social #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-social #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move .front .pane-tagline .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-tagline .pane-content .view-content, .front .pane-tagline #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-tagline #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move #breadcrumb .view-content, #panels-panel-context-edit-move .page-node .edgy .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .page-node .edgy .field-name-body .view-content, .page-node .edgy #panels-panel-context-edit-move .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events .page-node .edgy #panels-panel-context-edit-move .field-name-body .view-content, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .view-content, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .field-name-field-fact-fact-ref, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-social .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-social .pane-content .field-name-field-fact-fact-ref, .front .pane-social #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-social #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-tagline .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-tagline .pane-content .field-name-field-fact-fact-ref, .front .pane-tagline #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-tagline #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .page-node .edgy .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .page-node .edgy .field-name-body .field-name-field-fact-fact-ref, .page-node .edgy #panels-panel-context-edit-move .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .page-node .edgy #panels-panel-context-edit-move .field-name-body .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content .container .row,
+  #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content .row, .front .pane-become-a-hawkeye
+  #panels-panel-context-edit-content .pane-content .row,
+  #panels-panel-context-edit-content .front .pane-social .pane-content .row, .front .pane-social
+  #panels-panel-context-edit-content .pane-content .row,
+  #panels-panel-context-edit-content .front .pane-tagline .pane-content .row, .front .pane-tagline
+  #panels-panel-context-edit-content .pane-content .row,
   #panels-panel-context-edit-content #breadcrumb .row,
   #panels-panel-context-edit-content .page-node .edgy .field-name-body .row, .page-node .edgy
   #panels-panel-context-edit-content .field-name-body .row,
   #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .row,
   #panels-panel-context-edit-content .container .paragraphs-item-events .view-content, .paragraphs-item-events
   #panels-panel-context-edit-content .container .view-content,
+  #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events
+  #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content .view-content, .front .pane-become-a-hawkeye
+  #panels-panel-context-edit-content .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-become-a-hawkeye
+  #panels-panel-context-edit-content .pane-content .view-content,
+  #panels-panel-context-edit-content .front .pane-social .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events
+  #panels-panel-context-edit-content .front .pane-social .pane-content .view-content, .front .pane-social
+  #panels-panel-context-edit-content .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-social
+  #panels-panel-context-edit-content .pane-content .view-content,
+  #panels-panel-context-edit-content .front .pane-tagline .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events
+  #panels-panel-context-edit-content .front .pane-tagline .pane-content .view-content, .front .pane-tagline
+  #panels-panel-context-edit-content .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-tagline
+  #panels-panel-context-edit-content .pane-content .view-content,
   #panels-panel-context-edit-content #breadcrumb .paragraphs-item-events .view-content, .paragraphs-item-events
   #panels-panel-context-edit-content #breadcrumb .view-content,
   #panels-panel-context-edit-content .page-node .edgy .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events
@@ -8032,6 +8091,18 @@ html.js fieldset.collapsed {
   #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .view-content,
   #panels-panel-context-edit-content .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
   #panels-panel-context-edit-content .container .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
+  #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content .field-name-field-fact-fact-ref, .front .pane-become-a-hawkeye
+  #panels-panel-context-edit-content .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-become-a-hawkeye
+  #panels-panel-context-edit-content .pane-content .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-content .front .pane-social .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
+  #panels-panel-context-edit-content .front .pane-social .pane-content .field-name-field-fact-fact-ref, .front .pane-social
+  #panels-panel-context-edit-content .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-social
+  #panels-panel-context-edit-content .pane-content .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-content .front .pane-tagline .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
+  #panels-panel-context-edit-content .front .pane-tagline .pane-content .field-name-field-fact-fact-ref, .front .pane-tagline
+  #panels-panel-context-edit-content .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-tagline
+  #panels-panel-context-edit-content .pane-content .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
   #panels-panel-context-edit-content #breadcrumb .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content .page-node .edgy .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact
@@ -8059,8 +8130,8 @@ html.js fieldset.collapsed {
 .tabledrag-handle .handle {
   box-sizing: content-box; }
 
-.container .container, #breadcrumb .container, .page-node .edgy .field-name-body .container, .entity-paragraphs-item.grey-border .container, .container #breadcrumb, #breadcrumb #breadcrumb, .page-node .edgy .field-name-body #breadcrumb, .entity-paragraphs-item.grey-border #breadcrumb, .container .page-node .edgy .field-name-body, .page-node .edgy .container .field-name-body, #breadcrumb .page-node .edgy .field-name-body, .page-node .edgy #breadcrumb .field-name-body, .page-node .edgy .field-name-body .field-name-body, .entity-paragraphs-item.grey-border .page-node .edgy .field-name-body, .page-node .edgy .entity-paragraphs-item.grey-border .field-name-body, .container .entity-paragraphs-item.grey-border, #breadcrumb .entity-paragraphs-item.grey-border, .page-node .edgy .field-name-body .entity-paragraphs-item.grey-border, .entity-paragraphs-item.grey-border .entity-paragraphs-item.grey-border,
-.container .container-fluid, #breadcrumb .container-fluid, .page-node .edgy .field-name-body .container-fluid, .entity-paragraphs-item.grey-border .container-fluid {
+.container .container, .front .pane-become-a-hawkeye .pane-content .container, .front .pane-social .pane-content .container, .front .pane-tagline .pane-content .container, #breadcrumb .container, .page-node .edgy .field-name-body .container, .entity-paragraphs-item.grey-border .container, .container .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .container .pane-content, .front .pane-become-a-hawkeye .pane-content .pane-content, #breadcrumb .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye #breadcrumb .pane-content, .page-node .edgy .field-name-body .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .page-node .edgy .field-name-body .pane-content, .entity-paragraphs-item.grey-border .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .entity-paragraphs-item.grey-border .pane-content, .container .front .pane-social .pane-content, .front .pane-social .container .pane-content, .front .pane-social .pane-content .pane-content, #breadcrumb .front .pane-social .pane-content, .front .pane-social #breadcrumb .pane-content, .page-node .edgy .field-name-body .front .pane-social .pane-content, .front .pane-social .page-node .edgy .field-name-body .pane-content, .entity-paragraphs-item.grey-border .front .pane-social .pane-content, .front .pane-social .entity-paragraphs-item.grey-border .pane-content, .container .front .pane-tagline .pane-content, .front .pane-tagline .container .pane-content, .front .pane-tagline .pane-content .pane-content, #breadcrumb .front .pane-tagline .pane-content, .front .pane-tagline #breadcrumb .pane-content, .page-node .edgy .field-name-body .front .pane-tagline .pane-content, .front .pane-tagline .page-node .edgy .field-name-body .pane-content, .entity-paragraphs-item.grey-border .front .pane-tagline .pane-content, .front .pane-tagline .entity-paragraphs-item.grey-border .pane-content, .container #breadcrumb, .front .pane-become-a-hawkeye .pane-content #breadcrumb, .front .pane-social .pane-content #breadcrumb, .front .pane-tagline .pane-content #breadcrumb, #breadcrumb #breadcrumb, .page-node .edgy .field-name-body #breadcrumb, .entity-paragraphs-item.grey-border #breadcrumb, .container .page-node .edgy .field-name-body, .page-node .edgy .container .field-name-body, .front .pane-become-a-hawkeye .pane-content .page-node .edgy .field-name-body, .page-node .edgy .front .pane-become-a-hawkeye .pane-content .field-name-body, .front .pane-social .pane-content .page-node .edgy .field-name-body, .page-node .edgy .front .pane-social .pane-content .field-name-body, .front .pane-tagline .pane-content .page-node .edgy .field-name-body, .page-node .edgy .front .pane-tagline .pane-content .field-name-body, #breadcrumb .page-node .edgy .field-name-body, .page-node .edgy #breadcrumb .field-name-body, .page-node .edgy .field-name-body .field-name-body, .entity-paragraphs-item.grey-border .page-node .edgy .field-name-body, .page-node .edgy .entity-paragraphs-item.grey-border .field-name-body, .container .entity-paragraphs-item.grey-border, .front .pane-become-a-hawkeye .pane-content .entity-paragraphs-item.grey-border, .front .pane-social .pane-content .entity-paragraphs-item.grey-border, .front .pane-tagline .pane-content .entity-paragraphs-item.grey-border, #breadcrumb .entity-paragraphs-item.grey-border, .page-node .edgy .field-name-body .entity-paragraphs-item.grey-border, .entity-paragraphs-item.grey-border .entity-paragraphs-item.grey-border,
+.container .container-fluid, .front .pane-become-a-hawkeye .pane-content .container-fluid, .front .pane-social .pane-content .container-fluid, .front .pane-tagline .pane-content .container-fluid, #breadcrumb .container-fluid, .page-node .edgy .field-name-body .container-fluid, .entity-paragraphs-item.grey-border .container-fluid {
   width: auto;
   margin-left: -15px;
   margin-right: -15px; }
@@ -8068,7 +8139,7 @@ html.js fieldset.collapsed {
 #footer {
   margin: 36px 0; }
 
-body.maintenance-page .container, body.maintenance-page #breadcrumb, body.maintenance-page .page-node .edgy .field-name-body, .page-node .edgy body.maintenance-page .field-name-body, body.maintenance-page .entity-paragraphs-item.grey-border {
+body.maintenance-page .container, body.maintenance-page .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye body.maintenance-page .pane-content, body.maintenance-page .front .pane-social .pane-content, .front .pane-social body.maintenance-page .pane-content, body.maintenance-page .front .pane-tagline .pane-content, .front .pane-tagline body.maintenance-page .pane-content, body.maintenance-page #breadcrumb, body.maintenance-page .page-node .edgy .field-name-body, .page-node .edgy body.maintenance-page .field-name-body, body.maintenance-page .entity-paragraphs-item.grey-border {
   max-width: 970px !important; }
 
 body.maintenance-page .jumbotron {
@@ -8220,7 +8291,7 @@ body.ctools-modal-open {
 #modalContent #panopoly-form-widget-preview {
   width: 50%;
   float: right; }
-  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview #breadcrumb, #modalContent #panopoly-form-widget-preview .page-node .edgy .field-name-body, .page-node .edgy #modalContent #panopoly-form-widget-preview .field-name-body, #modalContent #panopoly-form-widget-preview .entity-paragraphs-item.grey-border {
+  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye #modalContent #panopoly-form-widget-preview .pane-content, #modalContent #panopoly-form-widget-preview .front .pane-social .pane-content, .front .pane-social #modalContent #panopoly-form-widget-preview .pane-content, #modalContent #panopoly-form-widget-preview .front .pane-tagline .pane-content, .front .pane-tagline #modalContent #panopoly-form-widget-preview .pane-content, #modalContent #panopoly-form-widget-preview #breadcrumb, #modalContent #panopoly-form-widget-preview .page-node .edgy .field-name-body, .page-node .edgy #modalContent #panopoly-form-widget-preview .field-name-body, #modalContent #panopoly-form-widget-preview .entity-paragraphs-item.grey-border {
     width: auto; }
 
 ul.menu > li > ul.menu {
@@ -8770,7 +8841,7 @@ p {
 .footer-center {
   text-align: center; }
 
-.footer-social, .paragraphs-item-social .social-icon {
+.footer-social, .paragraphs-item-social .social-icon, .front .pane-social .social-icon {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 60px 60px;
@@ -8839,6 +8910,88 @@ p {
   color: #000000;
   text-align: left; }
 
+.front .pane-become-a-hawkeye {
+  background-color: #333333;
+  padding: 40px 0; }
+  .front .pane-become-a-hawkeye .pane-content {
+    text-align: center; }
+  .front .pane-become-a-hawkeye .become-a-hakweye-title {
+    color: #ffe100;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; }
+  .front .pane-become-a-hawkeye .btn {
+    border: 3px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase; }
+    .front .pane-become-a-hawkeye .btn:hover, .front .pane-become-a-hawkeye .btn:focus {
+      background-color: #fff;
+      color: #333333; }
+
+.front .pane-social {
+  padding: 40px 0; }
+  .front .pane-social .social-hashtag {
+    font-family: "AvenirLT-Medium";
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase; }
+
+.front .pane-tagline {
+  background-color: #cccccc;
+  padding: 40px 0; }
+
+.front .callout-text-wrapper {
+  padding: 40px 0; }
+  .front .callout-text-wrapper .container, .front .callout-text-wrapper .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .callout-text-wrapper .pane-content, .front .callout-text-wrapper .pane-social .pane-content, .front .pane-social .callout-text-wrapper .pane-content, .front .callout-text-wrapper .pane-tagline .pane-content, .front .pane-tagline .callout-text-wrapper .pane-content, .front .callout-text-wrapper #breadcrumb, .front .callout-text-wrapper .page-node .edgy .field-name-body, .page-node .edgy .front .callout-text-wrapper .field-name-body, .front .callout-text-wrapper .entity-paragraphs-item.grey-border {
+    max-width: 800px; }
+
+.front .callout-text {
+  font-family: "AvenirLT-Heavy";
+  font-size: 1.2rem;
+  text-align: center; }
+
+.front .callout-image-wrapper .container, .front .callout-image-wrapper .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .callout-image-wrapper .pane-content, .front .callout-image-wrapper .pane-social .pane-content, .front .pane-social .callout-image-wrapper .pane-content, .front .callout-image-wrapper .pane-tagline .pane-content, .front .pane-tagline .callout-image-wrapper .pane-content, .front .callout-image-wrapper #breadcrumb, .front .callout-image-wrapper .page-node .edgy .field-name-body, .page-node .edgy .front .callout-image-wrapper .field-name-body, .front .callout-image-wrapper .entity-paragraphs-item.grey-border {
+  height: 570px;
+  position: relative;
+  text-align: center; }
+
+.front .btn-homepage-callout {
+  border-radius: 0;
+  border: 4px solid #333333;
+  color: #333333;
+  font-size: 2rem;
+  margin-top: 190px;
+  padding: 2rem 1rem;
+  text-transform: uppercase; }
+  @media (min-width: 992px) {
+    .front .btn-homepage-callout {
+      font-size: 3rem; } }
+  .front .btn-homepage-callout:hover, .front .btn-homepage-callout:focus {
+    background-color: #fff; }
+  @media (min-width: 768px) {
+    .front .btn-homepage-callout.btn-position-right {
+      position: absolute;
+      right: 40px; } }
+  @media (min-width: 768px) {
+    .front .btn-homepage-callout.btn-position-bottom-left {
+      position: absolute;
+      left: 40px;
+      bottom: 40px; } }
+  @media (min-width: 768px) {
+    .front .btn-homepage-callout.btn-position-top-right {
+      margin-top: 0;
+      position: absolute;
+      right: 40px;
+      top: 40px; } }
+
+.front .pane-callout-programs,
+.front .pane-callout-research,
+.front .pane-callout-leadership {
+  margin-top: 40px; }
+
 .tall-image {
   position: relative; }
   .tall-image img {
@@ -8879,7 +9032,7 @@ p {
     font-size: 1.25rem; }
   .uiowa-bar-dark #ui-wrapper {
     box-shadow: none; }
-  #ui-wrapper .container, #ui-wrapper #breadcrumb, #ui-wrapper .page-node .edgy .field-name-body, .page-node .edgy #ui-wrapper .field-name-body, #ui-wrapper .entity-paragraphs-item.grey-border {
+  #ui-wrapper .container, #ui-wrapper .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye #ui-wrapper .pane-content, #ui-wrapper .front .pane-social .pane-content, .front .pane-social #ui-wrapper .pane-content, #ui-wrapper .front .pane-tagline .pane-content, .front .pane-tagline #ui-wrapper .pane-content, #ui-wrapper #breadcrumb, #ui-wrapper .page-node .edgy .field-name-body, .page-node .edgy #ui-wrapper .field-name-body, #ui-wrapper .entity-paragraphs-item.grey-border {
     padding-top: 0;
     padding-bottom: 0;
     position: relative; }
@@ -8981,19 +9134,19 @@ img {
     margin: 40px auto;
     padding: 20px; }
 
-.paragraphs-item-social {
+.paragraphs-item-social, .front .pane-social {
   background-color: #333333;
   color: #fff; }
-  .paragraphs-item-social .social-title {
+  .paragraphs-item-social .social-title, .front .pane-social .social-title {
     color: #fff;
     font-size: 2rem;
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
-  .paragraphs-item-social .social {
+  .paragraphs-item-social .social, .front .pane-social .social {
     text-align: center;
     margin-bottom: 0; }
-  .paragraphs-item-social .social-icon {
+  .paragraphs-item-social .social-icon, .front .pane-social .social-icon {
     display: inline-block;
     float: none; }
 
