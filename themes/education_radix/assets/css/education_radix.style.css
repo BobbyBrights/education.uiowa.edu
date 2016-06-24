@@ -8979,7 +8979,18 @@ p {
     .front .btn-homepage-callout.btn-position-bottom-left {
       position: absolute;
       left: 40px;
-      bottom: 20px; } }
+      bottom: 40px; } }
+  @media (min-width: 768px) {
+    .front .btn-homepage-callout.btn-position-top-right {
+      margin-top: 0;
+      position: absolute;
+      right: 40px;
+      top: 40px; } }
+
+.front .pane-callout-programs,
+.front .pane-callout-research,
+.front .pane-callout-leadership {
+  margin-top: 40px; }
 
 .tall-image {
   position: relative; }

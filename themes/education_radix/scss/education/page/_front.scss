@@ -103,8 +103,23 @@
       @include breakpoint($education-sm-min) {
         position: absolute;
         left: 40px;
-        bottom: 20px;
+        bottom: 40px;
       }
     }
+
+    &.btn-position-top-right {
+      @include breakpoint($education-sm-min) {
+        margin-top: 0;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+      }
+    }
+  }
+
+  .pane-callout-programs,
+  .pane-callout-research,
+  .pane-callout-leadership {
+    margin-top: 40px;
   }
 }

@@ -172,6 +172,29 @@ function education_pages_default_page_manager_pages() {
     $pane->uuid = 'dce9d1e5-d608-4e0e-9406-09d1b4af7e4e';
     $display->content['new-dce9d1e5-d608-4e0e-9406-09d1b4af7e4e'] = $pane;
     $display->panels['middle'][4] = 'new-dce9d1e5-d608-4e0e-9406-09d1b4af7e4e';
+    $pane = new stdClass();
+    $pane->pid = 'new-159d3ac5-d8ce-417d-b837-2e7dcdcb99e0';
+    $pane->panel = 'middle';
+    $pane->type = 'callout_leadership';
+    $pane->subtype = 'callout_leadership';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = '159d3ac5-d8ce-417d-b837-2e7dcdcb99e0';
+    $display->content['new-159d3ac5-d8ce-417d-b837-2e7dcdcb99e0'] = $pane;
+    $display->panels['middle'][5] = 'new-159d3ac5-d8ce-417d-b837-2e7dcdcb99e0';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
