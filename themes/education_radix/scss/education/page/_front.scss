@@ -54,4 +54,18 @@
       @extend .container;
     }
   }
+
+  .callout-text-wrapper {
+    padding: 40px 0;
+
+    .container {
+      max-width: 800px;
+    }
+  }
+
+  .callout-text {
+    font-family: $avenir-85;
+    @include font-size(1.2);
+    text-align: center;
+  }
 }

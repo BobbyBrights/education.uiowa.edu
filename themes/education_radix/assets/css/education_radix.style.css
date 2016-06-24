@@ -8943,6 +8943,16 @@ p {
   background-color: #cccccc;
   padding: 40px 0; }
 
+.front .callout-text-wrapper {
+  padding: 40px 0; }
+  .front .callout-text-wrapper .container, .front .callout-text-wrapper .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .callout-text-wrapper .pane-content, .front .callout-text-wrapper .pane-social .pane-content, .front .pane-social .callout-text-wrapper .pane-content, .front .callout-text-wrapper .pane-tagline .pane-content, .front .pane-tagline .callout-text-wrapper .pane-content, .front .callout-text-wrapper #breadcrumb, .front .callout-text-wrapper .page-node .edgy .field-name-body, .page-node .edgy .front .callout-text-wrapper .field-name-body, .front .callout-text-wrapper .entity-paragraphs-item.grey-border {
+    max-width: 800px; }
+
+.front .callout-text {
+  font-family: "AvenirLT-Heavy";
+  font-size: 1.2rem;
+  text-align: center; }
+
 .tall-image {
   position: relative; }
   .tall-image img {
