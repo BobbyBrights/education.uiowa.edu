@@ -80,6 +80,9 @@ function education_radix_preprocess_page(&$variables) {
   if ($variables['is_front']) {
     // Make this page full width.
     $variables['theme_hook_suggestions'][] = 'page__edgy';
+
+    // Remove tabs.
+    unset($variables['tabs']);
   }
 }
 
