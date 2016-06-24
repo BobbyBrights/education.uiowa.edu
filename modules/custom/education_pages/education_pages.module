@@ -14,3 +14,60 @@ function education_pages_ctools_plugin_directory($owner, $plugin_type) {
     return 'plugins/' . $plugin_type;
   }
 }
+
+/**
+ * Implements hook_menu().
+ */
+function education_pages_menu() {
+  $items['admin/config/system/homepage'] = array(
+    'title' => "Manage Homepage",
+    'description' => "Determine header options, etc.",
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('education_pages_homepage_configuration'),
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+function education_pages_homepage_configuration($form, &$form_state) {
+  $form['#node'] = node_load(variable_get('education_pages_homepage_nid'));
+  if (!$form['#node']) {
+    $form['#node'] = entity_create('node', array('type' => 'page'));
+  }
+
+  $form['#node']->title = 'Homepage';
+
+  // Add page's field to a continer on the form.
+  $form['page'] = array(
+    '#type' => 'container',
+    '#parents' => array('page'),
+    '#tree' => TRUE,
+  );
+
+  field_attach_form('node', $form['#node'], $form['page'], $form_state);
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+  return $form;
+}
+
+/**
+ * Validation handler for education_pages_homepage_configuration().
+ */
+function education_pages_homepage_configuration_validate($form, &$form_state) {
+  field_attach_form_validate('page', $form['#node'], $form['page'], $form_state);
+}
+
+/**
+ * Submit handler education_pages_homepage_configuration().
+ */
+function education_pages_homepage_configuration_submit($form, &$form_state) {
+  field_attach_submit('node', $form['#node'], $form['page'], $form_state);
+  node_save($form['#node']);
+  variable_set('education_pages_homepage_nid', $form['#node']->nid);
+  variable_set('site_frontpage', 'node/' . $form['#node']->nid);
+  drupal_set_message(t('The homepage configuration has been saved.'), 'status');
+}
