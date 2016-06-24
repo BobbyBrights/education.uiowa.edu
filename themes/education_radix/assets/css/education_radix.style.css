@@ -8974,7 +8974,12 @@ p {
   @media (min-width: 768px) {
     .front .btn-homepage-callout.btn-position-right {
       position: absolute;
-      right: 0; } }
+      right: 40px; } }
+  @media (min-width: 768px) {
+    .front .btn-homepage-callout.btn-position-bottom-left {
+      position: absolute;
+      left: 40px;
+      bottom: 20px; } }
 
 .tall-image {
   position: relative; }

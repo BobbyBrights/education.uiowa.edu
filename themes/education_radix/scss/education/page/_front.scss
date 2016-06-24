@@ -95,7 +95,15 @@
     &.btn-position-right {
       @include breakpoint($education-sm-min) {
         position: absolute;
-        right: 0;
+        right: 40px;
+      }
+    }
+
+    &.btn-position-bottom-left {
+      @include breakpoint($education-sm-min) {
+        position: absolute;
+        left: 40px;
+        bottom: 20px;
       }
     }
   }
