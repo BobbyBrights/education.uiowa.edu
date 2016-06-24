@@ -51,7 +51,7 @@ function callout_leadership_edit_form_submit($form, &$form_state) {
  * See ctools_plugin_examples for more advanced info.
  */
 function callout_leadership_render($subtype, $conf, $panel_args, $context = NULL) {
-  $background_image = drupal_get_path('module', 'education_pages') . '/images/leadership.jpg';
+  $background_image = drupal_get_path('module', 'education_pages') . '/images/leadership.png';
   $block = new stdClass();
   $block->title = '';
   $block->content = array(
