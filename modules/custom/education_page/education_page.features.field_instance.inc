@@ -98,8 +98,8 @@ function education_page_field_default_field_instances() {
       'file_directory' => 'images/headers/tall',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '2000x700',
-      'min_resolution' => '2000x700',
+      'max_resolution' => '2000x800',
+      'min_resolution' => '2000x800',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -199,9 +199,71 @@ function education_page_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-page-field_page_paragraphs'.
+  $field_instances['node-page-field_page_paragraphs'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_page_paragraphs',
+    'label' => 'Content blocks',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'announcements' => 'announcements',
+        'callout' => 'callout',
+        'events' => 'events',
+        'fast_fact' => 'fast_fact',
+        'slogan' => 'slogan',
+        'social' => 'social',
+        'text' => 'text',
+      ),
+      'bundle_weights' => array(
+        'announcements' => 2,
+        'callout' => 3,
+        'events' => 4,
+        'fast_fact' => 5,
+        'slogan' => 6,
+        'social' => 7,
+        'text' => 8,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Content Block',
+      'title_multiple' => 'Content Blocks',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 9,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Content blocks');
   t('Header type');
   t('Tall image');
 

@@ -69,7 +69,7 @@ function education_common_image_default_styles() {
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 1200,
-          'height' => 700,
+          'height' => 800,
           'upscale' => 0,
           'respectminimum' => 1,
           'onlyscaleifcrop' => 0,
@@ -112,7 +112,7 @@ function education_common_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 2000,
-          'height' => 700,
+          'height' => 800,
         ),
         'weight' => 1,
       ),
