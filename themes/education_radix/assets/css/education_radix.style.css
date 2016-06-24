@@ -8954,7 +8954,7 @@ p {
   text-align: center; }
 
 .front .callout-image-wrapper .container, .front .callout-image-wrapper .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye .callout-image-wrapper .pane-content, .front .callout-image-wrapper .pane-social .pane-content, .front .pane-social .callout-image-wrapper .pane-content, .front .callout-image-wrapper .pane-tagline .pane-content, .front .pane-tagline .callout-image-wrapper .pane-content, .front .callout-image-wrapper #breadcrumb, .front .callout-image-wrapper .page-node .edgy .field-name-body, .page-node .edgy .front .callout-image-wrapper .field-name-body, .front .callout-image-wrapper .entity-paragraphs-item.grey-border {
-  height: 400px;
+  height: 570px;
   position: relative;
   text-align: center; }
 
@@ -8963,7 +8963,7 @@ p {
   border: 4px solid #333333;
   color: #333333;
   font-size: 2rem;
-  margin-top: 100px;
+  margin-top: 190px;
   padding: 2rem 1rem;
   text-transform: uppercase; }
   @media (min-width: 992px) {
