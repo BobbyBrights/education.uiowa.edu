@@ -287,8 +287,7 @@ function education_events_views_views_default_views() {
   $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area_text_custom']['content'] = '<h2>Events</h2>
-<p>Find out what\'s happening around the College on our Events page.</p>
+  $handler->display->display_options['empty']['area_text_custom']['content'] = '<p>Find out what\'s happening around the College on our Events page.</p>
 <a class="btn-long" href="/events">Go to Events</a>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Month */
