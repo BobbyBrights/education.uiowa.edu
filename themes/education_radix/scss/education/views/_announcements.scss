@@ -1,0 +1,30 @@
+.pane-education-announcements-education-honors-awards-pane-view {
+      @extend .col-sm-4;
+      padding:10px 20px;
+
+      .pane-title {
+        @extend .yellow-background;
+        @include font-size(1.75);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        margin-bottom: 0;
+        padding:20px 20px 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .pane-content {
+        @extend .yellow-background;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        margin-top:0;
+        margin-left: 0; margin-right:0;
+        text-align: left;
+        padding:20px 30px;
+      }
+
+      .views-field-body {
+        margin-bottom: 30px;
+      }
+
+    }

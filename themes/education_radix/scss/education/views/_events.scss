@@ -15,3 +15,68 @@
     margin-left: 10px;
   }
 }
+.pane-events-education-events-today-pane-view { //used on News & Events page
+  @extend .col-sm-4;
+  padding:10px 20px;
+
+  .pane-title {
+    @extend .grey-background;
+    @include font-size(2.5);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-bottom: 0;
+    padding:20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .pane-content {
+    @extend .grey-background;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top:0;
+    margin-left: 0; margin-right:0;
+    text-align: center;
+    padding:10px;
+  }
+.views-field-field-event-date, .views-field-field-event-date-1 {
+  display: none;
+  visibility: hidden;
+}
+.views-row-1{
+  .views-field-field-event-date, .views-field-field-event-date-1 {
+    @extend .yellow-background;
+    display: block;
+    height: 100px;
+    line-height: 70px;
+    padding:20px;
+    visibility: visible;
+    margin-left:auto;margin-right:auto;
+    text-transform: uppercase;
+    max-width:240px;
+  }
+  .views-field-field-event-date {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    @include font-size(3);
+    .field-content{
+      border-bottom: solid White 3px;
+    }
+  }
+  .views-field-field-event-date-1 {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  @include font-size(4);
+  }
+}
+  .views-field-title {
+    @include font-size(1.2);
+    font-family: $avenir-85;
+    margin: 20px auto;
+    max-width: 240px;
+  }
+
+  .view-footer {
+    padding-bottom:10px;
+  }
+}

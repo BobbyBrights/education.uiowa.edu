@@ -269,6 +269,89 @@ function education_events_views_views_default_views() {
   $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_event_affiliations_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['path'] = 'events/for/%';
+
+  /* Display: Todays Events */
+  $handler = $view->new_display('panel_pane', 'Todays Events', 'education_events_today_pane_view');
+  $handler->display->display_options['display_description'] = 'For News & Events page';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/events" title="Events page">See more events &gt;&gt;</a>
+<br/>';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Unfiltered text */
+  $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area_text_custom']['content'] = '<h2>Events</h2>
+<p>Find out what\'s happening around the College on our Events page.</p>
+<a class="btn-long" href="/events">Go to Events</a>';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Month */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['ui_name'] = 'Month';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['settings'] = array(
+    'format_type' => 'custom',
+    'custom_date_format' => 'M',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+  );
+  /* Field: Day */
+  $handler->display->display_options['fields']['field_event_date_1']['id'] = 'field_event_date_1';
+  $handler->display->display_options['fields']['field_event_date_1']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date_1']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date_1']['ui_name'] = 'Day';
+  $handler->display->display_options['fields']['field_event_date_1']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date_1']['settings'] = array(
+    'format_type' => 'custom',
+    'custom_date_format' => 'd',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'event' => 'event',
+  );
+  /* Filter criterion: Content: Date -  start date (field_event_date) */
+  $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
+  $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'today';
+  $handler->display->display_options['filters']['field_event_date_value']['year_range'] = '-0:+0';
   $export['events'] = $view;
 
   return $export;

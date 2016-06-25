@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Article Views feature.
+ */
+
+include_once 'education_article_views.features.inc';
