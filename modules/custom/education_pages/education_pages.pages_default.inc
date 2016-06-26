@@ -246,13 +246,111 @@ function education_pages_default_page_manager_pages() {
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'left' => NULL,
+      'right' => NULL,
+      'first' => NULL,
+      'second' => NULL,
+      'third' => NULL,
+      'main' => NULL,
+      'secondary' => NULL,
+      'tertiary-first' => NULL,
+      'tertiary-second' => NULL,
+      'tertiary-third' => NULL,
     ),
   );
   $display->cache = array();
-  $display->title = 'News';
+  $display->title = 'News & Events';
   $display->uuid = '637f51db-d553-476b-93a7-230e1407a6c2';
   $display->content = array();
   $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-7295be28-dd37-4d09-a777-d9f971926355';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'education_articles-education_news_pane_view';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '7295be28-dd37-4d09-a777-d9f971926355';
+    $display->content['new-7295be28-dd37-4d09-a777-d9f971926355'] = $pane;
+    $display->panels['middle'][0] = 'new-7295be28-dd37-4d09-a777-d9f971926355';
+    $pane = new stdClass();
+    $pane->pid = 'new-8958b01b-884f-4f8a-ad07-e88e6c52694d';
+    $pane->panel = 'middle';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Education Page News Quicklinks',
+      'title' => '',
+      'body' => '<p class="large-text"><a class="btn-long" href="http://magazine.education.uiowa.edu">Alumni Magazine</a></p>
+
+<p class="large-text"><a class="btn-long" href="http://wayback.archive-it.org/823/20151226142811/http://www.education.uiowa.edu/news/annual/2015">Annual Report</a></p>
+',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-education-articles-education-news-pane-custom',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '8958b01b-884f-4f8a-ad07-e88e6c52694d';
+    $display->content['new-8958b01b-884f-4f8a-ad07-e88e6c52694d'] = $pane;
+    $display->panels['middle'][1] = 'new-8958b01b-884f-4f8a-ad07-e88e6c52694d';
+    $pane = new stdClass();
+    $pane->pid = 'new-7cf76a78-d212-4489-b6ee-522e8674a8a7';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'events-education_events_today_pane_view';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '7cf76a78-d212-4489-b6ee-522e8674a8a7';
+    $display->content['new-7cf76a78-d212-4489-b6ee-522e8674a8a7'] = $pane;
+    $display->panels['middle'][2] = 'new-7cf76a78-d212-4489-b6ee-522e8674a8a7';
+    $pane = new stdClass();
+    $pane->pid = 'new-3885bde2-8ee0-4804-967f-0fa5b646a73f';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'education_announcements-education_honors_awards_pane_view';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '3885bde2-8ee0-4804-967f-0fa5b646a73f';
+    $display->content['new-3885bde2-8ee0-4804-967f-0fa5b646a73f'] = $pane;
+    $display->panels['middle'][3] = 'new-3885bde2-8ee0-4804-967f-0fa5b646a73f';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
