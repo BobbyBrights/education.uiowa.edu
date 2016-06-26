@@ -38,9 +38,11 @@ function education_person_field_default_field_bases() {
           'type' => 'property',
         ),
         'target_bundles' => array(
+          'center' => 'center',
           'degree' => 'degree',
           'department' => 'department',
           'program' => 'program',
+          'service' => 'service',
         ),
       ),
       'target_type' => 'node',
