@@ -11,41 +11,66 @@
  */
 ?>
 <header id="header" class="header" role="header">
-  <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <?php if ($site_name || $logo): ?>
-          <a href="<?php print $front_page; ?>" class="navbar-brand" rel="home" title="<?php print t('Home'); ?>">
-            <?php if ($logo): ?>
-              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo" />
-            <?php endif; ?>
-            <?php if ($site_name): ?>
-              <span class="site-name"><?php print $site_name; ?></span>
-            <?php endif; ?>
-          </a>
-        <?php endif; ?>
-      </div> <!-- /.navbar-header -->
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <?php if ($main_menu): ?>
-          <ul id="main-menu" class="menu nav navbar-nav">
-            <?php print render($main_menu); ?>
-          </ul>
-        <?php endif; ?>
-        <?php if ($search_form): ?>
-          <?php print $search_form; ?>
-        <?php endif; ?>
-      </div><!-- /.navbar-collapse -->
-    </nav><!-- /.navbar -->
-  </div> <!-- /.container -->
+  <div class="branding">
+    <div class="container">
+      <h1 id="site-name"><a href="<?php print $front_page; ?>" class="site-name" rel="home" title="<?php print t('Home'); ?>">College of <span class="site-name-bold">Education</span></a></h1>
+      <button class="primary-menu-toggle" type="button" data-toggle="collapse" data-target="#primaryMenu" aria-expanded="false" aria-controls="primaryMenu">
+        <span class="menu-text">Menu</span><span class="menu-icon menu-icon-open" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  <div class="collapse" id="primaryMenu" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row row-menu-links">
+            <?php print render($primary_menu_main_menu_links); ?>
+          </div>
+          <div class="row row-audiences-news-events">
+            <div class="col-sm-6">
+              <div class="audiences">
+                <h2 class="section-heading"><?php print(l('Information for', 'home')); ?></h2>
+                <?php print render($audiences_list); ?>
+              </div>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+              <div class="news-events">
+                <h2 class="section-heading"><?php print(l('News & Events', 'home')); ?></h2>
+                <?php print($date_today); ?>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="cta-links">
+            <h2 class="offscreen">Quick Links</h2>
+            <?php print(l('Apply', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
+            <?php print(l('Visit', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
+            <?php print(l('Contact', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
+            <?php print(l('Support the College', 'home', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
+          </div>
+          <div class="social-links">
+            <h2 class="offscreen">Connect with Us</h2>
+            <p class='clearfix social'>
+            <?php print(l("<span class='offscreen'>Facebook</span>
+          <span class='social-icon footer-social-facebook' id='facebook-icon'></span>", 'https://www.facebook.com/UICollegeofEducation', array('attributes' => array('class' => array('facebook', 'social-link')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>Instagram</span>
+          <span class='social-icon footer-social-instagram' id='instagram-icon'></span>", 'http://instagram.com/uicollegeofed', array('attributes' => array('class' => array('instagram', 'social-link')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>Twitter</span>
+          <span class='social-icon footer-social-twitter' id='twitter-icon'></span>", 'https://twitter.com/UIowaEducation', array('attributes' => array('class' => array('twitter', 'social-link')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>LinkedIn</span>
+          <span class='social-icon footer-social-linkedin' id='linkdin-icon'></span>", 'https://www.linkedin.com/in/uiowacollegeofeducation', array('attributes' => array('class' => array('linkedin', 'social-link')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>Pinterest</span>
+          <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span>", 'http://pinterest.com/uicoe', array('attributes' => array('class' => array('pinterest', 'social-link')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>YouTube</span>
+          <span class='social-icon footer-social-youtube' id='youtube-icon'></span>", 'https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA', array('attributes' => array('class' => array('youtube', 'social-link')),'html' => TRUE,))); ?>
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
 <div id="main-wrapper">
