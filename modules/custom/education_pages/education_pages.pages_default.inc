@@ -364,7 +364,7 @@ function education_pages_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'People Directory';
   $page->admin_description = '';
-  $page->path = 'directory';
+  $page->path = 'directories';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
@@ -419,7 +419,7 @@ function education_pages_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Directory buttons',
       'title' => '',
-      'body' => '<p><a class="btn-long">Offices and Centers</a></p>
+      'body' => '<br/><p><a class="btn-long">Offices and Centers</a></p>
 
 <p><a class="btn-long">Programs and Departments</a></p>
 

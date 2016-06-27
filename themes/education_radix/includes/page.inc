@@ -81,6 +81,12 @@ function education_radix_preprocess_page(&$variables) {
     // Make this page full width.
     $variables['theme_hook_suggestions'][] = 'page__edgy';
   }
+
+  // Get the full menu tree of the Main Menu.
+  $menu_tree = menu_build_tree('main-menu');
+  // Keep only the first 3 branches of the Main Menu.
+  $chosen_menu_branches = array_slice($menu_tree, 0, 3);
+  $variables['primary_menu_main_menu_links'] = menu_tree_output($chosen_menu_branches);
 }
 
 /**
@@ -90,4 +96,12 @@ function education_radix_process_page(&$variables) {
   if (isset($variables['header_classes_array'])) {
     $variables['header_classes'] = implode(' ', $variables['header_classes_array']);
   }
+
+  // Format today's date for the News & Events section of primary navigation.
+  $month = '<span class="month">' . date('M') . '</span>';
+  $day = '<span class="day">' . date('j') . '</span>';
+  $variables['date_today'] = '<div class="todays-date">' . $month . $day . '</div>';
+
+  // Get the listing of Audience terms.
+  $variables['audiences_list'] = views_embed_view('audiences', 'audiences_list_block');
 }

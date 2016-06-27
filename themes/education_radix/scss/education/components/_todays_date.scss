@@ -1,0 +1,22 @@
+.todays-date {
+  background-color: $black_80;
+  border-radius: 4px;
+  color: #fff;
+  margin: 20px;
+  padding: 20px;
+
+  .month {
+    border-bottom: 3px solid $yellow;
+    display: block;
+    @include font-size(2);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .day {
+    display: block;
+    font-family: $avenir-95;
+    @include font-size(2.5);
+    text-align: center;
+  }
+}

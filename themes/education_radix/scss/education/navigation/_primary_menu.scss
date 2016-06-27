@@ -1,0 +1,215 @@
+$bp-menu-grid: $education-sm-min;
+
+.primary-menu-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  float: right;
+  margin-top: 9px;
+  text-transform: uppercase;
+  @include font-size(1.2);
+  color: #fff;
+
+  .menu-text {
+    font-family: $avenir-85;
+    position: relative;
+    top: -4px;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    height: 23px;
+    width: 46px;
+    margin-left: 1rem;
+  }
+
+  .menu-icon-open {
+    background: transparent url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_white.png') no-repeat center center;
+    background-size: contain;
+  }
+
+  .menu-icon-close {
+    background: transparent url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/x_white.png') no-repeat center center;
+    background-size: contain;
+  }
+
+  &:hover, &:focus {
+    color: $yellow;
+
+    .menu-icon-open {
+      background-image: url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_yellow.png');
+      background-size: contain;
+    }
+
+    .menu-icon-close {
+      background: transparent url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/x_yellow.png') no-repeat center center;
+      background-size: contain;
+    }
+  }
+}
+
+#primaryMenu {
+  background-color: $black_80;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  .container {
+    height: 100vh;
+    min-height: calc(100vh - (#{$is_not_logged_in}));
+    height: calc(100vh - (#{$is_not_logged_in}));
+    overflow-y: scroll;
+  }
+
+  .row {
+    @include breakpoint(max-width $bp-menu-grid - 1px) {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 40px;
+  }
+
+  .row-menu-links {
+    @include breakpoint(max-width $bp-menu-grid - 1px) {
+      margin-bottom: 0;
+    }
+
+    // Display menu links in columns.
+    > ul.menu > li {
+      @extend .col-sm-4;
+
+      > a {
+        @extend .section-heading;
+        margin-bottom: 0;
+
+        &:hover, &:focus {
+          color: #fff;
+        }
+      }
+
+      > ul {
+        display: none;
+        @include breakpoint($bp-menu-grid) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  ul.menu {
+    a {
+      margin-bottom: 10px;
+      padding: 0;
+
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+    }
+
+    margin-left: 0;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover, &:focus {
+      color: $yellow;
+    }
+  }
+
+  .btn-primary {
+    border-radius: 6px;
+    color: $black_80;
+    display: block;
+    font-family: $avenir-85;
+    @include font-size(1.125);
+    margin-bottom: 1rem;
+
+    &:hover, &:focus {
+      color: $black_80;
+    }
+  }
+
+  .section-heading {
+    color: $yellow;
+    @include font-size(1.125);
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: $yellow;
+
+      &:hover, &:focus {
+        color: #fff;
+      }
+    }
+  }
+
+  .audiences {
+    @include breakpoint($bp-menu-grid) {
+      background-color: $black;
+      border-radius: 4px;
+      padding: 20px;
+    }
+
+    .view {
+      display: none;
+
+      @include breakpoint($bp-menu-grid) {
+        display: block;
+      }
+    }
+  }
+
+  .news-events {
+    .section-heading {
+      @include breakpoint($bp-menu-grid) {
+        text-align: center;
+      }
+    }
+
+    .todays-date {
+      display: none;
+      @include breakpoint($bp-menu-grid) {
+        display: block;
+      }
+    }
+
+    @include breakpoint($bp-menu-grid) {
+      background-color: $black;
+      border-radius: 4px;
+      padding: 20px;
+    }
+  }
+
+  .social-links {
+    @extend .row;
+  }
+
+  .social-link {
+    @extend .col-xs-4;
+    margin-bottom: 10px;
+  }
+
+  .social {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .social-icon {
+    @extend .footer-social;
+    display: inline-block;
+    float: none;
+    margin: 0;
+  }
+
+  .cta-links {
+    a:last-of-type {
+      @include breakpoint($bp-menu-grid) {
+        margin: 40px 0;
+      }
+    }
+  }
+}

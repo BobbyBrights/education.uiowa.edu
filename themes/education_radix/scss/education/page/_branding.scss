@@ -1,0 +1,24 @@
+.branding {
+  padding: 10px 0;
+}
+
+h1#site-name {
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-name {
+  color: #fff;
+  font-family: $avenir-35;
+  text-transform: uppercase;
+  @include font-size(2);
+
+  &:hover, &:focus {
+    color: $yellow;
+  }
+
+  .site-name-bold {
+    font-family: $avenir-95;
+  }
+}
