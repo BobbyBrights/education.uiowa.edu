@@ -22,6 +22,13 @@
   }
 }
 
+#header {
+  background-color: #000;
+
+  &.primary-menu-open {
+    background-color: $black_80;
+  }
+}
 
 .page-header {
   border-bottom: none;

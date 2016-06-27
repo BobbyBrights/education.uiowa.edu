@@ -8859,7 +8859,6 @@ p {
     text-align: center; }
 
 .branding {
-  background-color: #000;
   padding: 10px 0; }
 
 h1#site-name {
@@ -9070,6 +9069,11 @@ h1#site-name {
   .tall-image h1.title {
     border-bottom: none;
     padding: 0; }
+
+#header {
+  background-color: #000; }
+  #header.primary-menu-open {
+    background-color: #333333; }
 
 .page-header {
   border-bottom: none;
