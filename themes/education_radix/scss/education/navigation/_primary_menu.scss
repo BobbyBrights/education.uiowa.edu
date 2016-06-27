@@ -1,3 +1,5 @@
+$bp-menu-grid: $education-sm-min;
+
 .primary-menu-toggle {
   background-color: transparent;
   border: none;
@@ -60,7 +62,17 @@
   }
 
   .row {
+    @include breakpoint(max-width $bp-menu-grid - 1px) {
+      margin-bottom: 0;
+    }
+
     margin-bottom: 40px;
+  }
+
+  .row-menu-links {
+    @include breakpoint(max-width $bp-menu-grid - 1px) {
+      margin-bottom: 0;
+    }
 
     // Display menu links in columns.
     > ul.menu > li {
@@ -72,6 +84,13 @@
 
         &:hover, &:focus {
           color: #fff;
+        }
+      }
+
+      > ul {
+        display: none;
+        @include breakpoint($bp-menu-grid) {
+          display: block;
         }
       }
     }
@@ -111,17 +130,11 @@
     }
   }
 
-  .dark-background {
-    background-color: $black;
-    border-radius: 4px;
-    padding: 20px;
-  }
-
   .section-heading {
     color: $yellow;
-    font-family: $avenir-85;
     @include font-size(1.125);
     text-transform: uppercase;
+    line-height: 1.5;
     margin-top: 0;
     margin-bottom: 0.5rem;
 
@@ -134,8 +147,41 @@
     }
   }
 
-  .news-events .section-heading {
-    text-align: center;
+  .audiences {
+    @include breakpoint($bp-menu-grid) {
+      background-color: $black;
+      border-radius: 4px;
+      padding: 20px;
+    }
+
+    .view {
+      display: none;
+
+      @include breakpoint($bp-menu-grid) {
+        display: block;
+      }
+    }
+  }
+
+  .news-events {
+    .section-heading {
+      @include breakpoint($bp-menu-grid) {
+        text-align: center;
+      }
+    }
+
+    .todays-date {
+      display: none;
+      @include breakpoint($bp-menu-grid) {
+        display: block;
+      }
+    }
+
+    @include breakpoint($bp-menu-grid) {
+      background-color: $black;
+      border-radius: 4px;
+      padding: 20px;
+    }
   }
 
   .social-links {
@@ -161,7 +207,9 @@
 
   .cta-links {
     a:last-of-type {
-      margin: 40px 0;
+      @include breakpoint($bp-menu-grid) {
+        margin: 40px 0;
+      }
     }
   }
 }

@@ -23,18 +23,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-          <div class="row">
+          <div class="row row-menu-links">
             <?php print render($primary_menu_main_menu_links); ?>
           </div>
-          <div class="row">
+          <div class="row row-audiences-news-events">
             <div class="col-sm-6">
-              <div class="audiences dark-background">
+              <div class="audiences">
                 <h2 class="section-heading"><?php print(l('Information for', 'home')); ?></h2>
                 <?php print render($audiences_list); ?>
               </div>
             </div>
             <div class="col-sm-4 col-sm-offset-2">
-              <div class="news-events dark-background">
+              <div class="news-events">
                 <h2 class="section-heading"><?php print(l('News & Events', 'home')); ?></h2>
                 <?php print($date_today); ?>
               </div>

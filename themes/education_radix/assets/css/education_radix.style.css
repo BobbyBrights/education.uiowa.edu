@@ -1540,7 +1540,7 @@ pre {
   .row:after, #primaryMenu .social-links:after, .paragraphs-item-events .view-content:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-md-3, .col-lg-3, .col-xs-4, #primaryMenu .social-link, .col-sm-4, #primaryMenu .row > ul.menu > li, #primaryMenu .social-links > ul.menu > li, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li, .pane-education-announcements-education-honors-awards-pane-view, .pane-events-education-events-today-pane-view, .pane-education-articles-education-news-pane-custom, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-md-3, .col-lg-3, .col-xs-4, #primaryMenu .social-link, .col-sm-4, #primaryMenu .row-menu-links > ul.menu > li, .pane-education-announcements-education-honors-awards-pane-view, .pane-events-education-events-today-pane-view, .pane-education-articles-education-news-pane-custom, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
 #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .pane-education-articles-education-news-pane-view, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .view #primaryMenu .social-links > .list-group, #primaryMenu .view .social-links > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group, .col-lg-12 {
   position: relative;
   min-height: 1px;
@@ -1704,7 +1704,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-sm-4, #primaryMenu .row > ul.menu > li, #primaryMenu .social-links > ul.menu > li, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li, .pane-education-announcements-education-honors-awards-pane-view, .pane-events-education-events-today-pane-view, .pane-education-articles-education-news-pane-custom, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .pane-education-articles-education-news-pane-view, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-sm-4, #primaryMenu .row-menu-links > ul.menu > li, .pane-education-announcements-education-honors-awards-pane-view, .pane-events-education-events-today-pane-view, .pane-education-articles-education-news-pane-custom, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .pane-education-articles-education-news-pane-view, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
   .col-sm-1 {
     width: 8.33333%; }
@@ -1712,7 +1712,7 @@ pre {
     width: 16.66667%; }
   .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row {
     width: 25%; }
-  .col-sm-4, #primaryMenu .row > ul.menu > li, #primaryMenu .social-links > ul.menu > li, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li, .pane-education-announcements-education-honors-awards-pane-view, .pane-events-education-events-today-pane-view, .pane-education-articles-education-news-pane-custom, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number {
+  .col-sm-4, #primaryMenu .row-menu-links > ul.menu > li, .pane-education-announcements-education-honors-awards-pane-view, .pane-events-education-events-today-pane-view, .pane-education-articles-education-news-pane-custom, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number {
     width: 33.33333%; }
   .col-sm-5 {
     width: 41.66667%; }
@@ -9181,10 +9181,21 @@ img {
     overflow-y: scroll; }
   #primaryMenu .row, #primaryMenu .social-links, #primaryMenu .paragraphs-item-events .view-content, .paragraphs-item-events #primaryMenu .view-content, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref {
     margin-bottom: 40px; }
-    #primaryMenu .row > ul.menu > li > a, #primaryMenu .social-links > ul.menu > li > a, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a {
-      margin-bottom: 0; }
-      #primaryMenu .row > ul.menu > li > a:hover, #primaryMenu .social-links > ul.menu > li > a:hover, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a:hover, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a:hover, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a:hover, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a:hover, #primaryMenu .row > ul.menu > li > a:focus, #primaryMenu .social-links > ul.menu > li > a:focus, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a:focus, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a:focus, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a:focus, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a:focus {
-        color: #fff; }
+    @media (max-width: 767px) {
+      #primaryMenu .row, #primaryMenu .social-links, #primaryMenu .paragraphs-item-events .view-content, .paragraphs-item-events #primaryMenu .view-content, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref {
+        margin-bottom: 0; } }
+  @media (max-width: 767px) {
+    #primaryMenu .row-menu-links {
+      margin-bottom: 0; } }
+  #primaryMenu .row-menu-links > ul.menu > li > a {
+    margin-bottom: 0; }
+    #primaryMenu .row-menu-links > ul.menu > li > a:hover, #primaryMenu .row-menu-links > ul.menu > li > a:focus {
+      color: #fff; }
+  #primaryMenu .row-menu-links > ul.menu > li > ul {
+    display: none; }
+    @media (min-width: 768px) {
+      #primaryMenu .row-menu-links > ul.menu > li > ul {
+        display: block; } }
   #primaryMenu ul.menu {
     margin-left: 0; }
     #primaryMenu ul.menu a {
@@ -9205,23 +9216,40 @@ img {
     margin-bottom: 1rem; }
     #primaryMenu .btn-primary:hover, #primaryMenu body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions #primaryMenu .btn:hover:first-child, #primaryMenu .btn-long:hover, #primaryMenu .more-link a:hover, .more-link #primaryMenu a:hover, #primaryMenu .btn-primary:focus, #primaryMenu body.maintenance-page .form-actions .btn:focus:first-child, body.maintenance-page .form-actions #primaryMenu .btn:focus:first-child, #primaryMenu .btn-long:focus, #primaryMenu .more-link a:focus, .more-link #primaryMenu a:focus {
       color: #333333; }
-  #primaryMenu .dark-background {
-    background-color: #000000;
-    border-radius: 4px;
-    padding: 20px; }
-  #primaryMenu .section-heading, #primaryMenu .row > ul.menu > li > a, #primaryMenu .social-links > ul.menu > li > a, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a {
+  #primaryMenu .section-heading, #primaryMenu .row-menu-links > ul.menu > li > a {
     color: #ffe100;
-    font-family: "AvenirLT-Heavy";
     font-size: 1.125rem;
     text-transform: uppercase;
+    line-height: 1.5;
     margin-top: 0;
     margin-bottom: 0.5rem; }
-    #primaryMenu .section-heading a, #primaryMenu .row > ul.menu > li > a a, #primaryMenu .social-links > ul.menu > li > a a, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a a, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a a, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a a, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a a {
+    #primaryMenu .section-heading a, #primaryMenu .row-menu-links > ul.menu > li > a a {
       color: #ffe100; }
-      #primaryMenu .section-heading a:hover, #primaryMenu .row > ul.menu > li > a a:hover, #primaryMenu .social-links > ul.menu > li > a a:hover, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a a:hover, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a a:hover, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a a:hover, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a a:hover, #primaryMenu .section-heading a:focus, #primaryMenu .row > ul.menu > li > a a:focus, #primaryMenu .social-links > ul.menu > li > a a:focus, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a a:focus, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a a:focus, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a a:focus, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a a:focus {
+      #primaryMenu .section-heading a:hover, #primaryMenu .row-menu-links > ul.menu > li > a a:hover, #primaryMenu .section-heading a:focus, #primaryMenu .row-menu-links > ul.menu > li > a a:focus {
         color: #fff; }
-  #primaryMenu .news-events .section-heading, #primaryMenu .news-events .row > ul.menu > li > a, #primaryMenu .news-events .social-links > ul.menu > li > a, #primaryMenu .news-events .paragraphs-item-events .view-content > ul.menu > li > a, #primaryMenu .paragraphs-item-events .news-events .view-content > ul.menu > li > a, .paragraphs-item-events #primaryMenu .news-events .view-content > ul.menu > li > a, #primaryMenu .news-events .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a, #primaryMenu .paragraphs-item-fast-fact .news-events .field-name-field-fact-fact-ref > ul.menu > li > a, .paragraphs-item-fast-fact #primaryMenu .news-events .field-name-field-fact-fact-ref > ul.menu > li > a {
-    text-align: center; }
+  @media (min-width: 768px) {
+    #primaryMenu .audiences {
+      background-color: #000000;
+      border-radius: 4px;
+      padding: 20px; } }
+  #primaryMenu .audiences .view {
+    display: none; }
+    @media (min-width: 768px) {
+      #primaryMenu .audiences .view {
+        display: block; } }
+  @media (min-width: 768px) {
+    #primaryMenu .news-events .section-heading, #primaryMenu .news-events .row-menu-links > ul.menu > li > a {
+      text-align: center; } }
+  #primaryMenu .news-events .todays-date {
+    display: none; }
+    @media (min-width: 768px) {
+      #primaryMenu .news-events .todays-date {
+        display: block; } }
+  @media (min-width: 768px) {
+    #primaryMenu .news-events {
+      background-color: #000000;
+      border-radius: 4px;
+      padding: 20px; } }
   #primaryMenu .social-link {
     margin-bottom: 10px; }
   #primaryMenu .social {
@@ -9231,8 +9259,9 @@ img {
     display: inline-block;
     float: none;
     margin: 0; }
-  #primaryMenu .cta-links a:last-of-type {
-    margin: 40px 0; }
+  @media (min-width: 768px) {
+    #primaryMenu .cta-links a:last-of-type {
+      margin: 40px 0; } }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;
