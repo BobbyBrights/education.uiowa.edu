@@ -1531,23 +1531,23 @@ pre {
   .container-fluid:after {
     clear: both; }
 
-.row, .paragraphs-item-events .view-content, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref {
+.row, #primaryMenu .social-links, .paragraphs-item-events .view-content, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .paragraphs-item-events .view-content:before, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:before, .row:after, .paragraphs-item-events .view-content:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
+  .row:before, #primaryMenu .social-links:before, .paragraphs-item-events .view-content:before, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:before, .row:after, #primaryMenu .social-links:after, .paragraphs-item-events .view-content:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
     content: " ";
     display: table; }
-  .row:after, .paragraphs-item-events .view-content:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
+  .row:after, #primaryMenu .social-links:after, .paragraphs-item-events .view-content:after, .paragraphs-item-fast-fact .field-name-field-fact-fact-ref:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .pane-education-announcements-education-honors-awards-pane-view, .pane-events-education-events-today-pane-view, .pane-education-articles-education-news-pane-custom, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
-#audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .pane-education-articles-education-news-pane-view, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .view-display-id-page_faculty_listing .views-row, .view-display-id-page_faculty_full_listing .views-row, .col-md-3, .col-lg-3, .col-xs-4, #primaryMenu .social-link, .col-sm-4, .pane-education-announcements-education-honors-awards-pane-view, .pane-events-education-events-today-pane-view, .pane-education-articles-education-news-pane-custom, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-last-name, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-email, .view-display-id-panel_pane_faculty_staff_view .views-field-field-person-phone-number, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
+#audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .pane-education-articles-education-news-pane-view, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .view #primaryMenu .social-links > .list-group, #primaryMenu .view .social-links > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, #primaryMenu .social-link, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
 
 .col-xs-1 {
@@ -1559,7 +1559,7 @@ pre {
 .col-xs-3 {
   width: 25%; }
 
-.col-xs-4 {
+.col-xs-4, #primaryMenu .social-link {
   width: 33.33333%; }
 
 .col-xs-5 {
@@ -1811,7 +1811,7 @@ pre {
 
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .paragraphs-item-events .views-row, .paragraphs-item-fast-fact .field-item, #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
-  #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
+  #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group, .view #primaryMenu .social-links > .list-group, #primaryMenu .view .social-links > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
     float: left; }
   .col-md-1 {
     width: 8.33333%; }
@@ -1836,7 +1836,7 @@ pre {
     width: 83.33333%; }
   .col-md-11 {
     width: 91.66667%; }
-  .col-md-12, .calendar-calendar, .view .row > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
+  .col-md-12, .calendar-calendar, .view .row > .list-group, .view #primaryMenu .social-links > .list-group, #primaryMenu .view .social-links > .list-group, .view .paragraphs-item-events .view-content > .list-group, .paragraphs-item-events .view .view-content > .list-group, .view .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > .list-group, .paragraphs-item-fast-fact .view .field-name-field-fact-fact-ref > .list-group {
     width: 100%; }
   .col-md-pull-0 {
     right: auto; }
@@ -8055,7 +8055,7 @@ html.js fieldset.collapsed {
 #panels-panel-context-edit-content .entity-paragraphs-item.grey-border {
   width: auto;
   padding: 0; }
-  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .row, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move .front .pane-social .pane-content .row, .front .pane-social #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move .front .pane-tagline .pane-content .row, .front .pane-tagline #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .page-node .edgy .field-name-body .row, .page-node .edgy #panels-panel-context-edit-move .field-name-body .row, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .row, #panels-panel-context-edit-move .container .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .container .view-content, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .view-content, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move .front .pane-social .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-social .pane-content .view-content, .front .pane-social #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-social #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move .front .pane-tagline .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-tagline .pane-content .view-content, .front .pane-tagline #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-tagline #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move #breadcrumb .view-content, #panels-panel-context-edit-move .page-node .edgy .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .page-node .edgy .field-name-body .view-content, .page-node .edgy #panels-panel-context-edit-move .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events .page-node .edgy #panels-panel-context-edit-move .field-name-body .view-content, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .view-content, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .field-name-field-fact-fact-ref, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-social .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-social .pane-content .field-name-field-fact-fact-ref, .front .pane-social #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-social #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-tagline .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-tagline .pane-content .field-name-field-fact-fact-ref, .front .pane-tagline #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-tagline #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .page-node .edgy .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .page-node .edgy .field-name-body .field-name-field-fact-fact-ref, .page-node .edgy #panels-panel-context-edit-move .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .page-node .edgy #panels-panel-context-edit-move .field-name-body .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref,
+  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .row, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move .front .pane-social .pane-content .row, .front .pane-social #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move .front .pane-tagline .pane-content .row, .front .pane-tagline #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move #breadcrumb .row, #panels-panel-context-edit-move .page-node .edgy .field-name-body .row, .page-node .edgy #panels-panel-context-edit-move .field-name-body .row, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .row, #panels-panel-context-edit-move .container #primaryMenu .social-links, #primaryMenu #panels-panel-context-edit-move .container .social-links, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content #primaryMenu .social-links, #primaryMenu #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .social-links, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content #primaryMenu .social-links, #primaryMenu .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .social-links, #panels-panel-context-edit-move .front .pane-social .pane-content #primaryMenu .social-links, #primaryMenu #panels-panel-context-edit-move .front .pane-social .pane-content .social-links, .front .pane-social #panels-panel-context-edit-move .pane-content #primaryMenu .social-links, #primaryMenu .front .pane-social #panels-panel-context-edit-move .pane-content .social-links, #panels-panel-context-edit-move .front .pane-tagline .pane-content #primaryMenu .social-links, #primaryMenu #panels-panel-context-edit-move .front .pane-tagline .pane-content .social-links, .front .pane-tagline #panels-panel-context-edit-move .pane-content #primaryMenu .social-links, #primaryMenu .front .pane-tagline #panels-panel-context-edit-move .pane-content .social-links, #panels-panel-context-edit-move #breadcrumb #primaryMenu .social-links, #primaryMenu #panels-panel-context-edit-move #breadcrumb .social-links, #panels-panel-context-edit-move .page-node .edgy .field-name-body #primaryMenu .social-links, #primaryMenu #panels-panel-context-edit-move .page-node .edgy .field-name-body .social-links, .page-node .edgy #panels-panel-context-edit-move .field-name-body #primaryMenu .social-links, #primaryMenu .page-node .edgy #panels-panel-context-edit-move .field-name-body .social-links, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border #primaryMenu .social-links, #primaryMenu #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .social-links, #panels-panel-context-edit-move .container .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .container .view-content, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .view-content, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move .front .pane-social .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-social .pane-content .view-content, .front .pane-social #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-social #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move .front .pane-tagline .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .front .pane-tagline .pane-content .view-content, .front .pane-tagline #panels-panel-context-edit-move .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events .front .pane-tagline #panels-panel-context-edit-move .pane-content .view-content, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move #breadcrumb .view-content, #panels-panel-context-edit-move .page-node .edgy .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .page-node .edgy .field-name-body .view-content, .page-node .edgy #panels-panel-context-edit-move .field-name-body .paragraphs-item-events .view-content, .paragraphs-item-events .page-node .edgy #panels-panel-context-edit-move .field-name-body .view-content, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-events .view-content, .paragraphs-item-events #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .view-content, #panels-panel-context-edit-move .container .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .container .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-become-a-hawkeye .pane-content .field-name-field-fact-fact-ref, .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-become-a-hawkeye #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-social .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-social .pane-content .field-name-field-fact-fact-ref, .front .pane-social #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-social #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .front .pane-tagline .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .front .pane-tagline .pane-content .field-name-field-fact-fact-ref, .front .pane-tagline #panels-panel-context-edit-move .pane-content .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .front .pane-tagline #panels-panel-context-edit-move .pane-content .field-name-field-fact-fact-ref, #panels-panel-context-edit-move #breadcrumb .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move #breadcrumb .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .page-node .edgy .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .page-node .edgy .field-name-body .field-name-field-fact-fact-ref, .page-node .edgy #panels-panel-context-edit-move .field-name-body .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact .page-node .edgy #panels-panel-context-edit-move .field-name-body .field-name-field-fact-fact-ref, #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #panels-panel-context-edit-move .entity-paragraphs-item.grey-border .field-name-field-fact-fact-ref,
   #panels-panel-context-edit-content .container .row,
   #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content .row, .front .pane-become-a-hawkeye
   #panels-panel-context-edit-content .pane-content .row,
@@ -8067,6 +8067,28 @@ html.js fieldset.collapsed {
   #panels-panel-context-edit-content .page-node .edgy .field-name-body .row, .page-node .edgy
   #panels-panel-context-edit-content .field-name-body .row,
   #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .row,
+  #panels-panel-context-edit-content .container #primaryMenu .social-links, #primaryMenu
+  #panels-panel-context-edit-content .container .social-links,
+  #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content #primaryMenu .social-links, #primaryMenu
+  #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content .social-links, .front .pane-become-a-hawkeye
+  #panels-panel-context-edit-content .pane-content #primaryMenu .social-links, #primaryMenu .front .pane-become-a-hawkeye
+  #panels-panel-context-edit-content .pane-content .social-links,
+  #panels-panel-context-edit-content .front .pane-social .pane-content #primaryMenu .social-links, #primaryMenu
+  #panels-panel-context-edit-content .front .pane-social .pane-content .social-links, .front .pane-social
+  #panels-panel-context-edit-content .pane-content #primaryMenu .social-links, #primaryMenu .front .pane-social
+  #panels-panel-context-edit-content .pane-content .social-links,
+  #panels-panel-context-edit-content .front .pane-tagline .pane-content #primaryMenu .social-links, #primaryMenu
+  #panels-panel-context-edit-content .front .pane-tagline .pane-content .social-links, .front .pane-tagline
+  #panels-panel-context-edit-content .pane-content #primaryMenu .social-links, #primaryMenu .front .pane-tagline
+  #panels-panel-context-edit-content .pane-content .social-links,
+  #panels-panel-context-edit-content #breadcrumb #primaryMenu .social-links, #primaryMenu
+  #panels-panel-context-edit-content #breadcrumb .social-links,
+  #panels-panel-context-edit-content .page-node .edgy .field-name-body #primaryMenu .social-links, #primaryMenu
+  #panels-panel-context-edit-content .page-node .edgy .field-name-body .social-links, .page-node .edgy
+  #panels-panel-context-edit-content .field-name-body #primaryMenu .social-links, #primaryMenu .page-node .edgy
+  #panels-panel-context-edit-content .field-name-body .social-links,
+  #panels-panel-context-edit-content .entity-paragraphs-item.grey-border #primaryMenu .social-links, #primaryMenu
+  #panels-panel-context-edit-content .entity-paragraphs-item.grey-border .social-links,
   #panels-panel-context-edit-content .container .paragraphs-item-events .view-content, .paragraphs-item-events
   #panels-panel-context-edit-content .container .view-content,
   #panels-panel-context-edit-content .front .pane-become-a-hawkeye .pane-content .paragraphs-item-events .view-content, .paragraphs-item-events
@@ -8381,7 +8403,7 @@ ul.nav > li.dropdown:after {
     float: none !important;
     margin: 0 0 10px !important; } }
 
-.panel-display > .row, .paragraphs-item-events .panel-display > .view-content, .paragraphs-item-fast-fact .panel-display > .field-name-field-fact-fact-ref {
+.panel-display > .row, #primaryMenu .panel-display > .social-links, .paragraphs-item-events .panel-display > .view-content, .paragraphs-item-fast-fact .panel-display > .field-name-field-fact-fact-ref {
   margin-bottom: 20px; }
 
 .panel-flexible .panel-separator {
@@ -9145,7 +9167,7 @@ img {
     min-height: calc(100vh - (125px));
     height: calc(100vh - (125px));
     overflow-y: scroll; }
-  #primaryMenu .row, #primaryMenu .paragraphs-item-events .view-content, .paragraphs-item-events #primaryMenu .view-content, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref {
+  #primaryMenu .row, #primaryMenu .social-links, #primaryMenu .paragraphs-item-events .view-content, .paragraphs-item-events #primaryMenu .view-content, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref {
     margin-bottom: 40px; }
   #primaryMenu a {
     color: #fff; }
@@ -9177,12 +9199,15 @@ img {
         color: #fff; }
   #primaryMenu .news-events .section-heading {
     text-align: center; }
+  #primaryMenu .social-link {
+    margin-bottom: 10px; }
   #primaryMenu .social {
     text-align: center;
     margin-bottom: 0; }
   #primaryMenu .social-icon {
     display: inline-block;
-    float: none; }
+    float: none;
+    margin: 0; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;
@@ -9284,7 +9309,7 @@ img {
       margin-left: -15px;
       padding: 8px 20px 5px 40px;
       text-transform: uppercase; }
-  #audience-contact-info .row, #audience-contact-info .paragraphs-item-events .view-content, .paragraphs-item-events #audience-contact-info .view-content, #audience-contact-info .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #audience-contact-info .field-name-field-fact-fact-ref {
+  #audience-contact-info .row, #audience-contact-info #primaryMenu .social-links, #primaryMenu #audience-contact-info .social-links, #audience-contact-info .paragraphs-item-events .view-content, .paragraphs-item-events #audience-contact-info .view-content, #audience-contact-info .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #audience-contact-info .field-name-field-fact-fact-ref {
     margin-top: 40px; }
   #audience-contact-info .field-name-field-audience-contact-person > .field-items > .field-item,
   #audience-contact-info .field-name-field-audience-contact-text > .field-items > .field-item {

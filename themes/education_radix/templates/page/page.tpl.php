@@ -61,17 +61,17 @@
             <h2 class="offscreen">Connect with Us</h2>
             <p class='clearfix social'>
             <?php print(l("<span class='offscreen'>Facebook</span>
-          <span class='social-icon footer-social-facebook' id='facebook-icon'></span>", 'https://www.facebook.com/UICollegeofEducation', array('attributes' => array('class' => array('facebook')),'html' => TRUE,))); ?>
+          <span class='social-icon footer-social-facebook' id='facebook-icon'></span>", 'https://www.facebook.com/UICollegeofEducation', array('attributes' => array('class' => array('facebook', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>Instagram</span>
-          <span class='social-icon footer-social-instagram' id='instagram-icon'></span>", 'http://instagram.com/uicollegeofed', array('attributes' => array('class' => array('instagram')),'html' => TRUE,))); ?>
+          <span class='social-icon footer-social-instagram' id='instagram-icon'></span>", 'http://instagram.com/uicollegeofed', array('attributes' => array('class' => array('instagram', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>Twitter</span>
-          <span class='social-icon footer-social-twitter' id='twitter-icon'></span>", 'https://twitter.com/UIowaEducation', array('attributes' => array('class' => array('twitter')),'html' => TRUE,))); ?>
+          <span class='social-icon footer-social-twitter' id='twitter-icon'></span>", 'https://twitter.com/UIowaEducation', array('attributes' => array('class' => array('twitter', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>LinkedIn</span>
-          <span class='social-icon footer-social-linkedin' id='linkdin-icon'></span>", 'https://www.linkedin.com/in/uiowacollegeofeducation', array('attributes' => array('class' => array('linkedin')),'html' => TRUE,))); ?>
+          <span class='social-icon footer-social-linkedin' id='linkdin-icon'></span>", 'https://www.linkedin.com/in/uiowacollegeofeducation', array('attributes' => array('class' => array('linkedin', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>Pinterest</span>
-          <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span>", 'http://pinterest.com/uicoe', array('attributes' => array('class' => array('pinterest')),'html' => TRUE,))); ?>
+          <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span>", 'http://pinterest.com/uicoe', array('attributes' => array('class' => array('pinterest', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>YouTube</span>
-          <span class='social-icon footer-social-youtube' id='youtube-icon'></span>", 'https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA', array('attributes' => array('class' => array('youtube')),'html' => TRUE,))); ?>
+          <span class='social-icon footer-social-youtube' id='youtube-icon'></span>", 'https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA', array('attributes' => array('class' => array('youtube', 'social-link')),'html' => TRUE,))); ?>
             </p>
           </div>
           </div>

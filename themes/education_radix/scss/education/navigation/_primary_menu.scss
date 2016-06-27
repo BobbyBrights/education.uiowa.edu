@@ -97,6 +97,15 @@
     text-align: center;
   }
 
+  .social-links {
+    @extend .row;
+  }
+
+  .social-link {
+    @extend .col-xs-4;
+    margin-bottom: 10px;
+  }
+
   .social {
     text-align: center;
     margin-bottom: 0;
@@ -106,5 +115,6 @@
     @extend .footer-social;
     display: inline-block;
     float: none;
+    margin: 0;
   }
 }
