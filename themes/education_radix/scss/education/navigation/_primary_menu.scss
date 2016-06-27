@@ -65,7 +65,27 @@
     // Display menu links in columns.
     > ul.menu > li {
       @extend .col-sm-4;
+
+      > a {
+        @extend .section-heading;
+
+        &:hover, &:focus {
+          color: #fff;
+        }
+      }
     }
+  }
+
+  ul.menu {
+    a {
+      padding: 0;
+
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+    }
+
+    margin-left: 0;
   }
 
   a {

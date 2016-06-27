@@ -9181,6 +9181,14 @@ img {
     overflow-y: scroll; }
   #primaryMenu .row, #primaryMenu .social-links, #primaryMenu .paragraphs-item-events .view-content, .paragraphs-item-events #primaryMenu .view-content, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref {
     margin-bottom: 40px; }
+    #primaryMenu .row > ul.menu > li > a:hover, #primaryMenu .social-links > ul.menu > li > a:hover, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a:hover, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a:hover, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a:hover, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a:hover, #primaryMenu .row > ul.menu > li > a:focus, #primaryMenu .social-links > ul.menu > li > a:focus, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a:focus, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a:focus, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a:focus, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a:focus {
+      color: #fff; }
+  #primaryMenu ul.menu {
+    margin-left: 0; }
+    #primaryMenu ul.menu a {
+      padding: 0; }
+      #primaryMenu ul.menu a:hover, #primaryMenu ul.menu a:focus {
+        background-color: transparent; }
   #primaryMenu a {
     color: #fff; }
     #primaryMenu a:hover, #primaryMenu a:focus {
@@ -9198,18 +9206,18 @@ img {
     background-color: #000000;
     border-radius: 4px;
     padding: 20px; }
-  #primaryMenu .section-heading {
+  #primaryMenu .section-heading, #primaryMenu .row > ul.menu > li > a, #primaryMenu .social-links > ul.menu > li > a, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a {
     color: #ffe100;
     font-family: "AvenirLT-Heavy";
     font-size: 1.125rem;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0.5rem; }
-    #primaryMenu .section-heading a {
+    #primaryMenu .section-heading a, #primaryMenu .row > ul.menu > li > a a, #primaryMenu .social-links > ul.menu > li > a a, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a a, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a a, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a a, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a a {
       color: #ffe100; }
-      #primaryMenu .section-heading a:hover, #primaryMenu .section-heading a:focus {
+      #primaryMenu .section-heading a:hover, #primaryMenu .row > ul.menu > li > a a:hover, #primaryMenu .social-links > ul.menu > li > a a:hover, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a a:hover, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a a:hover, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a a:hover, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a a:hover, #primaryMenu .section-heading a:focus, #primaryMenu .row > ul.menu > li > a a:focus, #primaryMenu .social-links > ul.menu > li > a a:focus, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a a:focus, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a a:focus, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a a:focus, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a a:focus {
         color: #fff; }
-  #primaryMenu .news-events .section-heading {
+  #primaryMenu .news-events .section-heading, #primaryMenu .news-events .row > ul.menu > li > a, #primaryMenu .news-events .social-links > ul.menu > li > a, #primaryMenu .news-events .paragraphs-item-events .view-content > ul.menu > li > a, #primaryMenu .paragraphs-item-events .news-events .view-content > ul.menu > li > a, .paragraphs-item-events #primaryMenu .news-events .view-content > ul.menu > li > a, #primaryMenu .news-events .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a, #primaryMenu .paragraphs-item-fast-fact .news-events .field-name-field-fact-fact-ref > ul.menu > li > a, .paragraphs-item-fast-fact #primaryMenu .news-events .field-name-field-fact-fact-ref > ul.menu > li > a {
     text-align: center; }
   #primaryMenu .social-link {
     margin-bottom: 10px; }
