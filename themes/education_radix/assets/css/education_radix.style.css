@@ -9153,13 +9153,21 @@ img {
     display: inline-block;
     height: 23px;
     width: 46px;
-    background: transparent url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_white.png") no-repeat center center;
-    background-size: contain;
     margin-left: 1rem; }
+  .primary-menu-toggle .menu-icon-open {
+    background: transparent url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_white.png") no-repeat center center;
+    background-size: contain; }
+  .primary-menu-toggle .menu-icon-close {
+    background: transparent url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/x_white.png") no-repeat center center;
+    background-size: contain; }
   .primary-menu-toggle:hover, .primary-menu-toggle:focus {
     color: #ffe100; }
-    .primary-menu-toggle:hover .menu-icon, .primary-menu-toggle:focus .menu-icon {
-      background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_yellow.png"); }
+    .primary-menu-toggle:hover .menu-icon-open, .primary-menu-toggle:focus .menu-icon-open {
+      background-image: url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_yellow.png");
+      background-size: contain; }
+    .primary-menu-toggle:hover .menu-icon-close, .primary-menu-toggle:focus .menu-icon-close {
+      background: transparent url("/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/x_yellow.png") no-repeat center center;
+      background-size: contain; }
 
 #primaryMenu {
   background-color: #333333;

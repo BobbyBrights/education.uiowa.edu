@@ -18,16 +18,30 @@
     display: inline-block;
     height: 23px;
     width: 46px;
+    margin-left: 1rem;
+  }
+
+  .menu-icon-open {
     background: transparent url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_white.png') no-repeat center center;
     background-size: contain;
-    margin-left: 1rem;
+  }
+
+  .menu-icon-close {
+    background: transparent url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/x_white.png') no-repeat center center;
+    background-size: contain;
   }
 
   &:hover, &:focus {
     color: $yellow;
 
-    .menu-icon {
+    .menu-icon-open {
       background-image: url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/menu_yellow.png');
+      background-size: contain;
+    }
+
+    .menu-icon-close {
+      background: transparent url('/sites/education.uiowa.edu/themes/education_radix/assets/images/menu/x_yellow.png') no-repeat center center;
+      background-size: contain;
     }
   }
 }

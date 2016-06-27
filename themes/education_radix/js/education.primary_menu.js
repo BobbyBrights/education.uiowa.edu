@@ -5,6 +5,8 @@
       $('#primaryMenu').on('show.bs.collapse', function() {
         $('#header').addClass('primary-menu-open');
         $('.menu-text').text('Close');
+        $('.menu-icon').toggleClass('menu-icon-close');
+        $('.menu-icon').toggleClass('menu-icon-open');
       })
 
       // When the primary menu is done opening...
@@ -25,6 +27,8 @@
       $('#primaryMenu').on('hidden.bs.collapse', function() {
         $('#header').removeClass('primary-menu-open');
         $('.menu-text').text('Menu');
+        $('.menu-icon').toggleClass('menu-icon-close');
+        $('.menu-icon').toggleClass('menu-icon-open');
       })
     }
   };
