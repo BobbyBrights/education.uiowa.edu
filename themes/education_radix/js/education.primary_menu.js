@@ -1,6 +1,11 @@
 (function ($) {
   Drupal.behaviors.primaryMenuOverlay = {
     attach: function (context, settings) {
+      // When the primary menu is opening...
+      $('#primaryMenu').on('show.bs.collapse', function() {
+        $('#header').addClass('primary-menu-open');
+      })
+
       // When the primary menu is done opening...
       $('#primaryMenu').on('shown.bs.collapse', function () {
         $('#main-wrapper').hide();
@@ -13,6 +18,11 @@
         $('#main-wrapper').show();
         $('#footer').show();
         $('#ui-global-footer').show();
+      })
+
+      // When the primary menu is closed...
+      $('#primaryMenu').on('hidden.bs.collapse', function() {
+        $('#header').removeClass('primary-menu-open');
       })
     }
   };
