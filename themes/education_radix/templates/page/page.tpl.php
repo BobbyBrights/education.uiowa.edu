@@ -59,12 +59,20 @@
           </div>
           <div class="social-links">
             <h2 class="offscreen">Connect with Us</h2>
-            <?php print(l('Facebook', 'https://www.facebook.com/UICollegeofEducation', array('attributes' => array('class' => array('facebook'))))); ?>
-            <?php print(l('Instagram', 'http://instagram.com/uicollegeofed', array('attributes' => array('class' => array('instagram'))))); ?>
-            <?php print(l('Twitter', 'https://twitter.com/UIowaEducation', array('attributes' => array('class' => array('twitter'))))); ?>
-            <?php print(l('LinkedIn', 'https://www.linkedin.com/in/uiowacollegeofeducation', array('attributes' => array('class' => array('linkedin'))))); ?>
-            <?php print(l('Pinterest', 'http://pinterest.com/uicoe', array('attributes' => array('class' => array('pinterest'))))); ?>
-            <?php print(l('YouTube', 'https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA', array('attributes' => array('class' => array('youtube'))))); ?>
+            <p class='clearfix social'>
+            <?php print(l("<span class='offscreen'>Facebook</span>
+          <span class='social-icon footer-social-facebook' id='facebook-icon'></span>", 'https://www.facebook.com/UICollegeofEducation', array('attributes' => array('class' => array('facebook')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>Instagram</span>
+          <span class='social-icon footer-social-instagram' id='instagram-icon'></span>", 'http://instagram.com/uicollegeofed', array('attributes' => array('class' => array('instagram')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>Twitter</span>
+          <span class='social-icon footer-social-twitter' id='twitter-icon'></span>", 'https://twitter.com/UIowaEducation', array('attributes' => array('class' => array('twitter')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>LinkedIn</span>
+          <span class='social-icon footer-social-linkedin' id='linkdin-icon'></span>", 'https://www.linkedin.com/in/uiowacollegeofeducation', array('attributes' => array('class' => array('linkedin')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>Pinterest</span>
+          <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span>", 'http://pinterest.com/uicoe', array('attributes' => array('class' => array('pinterest')),'html' => TRUE,))); ?>
+            <?php print(l("<span class='offscreen'>YouTube</span>
+          <span class='social-icon footer-social-youtube' id='youtube-icon'></span>", 'https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA', array('attributes' => array('class' => array('youtube')),'html' => TRUE,))); ?>
+            </p>
           </div>
           </div>
         </div>

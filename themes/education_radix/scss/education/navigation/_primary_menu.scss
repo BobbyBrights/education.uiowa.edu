@@ -96,4 +96,15 @@
   .news-events .section-heading {
     text-align: center;
   }
+
+  .social {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .social-icon {
+    @extend .footer-social;
+    display: inline-block;
+    float: none;
+  }
 }

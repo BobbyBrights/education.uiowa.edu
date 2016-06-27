@@ -8881,7 +8881,7 @@ h1#site-name {
 .footer-center {
   text-align: center; }
 
-.footer-social, .paragraphs-item-social .social-icon, .front .pane-social .social-icon {
+.footer-social, #primaryMenu .social-icon, .paragraphs-item-social .social-icon, .front .pane-social .social-icon {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 60px 60px;
@@ -9177,6 +9177,12 @@ img {
         color: #fff; }
   #primaryMenu .news-events .section-heading {
     text-align: center; }
+  #primaryMenu .social {
+    text-align: center;
+    margin-bottom: 0; }
+  #primaryMenu .social-icon {
+    display: inline-block;
+    float: none; }
 
 .region-sidebar-first .menu-block-wrapper {
   background-color: #ffe100;
