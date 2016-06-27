@@ -81,6 +81,12 @@ function education_radix_preprocess_page(&$variables) {
     // Make this page full width.
     $variables['theme_hook_suggestions'][] = 'page__edgy';
   }
+
+  // Get the full menu tree of the Main Menu.
+  $menu_tree = menu_build_tree('main-menu');
+  // Keep only the first 3 branches of the Main Menu.
+  $chosen_menu_branches = array_slice($menu_tree, 0, 3);
+  $variables['primary_menu_main_menu_links'] = menu_tree_output($chosen_menu_branches);
 }
 
 /**

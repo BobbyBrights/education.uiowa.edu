@@ -61,6 +61,11 @@
 
   .row {
     margin-bottom: 40px;
+
+    // Display menu links in columns.
+    > ul.menu > li {
+      @extend .col-sm-4;
+    }
   }
 
   a {

@@ -24,15 +24,7 @@
       <div class="row">
         <div class="col-md-9">
           <div class="row">
-            <div class="col-sm-4">
-               <p><a href="#">Programs menu will go here.</a></p>
-            </div>
-            <div class="col-sm-4">
-               <p><a href="#">Research menu will go here.</a></p>
-            </div>
-            <div class="col-sm-4">
-               <p><a href="#">About menu will go here.</a></p>
-            </div>
+            <?php print render($primary_menu_main_menu_links); ?>
           </div>
           <div class="row">
             <div class="col-sm-6">
