@@ -131,8 +131,8 @@
     </div>
   </div>
 </div>
-        <br/>
-        <a href="directory" ><div class="footer-button"><strong>Directory<strong></div></a>
+        <br/> 
+        <a href="/directories" ><div class="footer-button"><strong>Directory<strong></div></a>
         <br/>
       </div>
       <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
