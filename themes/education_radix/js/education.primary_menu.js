@@ -4,6 +4,7 @@
       // When the primary menu is opening...
       $('#primaryMenu').on('show.bs.collapse', function() {
         $('#header').addClass('primary-menu-open');
+        $('.menu-text').text('Close');
       })
 
       // When the primary menu is done opening...
@@ -23,6 +24,7 @@
       // When the primary menu is closed...
       $('#primaryMenu').on('hidden.bs.collapse', function() {
         $('#header').removeClass('primary-menu-open');
+        $('.menu-text').text('Menu');
       })
     }
   };
