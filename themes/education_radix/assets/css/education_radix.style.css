@@ -9176,8 +9176,8 @@ img {
   z-index: 1; }
   #primaryMenu .container, #primaryMenu .front .pane-become-a-hawkeye .pane-content, .front .pane-become-a-hawkeye #primaryMenu .pane-content, #primaryMenu .front .pane-social .pane-content, .front .pane-social #primaryMenu .pane-content, #primaryMenu .front .pane-tagline .pane-content, .front .pane-tagline #primaryMenu .pane-content, #primaryMenu #breadcrumb, #primaryMenu .page-node .edgy .field-name-body, .page-node .edgy #primaryMenu .field-name-body, #primaryMenu .entity-paragraphs-item.grey-border {
     height: 100vh;
-    min-height: calc(100vh - (125px));
-    height: calc(100vh - (125px));
+    min-height: calc(100vh - (103px));
+    height: calc(100vh - (103px));
     overflow-y: scroll; }
   #primaryMenu .row, #primaryMenu .social-links, #primaryMenu .paragraphs-item-events .view-content, .paragraphs-item-events #primaryMenu .view-content, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref {
     margin-bottom: 40px; }
