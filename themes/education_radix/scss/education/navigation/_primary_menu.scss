@@ -68,6 +68,7 @@
 
       > a {
         @extend .section-heading;
+        margin-bottom: 0;
 
         &:hover, &:focus {
           color: #fff;
@@ -78,6 +79,7 @@
 
   ul.menu {
     a {
+      margin-bottom: 10px;
       padding: 0;
 
       &:hover, &:focus {

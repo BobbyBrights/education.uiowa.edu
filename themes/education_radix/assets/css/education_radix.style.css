@@ -9181,11 +9181,14 @@ img {
     overflow-y: scroll; }
   #primaryMenu .row, #primaryMenu .social-links, #primaryMenu .paragraphs-item-events .view-content, .paragraphs-item-events #primaryMenu .view-content, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref {
     margin-bottom: 40px; }
-    #primaryMenu .row > ul.menu > li > a:hover, #primaryMenu .social-links > ul.menu > li > a:hover, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a:hover, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a:hover, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a:hover, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a:hover, #primaryMenu .row > ul.menu > li > a:focus, #primaryMenu .social-links > ul.menu > li > a:focus, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a:focus, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a:focus, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a:focus, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a:focus {
-      color: #fff; }
+    #primaryMenu .row > ul.menu > li > a, #primaryMenu .social-links > ul.menu > li > a, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a {
+      margin-bottom: 0; }
+      #primaryMenu .row > ul.menu > li > a:hover, #primaryMenu .social-links > ul.menu > li > a:hover, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a:hover, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a:hover, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a:hover, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a:hover, #primaryMenu .row > ul.menu > li > a:focus, #primaryMenu .social-links > ul.menu > li > a:focus, #primaryMenu .paragraphs-item-events .view-content > ul.menu > li > a:focus, .paragraphs-item-events #primaryMenu .view-content > ul.menu > li > a:focus, #primaryMenu .paragraphs-item-fast-fact .field-name-field-fact-fact-ref > ul.menu > li > a:focus, .paragraphs-item-fast-fact #primaryMenu .field-name-field-fact-fact-ref > ul.menu > li > a:focus {
+        color: #fff; }
   #primaryMenu ul.menu {
     margin-left: 0; }
     #primaryMenu ul.menu a {
+      margin-bottom: 10px;
       padding: 0; }
       #primaryMenu ul.menu a:hover, #primaryMenu ul.menu a:focus {
         background-color: transparent; }
@@ -9362,6 +9365,9 @@ img {
     padding: 20px 30px; }
   .pane-education-announcements-education-honors-awards-pane-view .views-field-body {
     margin-bottom: 30px; }
+
+.view-display-id-audiences_list_block .views-row {
+  margin-bottom: 10px; }
 
 .view-display-id-education_events_landing_page_view .views-row-even, .view-display-id-education_events_landing_page_view .views-row-odd, .view-display-id-education_events_filtered_page_view .views-row-even, .view-display-id-education_events_filtered_page_view .views-row-odd, .view-display-id-education_events_affiliation_page_view .views-row-even, .view-display-id-education_events_affiliation_page_view .views-row-odd {
   margin: 10px;
