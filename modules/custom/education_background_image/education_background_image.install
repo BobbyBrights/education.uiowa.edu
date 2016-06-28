@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Add bg_image paths for landing pages.
+ */
+function education_background_image_update_7001() {
+  $bg_image_paths = array(
+    array(
+      'path' => 'directories/*',
+      'nid' => 0,
+      'weight' => 50,
+    ),
+    array(
+      'path' => 'events',
+      'nid' => 0,
+      'weight' => 50,
+    ),
+    array(
+      'path' => 'news',
+      'nid' => 0,
+      'weight' => 50,
+    ),
+    array(
+      'path' => 'scholarships',
+      'nid' => 0,
+      'weight' => 50,
+    ),
+  );
+
+  $query = db_insert('bg_image_paths')->fields(array('path', 'nid', 'weight'));
+  foreach ($bg_image_paths as $path) {
+    $query->values($path);
+  }
+  $query->execute();
+}
