@@ -3,6 +3,7 @@ description = Provides panel pages
 core = 7.x
 package = Education
 dependencies[] = ctools
+dependencies[] = education_fast_facts_views
 dependencies[] = education_person_views
 dependencies[] = education_scholarship_views
 dependencies[] = page_manager
