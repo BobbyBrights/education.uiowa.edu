@@ -2,3 +2,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+// Hide Media Folder field on image file entities.
+.field-name-field-folder {
+  display: none;
+}

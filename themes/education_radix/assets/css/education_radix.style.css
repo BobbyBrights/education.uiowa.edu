@@ -9147,6 +9147,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+.field-name-field-folder {
+  display: none; }
+
 .breadcrumb {
   background-color: transparent;
   border-radius: 0;
