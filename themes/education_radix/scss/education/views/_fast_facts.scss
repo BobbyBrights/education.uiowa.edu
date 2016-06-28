@@ -1,0 +1,11 @@
+.view-display-id-fast_facts_homepage_block {
+  @extend .container;
+
+  .view-content {
+    @extend .row;
+  }
+
+  .views-row {
+    @extend .col-md-4;
+  }
+}
