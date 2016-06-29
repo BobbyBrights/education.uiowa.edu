@@ -1,0 +1,13 @@
+diff --git a/jquery_ui_multiselect.module b/jquery_ui_multiselect.module
+index 79a6cbe..66b9f9a 100644
+--- a/jquery_ui_multiselect.module
++++ b/jquery_ui_multiselect.module
+@@ -148,7 +148,7 @@ function jquery_ui_multiselect_field_widget_options_select_form_alter(&$element,
+     $options = array();
+     foreach ($context['items'] as $item) {
+       foreach ($item as $value) {
+-        if (!empty($value)) {
++        if (!empty($value) && isset($element['#options'][$value])) {
+           // Note: Casting as string to avoid numerical ordering of array keys.
+           $options[(string)$value] = $element['#options'][$value];
+           unset($element['#options'][$value]);
