@@ -112,6 +112,14 @@ function education_article_views_views_default_views() {
   /* Display: News */
   $handler = $view->new_display('panel_pane', 'News', 'education_news_pane_view');
   $handler->display->display_options['display_description'] = 'Full listing of news on News & Events page';
+
+  /* Display: Paragraph */
+  $handler = $view->new_display('block', 'Paragraph', 'news_paragraph_block');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['block_description'] = 'News paragraph';
   $export['education_articles'] = $view;
 
   return $export;

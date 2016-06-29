@@ -185,6 +185,21 @@ function education_paragraphs_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_news_view'.
+  $field_bases['field_news_view'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_news_view',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'viewfield',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'viewfield',
+  );
+
   // Exported field_base: 'field_paragraph_container_style'.
   $field_bases['field_paragraph_container_style'] = array(
     'active' => 1,
