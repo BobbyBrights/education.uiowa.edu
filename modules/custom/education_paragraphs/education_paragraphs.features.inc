@@ -29,6 +29,11 @@ function education_paragraphs_paragraphs_info() {
       'bundle' => 'fast_fact',
       'locked' => '1',
     ),
+    'news' => array(
+      'name' => 'News',
+      'bundle' => 'news',
+      'locked' => '1',
+    ),
     'slogan' => array(
       'name' => 'Tagline',
       'bundle' => 'slogan',
