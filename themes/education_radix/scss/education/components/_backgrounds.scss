@@ -10,6 +10,18 @@
   }
 }
 
+.light-grey-background {
+  background-color: $black_10;
+
+  a {
+    color: darken($blue, 10);
+
+    &:hover, &:focus {
+      color: darken($blue, 20);
+    }
+  }
+}
+
 .yellow-background {
   background-color: $yellow;
 }

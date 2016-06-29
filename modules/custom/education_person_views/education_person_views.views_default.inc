@@ -256,7 +256,7 @@ function education_person_views_views_default_views() {
   $handler->display->display_options['arguments']['field_person_last_name_value']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['field_person_last_name_value']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_person_last_name_value']['summary']['format'] = 'unformatted_summary';
-  $handler->display->display_options['arguments']['field_person_last_name_value']['summary_options']['base_path'] = 'directory';
+  $handler->display->display_options['arguments']['field_person_last_name_value']['summary_options']['base_path'] = 'directories';
   $handler->display->display_options['arguments']['field_person_last_name_value']['summary_options']['count'] = FALSE;
   $handler->display->display_options['arguments']['field_person_last_name_value']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['field_person_last_name_value']['summary_options']['inline'] = TRUE;

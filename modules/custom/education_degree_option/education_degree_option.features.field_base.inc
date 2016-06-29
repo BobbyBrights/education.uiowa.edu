@@ -149,5 +149,20 @@ function education_degree_option_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_education_content_blocks'.
+  $field_bases['field_education_content_blocks'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_education_content_blocks',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'paragraphs',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'paragraphs',
+  );
+
   return $field_bases;
 }
