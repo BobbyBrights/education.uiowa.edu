@@ -1139,7 +1139,7 @@ hr {
   cursor: pointer; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-program-full .overview-section h2, .h4, .region-sidebar-first .menu-block-wrapper a, .h5, .h6 {
+.h1, .h2, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-degree-full .overview-section h2, .node-program-full .overview-section h2, .h4, .region-sidebar-first .menu-block-wrapper a, .h5, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
@@ -1153,8 +1153,8 @@ h1, h2, h3, h4, h5, h6,
   h6 .small,
   .h1 small,
   .h1 .small, .h2 small,
-  .h2 .small, .h3 small, .region-sidebar-first .menu-block-wrapper > ul > li > a small, .node-program-full .overview-section h2 small,
-  .h3 .small, .region-sidebar-first .menu-block-wrapper > ul > li > a .small, .node-program-full .overview-section h2 .small, .h4 small, .region-sidebar-first .menu-block-wrapper a small,
+  .h2 .small, .h3 small, .region-sidebar-first .menu-block-wrapper > ul > li > a small, .node-degree-full .overview-section h2 small, .node-program-full .overview-section h2 small,
+  .h3 .small, .region-sidebar-first .menu-block-wrapper > ul > li > a .small, .node-degree-full .overview-section h2 .small, .node-program-full .overview-section h2 .small, .h4 small, .region-sidebar-first .menu-block-wrapper a small,
   .h4 .small, .region-sidebar-first .menu-block-wrapper a .small, .h5 small,
   .h5 .small, .h6 small,
   .h6 .small {
@@ -1164,7 +1164,7 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1,
 h2, .h2,
-h3, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-program-full .overview-section h2 {
+h3, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-degree-full .overview-section h2, .node-program-full .overview-section h2 {
   margin-top: 20px;
   margin-bottom: 10px; }
   h1 small,
@@ -1174,8 +1174,8 @@ h3, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-program-
   h2 .small, .h2 small,
   .h2 .small,
   h3 small,
-  h3 .small, .h3 small, .region-sidebar-first .menu-block-wrapper > ul > li > a small, .node-program-full .overview-section h2 small,
-  .h3 .small, .region-sidebar-first .menu-block-wrapper > ul > li > a .small, .node-program-full .overview-section h2 .small {
+  h3 .small, .h3 small, .region-sidebar-first .menu-block-wrapper > ul > li > a small, .node-degree-full .overview-section h2 small, .node-program-full .overview-section h2 small,
+  .h3 .small, .region-sidebar-first .menu-block-wrapper > ul > li > a .small, .node-degree-full .overview-section h2 .small, .node-program-full .overview-section h2 .small {
     font-size: 65%; }
 
 h4, .h4, .region-sidebar-first .menu-block-wrapper a,
@@ -1200,7 +1200,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 30px; }
 
-h3, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-program-full .overview-section h2 {
+h3, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-degree-full .overview-section h2, .node-program-full .overview-section h2 {
   font-size: 24px; }
 
 h4, .h4, .region-sidebar-first .menu-block-wrapper a {
@@ -8712,7 +8712,7 @@ h2, .h2 {
   margin-top: 2.25rem;
   font-size: 1.5rem; }
 
-h3, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-program-full .overview-section h2 {
+h3, .h3, .region-sidebar-first .menu-block-wrapper > ul > li > a, .node-degree-full .overview-section h2, .node-program-full .overview-section h2 {
   color: #000000;
   font-family: "AvenirLT-Heavy";
   margin-bottom: 0.75rem;
@@ -8763,7 +8763,7 @@ body {
 p {
   margin-bottom: 0.75rem; }
 
-.large-text, .uppercase, .node-program-full .overview-section h2, .view-display-id-education_events_landing_page_view .views-field-title, .view-display-id-education_events_filtered_page_view .views-field-title, .view-display-id-education_events_affiliation_page_view .views-field-title, .view-display-id-panel_pane_faculty_staff_view .attachement_faculty_staff_view {
+.large-text, .uppercase, .node-degree-full .overview-section h2, .node-program-full .overview-section h2, .view-display-id-education_events_landing_page_view .views-field-title, .view-display-id-education_events_filtered_page_view .views-field-title, .view-display-id-education_events_affiliation_page_view .views-field-title, .view-display-id-panel_pane_faculty_staff_view .attachement_faculty_staff_view {
   font-family: "AvenirLT-Medium";
   font-size: 1.5rem; }
 
@@ -8777,11 +8777,11 @@ p {
     .grey-background a:hover, .paragraphs-item-events a:hover, .pane-events-education-events-today-pane-view .pane-title a:hover, .pane-events-education-events-today-pane-view .pane-content a:hover, .grey-background a:focus, .paragraphs-item-events a:focus, .pane-events-education-events-today-pane-view .pane-title a:focus, .pane-events-education-events-today-pane-view .pane-content a:focus {
       color: #065472; }
 
-.light-grey-background, .node-program-full .overview-section {
+.light-grey-background, .node-degree-full .overview-section, .node-program-full .overview-section {
   background-color: #e6e6e6; }
-  .light-grey-background a, .node-program-full .overview-section a {
+  .light-grey-background a, .node-degree-full .overview-section a, .node-program-full .overview-section a {
     color: #0977a2; }
-    .light-grey-background a:hover, .node-program-full .overview-section a:hover, .light-grey-background a:focus, .node-program-full .overview-section a:focus {
+    .light-grey-background a:hover, .node-degree-full .overview-section a:hover, .node-program-full .overview-section a:hover, .light-grey-background a:focus, .node-degree-full .overview-section a:focus, .node-program-full .overview-section a:focus {
       color: #065472; }
 
 .yellow-background, .pane-education-announcements-education-honors-awards-pane-view .pane-title, .pane-education-announcements-education-honors-awards-pane-view .pane-content, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date-1 {
@@ -9290,6 +9290,28 @@ img {
     text-indent: -0.5rem; }
   .region-sidebar-first .menu-block-wrapper > ul > li > a {
     margin: 0; }
+
+.node-degree-full {
+  /** Overview section **/ }
+  .node-degree-full .field-name-field-degree-overview-text {
+    clear: both;
+    margin: 10px; }
+  .node-degree-full .overview-section {
+    margin: 15px; }
+    @media (min-width: 992px) {
+      .node-degree-full .overview-section {
+        min-height: 200px; } }
+    .node-degree-full .overview-section .overview-text {
+      margin-top: 10px; }
+    .node-degree-full .overview-section h2 {
+      background-color: #666666;
+      color: White;
+      display: inline;
+      padding: 5px 10px 5px 20px;
+      min-width: 200px; }
+  .node-degree-full .content-section {
+    margin-left: 15px;
+    margin-right: 15px; }
 
 .page-node .edgy .field-name-body {
   padding-top: 40px;

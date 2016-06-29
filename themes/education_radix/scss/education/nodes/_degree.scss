@@ -1,0 +1,36 @@
+.node-degree-full {
+  .field-name-field-degree-leading-text {
+  }
+  .field-name-field-degree-leading-buttons {
+  }
+  .field-name-field-degree-overview-text {
+    clear:both;
+    margin: 10px;
+  }
+
+  /** Overview section **/
+  .overview-section {
+    @extend .light-grey-background;
+    margin:15px;
+
+    @include breakpoint($education-bg-image) {
+    min-height: 200px;
+    }
+    .overview-text {
+      margin-top:10px;
+    }
+    h2 {
+      @extend .h3;
+      @extend .large-text;
+      background-color:lighten(#000000, 40);
+      color:White;
+      display: inline;
+      padding: 5px 10px 5px 20px;
+      min-width: 200px;
+    }
+  }
+  .content-section {
+    margin-left:15px;
+    margin-right:15px;
+  }
+}
