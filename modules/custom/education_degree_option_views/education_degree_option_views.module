@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Education Degree Option Views feature.
+ */
+
+include_once 'education_degree_option_views.features.inc';
