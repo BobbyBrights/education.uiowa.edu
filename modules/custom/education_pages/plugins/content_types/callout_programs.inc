@@ -76,7 +76,7 @@ function callout_programs_render($subtype, $conf, $panel_args, $context = NULL) 
     ),
     'text' => array(
       '#prefix' => '<div class="callout-text-wrapper"><div class="container"><p class="callout-text">',
-      '#markup' => t('The College of Education contains more than XX undergraduate and graduate academic programs that are regularly ranked among the best in the nation. Students study with our world-renowned faculty who are known as the leaders, scholars, and innovators in their fields.'),
+      '#markup' => t('The University of Iowa College of Education contains more than 80 undergraduate and graduate academic degree programs that are regularly ranked among the best in the nation. Students study with our world-renowned faculty who are the leaders, scholars, and innovators in their fields.'),
       '#suffix' => '</p></div></div>',
     ),
     '#suffix' => '</div>',

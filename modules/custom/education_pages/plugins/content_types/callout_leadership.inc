@@ -76,7 +76,7 @@ function callout_leadership_render($subtype, $conf, $panel_args, $context = NULL
     ),
     'text' => array(
       '#prefix' => '<div class="callout-text-wrapper"><div class="container"><p class="callout-text">',
-      '#markup' => t('As the first college-level department of education in the United States, the College of Education has a long and rich history. Today, we continue our legacy by providing the education and leadership necessary to make the world a better place.'),
+      '#markup' => t('As the first college-level department of education in the United States, the University of Iowa College of Education has a long and rich history of service and excellence. Today, we continue our legacy by providing the education and leadership necessary to make the world a better place.'),
       '#suffix' => '</p></div></div>',
     ),
     '#suffix' => '</div>',

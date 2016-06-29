@@ -76,7 +76,7 @@ function callout_research_render($subtype, $conf, $panel_args, $context = NULL) 
     ),
     'text' => array(
       '#prefix' => '<div class="callout-text-wrapper"><div class="container"><p class="callout-text">',
-      '#markup' => t('The College of Education is home to XX centers and XX faculty who are innovating in the fields of education, measurement, counseling, and rehabilitation. Through cutting-edge research we are leading the way across the nation and globe.'),
+      '#markup' => t('The University of Iowa College of Education is home to centers and faculty who are innovating in the fields of education, measurement, counseling, and rehabilitation. Through cutting-edge research, we are leading the way across the nation and globe.'),
       '#suffix' => '</p></div></div>',
     ),
     '#suffix' => '</div>',
