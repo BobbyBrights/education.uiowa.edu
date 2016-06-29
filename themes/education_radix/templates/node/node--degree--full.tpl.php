@@ -21,7 +21,7 @@
     ?>
       <div class="leading-text">
         <div class="container">
-            <div class="col-sm-8">
+           <div class="col-sm-8"> 
               <?php print render($content['field_degree_leading_text']); ?>
             </div>
             <div class="col-sm-4">
