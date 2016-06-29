@@ -5,6 +5,7 @@ version = 7.x-1.0
 dependencies[] = classy_paragraphs
 dependencies[] = education_announcement
 dependencies[] = education_announcement_views
+dependencies[] = education_article_views
 dependencies[] = education_events
 dependencies[] = education_events_views
 dependencies[] = entityreference
