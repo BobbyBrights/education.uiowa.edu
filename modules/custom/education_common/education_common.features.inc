@@ -56,6 +56,16 @@ function education_common_wysiwyg_default_profiles_alter(&$data) {
 }
 
 /**
+ * Implements hook_file_default_displays_alter().
+ */
+function education_common_file_default_displays_alter(&$data) {
+  if (isset($data['image__default__file_field_file_default'])) {
+    $data['image__default__file_field_file_default']->status = FALSE; /* WAS: TRUE */
+    $data['image__default__file_field_file_default']->weight = 0; /* WAS: 50 */
+  }
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function education_common_image_default_styles() {
