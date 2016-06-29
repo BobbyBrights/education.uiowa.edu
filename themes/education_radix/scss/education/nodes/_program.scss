@@ -1,0 +1,68 @@
+.node-program-full {
+  .field-name-field-program-department {
+    visibility: hidden;
+    display: none;
+  }
+  .field-name-field-program-leading-text {
+  }
+  .field-name-field-program-leading-buttons {
+  }
+  .field-name-field-program-overview-text {
+    clear:both;
+    margin: 10px;
+  }
+  .field-name-field-program-overview-image {
+    margin-left:-15px;
+    margin-right:-15px;
+  }
+
+  /** Overview section **/
+  .overview-section {
+    @extend .light-grey-background;
+    margin:15px;
+    vertical-align: middle;
+    position:relative;
+
+  @include breakpoint($education-bg-image) {
+  min-height: 200px;
+  }
+    .overview-text {
+      margin-top:10px;
+    }
+    h2 {
+      @extend .h3;
+      @extend .large-text;
+      background-color:lighten(#000000, 40);
+      color:White;
+      display: inline;
+      margin-left:-15px;
+      padding: 5px 10px 5px 20px;
+      min-width: 200px;
+    }
+    img {
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      object-fit: cover;
+    }
+    #div2size {
+      visibility: hidden;
+    @include breakpoint($education-bg-image) {
+      visibility: visible;;
+      height:100%;
+      right:0;
+      position:absolute; }
+    }
+
+  }
+.field-name-field-program-degree-options a {
+  @extend .btn-long;
+  margin-bottom:5px;
+}
+.contact-section, .featured-faculty-section, .degree-section {
+  margin-left:15px;
+  margin-right:15px;
+}
+
+}

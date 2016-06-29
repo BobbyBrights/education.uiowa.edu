@@ -21,13 +21,13 @@ function education_academic_program_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact',
-    'weight' => '13',
+    'weight' => '14',
     'children' => array(
       0 => 'field_program_contact_person',
       1 => 'field_program_contact_title',
       2 => 'field_program_contact_person2',
-      3 => 'field_program_contact_title2',
-      4 => 'field_program_contact_text',
+      3 => 'field_program_contact_text',
+      4 => 'field_program_contact_title2',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -53,10 +53,10 @@ function education_academic_program_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Featured faculty',
-    'weight' => '12',
+    'weight' => '13',
     'children' => array(
-      0 => 'field_program_faculty_2',
-      1 => 'field_program_faculty_1',
+      0 => 'field_program_faculty_1',
+      1 => 'field_program_faculty_2',
       2 => 'field_program_faculty_3',
     ),
     'format_type' => 'fieldset',
@@ -114,8 +114,8 @@ function education_academic_program_field_group_info() {
     'label' => 'Overview',
     'weight' => '11',
     'children' => array(
-      0 => 'field_program_overview_text',
-      1 => 'field_program_overview_image',
+      0 => 'field_program_overview_image',
+      1 => 'field_program_overview_text',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

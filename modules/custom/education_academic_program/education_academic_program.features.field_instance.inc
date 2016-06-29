@@ -24,6 +24,12 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -75,6 +81,13 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'sitenow_map_formatter_abbr',
         'weight' => 8,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'sitenow_maps',
+        'settings' => array(),
+        'type' => 'sitenow_map_formatter_abbr',
+        'weight' => 13,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -113,6 +126,15 @@ function education_academic_program_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -170,6 +192,15 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 14,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 17,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -224,6 +255,13 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 16,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -263,6 +301,13 @@ function education_academic_program_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -304,6 +349,13 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 15,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -330,6 +382,76 @@ function education_academic_program_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-program-field_program_degree_options'.
+  $field_instances['node-program-field_program_degree_options'] = array(
+    'bundle' => 'program',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'degree_options|education_program_degree_option_pane',
+        'vargs' => '[node:nid]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 23,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_degree_options',
+    'label' => 'Degree Options',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_user' => 0,
+        'announcements' => 0,
+        'audiences' => 0,
+        'clone_of_administration_nodes' => 0,
+        'degree_options' => 'degree_options',
+        'education_announcements' => 0,
+        'education_articles' => 0,
+        'education_person_views' => 0,
+        'events' => 0,
+        'faculty' => 0,
+        'media_browser_plus' => 0,
+        'media_browser_plus_folders' => 0,
+        'scholarships' => 0,
+        'webform_analysis' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-program-field_program_department'.
   $field_instances['node-program-field_program_department'] = array(
     'bundle' => 'program',
@@ -345,6 +467,12 @@ function education_academic_program_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 1,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -396,6 +524,13 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'email_default',
         'weight' => 9,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 14,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -436,6 +571,15 @@ function education_academic_program_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 19,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -493,6 +637,15 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 18,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 7,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -549,6 +702,15 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 20,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 8,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -604,6 +766,15 @@ function education_academic_program_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 3,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -663,6 +834,13 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -702,6 +880,13 @@ function education_academic_program_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 22,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -743,6 +928,13 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 10,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -782,6 +974,13 @@ function education_academic_program_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 7,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -824,6 +1023,16 @@ function education_academic_program_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 13,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -900,6 +1109,13 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 12,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -940,6 +1156,13 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'text_plain',
         'weight' => 6,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 11,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -979,6 +1202,12 @@ function education_academic_program_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 21,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1016,6 +1245,7 @@ function education_academic_program_field_default_field_instances() {
   t('Contact title');
   t('Contact title2');
   t('Create links like "Apply" and "Contact" adding style Button.');
+  t('Degree Options');
   t('Department');
   t('Description');
   t('Email address');
