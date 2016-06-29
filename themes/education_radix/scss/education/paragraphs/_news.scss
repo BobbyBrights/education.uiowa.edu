@@ -1,0 +1,16 @@
+$news_inline: $education-md-min;
+
+.paragraphs-item-news {
+  .view-content {
+    @extend .row;
+  }
+
+  .views-row {
+    @extend .col-md-4;
+    margin-bottom: 20px;
+
+    @include breakpoint($news_inline) {
+      margin-bottom: 0;
+    }
+  }
+}
