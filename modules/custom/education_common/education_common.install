@@ -321,3 +321,12 @@ function education_common_update_7016() {
     module_enable(array('education_audiences_views'));
   }
 }
+
+/**
+ * Enable education_degree_option_views.
+ */
+function education_common_update_7017() {
+  if (!module_exists('education_degree_option_views')) {
+    module_enable(array('education_degree_option_views'));
+  }
+}
