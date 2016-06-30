@@ -131,6 +131,7 @@ function education_paragraphs_entity_presave($entity, $type) {
         $args = $audiences_arg . '/' . $affiliations_arg;
 
         $entity->field_events_view[LANGUAGE_NONE][0]['vargs'] = $args;
+        break;
 
       default:
         break;
