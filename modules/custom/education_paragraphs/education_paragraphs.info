@@ -54,6 +54,7 @@ features[field_instance][] = paragraphs_item-news-field_article_affiliation
 features[field_instance][] = paragraphs_item-news-field_article_audience
 features[field_instance][] = paragraphs_item-news-field_news_heading
 features[field_instance][] = paragraphs_item-news-field_news_view
+features[field_instance][] = paragraphs_item-news-field_paragraph_container_style
 features[field_instance][] = paragraphs_item-slogan-field_paragraph_container_style
 features[field_instance][] = paragraphs_item-text-field_paragraph_container_style
 features[field_instance][] = paragraphs_item-text-field_text_text
