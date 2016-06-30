@@ -115,6 +115,9 @@ function education_article_views_views_default_views() {
 
   /* Display: Paragraph */
   $handler = $view->new_display('block', 'Paragraph', 'news_paragraph_block');
+  $handler->display->display_options['defaults']['query'] = FALSE;
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
