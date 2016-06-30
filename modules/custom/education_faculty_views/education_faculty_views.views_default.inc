@@ -81,7 +81,6 @@ function education_faculty_views_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
   /* Contextual filter: Content: Affiliations (field_person_affiliations) */
   $handler->display->display_options['arguments']['field_person_affiliations_target_id']['id'] = 'field_person_affiliations_target_id';
   $handler->display->display_options['arguments']['field_person_affiliations_target_id']['table'] = 'field_data_field_person_affiliations';

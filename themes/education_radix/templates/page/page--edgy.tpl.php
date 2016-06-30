@@ -133,31 +133,33 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
         <!-- Button trigger modal -->
-<a data-toggle="modal" data-target="#myModal"><div class="footer-button"><strong>Apply</strong></div></a>
+        <a data-toggle="modal" data-target="#myModal" class="footer-button">Apply</a>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-  <div class="modal-dialog" role="document" >
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-        <h2 class="modal-title" id="myModalLabel">Apply to the College</h2>
-      </div>
-      <div class="modal-body">
-        <p>Learn more about our programs...</p>
-        <a class="btn btn-primary btn-modal" href="/node/294" >Undergraduate</a>
-        <a class="btn btn-primary btn-modal" href="https://apply.admissions.uiowa.edu/admissions/graduate.page">Graduate</a>
-        <a class="btn btn-primary btn-modal" href="">Licensure, Certificate, &amp; Endorsement</a>
-        <a class="btn btn-primary btn-modal" href>Professional Development</a>
-        <a class="btn btn-primary btn-modal" href="">Online</a>
-      </div>
-    <!--  <div class="modal-footer">
-    </div> -->
-    </div>
-  </div>
-</div>
-        <br/> 
-        <a href="/directories" ><div class="footer-button"><strong>Directory<strong></div></a>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+          <div class="modal-dialog" role="document" >
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                <h2 class="modal-title" id="myModalLabel">Apply to the College</h2>
+              </div>
+              <div class="modal-body">
+                <?php
+                  print l(t('Undergraduate'), drupal_get_path_alias('node/294'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Office of Student Services')));
+                  print l(t('Graduate'), 'https://apply.admissions.uiowa.edu/admissions/graduate.page', array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'University of Iowa Office of Admissions')));
+                  print l(t('Licensure, Certificate, &amp; Endorsement'), drupal_get_path_alias('node/691'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Non-degree programs')));
+                  print l(t('Professional Development'), drupal_get_path_alias('node/269'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Teacher Leader Center')));
+                  print l(t('Online'), drupal_get_path_alias('node/693'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Online programs')));
+                ?>
+              </div>
+            <!--  <div class="modal-footer">
+            </div> -->
+            </div>
+          </div>
+        </div>
+        <br/>
+
+        <?php print l(t('Directory'), drupal_get_path_alias('directories'), array('attributes' => array('class' => 'footer-button'))); ?>
         <br/>
       </div>
       <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
@@ -179,7 +181,7 @@
       <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-        <a href="webmaster">Report web site problems to the webmaster</a>
+        <?php print l(t('Report web site problems to the webmaster'), drupal_get_path_alias('262')); ?>
       </div>
       <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
       </div>
