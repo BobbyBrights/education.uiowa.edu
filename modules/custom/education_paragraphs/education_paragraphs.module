@@ -133,6 +133,33 @@ function education_paragraphs_entity_presave($entity, $type) {
         $entity->field_events_view[LANGUAGE_NONE][0]['vargs'] = $args;
         break;
 
+      case 'news':
+        $audiences_tids = array();
+        if (!empty($entity->field_article_audience['und'])) {
+          foreach($entity->field_article_audience['und'] as $delta) {
+            $audiences_tids[] = $delta['tid'];
+          }
+        } else {
+          $audiences_tids[] = 'all';
+        }
+
+        $affiliations_nids = array();
+        if (!empty($entity->field_article_affiliation['und'])) {
+          foreach($entity->field_article_affiliation['und'] as $delta) {
+            $affiliations_nids[] = $delta['target_id'];
+          }
+        } else {
+          $affiliations_nids[] = 'all';
+        }
+
+        $audiences_arg = '"' . implode('+', $audiences_tids) . '"';
+        $affiliations_arg = '"' . implode('+', $affiliations_nids) . '"';
+
+        $args = $audiences_arg . '/' . $affiliations_arg;
+
+        $entity->field_news_view[LANGUAGE_NONE][0]['vargs'] = $args;
+        break;
+
       default:
         break;
     }
