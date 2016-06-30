@@ -36,3 +36,23 @@
 .pane-education-articles-education-news-pane-custom {
     @extend .col-sm-4;
 }
+
+.view-display-id-news_paragraph_block {
+  .views-field-field-image {
+    margin-bottom: 20px;
+  }
+
+  .views-field-title h3 {
+    @include font-size(1.3);
+    margin-top: 0;
+    text-transform: none;
+  }
+
+  .views-field-created {
+    text-align: right;
+  }
+
+  .views-field-body {
+    margin-top: 10px;
+  }
+}

@@ -89,7 +89,7 @@ function education_announcement_field_default_field_instances() {
         'doubleClickable' => 1,
         'dragToAdd' => 1,
         'enabled' => 1,
-        'height' => 400,
+        'height' => 320,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
         'searchable' => 1,

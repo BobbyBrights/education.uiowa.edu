@@ -25,11 +25,11 @@
 .yellow-background {
   background-color: $yellow;
 
-    a {
-      color: darken($blue, 15);
+  a {
+    color: darken($blue, 10);
 
-      &:hover, &:focus {
-        color: darken($blue, 25);
-      }
+    &:hover, &:focus {
+      color: darken($blue, 20);
     }
+  }
 }

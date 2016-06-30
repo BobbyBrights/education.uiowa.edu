@@ -539,14 +539,14 @@ function education_paragraphs_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 0,
-        'height' => 0,
+        'enabled' => 1,
+        'height' => 190,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
         'searchable' => 1,
         'selectedContainerOnLeft' => 1,
         'sortable' => 1,
-        'width' => 0,
+        'width' => 320,
       ),
       'user_register_form' => FALSE,
     ),
@@ -588,14 +588,14 @@ function education_paragraphs_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 0,
-        'height' => 0,
+        'enabled' => 1,
+        'height' => 190,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
         'searchable' => 1,
         'selectedContainerOnLeft' => 1,
         'sortable' => 1,
-        'width' => 0,
+        'width' => 320,
       ),
       'user_register_form' => FALSE,
     ),
@@ -775,6 +775,248 @@ function education_paragraphs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'paragraphs_item-news-field_article_affiliation'.
+  $field_instances['paragraphs_item-news-field_article_affiliation'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_article_affiliation',
+    'label' => 'Affiliations',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 1,
+        'height' => 190,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 320,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-news-field_article_audience'.
+  $field_instances['paragraphs_item-news-field_article_audience'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_article_audience',
+    'label' => 'Audiences',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 1,
+        'height' => 190,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 320,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-news-field_news_heading'.
+  $field_instances['paragraphs_item-news-field_news_heading'] = array(
+    'bundle' => 'news',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Latest News',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Provide a custom heading for the list of News.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_news_heading',
+    'label' => 'Heading',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-news-field_news_view'.
+  $field_instances['paragraphs_item-news-field_news_view'] = array(
+    'bundle' => 'news',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'education_articles|news_paragraph_block',
+        'vargs' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_news_view',
+    'label' => 'News view',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_user' => 0,
+        'announcements' => 0,
+        'audiences' => 0,
+        'clone_of_administration_nodes' => 0,
+        'degree_options' => 0,
+        'education_announcements' => 0,
+        'education_articles' => 'education_articles',
+        'education_person_views' => 0,
+        'events' => 0,
+        'fast_facts' => 0,
+        'media_browser_plus' => 0,
+        'media_browser_plus_folders' => 0,
+        'scholarships' => 0,
+        'webform_analysis' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+      ),
+      'force_default' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-news-field_paragraph_container_style'.
+  $field_instances['paragraphs_item-news-field_paragraph_container_style'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_paragraph_container_style',
+    'label' => 'Container Style',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance:
   // 'paragraphs_item-slogan-field_paragraph_container_style'.
   $field_instances['paragraphs_item-slogan-field_paragraph_container_style'] = array(
@@ -906,8 +1148,10 @@ function education_paragraphs_field_default_field_instances() {
   t('Heading');
   t('Image');
   t('Image position');
+  t('News view');
   t('Provide a custom heading for the list of Announcements. Eg., "Honors & Awards", "Publications".');
   t('Provide a custom heading for the list of Events.');
+  t('Provide a custom heading for the list of News.');
   t('Select which affiliations to display Announcements for. If no affiliations are selected, Announcements with any affiliation will be included in the listing.');
   t('Select which audiences to display Announcements for. If no audiences are selected, Announcements for all audiences will be included in the listing.');
   t('Select which categories of Announcements to display. If no categories are selected, Announcements from all categories will be included in the listing.');

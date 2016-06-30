@@ -1,0 +1,23 @@
+$news_inline: $education-md-min;
+
+.paragraphs-item-news {
+  .news-list-title {
+    @include font-size(2);
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .view-content {
+    @extend .row;
+  }
+
+  .views-row {
+    @extend .col-md-4;
+    margin-bottom: 20px;
+
+    @include breakpoint($news_inline) {
+      margin-bottom: 0;
+    }
+  }
+}
