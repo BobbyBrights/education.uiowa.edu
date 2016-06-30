@@ -1,0 +1,13 @@
+diff --git a/jquery_ui_multiselect.module b/jquery_ui_multiselect.module
+index 79a6cbe..9352e8e 100644
+--- a/jquery_ui_multiselect.module
++++ b/jquery_ui_multiselect.module
+@@ -156,7 +156,7 @@ function jquery_ui_multiselect_field_widget_options_select_form_alter(&$element,
+       }
+     }
+     $element['#options'] = $options + $element['#options'];
+-
++    unset($element['#options']['_none']);
+     // Prepare settings to pass on to JS.
+     $settings = $context['instance']['settings']['jquery_ui_multiselect'];
+     // Remove settings that should not be passed on to JS.

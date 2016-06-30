@@ -29,14 +29,18 @@
     ?>
       <div class="leading-text">
         <div class="container">
-            <div class="col-sm-8">
+          <div <?php if ($content['field_program_leading_buttons']): ?> class="col-sm-8" <?php else: ?> class="col-sm-12" <?php endif; ?>>
               <?php print render($content['field_program_leading_text']); ?>
             </div>
+          <?php if ($content['field_program_leading_buttons']): ?>
             <div class="col-sm-4">
               <?php print render($content['field_program_leading_buttons']); ?>
             </div>
+          <?php endif; ?>
         </div>
       </div>
+
+    <?php if ($content['field_program_overview_text']): ?>
       <div class="overview-section">
         <div class="container">
             <div class="overview-box">
@@ -50,6 +54,7 @@
           </div>
         </div>
       </div>
+    <?php endif; ?>
     <div class="degree-section">
       <h2>Programs</h2>
       <?php print render($content['field_program_degree_options']); ?>
