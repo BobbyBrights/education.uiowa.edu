@@ -9145,7 +9145,7 @@ h1#site-name {
   .tall-image .header-content {
     background-color: rgba(255, 255, 255, 0.7);
     bottom: 0;
-    padding: 1rem 0;
+    padding-top: 6px;
     position: absolute;
     width: 100%;
     z-index: 1; }
@@ -9212,6 +9212,9 @@ img {
   margin-bottom: 1.5rem;
   padding: 0;
   font-size: 0.75rem; }
+  .edgy .breadcrumb {
+    margin-bottom: 0;
+    margin-top: 5px; }
 
 .nav {
   margin: 0; }
