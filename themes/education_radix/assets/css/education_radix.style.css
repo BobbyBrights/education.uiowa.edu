@@ -9673,6 +9673,20 @@ img {
   padding: 20px;
   margin: 20px 0; }
 
+.view-display-id-news_paragraph_block .views-field-field-image {
+  margin-bottom: 20px; }
+
+.view-display-id-news_paragraph_block .views-field-title h3 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  text-transform: none; }
+
+.view-display-id-news_paragraph_block .views-field-created {
+  text-align: right; }
+
+.view-display-id-news_paragraph_block .views-field-body {
+  margin-top: 10px; }
+
 .view-display-id-panel_pane_faculty_staff_view .views-row-even {
   background-color: #e6e6e6; }
 
