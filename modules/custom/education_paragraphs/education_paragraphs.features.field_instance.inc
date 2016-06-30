@@ -876,7 +876,11 @@ function education_paragraphs_field_default_field_instances() {
   // Exported field_instance: 'paragraphs_item-news-field_news_heading'.
   $field_instances['paragraphs_item-news-field_news_heading'] = array(
     'bundle' => 'news',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Latest News',
+      ),
+    ),
     'deleted' => 0,
     'description' => 'Provide a custom heading for the list of News.',
     'display' => array(
