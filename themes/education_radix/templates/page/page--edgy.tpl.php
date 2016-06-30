@@ -80,17 +80,17 @@
           <div class="<?php print $header_classes; ?>">
             <div class="header-content">
               <div class="container">
-                <?php if ($breadcrumb): ?>
-                  <div id="breadcrumb" class="visible-desktop">
-                    <?php print $breadcrumb; ?>
-                  </div>
-                <?php endif; ?>
                 <h1 class="title"><?php print $title; ?></h1>
               </div>
             </div>
             <?php if (!empty($header_image_tall)): ?>
               <?php print render($header_image_tall); ?>
             <?php endif; ?>
+          </div>
+        <?php endif; ?>
+        <?php if ($breadcrumb): ?>
+          <div id="breadcrumb" class="visible-desktop">
+            <?php print $breadcrumb; ?>
           </div>
         <?php endif; ?>
       </div>
