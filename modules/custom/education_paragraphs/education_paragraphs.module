@@ -46,6 +46,17 @@ function education_paragraphs_field_widget_form_alter(&$element, &$form_state, $
       $element['token_help']['#access'] = FALSE;
       break;
 
+    case 'field_news_view':
+      // Do not show the view name selector.
+      $element['vname']['#access'] = FALSE;
+
+      // Do not show the arguments field.
+      $element['vargs']['#access'] = FALSE;
+
+      // Do not show the token options.
+      $element['token_help']['#access'] = FALSE;
+      break;
+
     default:
       break;
   }
