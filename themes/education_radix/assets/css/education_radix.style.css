@@ -9476,6 +9476,12 @@ img {
     .paragraphs-item-fast-fact .field-item {
       margin-bottom: 0; } }
 
+.paragraphs-item-news .news-list-title {
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase; }
+
 .paragraphs-item-news .views-row {
   margin-bottom: 20px; }
   @media (min-width: 992px) {

@@ -1,6 +1,13 @@
 $news_inline: $education-md-min;
 
 .paragraphs-item-news {
+  .news-list-title {
+    @include font-size(2);
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   .view-content {
     @extend .row;
   }
