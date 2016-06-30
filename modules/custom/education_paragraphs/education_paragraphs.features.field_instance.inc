@@ -775,6 +775,96 @@ function education_paragraphs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'paragraphs_item-news-field_news_audience'.
+  $field_instances['paragraphs_item-news-field_news_audience'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_news_audience',
+    'label' => 'Audiences',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 0,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-news-field_news_heading'.
+  $field_instances['paragraphs_item-news-field_news_heading'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Provide a custom heading for the list of News.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_news_heading',
+    'label' => 'Heading',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-news-field_news_view'.
   $field_instances['paragraphs_item-news-field_news_view'] = array(
     'bundle' => 'news',
@@ -972,6 +1062,7 @@ function education_paragraphs_field_default_field_instances() {
   t('News view');
   t('Provide a custom heading for the list of Announcements. Eg., "Honors & Awards", "Publications".');
   t('Provide a custom heading for the list of Events.');
+  t('Provide a custom heading for the list of News.');
   t('Select which affiliations to display Announcements for. If no affiliations are selected, Announcements with any affiliation will be included in the listing.');
   t('Select which audiences to display Announcements for. If no audiences are selected, Announcements for all audiences will be included in the listing.');
   t('Select which categories of Announcements to display. If no categories are selected, Announcements from all categories will be included in the listing.');
