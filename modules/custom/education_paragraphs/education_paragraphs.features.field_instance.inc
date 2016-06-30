@@ -775,8 +775,60 @@ function education_paragraphs_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-news-field_news_audience'.
-  $field_instances['paragraphs_item-news-field_news_audience'] = array(
+  // Exported field_instance: 'paragraphs_item-news-field_article_affiliation'.
+  $field_instances['paragraphs_item-news-field_article_affiliation'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 4,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_article_affiliation',
+    'label' => 'Affiliations',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 1,
+        'height' => 0,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-news-field_article_audience'.
+  $field_instances['paragraphs_item-news-field_article_audience'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
     'deleted' => 0,
@@ -787,7 +839,7 @@ function education_paragraphs_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 5,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -797,7 +849,7 @@ function education_paragraphs_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_news_audience',
+    'field_name' => 'field_article_audience',
     'label' => 'Audiences',
     'required' => 0,
     'settings' => array(
@@ -805,7 +857,7 @@ function education_paragraphs_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 0,
+        'enabled' => 1,
         'height' => 0,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
