@@ -8810,6 +8810,10 @@ p {
 
 .yellow-background, .pane-education-announcements-education-honors-awards-pane-view .pane-title, .pane-education-announcements-education-honors-awards-pane-view .pane-content, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date-1 {
   background-color: #ffe100; }
+  .yellow-background a, .pane-education-announcements-education-honors-awards-pane-view .pane-title a, .pane-education-announcements-education-honors-awards-pane-view .pane-content a, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date a, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date-1 a {
+    color: #08668a; }
+    .yellow-background a:hover, .pane-education-announcements-education-honors-awards-pane-view .pane-title a:hover, .pane-education-announcements-education-honors-awards-pane-view .pane-content a:hover, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date a:hover, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date-1 a:hover, .yellow-background a:focus, .pane-education-announcements-education-honors-awards-pane-view .pane-title a:focus, .pane-education-announcements-education-honors-awards-pane-view .pane-content a:focus, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date a:focus, .pane-events-education-events-today-pane-view .views-row-1 .views-field-field-event-date-1 a:focus {
+      color: #054259; }
 
 .black-border {
   border: 2px solid #333333; }
