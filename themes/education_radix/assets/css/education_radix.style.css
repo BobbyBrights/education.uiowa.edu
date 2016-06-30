@@ -9558,7 +9558,8 @@ img {
   height: 270px; }
 
 .view-display-id-page_faculty_listing .views-row-odd, .view-display-id-page_faculty_listing .views-row-even, .view-display-id-page_faculty_full_listing .views-row-odd, .view-display-id-page_faculty_full_listing .views-row-even {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center; }
   @media (min-width: 992px) {
     .view-display-id-page_faculty_listing .views-row-odd, .view-display-id-page_faculty_listing .views-row-even, .view-display-id-page_faculty_full_listing .views-row-odd, .view-display-id-page_faculty_full_listing .views-row-even {
