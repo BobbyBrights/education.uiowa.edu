@@ -30,14 +30,6 @@ function education_article_views_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Sticky */
-  $handler->display->display_options['fields']['sticky']['id'] = 'sticky';
-  $handler->display->display_options['fields']['sticky']['table'] = 'node';
-  $handler->display->display_options['fields']['sticky']['field'] = 'sticky';
-  $handler->display->display_options['fields']['sticky']['label'] = '';
-  $handler->display->display_options['fields']['sticky']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['sticky']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['sticky']['not'] = 0;
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
