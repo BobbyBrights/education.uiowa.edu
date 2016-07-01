@@ -178,13 +178,9 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-        <?php print l(t('Report web site problems to the webmaster'), drupal_get_path_alias('262')); ?>
-      </div>
-      <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-      </div>
+        <div class="footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+            <?php print l(t('Report web site problems to the webmaster'), drupal_get_path_alias('262')); ?>
+        </div>
     </div>
   </div>
 </footer>
