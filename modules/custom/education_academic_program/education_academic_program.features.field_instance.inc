@@ -28,7 +28,7 @@ function education_academic_program_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -122,18 +122,20 @@ function education_academic_program_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 1,
+          'view_mode' => 'full',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 5,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'teaser',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 15,
       ),
       'teaser' => array(
@@ -187,9 +189,10 @@ function education_academic_program_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 1,
+          'view_mode' => 'default',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 14,
       ),
       'full' => array(
@@ -406,7 +409,7 @@ function education_academic_program_field_default_field_instances() {
         'module' => 'viewfield',
         'settings' => array(),
         'type' => 'viewfield_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -472,7 +475,7 @@ function education_academic_program_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -565,21 +568,15 @@ function education_academic_program_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 19,
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -630,21 +627,15 @@ function education_academic_program_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 18,
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 7,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -695,21 +686,15 @@ function education_academic_program_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 20,
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 8,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -751,6 +736,219 @@ function education_academic_program_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-program-field_program_ffaculty1'.
+  $field_instances['node-program-field_program_ffaculty1'] = array(
+    'bundle' => 'program',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'faculty|block_1',
+        'vargs' => '[node:field-program-faculty-1:nid]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 24,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_ffaculty1',
+    'label' => 'FFaculty1',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_user' => 0,
+        'announcements' => 0,
+        'audiences' => 0,
+        'clone_of_administration_nodes' => 0,
+        'degree_options' => 0,
+        'education_announcements' => 0,
+        'education_articles' => 0,
+        'education_person_views' => 0,
+        'events' => 0,
+        'faculty' => 'faculty',
+        'fast_facts' => 0,
+        'media_browser_plus' => 0,
+        'media_browser_plus_folders' => 0,
+        'scholarships' => 0,
+        'webform_analysis' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 57,
+    ),
+  );
+
+  // Exported field_instance: 'node-program-field_program_ffaculty2'.
+  $field_instances['node-program-field_program_ffaculty2'] = array(
+    'bundle' => 'program',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'faculty|block_1',
+        'vargs' => '[node:field-program-faculty-2:nid]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 25,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_ffaculty2',
+    'label' => 'FFaculty2',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_user' => 0,
+        'announcements' => 0,
+        'audiences' => 0,
+        'clone_of_administration_nodes' => 0,
+        'degree_options' => 0,
+        'education_announcements' => 0,
+        'education_articles' => 0,
+        'education_person_views' => 0,
+        'events' => 0,
+        'faculty' => 'faculty',
+        'fast_facts' => 0,
+        'media_browser_plus' => 0,
+        'media_browser_plus_folders' => 0,
+        'scholarships' => 0,
+        'webform_analysis' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 58,
+    ),
+  );
+
+  // Exported field_instance: 'node-program-field_program_ffaculty3'.
+  $field_instances['node-program-field_program_ffaculty3'] = array(
+    'bundle' => 'program',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'faculty|block_1',
+        'vargs' => '[node:field-program-faculty-3:nid]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 26,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_program_ffaculty3',
+    'label' => 'FFaculty3',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_user' => 0,
+        'announcements' => 0,
+        'audiences' => 0,
+        'clone_of_administration_nodes' => 0,
+        'degree_options' => 0,
+        'education_announcements' => 0,
+        'education_articles' => 0,
+        'education_person_views' => 0,
+        'events' => 0,
+        'faculty' => 'faculty',
+        'fast_facts' => 0,
+        'media_browser_plus' => 0,
+        'media_browser_plus_folders' => 0,
+        'scholarships' => 0,
+        'webform_analysis' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 59,
+    ),
+  );
+
   // Exported field_instance: 'node-program-field_program_leader_person'.
   $field_instances['node-program-field_program_leader_person'] = array(
     'bundle' => 'program',
@@ -771,9 +969,10 @@ function education_academic_program_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'teaser',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 9,
       ),
       'teaser' => array(
@@ -886,7 +1085,7 @@ function education_academic_program_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -933,7 +1132,7 @@ function education_academic_program_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1032,7 +1231,7 @@ function education_academic_program_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1114,7 +1313,7 @@ function education_academic_program_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1206,7 +1405,7 @@ function education_academic_program_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1249,6 +1448,9 @@ function education_academic_program_field_default_field_instances() {
   t('Department');
   t('Description');
   t('Email address');
+  t('FFaculty1');
+  t('FFaculty2');
+  t('FFaculty3');
   t('Faculty 1');
   t('Faculty 2');
   t('Faculty 3');

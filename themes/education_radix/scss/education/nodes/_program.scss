@@ -64,5 +64,45 @@
   margin-left:15px;
   margin-right:15px;
 }
+/**
+ * featured-faculty-section
+ */
+  .featured-faculty-section {
+    @extend .row;
+    @extend .light-grey-background;
+    clear:both;
+    margin: 30px 15px 15px 15px;
+    padding-top: 10px;
+    position:relative;
+    vertical-align: middle;
+
+    h2 {
+      @extend .h3;
+      @extend .large-text;
+      background-color:lighten(#000000, 40);
+      color:White;
+      display: inline;
+      padding: 5px 10px 5px 20px;
+      min-width: 200px;
+    }
+
+    .views-row {
+      @extend .col-sm-4;
+    }
+    .views-field {
+      margin:10px 20px;
+    }
+
+    p.see-more-faculty {
+      @extend .yellow-background;
+      float:right;
+      padding: 5px 30px 5px 10px;
+      margin-bottom:10px;
+      a {
+        @extend .large-text;
+        color: $black;
+      }
+    }
+  }
 
 }

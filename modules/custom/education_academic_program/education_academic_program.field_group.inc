@@ -21,7 +21,7 @@ function education_academic_program_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact',
-    'weight' => '14',
+    'weight' => '15',
     'children' => array(
       0 => 'field_program_contact_person',
       1 => 'field_program_contact_title',
@@ -58,6 +58,9 @@ function education_academic_program_field_group_info() {
       0 => 'field_program_faculty_1',
       1 => 'field_program_faculty_2',
       2 => 'field_program_faculty_3',
+      3 => 'field_program_ffaculty1',
+      4 => 'field_program_ffaculty2',
+      5 => 'field_program_ffaculty3',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

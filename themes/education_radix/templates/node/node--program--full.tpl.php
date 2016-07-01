@@ -59,14 +59,34 @@
       <h2>Programs</h2>
       <?php print render($content['field_program_degree_options']); ?>
     </div>
+  <?php if ($content['field_program_ffaculty1']): ?>
     <div class="featured-faculty-section">
-      <?php print render($content['field_program_faculty_1']); ?>
-      <?php print render($content['field_program_faculty_2']); ?>
-      <?php print render($content['field_program_faculty_3']); ?>
+      <h2>Meet our Faculty</h2>
+      <?php print render($content['field_program_ffaculty1']); ?>
+      <?php print render($content['field_program_ffaculty2']); ?>
+      <?php print render($content['field_program_ffaculty3']); ?>
+      <p class="see-more-faculty"><a href="faculty/<?php if (arg(0) == 'node' && is_numeric(arg(1))) $nodeid = arg(1);
+print $nodeid; ?>">See More >></a></p>
     </div>
+  <?php endif; ?>
+  
+<!-- Removed until styled
     <div class="contact-section">
-      <?php print render($content); ?>
-    </div>
+        <h2>Contact:</h2>
+        <h3>Leader:</h3>
+        <?php print render($content['field_program_leader_person']); ?>
+        <?php print render($content['field_program_leader_title']); ?>
+        <?php print render($content['field_program_office_number']); ?>
+        <h3>Contacts 1/2:</h3>
+        <?php print render($content['field_program_contact_person']); ?>
+        <?php print render($content['field_program_contact_title']); ?>
+        <?php print render($content['field_program_contact_person2']); ?>
+        <?php print render($content['field_program_contact_title2']); ?>
+        <h3>Contact text</h3>
+        <?php print render($content['field_program_contact_text']); ?>
+      </div>
+    -->
   </div>
+
 
 </article>
