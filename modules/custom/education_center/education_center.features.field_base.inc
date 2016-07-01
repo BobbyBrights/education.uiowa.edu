@@ -134,6 +134,21 @@ function education_center_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_center_paragraphs'.
+  $field_bases['field_center_paragraphs'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_center_paragraphs',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'paragraphs',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'paragraphs',
+  );
+
   // Exported field_base: 'field_center_phone_number'.
   $field_bases['field_center_phone_number'] = array(
     'active' => 1,

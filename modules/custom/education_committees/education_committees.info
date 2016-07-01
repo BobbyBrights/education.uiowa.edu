@@ -22,4 +22,5 @@ features[variable][] = menu_parent_committee
 features[variable][] = node_options_committee
 features[variable][] = node_preview_committee
 features[variable][] = node_submitted_committee
+features[variable][] = pathauto_node_committee_pattern
 project path = sites/education.uiowa.edu/modules/custom

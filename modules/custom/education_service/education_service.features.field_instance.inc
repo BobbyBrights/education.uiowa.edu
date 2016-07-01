@@ -94,7 +94,7 @@ function education_service_field_default_field_instances() {
       'module' => 'sitenow_maps',
       'settings' => array(),
       'type' => 'sitenow_map_widget_building_select',
-      'weight' => 11,
+      'weight' => 8,
     ),
   );
 
@@ -133,7 +133,7 @@ function education_service_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -172,7 +172,7 @@ function education_service_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -228,7 +228,7 @@ function education_service_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -272,7 +272,7 @@ function education_service_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -312,7 +312,72 @@ function education_service_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-service-field_service_paragraphs'.
+  $field_instances['node-service-field_service_paragraphs'] = array(
+    'bundle' => 'service',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_service_paragraphs',
+    'label' => 'Content Blocks',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'announcements' => 'announcements',
+        'callout' => 'callout',
+        'events' => 'events',
+        'fast_fact' => -1,
+        'featured_faculty' => -1,
+        'news' => 'news',
+        'slogan' => -1,
+        'social' => -1,
+        'text' => 'text',
+      ),
+      'bundle_weights' => array(
+        'announcements' => 2,
+        'callout' => 3,
+        'events' => 4,
+        'fast_fact' => 5,
+        'featured_faculty' => 6,
+        'news' => 7,
+        'slogan' => 8,
+        'social' => 9,
+        'text' => 10,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 11,
     ),
   );
 
@@ -351,7 +416,7 @@ function education_service_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -408,7 +473,7 @@ function education_service_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 13,
+      'weight' => 9,
     ),
   );
 
@@ -448,7 +513,7 @@ function education_service_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 43,
+      'weight' => 10,
     ),
   );
 
@@ -456,6 +521,7 @@ function education_service_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('555-555-5555');
   t('Building');
+  t('Content Blocks');
   t('Description');
   t('Email Address');
   t('Fax number');

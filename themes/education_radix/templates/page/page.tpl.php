@@ -158,7 +158,7 @@
         </div>
       </div>
         <br/>
-          <a href="/directories" class="footer-button">Directory</a>
+        <a href="/directories" class="footer-button">Directory</a>
         <br/>
       </div>
       <div class="col-xs-12 col-md-4 social"> <!-- bootstrap to span across 4 of available 12 columns in .row -->

@@ -19,13 +19,13 @@ function education_center_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '13',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '12',
         ),
       ),
       'display' => array(),
@@ -71,6 +71,13 @@ function education_center_strongarm() {
   $strongarm->name = 'node_submitted_center';
   $strongarm->value = 0;
   $export['node_submitted_center'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_center_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_center_pattern'] = $strongarm;
 
   return $export;
 }

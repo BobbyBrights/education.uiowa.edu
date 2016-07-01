@@ -316,6 +316,71 @@ function education_center_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-center-field_center_paragraphs'.
+  $field_instances['node-center-field_center_paragraphs'] = array(
+    'bundle' => 'center',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_center_paragraphs',
+    'label' => 'Content Blocks',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'announcements' => -1,
+        'callout' => -1,
+        'events' => -1,
+        'fast_fact' => -1,
+        'featured_faculty' => -1,
+        'news' => -1,
+        'slogan' => -1,
+        'social' => -1,
+        'text' => -1,
+      ),
+      'bundle_weights' => array(
+        'announcements' => 2,
+        'callout' => 3,
+        'events' => 4,
+        'fast_fact' => 5,
+        'featured_faculty' => 6,
+        'news' => 7,
+        'slogan' => 8,
+        'social' => 9,
+        'text' => 10,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-center-field_center_phone_number'.
   $field_instances['node-center-field_center_phone_number'] = array(
     'bundle' => 'center',
@@ -455,6 +520,7 @@ function education_center_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Building');
+  t('Content Blocks');
   t('Description');
   t('Email address');
   t('Fax number');
