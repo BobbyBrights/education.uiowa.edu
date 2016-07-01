@@ -54,6 +54,58 @@ function education_articles_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-article-field_article_affiliation'.
+  $field_instances['node-article-field_article_affiliation'] = array(
+    'bundle' => 'article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_article_affiliation',
+    'label' => 'Affiliations',
+    'required' => 0,
+    'settings' => array(
+      'jquery_ui_multiselect' => array(
+        'dividerLocation' => 0.5,
+        'doubleClickable' => 1,
+        'dragToAdd' => 1,
+        'enabled' => 1,
+        'height' => 320,
+        'includeAddAll' => 1,
+        'includeRemoveAll' => 1,
+        'searchable' => 1,
+        'selectedContainerOnLeft' => 1,
+        'sortable' => 1,
+        'width' => 320,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-article-field_article_audience'.
   $field_instances['node-article-field_article_audience'] = array(
     'bundle' => 'article',
@@ -85,12 +137,12 @@ function education_articles_field_default_field_instances() {
         'doubleClickable' => 1,
         'dragToAdd' => 1,
         'enabled' => 1,
-        'height' => 190,
+        'height' => 320,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
-        'searchable' => 0,
+        'searchable' => 1,
         'selectedContainerOnLeft' => 1,
-        'sortable' => 0,
+        'sortable' => 1,
         'width' => 320,
       ),
       'user_register_form' => FALSE,
@@ -100,7 +152,7 @@ function education_articles_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -157,7 +209,7 @@ function education_articles_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 3,
     ),
   );
 
@@ -191,50 +243,60 @@ function education_articles_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_image',
     'label' => 'Image',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'alt_field' => TRUE,
       'default_image' => 0,
       'file_directory' => 'field/image',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '',
+      'max_resolution' => '2000x2000',
       'min_resolution' => '',
       'title_field' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
+          'sharestream' => 0,
+          'youtube' => 0,
         ),
         'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
           'image' => 'image',
+          'video' => 0,
         ),
-        'browser_plugins' => array(),
-        'manualcrop_crop_info' => TRUE,
-        'manualcrop_default_crop_area' => TRUE,
-        'manualcrop_enable' => FALSE,
-        'manualcrop_inline_crop' => FALSE,
+        'browser_plugins' => array(
+          'media_browser_plus--media_browser_my_files' => 0,
+          'media_browser_plus--media_browser_thumbnails' => 'media_browser_plus--media_browser_thumbnails',
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
         'manualcrop_instant_crop' => FALSE,
-        'manualcrop_instant_preview' => TRUE,
-        'manualcrop_keyboard' => TRUE,
-        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
         'manualcrop_require_cropping' => array(),
         'manualcrop_styles_list' => array(),
         'manualcrop_styles_mode' => 'include',
-        'manualcrop_thumblist' => FALSE,
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
+        'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => -1,
+      'weight' => 1,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Affiliations');
   t('Audience');
   t('Body');
   t('Image');

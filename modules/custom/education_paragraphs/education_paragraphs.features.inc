@@ -5,6 +5,15 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function education_paragraphs_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_paragraphs_info().
  */
 function education_paragraphs_paragraphs_info() {
@@ -27,6 +36,11 @@ function education_paragraphs_paragraphs_info() {
     'fast_fact' => array(
       'name' => 'Fast Facts',
       'bundle' => 'fast_fact',
+      'locked' => '1',
+    ),
+    'news' => array(
+      'name' => 'News',
+      'bundle' => 'news',
       'locked' => '1',
     ),
     'slogan' => array(

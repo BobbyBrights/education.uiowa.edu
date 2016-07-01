@@ -80,17 +80,17 @@
           <div class="<?php print $header_classes; ?>">
             <div class="header-content">
               <div class="container">
-                <?php if ($breadcrumb): ?>
-                  <div id="breadcrumb" class="visible-desktop">
-                    <?php print $breadcrumb; ?>
-                  </div>
-                <?php endif; ?>
                 <h1 class="title"><?php print $title; ?></h1>
               </div>
             </div>
             <?php if (!empty($header_image_tall)): ?>
               <?php print render($header_image_tall); ?>
             <?php endif; ?>
+          </div>
+        <?php endif; ?>
+        <?php if ($breadcrumb): ?>
+          <div id="breadcrumb" class="visible-desktop">
+            <?php print $breadcrumb; ?>
           </div>
         <?php endif; ?>
       </div>
@@ -158,8 +158,7 @@
           </div>
         </div>
         <br/>
-
-        <?php print l(t('Directory'), drupal_get_path_alias('directories'), array('attributes' => array('class' => 'footer-button'))); ?>
+        <a href="/directories" class="footer-button">Directory</a>
         <br/>
       </div>
       <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
@@ -178,13 +177,9 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-        <?php print l(t('Report web site problems to the webmaster'), drupal_get_path_alias('262')); ?>
-      </div>
-      <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-      </div>
+        <div class="footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
+            <?php print l(t('Report web site problems to the webmaster'), drupal_get_path_alias('262')); ?>
+        </div>
     </div>
   </div>
 </footer>

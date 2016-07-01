@@ -712,6 +712,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create committee content'.
+  $permissions['create committee content'] = array(
+    'name' => 'create committee content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create degree content'.
   $permissions['create degree content'] = array(
     'name' => 'create degree content',
@@ -871,6 +881,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any committee content'.
+  $permissions['delete any committee content'] = array(
+    'name' => 'delete any committee content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any degree content'.
   $permissions['delete any degree content'] = array(
     'name' => 'delete any degree content',
@@ -1022,6 +1042,16 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'delete own center content'.
   $permissions['delete own center content'] = array(
     'name' => 'delete own center content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own committee content'.
+  $permissions['delete own committee content'] = array(
+    'name' => 'delete own committee content',
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
@@ -1352,6 +1382,16 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any committee content'.
+  $permissions['edit any committee content'] = array(
+    'name' => 'edit any committee content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any degree content'.
   $permissions['edit any degree content'] = array(
     'name' => 'edit any degree content',
@@ -1515,6 +1555,16 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'edit own center content'.
   $permissions['edit own center content'] = array(
     'name' => 'edit own center content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own committee content'.
+  $permissions['edit own committee content'] = array(
+    'name' => 'edit own committee content',
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
@@ -1732,7 +1782,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter announcement revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1742,7 +1791,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter article revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1752,7 +1800,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter background_image revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1762,7 +1809,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter center revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1772,7 +1818,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter degree revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1782,7 +1827,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter department revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1792,7 +1836,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter event revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1802,7 +1845,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter fast_fact revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1812,7 +1854,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter page revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1822,7 +1863,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter person revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1832,7 +1872,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter program revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1842,7 +1881,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter scholarship revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1850,16 +1888,6 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'enter service revision log entry'.
   $permissions['enter service revision log entry'] = array(
     'name' => 'enter service revision log entry',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'override_node_options',
-  );
-
-  // Exported permission: 'enter sitenow_map revision log entry'.
-  $permissions['enter sitenow_map revision log entry'] = array(
-    'name' => 'enter sitenow_map revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -1871,7 +1899,6 @@ function education_roles_user_default_permissions() {
     'name' => 'enter webform revision log entry',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1945,7 +1972,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override announcement published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -1991,7 +2017,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override article promote to front page option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2001,7 +2026,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override article published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2020,7 +2044,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override article sticky option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2057,7 +2080,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override background_image published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2112,7 +2134,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override center published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2167,7 +2188,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override degree published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2222,7 +2242,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override department published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2268,7 +2287,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override event promote to front page option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2278,7 +2296,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override event published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2315,7 +2332,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override fast_fact authored on option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2325,7 +2341,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override fast_fact promote to front page option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2335,7 +2350,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override fast_fact published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2390,7 +2404,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override page published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2445,7 +2458,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override person published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2500,7 +2512,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override program published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2555,7 +2566,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override scholarship published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2610,7 +2620,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override service published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -2627,60 +2636,6 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'override service sticky option'.
   $permissions['override service sticky option'] = array(
     'name' => 'override service sticky option',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'override_node_options',
-  );
-
-  // Exported permission: 'override sitenow_map authored by option'.
-  $permissions['override sitenow_map authored by option'] = array(
-    'name' => 'override sitenow_map authored by option',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'override_node_options',
-  );
-
-  // Exported permission: 'override sitenow_map authored on option'.
-  $permissions['override sitenow_map authored on option'] = array(
-    'name' => 'override sitenow_map authored on option',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'override_node_options',
-  );
-
-  // Exported permission: 'override sitenow_map promote to front page option'.
-  $permissions['override sitenow_map promote to front page option'] = array(
-    'name' => 'override sitenow_map promote to front page option',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'override_node_options',
-  );
-
-  // Exported permission: 'override sitenow_map published option'.
-  $permissions['override sitenow_map published option'] = array(
-    'name' => 'override sitenow_map published option',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'override_node_options',
-  );
-
-  // Exported permission: 'override sitenow_map revision option'.
-  $permissions['override sitenow_map revision option'] = array(
-    'name' => 'override sitenow_map revision option',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'override_node_options',
-  );
-
-  // Exported permission: 'override sitenow_map sticky option'.
-  $permissions['override sitenow_map sticky option'] = array(
-    'name' => 'override sitenow_map sticky option',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -2719,7 +2674,6 @@ function education_roles_user_default_permissions() {
     'name' => 'override webform published option',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );

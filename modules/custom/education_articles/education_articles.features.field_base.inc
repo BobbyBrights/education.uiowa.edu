@@ -10,6 +10,48 @@
 function education_articles_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_article_affiliation'.
+  $field_bases['field_article_affiliation'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_article_affiliation',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'direction' => 'ASC',
+          'property' => 'title',
+          'type' => 'property',
+        ),
+        'target_bundles' => array(
+          'center' => 'center',
+          'committee' => 'committee',
+          'degree' => 'degree',
+          'department' => 'department',
+          'program' => 'program',
+          'service' => 'service',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_article_audience'.
   $field_bases['field_article_audience'] = array(
     'active' => 1,
@@ -80,7 +122,7 @@ function education_articles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'image',
     'settings' => array(
-      'default_image' => FALSE,
+      'default_image' => 0,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
