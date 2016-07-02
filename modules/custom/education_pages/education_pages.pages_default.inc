@@ -327,8 +327,11 @@ function education_pages_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Education Page News Quicklinks',
       'title' => '',
-      'body' => '<p class="large-text"><a class="btn-long" href="http://magazine.education.uiowa.edu">Alumni Magazine</a></p>
+      'body' => '<p class="large-text"><a class="btn-long" href="/news">News</a></p>
+<p class="large-text"><a class="btn-long" href="/events">Events</a></p>
 
+<p class="large-text"><a class="btn-long" href="/audiences/media">Media Resources</a></p>
+<p class="large-text"><a class="btn-long" href="http://magazine.education.uiowa.edu">Alumni Magazine</a></p>
 <p class="large-text"><a class="btn-long" href="http://wayback.archive-it.org/823/20151226142811/http://www.education.uiowa.edu/news/annual/2015">Annual Report</a></p>
 ',
       'format' => 'filtered_html',
@@ -454,11 +457,11 @@ function education_pages_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Directory buttons',
       'title' => '',
-      'body' => '<br/><p><a class="btn-long">Offices and Centers</a></p>
+      'body' => '<p style="margin-top:15px;"><a class="btn-long" href="/centers-and-services">centers &amp;&nbsp;services</a></p>
 
-<p><a class="btn-long">Programs and Departments</a></p>
+<p><a class="btn-long" href="/academic-programs">Programs &amp; Departments</a></p>
 
-<h2>Faculty and Staff</h2>
+<h2>Faculty &amp; Staff Listing</h2>
 ',
       'format' => 'filtered_html',
       'substitute' => TRUE,
