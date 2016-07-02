@@ -91,15 +91,20 @@
     }
     .views-field {
       margin:10px 20px;
+      text-align: center;
+
+      @include breakpoint($education-bg-image) {
+        text-align: left;
+      }
     }
 
     p.see-more-faculty {
       @extend .yellow-background;
+      clear:both;
       float:right;
       padding: 5px 30px 5px 10px;
       margin-bottom:10px;
       a {
-        @extend .large-text;
         color: $black;
       }
     }

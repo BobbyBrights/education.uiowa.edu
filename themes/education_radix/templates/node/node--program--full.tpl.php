@@ -59,7 +59,7 @@
       <h2>Programs</h2>
       <?php print render($content['field_program_degree_options']); ?>
     </div>
-  <?php if ($content['field_program_ffaculty1']): ?>
+  <?php if ($content['field_program_faculty_1']): ?>
     <div class="featured-faculty-section">
       <h2>Meet our Faculty</h2>
       <?php print render($content['field_program_ffaculty1']); ?>
@@ -69,7 +69,7 @@
 print $nodeid; ?>">See More >></a></p>
     </div>
   <?php endif; ?>
-  
+
 <!-- Removed until styled
     <div class="contact-section">
         <h2>Contact:</h2>

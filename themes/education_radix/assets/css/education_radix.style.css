@@ -8833,7 +8833,7 @@ body {
 p {
   margin-bottom: 0.75rem; }
 
-.large-text, .uppercase, .node-degree-full .overview-section h2, .node-program-full .overview-section h2, .node-program-full .featured-faculty-section h2, .node-program-full .featured-faculty-section p.see-more-faculty a, .view-display-id-education_events_landing_page_view .views-field-title, .view-display-id-education_events_filtered_page_view .views-field-title, .view-display-id-education_events_affiliation_page_view .views-field-title, .view-display-id-panel_pane_faculty_staff_view .attachement_faculty_staff_view {
+.large-text, .uppercase, .node-degree-full .overview-section h2, .node-program-full .overview-section h2, .node-program-full .featured-faculty-section h2, .view-display-id-education_events_landing_page_view .views-field-title, .view-display-id-education_events_filtered_page_view .views-field-title, .view-display-id-education_events_affiliation_page_view .views-field-title, .view-display-id-panel_pane_faculty_staff_view .attachement_faculty_staff_view {
   font-family: "AvenirLT-Medium";
   font-size: 1.5rem; }
 
@@ -9477,8 +9477,13 @@ img {
       padding: 5px 10px 5px 20px;
       min-width: 200px; }
     .node-program-full .featured-faculty-section .views-field {
-      margin: 10px 20px; }
+      margin: 10px 20px;
+      text-align: center; }
+      @media (min-width: 992px) {
+        .node-program-full .featured-faculty-section .views-field {
+          text-align: left; } }
     .node-program-full .featured-faculty-section p.see-more-faculty {
+      clear: both;
       float: right;
       padding: 5px 30px 5px 10px;
       margin-bottom: 10px; }
