@@ -692,6 +692,17 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create article content'.
+  $permissions['create article content'] = array(
+    'name' => 'create article content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create background_image content'.
   $permissions['create background_image content'] = array(
     'name' => 'create background_image content',
@@ -854,6 +865,16 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'delete any announcement content'.
   $permissions['delete any announcement content'] = array(
     'name' => 'delete any announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any article content'.
+  $permissions['delete any article content'] = array(
+    'name' => 'delete any article content',
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
@@ -1034,6 +1055,16 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'delete own announcement content'.
   $permissions['delete own announcement content'] = array(
     'name' => 'delete own announcement content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own article content'.
+  $permissions['delete own article content'] = array(
+    'name' => 'delete own article content',
     'roles' => array(
       'administrator' => 'administrator',
       'webmaster' => 'webmaster',
@@ -1382,6 +1413,17 @@ function education_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any article content'.
+  $permissions['edit any article content'] = array(
+    'name' => 'edit any article content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any audio files'.
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
@@ -1569,6 +1611,17 @@ function education_roles_user_default_permissions() {
     'name' => 'edit own announcement content',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own article content'.
+  $permissions['edit own article content'] = array(
+    'name' => 'edit own article content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -2916,6 +2969,8 @@ function education_roles_user_default_permissions() {
     'name' => 'view any unpublished article content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'view_unpublished',
   );
