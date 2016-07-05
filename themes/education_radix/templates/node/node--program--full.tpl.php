@@ -70,22 +70,40 @@ print $nodeid; ?>">See More >></a></p>
     </div>
   <?php endif; ?>
 
-<!-- Removed until styled
-    <div class="contact-section">
-        <h2>Contact:</h2>
-        <h3>Leader:</h3>
-        <?php print render($content['field_program_leader_person']); ?>
-        <?php print render($content['field_program_leader_title']); ?>
-        <?php print render($content['field_program_office_number']); ?>
-        <h3>Contacts 1/2:</h3>
-        <?php print render($content['field_program_contact_person']); ?>
-        <?php print render($content['field_program_contact_title']); ?>
-        <?php print render($content['field_program_contact_person2']); ?>
-        <?php print render($content['field_program_contact_title2']); ?>
-        <h3>Contact text</h3>
-        <?php print render($content['field_program_contact_text']); ?>
-      </div>
-    -->
+  <?php if (!empty($content['field_program_contact_person']) || !empty($content['field_program_contact_person2']) || !empty($content['field_program_contact_text'])): ?>
+
+      <div class="contact-section">
+          <h2>Contact</h2>
+          <?php if ($content['field_program_contact_person']): ?>
+            <div class="contact-col">
+              <?php print render($content['field_program_contact_title']); ?>
+              <?php print render($content['field_program_contact_person']); ?>
+            </div>
+          <?php endif; ?>
+          <?php if ($content['field_program_contact_person2']): ?>
+            <div class="contact-col">
+              <?php print render($content['field_program_contact_title2']); ?>
+              <?php print render($content['field_program_contact_person2']); ?>
+            </div>
+          <?php endif; ?>
+          <?php if ($content['field_program_contact_text']): ?>
+            <div class="contact-col">
+              <?php print render($content['field_program_contact_text']); ?>
+            </div>
+          <?php endif; ?>
+          <br style="clear:both;" />
+        </div>
+      <?php endif; ?>
+
+      <!-- Removed until styled
+          <div class="contact-section">
+              <h2>Contact:</h2>
+              <h3>Leader:</h3>
+              <?php print render($content['field_program_leader_person']); ?>
+              <?php print render($content['field_program_leader_title']); ?>
+              <?php print render($content['field_program_office_number']); ?>
+            </div>
+          -->
   </div>
 
 

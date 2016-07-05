@@ -72,18 +72,17 @@
     @extend .light-grey-background;
     clear:both;
     margin: 30px 15px 15px 15px;
-    padding-top: 10px;
+    padding-top: 15px;
     position:relative;
     vertical-align: middle;
 
     h2 {
-      @extend .h3;
-      @extend .large-text;
       background-color:lighten(#000000, 40);
       color:White;
       display: inline;
-      padding: 5px 10px 5px 20px;
+      padding: 5px 10px 5px 30px;
       min-width: 200px;
+      text-transform: uppercase;
     }
 
     .views-row {
@@ -106,6 +105,36 @@
       margin-bottom:10px;
       a {
         color: $black;
+      }
+    }
+  }
+
+  /**
+   * contact-section
+   * extending from audience-contact-info
+   */
+  .contact-section {
+    @extend .light-grey-background;
+    clear:both;
+    margin-top:30px;
+    padding-top:15px;
+    padding-bottom:20px;
+
+    h2 {
+      background-color:lighten(#000000, 40);
+      color: White;
+      text-transform: uppercase;
+      margin-left: 0;
+      margin-top: 0;
+      padding: 5px 10px 5px 30px;
+      width: 165px;
+    }
+    .contact-col {
+      @extend .col-sm-4;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      .field-name-field-program-contact-title, .field-name-field-program-contact-title2 {
+        text-align: center;
       }
     }
   }
