@@ -200,6 +200,8 @@ function education_article_views_views_default_views() {
 
   /* Display: Homepage */
   $handler = $view->new_display('block', 'Homepage', 'homepage_news_block');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Latest News';
   $handler->display->display_options['defaults']['query'] = FALSE;
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
