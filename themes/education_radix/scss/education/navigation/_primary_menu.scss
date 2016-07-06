@@ -208,7 +208,9 @@ $bp-menu-toggle-inline: 555px;
     @extend .footer-social;
     display: inline-block;
     float: none;
+    height: 81px;
     margin: 0;
+    width: 81px;
   }
 
   .cta-links {
