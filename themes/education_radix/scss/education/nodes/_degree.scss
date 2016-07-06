@@ -13,9 +13,6 @@
     @extend .light-grey-background;
     margin:15px;
 
-    @include breakpoint($education-bg-image) {
-    min-height: 200px;
-    }
     .overview-text {
       margin-top:10px;
     }

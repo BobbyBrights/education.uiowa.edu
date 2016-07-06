@@ -19,15 +19,29 @@ function education_common_features_override_default_overrides() {
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|0"] = 'btn-primary';
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|2"] = 'btn-long';
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|4"] = 'large-text';
-  $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|6"] = 'uppercase';
 
   // Exported overrides for: wysiwyg
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Maximize"] = 1;
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Styles"] = 1;
   $overrides["wysiwyg.filtered_html.settings|stylesSet"] = 'Large text = p.large-text
-          Large caps = p.uppercase
-          Button = a.btn-primary
-          Long button = a.btn-long';
+              Large caps = p.uppercase
+              Button = a.btn-primary
+              Long button = a.btn-long';
+
+  // Exported overrides for: file_type
+  $overrides["file_type.document.disabled"] = FALSE;
+  $overrides["file_type.document.mimetypes|0"] = 'text/csv';
+  $overrides["file_type.document.mimetypes|1"] = 'text/plain';
+  $overrides["file_type.document.mimetypes|10"] = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
+  $overrides["file_type.document.mimetypes|11"] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+  $overrides["file_type.document.mimetypes|2"] = 'application/msword';
+  $overrides["file_type.document.mimetypes|3"] = 'application/vnd.ms-excel';
+  $overrides["file_type.document.mimetypes|4"] = 'application/pdf';
+  $overrides["file_type.document.mimetypes|5"] = 'application/vnd.ms-powerpoint';
+  $overrides["file_type.document.mimetypes|6"] = 'application/vnd.oasis.opendocument.text';
+  $overrides["file_type.document.mimetypes|7"] = 'application/vnd.oasis.opendocument.spreadsheet';
+  $overrides["file_type.document.mimetypes|8"] = 'application/vnd.oasis.opendocument.presentation';
+  $overrides["file_type.document.mimetypes|9"] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
 
  return $overrides;
 }

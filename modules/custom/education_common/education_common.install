@@ -330,3 +330,11 @@ function education_common_update_7017() {
     module_enable(array('education_degree_option_views'));
   }
 }
+
+/**
+ * Allow csv files to be uploaded.
+ */
+function education_common_update_7018() {
+  $allowed_file_types = 'csv ' . variable_get('file_entity_default_allowed_extensions');
+  variable_set('file_entity_default_allowed_extensions', $allowed_file_types);
+}

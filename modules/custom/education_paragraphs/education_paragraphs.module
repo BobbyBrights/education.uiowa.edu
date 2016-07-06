@@ -117,8 +117,8 @@ function education_paragraphs_entity_presave($entity, $type) {
         }
 
         $affiliations_nids = array();
-        if (!empty($entity->field_event_affiliation['und'])) {
-          foreach($entity->field_event_affiliation['und'] as $delta) {
+        if (!empty($entity->field_event_affiliations['und'])) {
+          foreach($entity->field_event_affiliations['und'] as $delta) {
             $affiliations_nids[] = $delta['target_id'];
           }
         } else {

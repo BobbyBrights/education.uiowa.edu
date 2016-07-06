@@ -30,6 +30,16 @@ function education_common_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_file_default_displays_alter().
+ */
+function education_common_file_default_displays_alter(&$data) {
+  if (isset($data['image__default__file_field_file_default'])) {
+    $data['image__default__file_field_file_default']->status = FALSE; /* WAS: TRUE */
+    $data['image__default__file_field_file_default']->weight = 0; /* WAS: 50 */
+  }
+}
+
+/**
  * Implements hook_filter_default_formats_alter().
  */
 function education_common_filter_default_formats_alter(&$data) {
@@ -37,7 +47,6 @@ function education_common_filter_default_formats_alter(&$data) {
     $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][0] = 'btn-primary'; /* WAS: 'plain-button' */
     $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][2] = 'btn-long'; /* WAS: 'small' */
     $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][4] = 'large-text'; /* WAS: '' */
-    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][6] = 'uppercase'; /* WAS: '' */
   }
 }
 
@@ -49,19 +58,30 @@ function education_common_wysiwyg_default_profiles_alter(&$data) {
     $data['filtered_html']['settings']['buttons']['default']['Maximize'] = 1; /* WAS: '' */
     $data['filtered_html']['settings']['buttons']['default']['Styles'] = 1; /* WAS: '' */
     $data['filtered_html']['settings']['stylesSet'] = 'Large text = p.large-text
-            Large caps = p.uppercase
-            Button = a.btn-primary
-            Long button = a.btn-long'; /* WAS: '' */
+                Large caps = p.uppercase
+                Button = a.btn-primary
+                Long button = a.btn-long'; /* WAS: '' */
   }
 }
 
 /**
- * Implements hook_file_default_displays_alter().
+ * Implements hook_file_default_types_alter().
  */
-function education_common_file_default_displays_alter(&$data) {
-  if (isset($data['image__default__file_field_file_default'])) {
-    $data['image__default__file_field_file_default']->status = FALSE; /* WAS: TRUE */
-    $data['image__default__file_field_file_default']->weight = 0; /* WAS: 50 */
+function education_common_file_default_types_alter(&$data) {
+  if (isset($data['document'])) {
+    $data['document']->disabled = FALSE; /* WAS: '' */
+    $data['document']->mimetypes[0] = 'text/csv'; /* WAS: 'text/plain' */
+    $data['document']->mimetypes[1] = 'text/plain'; /* WAS: 'application/msword' */
+    $data['document']->mimetypes[10] = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'; /* WAS: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' */
+    $data['document']->mimetypes[11] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'; /* WAS: '' */
+    $data['document']->mimetypes[2] = 'application/msword'; /* WAS: 'application/vnd.ms-excel' */
+    $data['document']->mimetypes[3] = 'application/vnd.ms-excel'; /* WAS: 'application/pdf' */
+    $data['document']->mimetypes[4] = 'application/pdf'; /* WAS: 'application/vnd.ms-powerpoint' */
+    $data['document']->mimetypes[5] = 'application/vnd.ms-powerpoint'; /* WAS: 'application/vnd.oasis.opendocument.text' */
+    $data['document']->mimetypes[6] = 'application/vnd.oasis.opendocument.text'; /* WAS: 'application/vnd.oasis.opendocument.spreadsheet' */
+    $data['document']->mimetypes[7] = 'application/vnd.oasis.opendocument.spreadsheet'; /* WAS: 'application/vnd.oasis.opendocument.presentation' */
+    $data['document']->mimetypes[8] = 'application/vnd.oasis.opendocument.presentation'; /* WAS: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' */
+    $data['document']->mimetypes[9] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'; /* WAS: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' */
   }
 }
 

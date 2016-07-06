@@ -90,6 +90,13 @@ function education_common_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'file_entity_default_allowed_extensions';
+  $strongarm->value = 'jpg jpeg gif png txt doc docx xls xlsx pdf ppt pptx csv';
+  $export['file_entity_default_allowed_extensions'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_webform';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -139,6 +146,13 @@ function education_common_strongarm() {
   $strongarm->name = 'node_submitted_webform';
   $strongarm->value = 0;
   $export['node_submitted_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_webform_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_webform_pattern'] = $strongarm;
 
   return $export;
 }
