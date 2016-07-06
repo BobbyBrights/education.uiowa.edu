@@ -25,8 +25,9 @@
 
     <div class="article-publication-info">
       <?php if (!empty($content['field_article_source'])): ?>
-        <?php print render($content['field_article_source']) . ' | ' . $date; ?>
+        <?php print render($content['field_article_source']) . ' | '; ?>
       <?php endif; ?>
+      <?php print $date; ?>
     </div>
 
     <?php print render($content['body']); ?>
