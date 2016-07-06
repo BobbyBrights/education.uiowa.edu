@@ -130,4 +130,17 @@
   .pane-callout-leadership {
     margin-top: 40px;
   }
+
+  .pane-education-articles {
+    .pane-title {
+      @include font-size(2);
+      margin-top: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .pane-content {
+      @extend .container;
+    }
+  }
 }
