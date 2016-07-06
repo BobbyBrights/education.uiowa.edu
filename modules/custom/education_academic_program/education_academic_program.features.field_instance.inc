@@ -133,7 +133,7 @@ function education_academic_program_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
-          'view_mode' => 'teaser',
+          'view_mode' => 'referenced',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 15,
@@ -199,9 +199,10 @@ function education_academic_program_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 1,
+          'view_mode' => 'referenced',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 17,
       ),
       'teaser' => array(
