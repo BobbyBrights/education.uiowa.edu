@@ -37,7 +37,8 @@
     @extend .col-sm-4;
 }
 
-.view-display-id-news_paragraph_block {
+.view-display-id-news_paragraph_block,
+.view-display-id-homepage_news_block {
   .views-field-field-image {
     margin-bottom: 20px;
   }
@@ -54,5 +55,26 @@
 
   .views-field-body {
     margin-top: 10px;
+  }
+}
+
+.view-display-id-homepage_news_block {
+  .view-content {
+    @extend .row;
+  }
+
+  .views-row {
+    @extend .col-md-4;
+    margin-bottom: 20px;
+
+    @include breakpoint($education-md-min) {
+      margin-bottom: 0;
+    }
+  }
+
+  article {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 15px;
   }
 }

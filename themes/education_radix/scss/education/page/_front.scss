@@ -130,4 +130,25 @@
   .pane-callout-leadership {
     margin-top: 40px;
   }
+
+  .pane-education-articles {
+    @extend .container;
+    background-color: $black_20;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    .pane-title {
+      background-color: $black-80;
+      color: #fff;
+      display: inline-block;
+      margin: 0;
+      margin-left: -15px;
+      padding: 8px 20px 5px 40px;
+      text-transform: uppercase;
+    }
+
+    .pane-content {
+      margin-top: 40px;
+    }
+  }
 }
