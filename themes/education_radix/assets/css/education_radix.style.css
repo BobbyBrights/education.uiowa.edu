@@ -9480,6 +9480,9 @@ img {
   .region-sidebar-first .menu-block-wrapper > ul > li > a {
     margin: 0; }
 
+.node-article-teaser .article-publication-info {
+  text-align: right; }
+
 .node-degree-full {
   /** Overview section **/ }
   .node-degree-full .field-name-field-degree-overview-text {
