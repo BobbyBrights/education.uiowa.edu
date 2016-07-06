@@ -9480,8 +9480,19 @@ img {
   .region-sidebar-first .menu-block-wrapper > ul > li > a {
     margin: 0; }
 
+.node-article-teaser .field-name-field-image {
+  margin-bottom: 20px; }
+
+.node-article-teaser .node-title {
+  font-size: 1.3rem;
+  margin-top: 0;
+  text-transform: none; }
+
 .node-article-teaser .article-publication-info {
   text-align: right; }
+
+.node-article-teaser .field-name-body {
+  margin-top: 10px; }
 
 .node-degree-full {
   /** Overview section **/ }
@@ -9860,11 +9871,7 @@ img {
   margin-top: 10px; }
 
 .view-display-id-homepage_news_block .views-row {
-  background-color: #fff;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  margin-bottom: 20px; }
   @media (min-width: 992px) {
     .view-display-id-homepage_news_block .views-row {
       margin-bottom: 0; } }

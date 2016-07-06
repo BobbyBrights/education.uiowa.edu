@@ -65,11 +65,7 @@
 
   .views-row {
     @extend .col-md-4;
-    background-color: #fff;
-    border-radius: 4px;
     margin-bottom: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
 
     @include breakpoint($education-md-min) {
       margin-bottom: 0;

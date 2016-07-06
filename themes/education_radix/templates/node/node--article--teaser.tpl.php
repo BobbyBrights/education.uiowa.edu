@@ -21,7 +21,7 @@
   <div class="content"<?php print $content_attributes; ?>>
     <?php print render($content['field_image']); ?>
 
-    <h3><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
+    <h3 class="node-title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
 
     <div class="article-publication-info">
       <?php if (!empty($content['field_article_source'])): ?>
