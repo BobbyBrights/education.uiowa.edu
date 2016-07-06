@@ -13,4 +13,9 @@ function education_radix_preprocess_node(&$variables) {
 
   // Add view mode class.
   $variables['classes_array'][] = 'node-' . $variables['type'] . '-' . $variables['view_mode'];
+
+  // Change the date format of Article teasers.
+  if ($variables['type'] == 'article' && $variables['view_mode'] == 'teaser') {
+    $variables['date'] = format_date($variables['created'], 'custom', 'F d, Y');
+  }
 }
