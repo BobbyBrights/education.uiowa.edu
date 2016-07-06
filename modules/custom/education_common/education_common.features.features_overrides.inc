@@ -19,15 +19,14 @@ function education_common_features_override_default_overrides() {
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|0"] = 'btn-primary';
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|2"] = 'btn-long';
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|4"] = 'large-text';
-  $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|6"] = 'uppercase';
 
   // Exported overrides for: wysiwyg
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Maximize"] = 1;
   $overrides["wysiwyg.filtered_html.settings|buttons|default|Styles"] = 1;
   $overrides["wysiwyg.filtered_html.settings|stylesSet"] = 'Large text = p.large-text
-          Large caps = p.uppercase
-          Button = a.btn-primary
-          Long button = a.btn-long';
+              Large caps = p.uppercase
+              Button = a.btn-primary
+              Long button = a.btn-long';
 
  return $overrides;
 }
