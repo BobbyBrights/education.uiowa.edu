@@ -66,7 +66,7 @@
       <?php print render($content['field_program_ffaculty2']); ?>
       <?php print render($content['field_program_ffaculty3']); ?>
       <p class="see-more-faculty"><a href="faculty/<?php if (arg(0) == 'node' && is_numeric(arg(1))) $nodeid = arg(1);
-print $nodeid; ?>">See More >></a></p>
+print $nodeid; ?>">More Faculty >></a></p>
     </div>
   <?php endif; ?>
 

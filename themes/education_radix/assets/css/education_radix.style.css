@@ -8769,7 +8769,7 @@ h1, .h1 {
   color: #000000;
   display: inline-block;
   font-family: "AvenirLT-Heavy";
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   text-transform: uppercase;
   font-size: 2.25rem; }
   h1.title, .h1.title {
@@ -9384,9 +9384,6 @@ img {
     margin: 10px; }
   .node-degree-full .overview-section {
     margin: 15px; }
-    @media (min-width: 992px) {
-      .node-degree-full .overview-section {
-        min-height: 200px; } }
     .node-degree-full .overview-section .overview-text {
       margin-top: 10px; }
     .node-degree-full .overview-section h2 {
@@ -9554,9 +9551,9 @@ img {
       margin-bottom: 0; } }
 
 .entity-paragraphs-item {
-  padding: 40px 0; }
+  padding: 30px 0; }
   .entity-paragraphs-item.grey-border {
-    margin: 40px auto;
+    margin: 30px auto;
     padding: 20px; }
 
 .paragraphs-item-social, .front .pane-social {
