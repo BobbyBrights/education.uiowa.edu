@@ -1,4 +1,5 @@
 $bp-menu-grid: $education-sm-min;
+$bp-menu-toggle-inline: 555px;
 
 .primary-menu-toggle {
   background-color: transparent;
@@ -56,9 +57,14 @@ $bp-menu-grid: $education-sm-min;
 
   .container {
     height: 100vh;
-    min-height: calc(100vh - (#{$is_not_logged_in}));
-    height: calc(100vh - (#{$is_not_logged_in}));
+    min-height: calc(100vh - (#{$is_not_logged_in_mobile}));
+    height: calc(100vh - (#{$is_not_logged_in_mobile}));
     overflow-y: scroll;
+
+    @include breakpoint($bp-menu-toggle-inline) {
+      min-height: calc(100vh - (#{$is_not_logged_in}));
+      height: calc(100vh - (#{$is_not_logged_in}));
+    }
   }
 
   .row {
