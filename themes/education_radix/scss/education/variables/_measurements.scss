@@ -1,5 +1,7 @@
 $ui-bar-height: 42px;
 $branding-height: 61px;
+$branding-height-mobile: 135px;
 
 // Calculated measurements.
 $is_not_logged_in: $ui-bar-height + $branding-height;
+$is_not_logged_in_mobile: $ui-bar-height + $branding-height-mobile;
