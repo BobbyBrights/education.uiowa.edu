@@ -94,9 +94,9 @@ function education_radix_preprocess_page(&$variables) {
 
     $variables['header_fields'] = array(
       'subtitle' => array(
-        '#prefix' => '<span class="home-subtitle">',
-        '#suffix' => '</span>',
-        '#markup' => 'College of <span class="homepage-subtitle-bold">Education</span>',
+        '#prefix' => '<div class="home-subtitle">',
+        '#suffix' => '</div>',
+        '#markup' => 'College of </br><span class="home-subtitle-bold">Education</span>',
       ),
     );
 

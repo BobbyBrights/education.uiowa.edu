@@ -9338,6 +9338,28 @@ h1#site-name {
   margin-right: auto;
   width: 100%; }
 
+.front .tall-image-custom .header-content {
+  background-color: transparent; }
+
+.front .home-subtitle {
+  color: #fff;
+  font-family: "AvenirLT-Medium";
+  font-size: 3rem;
+  line-height: 1;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase; }
+  @media (min-width: 900px) {
+    .front .home-subtitle {
+      font-size: 4rem;
+      padding-bottom: 30px; } }
+  @media (min-width: 1200px) {
+    .front .home-subtitle {
+      font-size: 5rem;
+      padding-bottom: 50px; } }
+  .front .home-subtitle .home-subtitle-bold {
+    font-family: "AvenirLT-Black"; }
+
 .tall-image {
   position: relative; }
   .tall-image img {

@@ -1,3 +1,6 @@
+$bp-home-subtitle-medium: 900px;
+$bp-home-subtitle-large: 1200px;
+
 .front {
   .pane-become-a-hawkeye {
     background-color: $black_80;
@@ -179,5 +182,33 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+  }
+
+  .tall-image-custom .header-content {
+    background-color: transparent;
+  }
+
+  .home-subtitle {
+    color: #fff;
+    font-family: $avenir-65;
+    @include font-size(3);
+    line-height: 1;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint($bp-home-subtitle-medium) {
+      @include font-size(4);
+      padding-bottom: 30px;
+    }
+
+    @include breakpoint($bp-home-subtitle-large) {
+      @include font-size(5);
+      padding-bottom: 50px;
+    }
+
+    .home-subtitle-bold {
+      font-family: $avenir-95;
+    }
   }
 }
