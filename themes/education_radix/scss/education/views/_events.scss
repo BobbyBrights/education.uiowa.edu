@@ -80,3 +80,25 @@
     padding-bottom:10px;
   }
 }
+
+.view-display-id-events_homepage_block {
+  .view-content {
+    @extend .row;
+  }
+
+  .views-row {
+    @extend .col-md-4;
+    margin-bottom: 20px;
+
+    @include breakpoint($education-md-min) {
+      margin-bottom: 0;
+    }
+  }
+
+  .views-field-title {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 10rem;
+    text-align: center;
+  }
+}

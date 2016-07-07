@@ -1,3 +1,8 @@
+$bp-home-subtitle-small: 600px;
+$bp-home-subtitle-medium: 900px;
+$bp-home-subtitle-large: 1200px;
+$caret-width: 20px;
+
 .front {
   .pane-become-a-hawkeye {
     background-color: $black_80;
@@ -129,5 +134,106 @@
   .pane-callout-research,
   .pane-callout-leadership {
     margin-top: 40px;
+  }
+
+  .pane-education-articles {
+    @extend .container;
+    background-color: $black_20;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    .pane-title {
+      background-color: $black-80;
+      color: #fff;
+      display: inline-block;
+      margin: 0;
+      margin-left: -15px;
+      padding: 8px 20px 5px 40px;
+      text-transform: uppercase;
+    }
+
+    .pane-content {
+      margin-top: 40px;
+    }
+  }
+
+  .pane-events {
+    @extend .container;
+    @extend .grey-background;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    .pane-title {
+      background-color: $black-80;
+      color: #fff;
+      display: inline-block;
+      margin: 0;
+      margin-left: -15px;
+      padding: 8px 20px 5px 40px;
+      text-transform: uppercase;
+    }
+
+    .pane-content {
+      margin-top: 40px;
+    }
+  }
+
+  #headervid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .tall-image-custom .header-content {
+    background: transparent;
+    padding-top: 0;
+  }
+
+  .home-subtitle {
+    color: #fff;
+    font-family: $avenir-65;
+    @include font-size(2);
+    line-height: 1;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint($bp-home-subtitle-small) {
+      @include font-size(3);
+      padding-bottom: 20px;
+    }
+
+    @include breakpoint($bp-home-subtitle-medium) {
+      @include font-size(4);
+      padding-bottom: 30px;
+    }
+
+    @include breakpoint($bp-home-subtitle-large) {
+      @include font-size(5);
+      padding-bottom: 50px;
+    }
+
+    .home-subtitle-bold {
+      font-family: $avenir-95;
+    }
+  }
+
+  .home-suffix-caret {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    .caret {
+      border-left-width: $caret-width;
+      border-right-width: $caret-width;
+      border-top-width: $caret-width;
+    }
+  }
+
+  .header-suffix {
+    background-color: $black_80;
+    color: $yellow;
   }
 }
