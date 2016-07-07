@@ -23,6 +23,9 @@
     <div class="content-section">
       <?php print render($content); ?>
     </div>
+    <div class="link-section">
+      <p class="large-text"><?php print(l('News', 'news', array('attributes' => array('class' => array('btn-long'))))); ?></p>
+      <p class="large-text"><?php print(l('Events', 'events', array('attributes' => array('class' => array('btn-long'))))); ?></p>
+    </div>
   </div>
-
 </article>

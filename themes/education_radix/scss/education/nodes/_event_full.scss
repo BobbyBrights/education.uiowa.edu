@@ -1,0 +1,10 @@
+.node-event-full {
+
+  .content-section {
+    @extend .col-sm-8;
+    padding: 20px;
+  }
+  .link-section {
+    @extend .col-sm-4;
+  }
+}
