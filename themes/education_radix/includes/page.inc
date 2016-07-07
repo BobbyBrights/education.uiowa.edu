@@ -102,9 +102,9 @@ function education_radix_preprocess_page(&$variables) {
 
     $variables['header_suffix_fields'] = array(
       'caret' => array(
-        '#prefix' => '<span class="home-caret">',
-        '#suffix' => '</span>',
-        '#markup' => 'A caret will be here.',
+        '#prefix' => '<div class="home-suffix-caret">',
+        '#suffix' => '</div',
+        '#markup' => '<span class="caret"></span>',
       ),
     );
   }

@@ -1,5 +1,7 @@
+$bp-home-subtitle-small: 600px;
 $bp-home-subtitle-medium: 900px;
 $bp-home-subtitle-large: 1200px;
+$caret-width: 20px;
 
 .front {
   .pane-become-a-hawkeye {
@@ -185,17 +187,23 @@ $bp-home-subtitle-large: 1200px;
   }
 
   .tall-image-custom .header-content {
-    background-color: transparent;
+    background: transparent;
+    padding-top: 0;
   }
 
   .home-subtitle {
     color: #fff;
     font-family: $avenir-65;
-    @include font-size(3);
+    @include font-size(2);
     line-height: 1;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
+
+    @include breakpoint($bp-home-subtitle-small) {
+      @include font-size(3);
+      padding-bottom: 20px;
+    }
 
     @include breakpoint($bp-home-subtitle-medium) {
       @include font-size(4);
@@ -210,5 +218,22 @@ $bp-home-subtitle-large: 1200px;
     .home-subtitle-bold {
       font-family: $avenir-95;
     }
+  }
+
+  .home-suffix-caret {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    .caret {
+      border-left-width: $caret-width;
+      border-right-width: $caret-width;
+      border-top-width: $caret-width;
+    }
+  }
+
+  .header-suffix {
+    background-color: $black_80;
+    color: $yellow;
   }
 }

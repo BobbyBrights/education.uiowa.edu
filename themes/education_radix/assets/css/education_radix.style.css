@@ -9339,16 +9339,21 @@ h1#site-name {
   width: 100%; }
 
 .front .tall-image-custom .header-content {
-  background-color: transparent; }
+  background: transparent;
+  padding-top: 0; }
 
 .front .home-subtitle {
   color: #fff;
   font-family: "AvenirLT-Medium";
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 600px) {
+    .front .home-subtitle {
+      font-size: 3rem;
+      padding-bottom: 20px; } }
   @media (min-width: 900px) {
     .front .home-subtitle {
       font-size: 4rem;
@@ -9359,6 +9364,19 @@ h1#site-name {
       padding-bottom: 50px; } }
   .front .home-subtitle .home-subtitle-bold {
     font-family: "AvenirLT-Black"; }
+
+.front .home-suffix-caret {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center; }
+  .front .home-suffix-caret .caret {
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-top-width: 20px; }
+
+.front .header-suffix {
+  background-color: #333333;
+  color: #ffe100; }
 
 .tall-image {
   position: relative; }
