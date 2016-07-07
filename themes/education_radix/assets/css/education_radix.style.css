@@ -9332,6 +9332,12 @@ h1#site-name {
   .front .pane-events .pane-content {
     margin-top: 40px; }
 
+.front #headervid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
 .tall-image {
   position: relative; }
   .tall-image img {
