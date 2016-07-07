@@ -80,6 +80,19 @@ function education_radix_preprocess_page(&$variables) {
   if ($variables['is_front']) {
     // Make this page full width.
     $variables['theme_hook_suggestions'][] = 'page__edgy';
+
+    // Add generic tall-image class for layout.
+    $variables['header_classes_array'][] = 'tall-image';
+    $variables['header_classes_array'][] = 'tall-image-custom';
+
+    drupal_set_title('College of Education');
+
+    $video_directory = drupal_get_path('module', 'education_pages') . '/video/';
+
+    $variables['header_image_tall'] = array(
+      '#markup' => '<video autoplay loop poster="' . $video_directory . 'poster.png" id="headervid">
+              <source src="' . $video_directory . 'homepage.mp4" type="video/mp4"></video>',
+    );
   }
 
   // Get the full menu tree of the Main Menu.
