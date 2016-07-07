@@ -9545,11 +9545,12 @@ img {
     text-align: center;
     margin-bottom: 0; }
   #primaryMenu .social-icon {
+    background-size: 60px;
     display: inline-block;
     float: none;
-    height: 81px;
+    height: 60px;
     margin: 0;
-    width: 81px; }
+    width: 60px; }
   @media (min-width: 768px) {
     #primaryMenu .cta-links a:last-of-type {
       margin: 40px 0; } }
