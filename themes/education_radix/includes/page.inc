@@ -80,6 +80,33 @@ function education_radix_preprocess_page(&$variables) {
   if ($variables['is_front']) {
     // Make this page full width.
     $variables['theme_hook_suggestions'][] = 'page__edgy';
+
+    // Add generic tall-image class for layout.
+    $variables['header_classes_array'][] = 'tall-image';
+    $variables['header_classes_array'][] = 'tall-image-custom';
+
+    $video_directory = drupal_get_path('module', 'education_pages') . '/video/';
+
+    $variables['header_image_tall'] = array(
+      '#markup' => '<video autoplay loop poster="' . $video_directory . 'poster.png" id="headervid">
+              <source src="' . $video_directory . 'homepage.mp4" type="video/mp4"></video>',
+    );
+
+    $variables['header_fields'] = array(
+      'subtitle' => array(
+        '#prefix' => '<div class="home-subtitle">',
+        '#suffix' => '</div>',
+        '#markup' => 'College of </br><span class="home-subtitle-bold">Education</span>',
+      ),
+    );
+
+    $variables['header_suffix_fields'] = array(
+      'caret' => array(
+        '#prefix' => '<div class="home-suffix-caret">',
+        '#suffix' => '</div>',
+        '#markup' => '<span class="caret"></span>',
+      ),
+    );
   }
 
   // Get the full menu tree of the Main Menu.

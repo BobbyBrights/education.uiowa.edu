@@ -76,24 +76,33 @@
 <div id="main-wrapper">
   <div id="main" class="main">
     <div id="page-header" class="edgy">
-        <?php if ($title): ?>
-          <div class="<?php print $header_classes; ?>">
-            <div class="header-content">
-              <div class="container">
-                <h1 class="title"><?php print $title; ?></h1>
-              </div>
-            </div>
-            <?php if (!empty($header_image_tall)): ?>
-              <?php print render($header_image_tall); ?>
+      <div class="<?php print $header_classes; ?>">
+        <div class="header-content">
+          <div class="container">
+            <?php if ($title): ?>
+              <h1 class="title"><?php print $title; ?></h1>
+            <?php endif; ?>
+            <?php if (!empty($header_fields)): ?>
+              <div class="header-fields"><?php print render($header_fields); ?></div>
             <?php endif; ?>
           </div>
-        <?php endif; ?>
-        <?php if ($breadcrumb): ?>
-          <div id="breadcrumb" class="visible-desktop">
-            <?php print $breadcrumb; ?>
-          </div>
+        </div>
+
+        <?php if (!empty($header_image_tall)): ?>
+          <?php print render($header_image_tall); ?>
         <?php endif; ?>
       </div>
+
+      <?php if (!empty($header_suffix_fields)): ?>
+        <div class="header-suffix"><?php print render($header_suffix_fields); ?></div>
+      <?php endif; ?>
+
+      <?php if ($breadcrumb): ?>
+        <div id="breadcrumb" class="visible-desktop">
+          <?php print $breadcrumb; ?>
+        </div>
+      <?php endif; ?>
+
       <div class="container">
         <?php if ($messages): ?>
           <div id="messages">
