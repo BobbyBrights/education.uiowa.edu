@@ -85,13 +85,27 @@ function education_radix_preprocess_page(&$variables) {
     $variables['header_classes_array'][] = 'tall-image';
     $variables['header_classes_array'][] = 'tall-image-custom';
 
-    drupal_set_title('College of Education');
-
     $video_directory = drupal_get_path('module', 'education_pages') . '/video/';
 
     $variables['header_image_tall'] = array(
       '#markup' => '<video autoplay loop poster="' . $video_directory . 'poster.png" id="headervid">
               <source src="' . $video_directory . 'homepage.mp4" type="video/mp4"></video>',
+    );
+
+    $variables['header_fields'] = array(
+      'subtitle' => array(
+        '#prefix' => '<span class="home-subtitle">',
+        '#suffix' => '</span>',
+        '#markup' => 'College of <span class="homepage-subtitle-bold">Education</span>',
+      ),
+    );
+
+    $variables['header_suffix_fields'] = array(
+      'caret' => array(
+        '#prefix' => '<span class="home-caret">',
+        '#suffix' => '</span>',
+        '#markup' => 'A caret will be here.',
+      ),
     );
   }
 
