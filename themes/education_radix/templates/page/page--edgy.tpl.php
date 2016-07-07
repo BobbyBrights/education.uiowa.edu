@@ -44,10 +44,10 @@
         <div class="col-md-3">
           <div class="cta-links">
             <h2 class="offscreen">Quick Links</h2>
-            <?php print(l('Apply', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
-            <?php print(l('Visit', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
-            <?php print(l('Contact', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
-            <?php print(l('Support the College', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
+            <?php print(l('Apply', 'node/292', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
+            <?php print(l('Visit', 'node/724', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
+            <?php print(l('Contact', 'mailto:ask-education@uiowa.edu', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
+            <?php print(l('Support the College', 'http://www.uifoundation.org/education/', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
           </div>
           <div class="social-links">
             <h2 class="offscreen">Connect with Us</h2>
