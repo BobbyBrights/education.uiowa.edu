@@ -206,11 +206,12 @@ $bp-menu-toggle-inline: 555px;
 
   .social-icon {
     @extend .footer-social;
+    background-size: 60px;
     display: inline-block;
     float: none;
-    height: 81px;
+    height: 60px;
     margin: 0;
-    width: 81px;
+    width: 60px;
   }
 
   .cta-links {
