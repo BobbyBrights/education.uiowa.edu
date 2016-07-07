@@ -1,0 +1,13 @@
+.node-event-full {
+
+  .content-section {
+    @extend .col-sm-8;
+    margin-left:15px;
+    margin-right:15px;
+  }
+  .contextual-links-region, .block-block {
+    @extend .col-sm-4;
+    display: inline-block;
+    float: right;
+  }
+}
