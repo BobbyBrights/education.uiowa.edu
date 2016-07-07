@@ -51,7 +51,7 @@ function callout_research_edit_form_submit($form, &$form_state) {
  * See ctools_plugin_examples for more advanced info.
  */
 function callout_research_render($subtype, $conf, $panel_args, $context = NULL) {
-  $background_image = drupal_get_path('module', 'education_pages') . '/images/research.jpg';
+  $background_image = drupal_get_path('module', 'education_pages') . '/images/research.jpeg';
   $block = new stdClass();
   $block->title = '';
   $block->content = array(
