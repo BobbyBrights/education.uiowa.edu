@@ -1,0 +1,21 @@
+.node-article-full {
+  .content-section {
+    @extend .col-sm-8;
+    margin: 0;
+    padding: 20px;
+
+      .field-name-field-image {
+        img {
+          margin-bottom: 10px;
+          width: 100%;
+        }
+      }
+      .field-name-body {
+        margin-top: 10px;
+      }
+  }
+
+  .link-section {
+    @extend .col-sm-4;
+  }
+}
