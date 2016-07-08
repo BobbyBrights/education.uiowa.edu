@@ -356,6 +356,9 @@ function education_common_update_7019(&$sandbox) {
     db_delete('url_alias')
       ->condition('source', 'node/%', 'LIKE')
       ->execute();
+
+    // Set the default node alias pattern.
+    variable_set('pathauto_node_pattern', '[node:menu-link:parents:join-path]/[node:title]');
   }
 
   $limit = 200;
