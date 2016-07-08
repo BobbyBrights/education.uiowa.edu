@@ -29,13 +29,13 @@
           <div class="row row-audiences-news-events">
             <div class="col-sm-6">
               <div class="audiences">
-                <h2 class="section-heading"><?php print(l('Information for', 'home')); ?></h2>
+                <h2 class="section-heading">Information for</h2>
                 <?php print render($audiences_list); ?>
               </div>
             </div>
             <div class="col-sm-4 col-sm-offset-2">
               <div class="news-events">
-                <h2 class="section-heading"><?php print(l('News & Events', 'home')); ?></h2>
+                <h2 class="section-heading"><?php print(l('News & Events', 'news')); ?></h2>
                 <?php print($date_today); ?>
               </div>
             </div>
@@ -44,10 +44,10 @@
         <div class="col-md-3">
           <div class="cta-links">
             <h2 class="offscreen">Quick Links</h2>
-            <?php print(l('Apply', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
-            <?php print(l('Visit', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
-            <?php print(l('Contact', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
-            <?php print(l('Support the College', 'node/23', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
+            <?php print(l('Apply', 'node/292', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
+            <?php print(l('Visit', 'node/724', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
+            <?php print(l('Contact', 'mailto:ask-education@uiowa.edu', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
+            <?php print(l('Support the College', 'http://www.uifoundation.org/education/', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
           </div>
           <div class="social-links">
             <h2 class="offscreen">Connect with Us</h2>
