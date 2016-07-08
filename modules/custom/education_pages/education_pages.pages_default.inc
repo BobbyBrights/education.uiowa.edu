@@ -527,7 +527,7 @@ function education_pages_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Directory buttons',
       'title' => '',
-      'body' => '<p style="margin-top:15px;"><a class="btn-long" href="/centers-and-services">centers &amp;&nbsp;services</a></p>
+      'body' => '<p><a class="btn-long" href="/centers-and-services">centers &amp;&nbsp;services</a></p>
 
 <p><a class="btn-long" href="/academic-programs">Programs &amp; Departments</a></p>
 
