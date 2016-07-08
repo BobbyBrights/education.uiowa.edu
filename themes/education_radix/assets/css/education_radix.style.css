@@ -9405,6 +9405,8 @@ h1#site-name {
 
 #page-header {
   margin-bottom: 36px; }
+  #page-header.edgy {
+    margin-bottom: 0; }
 
 .page-header {
   border-bottom: none;

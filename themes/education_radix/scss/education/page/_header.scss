@@ -32,6 +32,10 @@
 
 #page-header {
   margin-bottom: 36px;
+
+  &.edgy {
+    margin-bottom: 0;
+  }
 }
 
 .page-header {
