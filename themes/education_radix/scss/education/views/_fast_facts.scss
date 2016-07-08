@@ -7,5 +7,10 @@
 
   .views-row {
     @extend .col-md-4;
+    margin-bottom: 20px;
+
+    @include breakpoint($education-md-min) {
+      margin-bottom: 0;
+    }
   }
 }
