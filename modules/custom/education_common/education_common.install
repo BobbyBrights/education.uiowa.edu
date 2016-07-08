@@ -361,6 +361,7 @@ function education_common_update_7019(&$sandbox) {
     variable_set('pathauto_node_pattern', '[node:menu-link:parents:join-path]/[node:title]');
   }
 
+  // Get the id's of nodes to update aliases for.
   $limit = 200;
   $nids = db_select('node', 'n')
     ->fields('n', array('nid'))
@@ -369,6 +370,7 @@ function education_common_update_7019(&$sandbox) {
     ->execute()
     ->fetchCol();
 
+  // Update node aliases.
   pathauto_node_update_alias_multiple($nids, 'bulkupdate');
   unset($nids);
   $sandbox['position'] += $limit;
