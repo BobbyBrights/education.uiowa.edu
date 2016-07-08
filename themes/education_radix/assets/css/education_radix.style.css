@@ -10010,6 +10010,7 @@ img {
   background-color: #e6e6e6; }
 
 .view-display-id-panel_pane_faculty_staff_view .views-row-odd, .view-display-id-panel_pane_faculty_staff_view .views-row-even {
+  clear: both;
   line-height: 2em;
   text-align: left; }
   .view-display-id-panel_pane_faculty_staff_view .views-row-odd a, .view-display-id-panel_pane_faculty_staff_view .views-row-even a {

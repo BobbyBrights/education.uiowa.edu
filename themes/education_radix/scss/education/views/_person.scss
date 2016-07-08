@@ -2,7 +2,7 @@
 .view-display-id-panel_pane_faculty_staff_view {
   .views-row-even {
     background-color: $black_10;
-  } 
+  }
   .attachement_faculty_staff_view {
     @extend .large-text;
   }
@@ -12,6 +12,7 @@
       display: block;
       line-height: 2em;
     }
+    clear: both;
     line-height: 2em;
     text-align: left;
   }
