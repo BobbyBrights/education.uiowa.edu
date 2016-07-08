@@ -9622,6 +9622,8 @@ img {
     text-indent: -0.5rem; }
   .region-sidebar-first .menu-block-wrapper > ul > li > a {
     margin: 0; }
+  .region-sidebar-first .menu-block-wrapper.menu-block-5 > ul.menu > li:not(.active-trail) {
+    display: none; }
 
 .node-article-full .content-section {
   margin: 0;
