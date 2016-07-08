@@ -30,6 +30,14 @@
   }
 }
 
+#page-header {
+  margin-bottom: 36px;
+
+  &.edgy {
+    margin-bottom: 0;
+  }
+}
+
 .page-header {
   border-bottom: none;
   margin: 0;
