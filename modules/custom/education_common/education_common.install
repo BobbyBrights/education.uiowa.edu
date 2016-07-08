@@ -384,6 +384,7 @@ function education_common_update_7019(&$sandbox) {
 
   // Set pages on which the Main Menu (level 2+) block should NOT be visible.
   $pages = <<<EDUCATION_COMMON_7019
+academic-programs/*
 centers/*
 services/*
 EDUCATION_COMMON_7019;
