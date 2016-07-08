@@ -338,3 +338,51 @@ function education_common_update_7018() {
   $allowed_file_types = 'csv ' . variable_get('file_entity_default_allowed_extensions');
   variable_set('file_entity_default_allowed_extensions', $allowed_file_types);
 }
+
+/**
+ * Re-generate path aliases for nodes.
+ */
+function education_common_update_7019(&$sandbox) {
+  // Delete existing node path aliases.
+  pathauto_path_delete_all('node');
+
+  // Generate new node path aliases.
+  // Copied from node_pathauto_bulk_update_batch_process() in
+  // pathauto.pathauto.inc.
+  if (!isset($sandbox['current'])) {
+    $sandbox['count'] = 0;
+    $sandbox['current'] = 0;
+  }
+
+  $query = db_select('node', 'n');
+  $query->leftJoin('url_alias', 'ua', "CONCAT('node/', n.nid) = ua.source");
+  $query->addField('n', 'nid');
+  $query->isNull('ua.source');
+  $query->condition('n.nid', $sandbox['current'], '>');
+  $query->orderBy('n.nid');
+  $query->addTag('pathauto_bulk_update');
+  $query->addMetaData('entity', 'node');
+
+  // Get the total amount of items to process.
+  if (!isset($sandbox['total'])) {
+    $sandbox['total'] = $query->countQuery()->execute()->fetchField();
+
+    // If there are no nodes to update, the stop immediately.
+    if (!$sandbox['total']) {
+      $sandbox['#finished'] = 1;
+      return;
+    }
+  }
+
+  $query->range(0, 25);
+  $nids = $query->execute()->fetchCol();
+
+  pathauto_node_update_alias_multiple($nids, 'bulkupdate');
+  $sandbox['count'] += count($nids);
+  $sandbox['current'] = max($nids);
+  $sandbox['message'] = t('Updated alias for node @nid.', array('@nid' => end($nids)));
+
+  if ($sandbox['count'] != $sandbox['total']) {
+    $sandbox['#finished'] = $sandbox['count'] / $sandbox['total'];
+  }
+}
