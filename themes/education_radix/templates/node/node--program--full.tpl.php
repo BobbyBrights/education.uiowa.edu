@@ -55,6 +55,7 @@
         </div>
       </div>
     <?php endif; ?>
+    <a id="programs" name="programs"></a>
     <div class="degree-section">
       <h2>Programs</h2>
       <?php print render($content['field_program_degree_options']); ?>
