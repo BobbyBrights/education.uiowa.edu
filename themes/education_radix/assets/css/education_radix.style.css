@@ -9988,6 +9988,12 @@ img {
 .view-display-id-page_faculty_listing .pagination, .view-display-id-page_faculty_full_listing .pagination {
   clear: both; }
 
+.view-display-id-fast_facts_homepage_block .views-row {
+  margin-bottom: 20px; }
+  @media (min-width: 992px) {
+    .view-display-id-fast_facts_homepage_block .views-row {
+      margin-bottom: 0; } }
+
 .pane-education-articles-education-news-pane-view img {
   width: 100%; }
 
