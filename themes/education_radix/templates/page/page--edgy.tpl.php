@@ -29,13 +29,13 @@
           <div class="row row-audiences-news-events">
             <div class="col-sm-6">
               <div class="audiences">
-                <h2 class="section-heading"><?php print(l('Information for', 'home')); ?></h2>
+                <h2 class="section-heading">Information for</h2>
                 <?php print render($audiences_list); ?>
               </div>
             </div>
             <div class="col-sm-4 col-sm-offset-2">
               <div class="news-events">
-                <h2 class="section-heading"><?php print(l('News & Events', 'home')); ?></h2>
+                <h2 class="section-heading"><?php print(l('News & Events', 'news')); ?></h2>
                 <?php print($date_today); ?>
               </div>
             </div>
