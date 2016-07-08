@@ -357,6 +357,12 @@ function education_common_update_7019(&$sandbox) {
       ->condition('source', 'node/%', 'LIKE')
       ->execute();
 
+    // Set all nodes to use automatic aliases.
+    db_update('pathauto_state')
+      ->fields(array('pathauto' => 1))
+      ->condition('entity_type', 'node')
+      ->execute();
+
     // Set the default node alias pattern.
     variable_set('pathauto_node_pattern', '[node:menu-link:parents:join-path]/[node:title]');
   }
