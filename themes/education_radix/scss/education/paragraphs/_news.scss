@@ -2,7 +2,7 @@ $news_inline: $education-md-min;
 
 .paragraphs-item-news {
   .news-list-title {
-    @include font-size(2);
+    font-size: 2rem;
     margin-top: 0;
     text-align: center;
     text-transform: uppercase;
@@ -10,6 +10,7 @@ $news_inline: $education-md-min;
 
   .view-content {
     @extend .row;
+    margin-top: 40px;
   }
 
   .views-row {
@@ -18,6 +19,26 @@ $news_inline: $education-md-min;
 
     @include breakpoint($news_inline) {
       margin-bottom: 0;
+    }
+  }
+
+  article {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 15px;
+  }
+
+  .one-sidebar & {
+    padding: 20px 15px 40px 15px;
+
+    .news-list-title {
+      background-color: $black-80;
+      color: #fff;
+      display: inline-block;
+      margin: 0;
+      margin-left: -15px;
+      padding: 8px 20px 5px 40px;
+      text-transform: uppercase;
     }
   }
 }

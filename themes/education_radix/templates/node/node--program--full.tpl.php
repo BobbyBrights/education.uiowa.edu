@@ -29,10 +29,10 @@
     ?>
       <div class="leading-text">
         <div class="container">
-          <div <?php if ($content['field_program_leading_buttons']): ?> class="col-sm-8" <?php else: ?> class="col-sm-12" <?php endif; ?>>
+          <div <?php if (!empty($content['field_program_leading_buttons'])): ?> class="col-sm-8" <?php else: ?> class="col-sm-12" <?php endif; ?>>
               <?php print render($content['field_program_leading_text']); ?>
             </div>
-          <?php if ($content['field_program_leading_buttons']): ?>
+          <?php if (!empty($content['field_program_leading_buttons'])): ?>
             <div class="col-sm-4">
               <?php print render($content['field_program_leading_buttons']); ?>
             </div>
@@ -40,7 +40,7 @@
         </div>
       </div>
 
-    <?php if ($content['field_program_overview_text']): ?>
+    <?php if (!empty($content['field_program_overview_text'])): ?>
       <div class="overview-section">
         <div class="container">
             <div class="overview-box">
@@ -55,11 +55,12 @@
         </div>
       </div>
     <?php endif; ?>
+    <a id="programs" name="programs"></a>
     <div class="degree-section">
       <h2>Programs</h2>
       <?php print render($content['field_program_degree_options']); ?>
     </div>
-  <?php if ($content['field_program_faculty_1']): ?>
+  <?php if (!empty($content['field_program_faculty_1'])): ?>
     <div class="featured-faculty-section">
       <h2>Meet our Faculty</h2>
       <?php print render($content['field_program_ffaculty1']); ?>
@@ -73,20 +74,21 @@ print $nodeid; ?>">More Faculty >></a></p>
   <?php if (!empty($content['field_program_contact_person']) || !empty($content['field_program_contact_person2']) || !empty($content['field_program_contact_text'])): ?>
 
       <div class="contact-section">
+          <a id="contact" name="contact"></a>
           <h2>Contact</h2>
-          <?php if ($content['field_program_contact_person']): ?>
+          <?php if (!empty($content['field_program_contact_person'])): ?>
             <div class="contact-col">
               <?php print render($content['field_program_contact_title']); ?>
               <?php print render($content['field_program_contact_person']); ?>
             </div>
           <?php endif; ?>
-          <?php if ($content['field_program_contact_person2']): ?>
+          <?php if (!empty($content['field_program_contact_person2'])): ?>
             <div class="contact-col">
               <?php print render($content['field_program_contact_title2']); ?>
               <?php print render($content['field_program_contact_person2']); ?>
             </div>
           <?php endif; ?>
-          <?php if ($content['field_program_contact_text']): ?>
+          <?php if (!empty($content['field_program_contact_text'])): ?>
             <div class="contact-col">
               <?php print render($content['field_program_contact_text']); ?>
             </div>
