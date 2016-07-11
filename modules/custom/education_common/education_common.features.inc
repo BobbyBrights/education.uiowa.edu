@@ -40,31 +40,6 @@ function education_common_file_default_displays_alter(&$data) {
 }
 
 /**
- * Implements hook_filter_default_formats_alter().
- */
-function education_common_filter_default_formats_alter(&$data) {
-  if (isset($data['filtered_html'])) {
-    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][0] = 'btn-primary'; /* WAS: 'plain-button' */
-    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][2] = 'btn-long'; /* WAS: 'small' */
-    $data['filtered_html']['filters']['wysiwyg']['settings']['rule_valid_classes'][4] = 'large-text'; /* WAS: '' */
-  }
-}
-
-/**
- * Implements hook_wysiwyg_default_profiles_alter().
- */
-function education_common_wysiwyg_default_profiles_alter(&$data) {
-  if (isset($data['filtered_html'])) {
-    $data['filtered_html']['settings']['buttons']['default']['Maximize'] = 1; /* WAS: '' */
-    $data['filtered_html']['settings']['buttons']['default']['Styles'] = 1; /* WAS: '' */
-    $data['filtered_html']['settings']['stylesSet'] = 'Large text = p.large-text
-                Large caps = p.uppercase
-                Button = a.btn-primary
-                Long button = a.btn-long'; /* WAS: '' */
-  }
-}
-
-/**
  * Implements hook_file_default_types_alter().
  */
 function education_common_file_default_types_alter(&$data) {
@@ -82,6 +57,21 @@ function education_common_file_default_types_alter(&$data) {
     $data['document']->mimetypes[7] = 'application/vnd.oasis.opendocument.spreadsheet'; /* WAS: 'application/vnd.oasis.opendocument.presentation' */
     $data['document']->mimetypes[8] = 'application/vnd.oasis.opendocument.presentation'; /* WAS: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' */
     $data['document']->mimetypes[9] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'; /* WAS: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' */
+  }
+}
+
+/**
+ * Implements hook_wysiwyg_default_profiles_alter().
+ */
+function education_common_wysiwyg_default_profiles_alter(&$data) {
+  if (isset($data['filtered_html'])) {
+    $data['filtered_html']['settings']['stylesSet'] = 'Large text = p.large-text
+                Large caps = p.uppercase
+                Button = a.btn-primary
+                Long button = a.btn-long'; /* WAS: 'Large text = p.large-text
+            Large caps = p.uppercase
+            Button = a.btn-primary
+            Long button = a.btn-long' */
   }
 }
 

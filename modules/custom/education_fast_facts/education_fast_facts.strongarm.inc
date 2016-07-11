@@ -76,8 +76,15 @@ function education_fast_facts_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_fast_fact';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_fast_fact'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_revision_delete_number_fast_fact';
+  $strongarm->value = '50';
+  $export['node_revision_delete_number_fast_fact'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -85,6 +92,55 @@ function education_fast_facts_strongarm() {
   $strongarm->name = 'node_submitted_fast_fact';
   $strongarm->value = 0;
   $export['node_submitted_fast_fact'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_fast_fact_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_fast_fact_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'redirect_setting_name_fast_fact';
+  $strongarm->value = 'rh_node_redirect';
+  $export['redirect_setting_name_fast_fact'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_module_fast_fact';
+  $strongarm->value = 'rh_node';
+  $export['rh_module_fast_fact'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_fast_fact';
+  $strongarm->value = '3';
+  $export['rh_node_action_fast_fact'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_override_fast_fact';
+  $strongarm->value = 0;
+  $export['rh_node_override_fast_fact'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_fast_fact';
+  $strongarm->value = '<front>';
+  $export['rh_node_redirect_fast_fact'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_fast_fact';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_fast_fact'] = $strongarm;
 
   return $export;
 }

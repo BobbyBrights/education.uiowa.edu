@@ -14,7 +14,7 @@ function education_background_image_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_background_image';
-  $strongarm->value = 'edit-diff';
+  $strongarm->value = 'edit-rabbit-hole';
   $export['additional_settings__active_tab_background_image'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -224,6 +224,48 @@ function education_background_image_strongarm() {
   $strongarm->name = 'node_submitted_background_image';
   $strongarm->value = 0;
   $export['node_submitted_background_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_background_image_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_background_image_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_module_background_image';
+  $strongarm->value = 'rh_node';
+  $export['rh_module_background_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_background_image';
+  $strongarm->value = '3';
+  $export['rh_node_action_background_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_override_background_image';
+  $strongarm->value = 0;
+  $export['rh_node_override_background_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_background_image';
+  $strongarm->value = '<front>';
+  $export['rh_node_redirect_background_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_background_image';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_background_image'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
