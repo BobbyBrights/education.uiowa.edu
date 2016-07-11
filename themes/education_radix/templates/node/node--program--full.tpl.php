@@ -75,19 +75,19 @@ print $nodeid; ?>">More Faculty >></a></p>
 
       <div class="contact-section">
           <h2>Contact</h2>
-          <?php if ($content['field_program_contact_person']): ?>
+          <?php if (!empty($content['field_program_contact_person'])): ?>
             <div class="contact-col">
               <?php print render($content['field_program_contact_title']); ?>
               <?php print render($content['field_program_contact_person']); ?>
             </div>
           <?php endif; ?>
-          <?php if ($content['field_program_contact_person2']): ?>
+          <?php if (!empty($content['field_program_contact_person2'])): ?>
             <div class="contact-col">
               <?php print render($content['field_program_contact_title2']); ?>
               <?php print render($content['field_program_contact_person2']); ?>
             </div>
           <?php endif; ?>
-          <?php if ($content['field_program_contact_text']): ?>
+          <?php if (!empty($content['field_program_contact_text'])): ?>
             <div class="contact-col">
               <?php print render($content['field_program_contact_text']); ?>
             </div>
