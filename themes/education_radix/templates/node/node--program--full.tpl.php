@@ -66,8 +66,9 @@
       <?php print render($content['field_program_ffaculty1']); ?>
       <?php print render($content['field_program_ffaculty2']); ?>
       <?php print render($content['field_program_ffaculty3']); ?>
-      <p class="see-more-faculty"><a href="faculty/<?php if (arg(0) == 'node' && is_numeric(arg(1))) $nodeid = arg(1);
-print $nodeid; ?>">More Faculty >></a></p>
+      <p class="see-more-faculty">
+        <?php print l(t('More Faculty'), 'faculty/' . $node->nid); ?>
+      </p>
     </div>
   <?php endif; ?>
 
