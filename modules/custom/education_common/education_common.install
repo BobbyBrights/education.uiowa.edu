@@ -451,3 +451,33 @@ function education_common_update_7020(&$sandbox) {
     $sandbox['#finished'] = 1;
   }
 }
+
+/**
+ * Configure visibility of new menu block.
+ */
+function education_common_update_7021() {
+  // Set pages on which only the new menu block should be visible.
+  $pages = <<<EDUCATION_COMMON_7021
+academic-programs/*
+centers/*
+services/*
+EDUCATION_COMMON_7021;
+
+  // Place the block for the education_radix theme.
+  db_update('block')
+    ->fields(array(
+      'status' => 1,
+      'region' => 'sidebar_first',
+      'visibility' => 1, // Show only on specified pages.
+      'pages' => $pages,
+      'title' => '<none>', // Be sure no title displays.
+    ))
+    ->condition(db_or()
+      ->condition(db_and()
+        ->condition('module', 'menu_block')
+        ->condition('delta', 2)
+        ->condition('theme', 'education_radix')
+      )
+    )
+    ->execute();
+}
