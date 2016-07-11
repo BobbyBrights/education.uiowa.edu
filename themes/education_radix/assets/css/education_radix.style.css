@@ -9575,11 +9575,6 @@ img {
       background-color: #000000;
       border-radius: 4px;
       padding: 20px; } }
-  #primaryMenu .audiences .view {
-    display: none; }
-    @media (min-width: 768px) {
-      #primaryMenu .audiences .view {
-        display: block; } }
   @media (min-width: 768px) {
     #primaryMenu .news-events .section-heading, #primaryMenu .news-events .row-menu-links > ul.menu > li > a {
       text-align: center; } }
