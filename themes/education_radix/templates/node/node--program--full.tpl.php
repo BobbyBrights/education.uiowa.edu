@@ -60,7 +60,7 @@
       <h2>Programs</h2>
       <?php print render($content['field_program_degree_options']); ?>
     </div>
-  <?php if ($content['field_program_faculty_1']): ?>
+  <?php if (!empty($content['field_program_faculty_1'])): ?>
     <div class="featured-faculty-section">
       <h2>Meet our Faculty</h2>
       <?php print render($content['field_program_ffaculty1']); ?>
