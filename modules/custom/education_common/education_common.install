@@ -338,3 +338,116 @@ function education_common_update_7018() {
   $allowed_file_types = 'csv ' . variable_get('file_entity_default_allowed_extensions');
   variable_set('file_entity_default_allowed_extensions', $allowed_file_types);
 }
+
+/**
+ * Create menu block for Academic Programs, Centers, and Services.
+ */
+function education_common_update_7019() {
+  // Pages on which only the new menu block should be visible.
+  $pages = <<<EDUCATION_COMMON_7019
+academic-programs/*
+centers/*
+services/*
+EDUCATION_COMMON_7019;
+
+  // Create sidebar menu block for Academic Programs, Centers, and Services.
+  // Determine the delta of the new block.
+  $block_ids = variable_get('menu_block_ids', array());
+  $delta = empty($block_ids) ? 1 : max($block_ids) + 1;
+  $form_state['values']['delta'] = $delta;
+
+  // Save the new array of blocks IDs.
+  $block_ids[] = $delta;
+  variable_set('menu_block_ids', $block_ids);
+
+  // Save the block configuration.
+  variable_set("menu_block_{$delta}_title_link", 0);
+  variable_set("menu_block_{$delta}_admin_title", 'Main menu (levels 2+, active trail only)');
+  variable_set("menu_block_{$delta}_parent", 'main-menu:0');
+  variable_set("menu_block_{$delta}_level", '2');
+  variable_set("menu_block_{$delta}_follow", 0);
+  variable_set("menu_block_{$delta}_depth", '0');
+  variable_set("menu_block_{$delta}_depth_relative", 0);
+  variable_set("menu_block_{$delta}_expanded", 0);
+  variable_set("menu_block_{$delta}_sort", 0);
+
+  // Run the normal new block submission.
+  $query = db_insert('block')->fields(array('visibility', 'pages', 'custom', 'title', 'module', 'theme', 'region', 'status', 'weight', 'delta', 'cache'));
+  foreach (list_themes() as $key => $theme) {
+    if ($theme->status) {
+      $query->values(array(
+        'visibility' => 0,
+        'pages' => '',
+        'custom' => 0,
+        'title' => '<none>',
+        'module' => 'menu_block',
+        'theme' => $theme->name,
+        'region' => BLOCK_REGION_NONE,
+        'status' => 0,
+        'weight' => 0,
+        'delta' => $delta,
+        'cache' => DRUPAL_NO_CACHE,
+      ));
+    }
+  }
+  $query->execute();
+
+  // Remove the existing menu block from these pages.
+  db_update('block')
+    ->fields(array(
+      'pages' => $pages,
+    ))
+    ->condition('module', 'menu_block')
+    ->condition('delta', '1')
+    ->execute();
+}
+
+/**
+ * Re-generate path aliases for nodes.
+ */
+function education_common_update_7020(&$sandbox) {
+  module_load_include('inc', 'pathauto');
+  module_load_include('inc', 'pathauto.pathauto');
+
+  if (!isset($sandbox['max'])) {
+    $count_query = db_select('node', 'n');
+    $count_query->addExpression('COUNT(n.nid)', 'count');
+    $sandbox['max'] = $count_query->execute()->fetchField();
+    $sandbox['position'] = 0;
+
+    // Delete the existing node aliases.
+    db_delete('url_alias')
+      ->condition('source', 'node/%', 'LIKE')
+      ->execute();
+
+    // Set all nodes to use automatic aliases.
+    db_update('pathauto_state')
+      ->fields(array('pathauto' => 1))
+      ->condition('entity_type', 'node')
+      ->execute();
+
+    // Set the default node alias pattern.
+    variable_set('pathauto_node_pattern', '[node:menu-link:parents:join-path]/[node:title]');
+  }
+
+  // Get the id's of nodes to update aliases for.
+  $limit = 200;
+  $nids = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->orderBy('n.nid')
+    ->range($sandbox['position'], $limit)
+    ->execute()
+    ->fetchCol();
+
+  // Update node aliases.
+  pathauto_node_update_alias_multiple($nids, 'bulkupdate');
+  unset($nids);
+  $sandbox['position'] += $limit;
+
+  if ($sandbox['max'] > 0 && $sandbox['max'] > $sandbox['position']) {
+    $sandbox['#finished'] = $sandbox['position'] / $sandbox['max'];
+  }
+  else {
+    $sandbox['#finished'] = 1;
+  }
+}

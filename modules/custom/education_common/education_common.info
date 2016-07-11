@@ -94,6 +94,7 @@ features[variable][] = node_preview_webform
 features[variable][] = node_revision_delete_cron
 features[variable][] = node_revision_delete_time
 features[variable][] = node_submitted_webform
+features[variable][] = pathauto_node_pattern
 features[variable][] = pathauto_node_webform_pattern
 features[views_view][] = clone_of_administration_nodes
 project path = sites/education.uiowa.edu/modules/custom
