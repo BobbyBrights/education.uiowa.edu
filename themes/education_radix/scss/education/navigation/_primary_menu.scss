@@ -159,14 +159,6 @@ $bp-menu-toggle-inline: 555px;
       border-radius: 4px;
       padding: 20px;
     }
-
-    .view {
-      display: none;
-
-      @include breakpoint($bp-menu-grid) {
-        display: block;
-      }
-    }
   }
 
   .news-events {
