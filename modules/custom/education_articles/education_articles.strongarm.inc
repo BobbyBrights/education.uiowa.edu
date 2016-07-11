@@ -98,5 +98,40 @@ function education_articles_strongarm() {
   $strongarm->value = 'news/[node:title]';
   $export['pathauto_node_article_pattern'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_module_article';
+  $strongarm->value = 'rh_node';
+  $export['rh_module_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_article';
+  $strongarm->value = '0';
+  $export['rh_node_action_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_override_article';
+  $strongarm->value = 0;
+  $export['rh_node_override_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_article';
+  $strongarm->value = '';
+  $export['rh_node_redirect_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_article';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_article'] = $strongarm;
+
   return $export;
 }
