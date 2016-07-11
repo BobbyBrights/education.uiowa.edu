@@ -40,7 +40,7 @@
         </div>
       </div>
 
-    <?php if ($content['field_program_overview_text']): ?>
+    <?php if (!empty($content['field_program_overview_text'])): ?>
       <div class="overview-section">
         <div class="container">
             <div class="overview-box">
