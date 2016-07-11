@@ -29,7 +29,7 @@
     ?>
       <div class="leading-text">
         <div class="container">
-          <div <?php if ($content['field_program_leading_buttons']): ?> class="col-sm-8" <?php else: ?> class="col-sm-12" <?php endif; ?>>
+          <div <?php if (!empty($content['field_program_leading_buttons'])): ?> class="col-sm-8" <?php else: ?> class="col-sm-12" <?php endif; ?>>
               <?php print render($content['field_program_leading_text']); ?>
             </div>
           <?php if ($content['field_program_leading_buttons']): ?>
