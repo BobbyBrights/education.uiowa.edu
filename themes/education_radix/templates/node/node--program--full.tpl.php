@@ -74,6 +74,7 @@ print $nodeid; ?>">More Faculty >></a></p>
   <?php if (!empty($content['field_program_contact_person']) || !empty($content['field_program_contact_person2']) || !empty($content['field_program_contact_text'])): ?>
 
       <div class="contact-section">
+          <a id="contact" name="contact"></a>
           <h2>Contact</h2>
           <?php if (!empty($content['field_program_contact_person'])): ?>
             <div class="contact-col">
