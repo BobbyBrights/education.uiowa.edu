@@ -52,6 +52,13 @@ function education_service_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__service';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_service';
   $strongarm->value = array(
     0 => 'status',
@@ -68,6 +75,20 @@ function education_service_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_revision_delete_number_service';
+  $strongarm->value = '50';
+  $export['node_revision_delete_number_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_revision_delete_track_service';
+  $strongarm->value = 0;
+  $export['node_revision_delete_track_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_service';
   $strongarm->value = 0;
   $export['node_submitted_service'] = $strongarm;
@@ -78,6 +99,48 @@ function education_service_strongarm() {
   $strongarm->name = 'pathauto_node_service_pattern';
   $strongarm->value = '';
   $export['pathauto_node_service_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'redirect_setting_name_service';
+  $strongarm->value = 'rh_node_redirect';
+  $export['redirect_setting_name_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_module_service';
+  $strongarm->value = 'rh_node';
+  $export['rh_module_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_service';
+  $strongarm->value = '0';
+  $export['rh_node_action_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_override_service';
+  $strongarm->value = 0;
+  $export['rh_node_override_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_service';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_service'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_service';
+  $strongarm->value = '';
+  $export['rh_node_redirect_service'] = $strongarm;
 
   return $export;
 }
