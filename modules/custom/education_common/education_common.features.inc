@@ -66,6 +66,8 @@ function education_common_file_default_types_alter(&$data) {
 function education_common_wysiwyg_default_profiles_alter(&$data) {
   if (isset($data['filtered_html'])) {
     $data['filtered_html']['settings']['advanced__active_tab'] = 'edit-basic'; /* WAS: 'edit-output' */
+    $data['filtered_html']['settings']['buttons']['default']['Maximize'] = 1; /* WAS: '' */
+    $data['filtered_html']['settings']['buttons']['default']['Styles'] = 1; /* WAS: '' */
     $data['filtered_html']['settings']['stylesSet'] = 'Large text = p.large-text
                 Large caps = p.uppercase
                 Button = a.btn-primary
