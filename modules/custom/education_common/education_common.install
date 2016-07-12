@@ -481,3 +481,21 @@ EDUCATION_COMMON_7021;
     )
     ->execute();
 }
+
+/**
+ * Weight education_common heavier than sitenow_wysiwyg.
+ */
+function education_common_update_7022() {
+  // Get the weight of the module we want to compare against.
+  $weight = db_select('system', 's')
+    ->fields('s', array('weight'))
+    ->condition('name', 'sitenow_wysiwyg', '=')
+    ->execute()
+    ->fetchField();
+
+  // Set our module to a weight 1 heavier, so ours moves lower in execution order.
+  db_update('system')
+    ->fields(array('weight' => $weight + 1))
+    ->condition('name', 'education_common', '=')
+    ->execute();
+}
