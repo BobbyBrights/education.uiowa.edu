@@ -30,7 +30,10 @@ function education_common_features_override_default_overrides() {
   $overrides["file_type.document.mimetypes|8"] = 'application/vnd.oasis.opendocument.presentation';
   $overrides["file_type.document.mimetypes|9"] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
 
+  // Exported overrides for: filter
+
   // Exported overrides for: wysiwyg
+  $overrides["wysiwyg.filtered_html.settings|advanced__active_tab"] = 'edit-basic';
   $overrides["wysiwyg.filtered_html.settings|stylesSet"] = 'Large text = p.large-text
               Large caps = p.uppercase
               Button = a.btn-primary
