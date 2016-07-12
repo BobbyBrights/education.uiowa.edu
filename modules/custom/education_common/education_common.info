@@ -63,6 +63,7 @@ features[features_overrides][] = file_type.document.mimetypes|9
 features[features_overrides][] = filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|0
 features[features_overrides][] = filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|2
 features[features_overrides][] = filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|4
+features[features_overrides][] = wysiwyg.filtered_html.settings|advanced__active_tab
 features[features_overrides][] = wysiwyg.filtered_html.settings|buttons|default|Maximize
 features[features_overrides][] = wysiwyg.filtered_html.settings|buttons|default|Styles
 features[features_overrides][] = wysiwyg.filtered_html.settings|stylesSet
