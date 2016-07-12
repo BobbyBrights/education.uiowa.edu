@@ -178,7 +178,7 @@
       </div>
     </div>
       <div class="footer-center"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-          <?php print l(t('Report web site problems to the webmaster'), drupal_get_path_alias('262')); ?>
+          <?php print l(t('Report web site problems to the webmaster'), drupal_get_path_alias('node/262')); ?>
       </div>
     </div>
   </div>
