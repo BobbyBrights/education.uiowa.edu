@@ -129,9 +129,13 @@ function education_center_field_default_field_instances() {
         'weight' => 11,
       ),
       'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'referenced',
+        ),
+        'type' => 'entityreference_entity_view',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -191,10 +195,14 @@ function education_center_field_default_field_instances() {
         'weight' => 12,
       ),
       'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'referenced',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -251,10 +259,11 @@ function education_center_field_default_field_instances() {
         'weight' => 15,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -297,10 +306,11 @@ function education_center_field_default_field_instances() {
         'weight' => 13,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -343,10 +353,11 @@ function education_center_field_default_field_instances() {
         'weight' => 14,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
