@@ -25,7 +25,33 @@ function education_fast_facts_views_views_default_views() {
   $handler->display->display_options['title'] = 'Fast Facts';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'views_content_cache';
+  $handler->display->display_options['cache']['results_min_lifespan'] = '-1';
+  $handler->display->display_options['cache']['results_max_lifespan'] = '21600';
+  $handler->display->display_options['cache']['output_min_lifespan'] = '-1';
+  $handler->display->display_options['cache']['output_max_lifespan'] = '21600';
+  $handler->display->display_options['cache']['keys'] = array(
+    'node' => array(
+      'fast_fact' => 'fast_fact',
+      'program' => 0,
+      'announcement' => 0,
+      'article' => 0,
+      'background_image' => 0,
+      'page' => 0,
+      'center' => 0,
+      'committee' => 0,
+      'degree' => 0,
+      'department' => 0,
+      'event' => 0,
+      'person' => 0,
+      'scholarship' => 0,
+      'service' => 0,
+      'webform' => 0,
+    ),
+    'node_only' => array(
+      'node_changed' => 0,
+    ),
+  );
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
