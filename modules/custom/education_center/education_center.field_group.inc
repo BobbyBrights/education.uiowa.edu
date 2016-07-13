@@ -43,6 +43,39 @@ function education_center_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_center_contact_1|node|center|full';
+  $field_group->group_name = 'group_center_contact_1';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'center';
+  $field_group->mode = 'full';
+  $field_group->parent_name = 'group_center_contact';
+  $field_group->data = array(
+    'label' => 'Contact 1',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_center_contact_person_1',
+      1 => 'field_center_contact_title_1',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Contact 1',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-center-contact-1 field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_center_contact_1|node|center|full'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_center_contact_2|node|center|form';
   $field_group->group_name = 'group_center_contact_2';
   $field_group->entity_type = 'node';
@@ -68,6 +101,39 @@ function education_center_field_group_info() {
     ),
   );
   $field_groups['group_center_contact_2|node|center|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_center_contact_2|node|center|full';
+  $field_group->group_name = 'group_center_contact_2';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'center';
+  $field_group->mode = 'full';
+  $field_group->parent_name = 'group_center_contact';
+  $field_group->data = array(
+    'label' => 'Contact 2',
+    'weight' => '14',
+    'children' => array(
+      0 => 'field_center_contact_person_2',
+      1 => 'field_center_contact_title_2',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Contact 2',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-center-contact-2 field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_center_contact_2|node|center|full'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -140,11 +206,9 @@ function education_center_field_group_info() {
     'label' => 'Contact',
     'weight' => '13',
     'children' => array(
-      0 => 'field_center_contact_person_1',
-      1 => 'field_center_contact_person_2',
-      2 => 'field_center_contact_title_1',
-      3 => 'field_center_contact_title_2',
-      4 => 'field_center_contact_text',
+      0 => 'field_center_contact_text',
+      1 => 'group_center_contact_1',
+      2 => 'group_center_contact_2',
     ),
     'format_type' => 'div',
     'format_settings' => array(
