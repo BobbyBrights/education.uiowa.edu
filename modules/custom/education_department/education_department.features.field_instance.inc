@@ -63,11 +63,11 @@ function education_department_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -113,7 +113,7 @@ function education_department_field_default_field_instances() {
         'module' => 'sitenow_maps',
         'settings' => array(),
         'type' => 'sitenow_map_formatter_abbr',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -146,13 +146,14 @@ function education_department_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'referenced',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 10,
+        'type' => 'entityreference_entity_view',
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -202,13 +203,14 @@ function education_department_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'referenced',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 13,
+        'type' => 'entityreference_entity_view',
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -259,11 +261,11 @@ function education_department_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -300,11 +302,11 @@ function education_department_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -344,7 +346,7 @@ function education_department_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -385,7 +387,7 @@ function education_department_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -483,7 +485,7 @@ function education_department_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -523,7 +525,7 @@ function education_department_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -562,7 +564,7 @@ function education_department_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
