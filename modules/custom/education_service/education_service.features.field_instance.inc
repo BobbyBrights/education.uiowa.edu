@@ -106,13 +106,14 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'referenced',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 11,
+        'type' => 'entityreference_entity_view',
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -162,13 +163,14 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'referenced',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 13,
+        'type' => 'entityreference_entity_view',
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -218,11 +220,11 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -258,11 +260,11 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -298,11 +300,11 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
