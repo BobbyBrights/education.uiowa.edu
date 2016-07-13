@@ -106,5 +106,7 @@ features[variable][] = node_submitted_webform
 features[variable][] = pathauto_node_pattern
 features[variable][] = pathauto_node_webform_pattern
 features[variable][] = pathauto_taxonomy_term_media_folders_pattern
+features[variable][] = xmlsitemap_settings_node_webform
+features[variable][] = xmlsitemap_settings_taxonomy_term_media_folders
 features[views_view][] = clone_of_administration_nodes
 project path = sites/education.uiowa.edu/modules/custom

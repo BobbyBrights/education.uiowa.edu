@@ -69,4 +69,5 @@ features[variable][] = rh_node_action_service
 features[variable][] = rh_node_override_service
 features[variable][] = rh_node_redirect_response_service
 features[variable][] = rh_node_redirect_service
+features[variable][] = xmlsitemap_settings_node_service
 project path = sites/education.uiowa.edu/modules/custom

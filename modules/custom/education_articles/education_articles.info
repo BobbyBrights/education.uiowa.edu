@@ -44,6 +44,7 @@ features[variable][] = rh_node_action_article
 features[variable][] = rh_node_override_article
 features[variable][] = rh_node_redirect_article
 features[variable][] = rh_node_redirect_response_article
+features[variable][] = xmlsitemap_settings_node_article
 features_exclude[field_base][body] = body
 features_exclude[field_base][field_tags] = field_tags
 features_exclude[field_base][field_article_type] = field_article_type

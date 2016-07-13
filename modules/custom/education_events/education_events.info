@@ -49,4 +49,6 @@ features[variable][] = rh_node_action_event
 features[variable][] = rh_node_override_event
 features[variable][] = rh_node_redirect_event
 features[variable][] = rh_node_redirect_response_event
+features[variable][] = xmlsitemap_settings_node_event
+features[variable][] = xmlsitemap_settings_taxonomy_term_expertise
 project path = sites/education.uiowa.edu/modules/custom
