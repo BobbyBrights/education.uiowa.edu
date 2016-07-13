@@ -186,7 +186,7 @@ function education_department_field_group_info() {
     'format_settings' => array(
       'label' => 'Contact',
       'instance_settings' => array(
-        'id' => '',
+        'id' => 'contact',
         'classes' => 'group-department-contact field-group-div',
         'description' => '',
         'show_label' => '1',
