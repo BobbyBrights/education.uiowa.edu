@@ -17,7 +17,6 @@ dependencies[] = rh_taxonomy
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = xmlsitemap_taxonomy
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
