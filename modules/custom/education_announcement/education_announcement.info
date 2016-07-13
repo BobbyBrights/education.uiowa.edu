@@ -44,4 +44,6 @@ features[variable][] = rh_taxonomy_term_action_announcement_categories
 features[variable][] = rh_taxonomy_term_override_announcement_categories
 features[variable][] = rh_taxonomy_term_redirect_announcement_categories
 features[variable][] = rh_taxonomy_term_redirect_response_announcement_categories
+features[variable][] = xmlsitemap_settings_node_announcement
+features[variable][] = xmlsitemap_settings_taxonomy_term_announcement_categories
 project path = sites/education.uiowa.edu/modules/custom

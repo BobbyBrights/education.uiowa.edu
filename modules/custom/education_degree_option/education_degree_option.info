@@ -62,4 +62,6 @@ features[variable][] = rh_taxonomy_term_action_degree_levels
 features[variable][] = rh_taxonomy_term_override_degree_levels
 features[variable][] = rh_taxonomy_term_redirect_degree_levels
 features[variable][] = rh_taxonomy_term_redirect_response_degree_levels
+features[variable][] = xmlsitemap_settings_node_degree
+features[variable][] = xmlsitemap_settings_taxonomy_term_degree_levels
 project path = sites/education.uiowa.edu/modules/custom

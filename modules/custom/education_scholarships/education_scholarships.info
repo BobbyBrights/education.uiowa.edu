@@ -32,5 +32,6 @@ features[variable][] = rh_node_action_scholarship
 features[variable][] = rh_node_override_scholarship
 features[variable][] = rh_node_redirect_response_scholarship
 features[variable][] = rh_node_redirect_scholarship
+features[variable][] = xmlsitemap_settings_node_scholarship
 features_exclude[field_base][body] = body
 project path = sites/education.uiowa.edu/modules/custom

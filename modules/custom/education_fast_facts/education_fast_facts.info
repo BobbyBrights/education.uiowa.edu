@@ -29,4 +29,5 @@ features[variable][] = rh_node_action_fast_fact
 features[variable][] = rh_node_override_fast_fact
 features[variable][] = rh_node_redirect_fast_fact
 features[variable][] = rh_node_redirect_response_fast_fact
+features[variable][] = xmlsitemap_settings_node_fast_fact
 project path = sites/education.uiowa.edu/modules/custom

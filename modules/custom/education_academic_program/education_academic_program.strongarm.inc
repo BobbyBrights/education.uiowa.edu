@@ -134,5 +134,15 @@ function education_academic_program_strongarm() {
   $strongarm->value = '301';
   $export['rh_node_redirect_response_program'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_program';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_node_program'] = $strongarm;
+
   return $export;
 }

@@ -49,5 +49,6 @@ features[variable][] = rh_node_override_background_image
 features[variable][] = rh_node_redirect_background_image
 features[variable][] = rh_node_redirect_response_background_image
 features[variable][] = save_continue_background_image
+features[variable][] = xmlsitemap_settings_node_background_image
 features_exclude[dependencies][ctools] = ctools
 project path = sites/education.uiowa.edu/modules/custom
