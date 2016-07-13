@@ -167,9 +167,7 @@
           </div>
         </div>
         <br/>
-        <?php
-          print l(t('Directory'), drupal_get_path_alias('directories'), array('attributes' => array('class' => 'footer-button')));
-        ?>
+        <a href="/directories" class="footer-button">Directory</a>
         <br/>
         <?php
           print l(t('Give'), 'http://www.uifoundation.org/education/', array('attributes' => array('class' => 'footer-button')));
