@@ -520,6 +520,15 @@ function education_roles_user_default_permissions() {
     'module' => 'picture',
   );
 
+  // Exported permission: 'administer redirects'.
+  $permissions['administer redirects'] = array(
+    'name' => 'administer redirects',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redirect',
+  );
+
   // Exported permission: 'administer rh_node'.
   $permissions['administer rh_node'] = array(
     'name' => 'administer rh_node',
@@ -541,9 +550,7 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'administer rh_user'.
   $permissions['administer rh_user'] = array(
     'name' => 'administer rh_user',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'rabbit_hole',
   );
 
@@ -678,7 +685,6 @@ function education_roles_user_default_permissions() {
     'name' => 'bypass rh_node',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'rabbit_hole',
   );
@@ -688,7 +694,6 @@ function education_roles_user_default_permissions() {
     'name' => 'bypass rh_taxonomy',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'rabbit_hole',
   );
@@ -696,10 +701,7 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'bypass rh_user'.
   $permissions['bypass rh_user'] = array(
     'name' => 'bypass rh_user',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
+    'roles' => array(),
     'module' => 'rabbit_hole',
   );
 
@@ -2809,14 +2811,18 @@ function education_roles_user_default_permissions() {
   // Exported permission: 'php redirect rh_node'.
   $permissions['php redirect rh_node'] = array(
     'name' => 'php redirect rh_node',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'rabbit_hole',
   );
 
   // Exported permission: 'php redirect rh_taxonomy'.
   $permissions['php redirect rh_taxonomy'] = array(
     'name' => 'php redirect rh_taxonomy',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'rabbit_hole',
   );
 

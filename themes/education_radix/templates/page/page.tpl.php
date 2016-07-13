@@ -157,9 +157,15 @@
           </div>
         </div>
       </div>
-        <br/>
-        <a href="/directories" class="footer-button">Directory</a>
-        <br/>
+      <br/>
+      <?php
+        print l(t('Directory'), drupal_get_path_alias('directories'), array('attributes' => array('class' => 'footer-button')));
+      ?>
+      <br/>
+      <?php
+        print l(t('Give'), 'http://www.uifoundation.org/education/', array('attributes' => array('class' => 'footer-button')));
+      ?>
+      <br/>
       </div>
       <div class="col-xs-12 col-md-4 social"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
         <h2 class="offscreen">Connect with Us</h2>

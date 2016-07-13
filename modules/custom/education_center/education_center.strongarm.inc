@@ -46,6 +46,9 @@ function education_center_strongarm() {
         'path' => array(
           'weight' => '12',
         ),
+        'rabbit_hole' => array(
+          'weight' => '0',
+        ),
       ),
       'display' => array(),
     ),
