@@ -31,13 +31,18 @@ function education_common_features_override_default_overrides() {
   $overrides["file_type.document.mimetypes|9"] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
 
   // Exported overrides for: filter
+  $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|0"] = 'btn-primary';
+  $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|2"] = 'btn-long';
+  $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|4"] = 'large-text';
 
   // Exported overrides for: wysiwyg
   $overrides["wysiwyg.filtered_html.settings|advanced__active_tab"] = 'edit-basic';
+  $overrides["wysiwyg.filtered_html.settings|buttons|default|Maximize"] = 1;
+  $overrides["wysiwyg.filtered_html.settings|buttons|default|Styles"] = 1;
   $overrides["wysiwyg.filtered_html.settings|stylesSet"] = 'Large text = p.large-text
-              Large caps = p.uppercase
-              Button = a.btn-primary
-              Long button = a.btn-long';
+                  Large caps = p.uppercase
+                  Button = a.btn-primary
+                  Long button = a.btn-long';
 
  return $overrides;
 }
