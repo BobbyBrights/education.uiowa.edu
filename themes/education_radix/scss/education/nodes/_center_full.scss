@@ -1,0 +1,33 @@
+.group-center-contact {
+  @extend .container;
+  @extend .grey-background;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  h2 span {
+    background-color: $black_60;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    margin-left: -15px;
+    padding: 8px 20px 5px 40px;
+    text-transform: uppercase;
+  }
+}
+
+.group-center-contact-1,
+.group-center-contact-2,
+.field-name-field-center-contact-text {
+  @extend .col-md-4;
+  margin-bottom: 20px;
+
+  @include breakpoint($education-md-min) {
+    margin-bottom: 0;
+  }
+}
+
+.field-name-field-center-contact-title-1,
+.field-name-field-center-contact-title-2 {
+  text-align: center;
+}

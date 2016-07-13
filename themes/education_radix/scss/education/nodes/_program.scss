@@ -32,7 +32,7 @@
     h2 {
       @extend .h3;
       @extend .large-text;
-      background-color:lighten(#000000, 40);
+      background-color: $black_60;
       color:White;
       display: inline;
       margin-left:-15px;
@@ -77,7 +77,7 @@
     vertical-align: middle;
 
     h2 {
-      background-color:lighten(#000000, 40);
+      background-color: $black_60;
       color:White;
       display: inline;
       padding: 5px 10px 5px 30px;
@@ -121,7 +121,7 @@
     padding-bottom:20px;
 
     h2 {
-      background-color:lighten(#000000, 40);
+      background-color: $black_60;
       color: White;
       text-transform: uppercase;
       margin-left: 0;
