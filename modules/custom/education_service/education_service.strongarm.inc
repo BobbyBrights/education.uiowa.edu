@@ -16,11 +16,11 @@ function education_service_strongarm() {
   $strongarm->name = 'field_bundle_settings_node__service';
   $strongarm->value = array(
     'view_modes' => array(
-      'teaser' => array(
+      'full' => array(
         'custom_settings' => TRUE,
       ),
-      'full' => array(
-        'custom_settings' => FALSE,
+      'teaser' => array(
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -28,29 +28,23 @@ function education_service_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
-      'token' => array(
+      'referenced' => array(
         'custom_settings' => FALSE,
       ),
-      'referenced' => array(
+      'token' => array(
         'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '13',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '13',
-        ),
-        'rabbit_hole' => array(
-          'weight' => '1',
-        ),
-        'redirect' => array(
-          'weight' => '15',
+          'weight' => '12',
         ),
       ),
       'display' => array(),
