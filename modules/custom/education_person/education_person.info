@@ -84,4 +84,7 @@ features[variable][] = rh_taxonomy_term_redirect_ranks
 features[variable][] = rh_taxonomy_term_redirect_response_expertise
 features[variable][] = rh_taxonomy_term_redirect_response_ranks
 features[variable][] = save_continue_person
+features[variable][] = xmlsitemap_settings_node_person
+features[variable][] = xmlsitemap_settings_taxonomy_term_expertise
+features[variable][] = xmlsitemap_settings_taxonomy_term_ranks
 project path = sites/education.uiowa.edu/modules/custom
