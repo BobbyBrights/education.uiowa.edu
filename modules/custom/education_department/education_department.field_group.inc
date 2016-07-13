@@ -23,7 +23,7 @@ function education_department_field_group_info() {
     'label' => 'Contact 1',
     'weight' => '8',
     'children' => array(),
-    'format_type' => 'hidden',
+    'format_type' => 'fieldset',
     'format_settings' => array(
       'label' => 'Contact 1',
       'instance_settings' => array(
@@ -83,7 +83,7 @@ function education_department_field_group_info() {
     'label' => 'Contact 2',
     'weight' => '9',
     'children' => array(),
-    'format_type' => 'hidden',
+    'format_type' => 'fieldset',
     'format_settings' => array(
       'label' => 'Contact 2',
       'instance_settings' => array(
@@ -170,12 +170,12 @@ function education_department_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact',
-    'weight' => '8',
+    'weight' => '1',
     'children' => array(
       0 => 'group_department_contact_1',
       1 => 'group_department_contact_2',
     ),
-    'format_type' => 'hidden',
+    'format_type' => 'fieldset',
     'format_settings' => array(
       'label' => 'Contact',
       'instance_settings' => array(

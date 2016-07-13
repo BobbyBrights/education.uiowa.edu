@@ -77,17 +77,16 @@ function education_department_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'full' => array(
+        'label' => 'hidden',
         'module' => 'sitenow_maps',
         'settings' => array(),
         'type' => 'sitenow_map_formatter_abbr',
         'weight' => 4,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'sitenow_maps',
-        'settings' => array(),
-        'type' => 'sitenow_map_formatter_abbr',
-        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -121,17 +120,16 @@ function education_department_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
         'weight' => 6,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_plain',
-        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -167,21 +165,18 @@ function education_department_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'full' => array(
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 2,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -236,13 +231,12 @@ function education_department_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -283,17 +277,16 @@ function education_department_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -330,17 +323,16 @@ function education_department_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'full' => array(
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
         'weight' => 5,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_plain',
-        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -378,14 +370,13 @@ function education_department_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',

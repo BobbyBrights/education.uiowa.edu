@@ -76,10 +76,10 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'sitenow_maps',
         'settings' => array(),
-        'type' => 'sitenow_map_formatter_abbr',
+        'type' => 'sitenow_map_formatter_name',
         'weight' => 6,
       ),
       'full' => array(
@@ -120,7 +120,7 @@ function education_service_field_default_field_instances() {
     'description' => 'Shared email account only.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
@@ -166,7 +166,7 @@ function education_service_field_default_field_instances() {
     'description' => '555-555-5555',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
@@ -212,7 +212,7 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
@@ -281,7 +281,7 @@ function education_service_field_default_field_instances() {
     'description' => 'Title of person it leadership position within the unit.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -328,7 +328,7 @@ function education_service_field_default_field_instances() {
     'description' => 'Service on-campus mailing address office number.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -375,13 +375,13 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -449,10 +449,12 @@ function education_service_field_default_field_instances() {
     'description' => '555-555-5555',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_plain',
+        'label' => 'hidden',
+        'module' => 'telephone',
+        'settings' => array(
+          'title' => '',
+        ),
+        'type' => 'telephone_link',
         'weight' => 2,
       ),
       'full' => array(
@@ -495,7 +497,7 @@ function education_service_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
@@ -560,10 +562,9 @@ function education_service_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',

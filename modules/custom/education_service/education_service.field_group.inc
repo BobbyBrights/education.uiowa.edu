@@ -22,11 +22,8 @@ function education_service_field_group_info() {
   $field_group->data = array(
     'label' => 'Contact 1',
     'weight' => '27',
-    'children' => array(
-      0 => 'field_service_contact_person_1',
-      1 => 'field_service_contact_title_1',
-    ),
-    'format_type' => 'div',
+    'children' => array(),
+    'format_type' => 'hidden',
     'format_settings' => array(
       'label' => 'Contact 1',
       'instance_settings' => array(
@@ -85,11 +82,8 @@ function education_service_field_group_info() {
   $field_group->data = array(
     'label' => 'Contact 2',
     'weight' => '28',
-    'children' => array(
-      0 => 'field_service_contact_person_2',
-      1 => 'field_service_contact_title_2',
-    ),
-    'format_type' => 'div',
+    'children' => array(),
+    'format_type' => 'hidden',
     'format_settings' => array(
       'label' => 'Contact 2',
       'instance_settings' => array(
@@ -176,13 +170,12 @@ function education_service_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact',
-    'weight' => '12',
+    'weight' => '10',
     'children' => array(
-      0 => 'field_service_contact_text',
-      1 => 'group_service_contact_1',
-      2 => 'group_service_contact_2',
+      0 => 'group_service_contact_1',
+      1 => 'group_service_contact_2',
     ),
-    'format_type' => 'div',
+    'format_type' => 'hidden',
     'format_settings' => array(
       'label' => 'Contact',
       'instance_settings' => array(
