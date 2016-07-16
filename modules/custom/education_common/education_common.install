@@ -531,7 +531,7 @@ function education_common_update_7023() {
 }
 
 /**
- * Re-set media_browser_plus_root_folder_tid.
+ * Re-set media_browser_plus_root_folder_tid and disable default media browser.
  */
 function education_common_update_7024() {
   // Get the tid of the term 'Media Root' in the media_folders vocabulary.
@@ -539,4 +539,28 @@ function education_common_update_7024() {
   $tid = array_pop($term)->tid;
   // Reset the variable with this tid.
   variable_set('media_browser_plus_root_folder_tid', $tid);
+
+  // Grab list of views that are already disabled.
+  $views_status = variable_get('views_defaults', array());
+
+  // Add our views to be disabled to the list.
+  $views_status['media_default'] = TRUE;
+
+  // Reset the variable with the new list.
+  variable_set('views_defaults', $views_status);
+
+  // Empty cache now.
+  if (function_exists('views_invalidate_cache')) {
+    views_invalidate_cache();
+  }
+
+  // Build an array of plugins that should show up in the WYSIWYG.
+  $education_wysiwyg_media_plugins = array(
+    0 => 'upload',
+    1 => 'media_browser_plus--media_browser_thumbnails',
+    2 => 'media_internet',
+  );
+
+  // Set which plugins show up in the WYSIWYG.
+  variable_set('media_wysiwyg_wysiwyg_browser_plugins', $education_wysiwyg_media_plugins);
 }
