@@ -97,13 +97,6 @@ function education_common_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'media_browser_plus_root_folder_tid';
-  $strongarm->value = '72';
-  $export['media_browser_plus_root_folder_tid'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_webform';
   $strongarm->value = array(
     0 => 'main-menu',
