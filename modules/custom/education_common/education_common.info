@@ -96,7 +96,6 @@ features[variable][] = captcha_log_wrong_responses
 features[variable][] = captcha_persistence
 features[variable][] = comment_webform
 features[variable][] = file_entity_default_allowed_extensions
-features[variable][] = media_browser_plus_root_folder_tid
 features[variable][] = menu_options_webform
 features[variable][] = menu_parent_webform
 features[variable][] = metatag_enable_node__webform
