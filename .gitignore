@@ -1,2 +1,4 @@
 settings.php
 *.log
+files
+settings.local.php
