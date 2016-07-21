@@ -217,7 +217,7 @@ function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode,
           <span class='offscreen'>Facebook</span>
           <span class='social-icon footer-social-facebook' id='facebook-icon'></span>
         </a>
-        <a role='link' title='Follow us on Instagram' href='http://instagram.com/uicollegeofed'>
+        <a role='link' title='Follow us on Instagram' href='https://instagram.com/uicollegeofed'>
           <span class='offscreen'>Instagram</span>
           <span class='social-icon footer-social-instagram' id='instagram-icon'></span>
         </a>
@@ -229,7 +229,7 @@ function education_paragraphs_paragraphs_item_view($paragraphs_item, $view_mode,
           <span class='offscreen'>LinkedIn</span>
           <span class='social-icon footer-social-linkedin' id='linkdin-icon'></span>
         </a>
-        <a role='link' title='Checkout out our boards on Pinterest' href='http://pinterest.com/uicoe/'>
+        <a role='link' title='Checkout out our boards on Pinterest' href='https://pinterest.com/uicoe/'>
           <span class='offscreen'>Pinterest</span>
           <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span></a>
         <a role='link' title='Find our latest videos on YouTube' href='https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA'>
