@@ -55,13 +55,13 @@
             <?php print(l("<span class='offscreen'>Facebook</span>
           <span class='social-icon footer-social-facebook' id='facebook-icon'></span>", 'https://www.facebook.com/UICollegeofEducation', array('attributes' => array('class' => array('facebook', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>Instagram</span>
-          <span class='social-icon footer-social-instagram' id='instagram-icon'></span>", 'http://instagram.com/uicollegeofed', array('attributes' => array('class' => array('instagram', 'social-link')),'html' => TRUE,))); ?>
+          <span class='social-icon footer-social-instagram' id='instagram-icon'></span>", 'https://instagram.com/uicollegeofed', array('attributes' => array('class' => array('instagram', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>Twitter</span>
           <span class='social-icon footer-social-twitter' id='twitter-icon'></span>", 'https://twitter.com/UIowaEducation', array('attributes' => array('class' => array('twitter', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>LinkedIn</span>
           <span class='social-icon footer-social-linkedin' id='linkdin-icon'></span>", 'https://www.linkedin.com/in/uiowacollegeofeducation', array('attributes' => array('class' => array('linkedin', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>Pinterest</span>
-          <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span>", 'http://pinterest.com/uicoe', array('attributes' => array('class' => array('pinterest', 'social-link')),'html' => TRUE,))); ?>
+          <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span>", 'https://pinterest.com/uicoe', array('attributes' => array('class' => array('pinterest', 'social-link')),'html' => TRUE,))); ?>
             <?php print(l("<span class='offscreen'>YouTube</span>
           <span class='social-icon footer-social-youtube' id='youtube-icon'></span>", 'https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA', array('attributes' => array('class' => array('youtube', 'social-link')),'html' => TRUE,))); ?>
             </p>
@@ -133,7 +133,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4" style="text-align:center;"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
-        <a href="http://education.uiowa.edu" title="The University of Iowa College of Education"><div id="footer-logo" ></div></a>
+        <a href="https://education.uiowa.edu" title="The University of Iowa College of Education"><div id="footer-logo" ></div></a>
 
         N459 Lindquist Center<br/>
         Iowa City, IA 52242<br/>
@@ -177,13 +177,13 @@
       <div class="col-xs-12 col-md-4"> <!-- bootstrap to span across 4 of available 12 columns in .row -->
         <a href="https://www.facebook.com/UICollegeofEducation" title="Follow us on facebook" role="link">
           <div id="facebook-icon" class="footer-social footer-social-facebook"></div></a>
-        <a href="http://instagram.com/uicollegeofed" title="Follow us on Instagram" role="link">
+        <a href="https://instagram.com/uicollegeofed" title="Follow us on Instagram" role="link">
           <div id="instagram-icon" class="footer-social footer-social-instagram"></div></a>
         <a href="https://twitter.com/UIowaEducation" title="Follow us on Twitter" role="link">
           <div id="twitter-icon" class="footer-social footer-social-twitter"></div></a>
         <a href="https://www.linkedin.com/in/uiowacollegeofeducation" title="Connect with us on LinkedIn" role="link">
           <div id="linkdin-icon" class="footer-social footer-social-linkedin"></div></a>
-        <a href="http://pinterest.com/uicoe/" title="Checkout out our boards on Pinterest" role="link">
+        <a href="https://pinterest.com/uicoe/" title="Checkout out our boards on Pinterest" role="link">
           <div id="youtube-icon" class="footer-social footer-social-pinterest"></div></a>
         <a href="https://www.youtube.com/channel/UC4XWVXnCeZQRS4lJjQLbnVA" title="Find our latest videos on YouTube" role="link">
           <div id="facebook-icon" class="footer-social footer-social-youtube"></div></a>
