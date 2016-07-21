@@ -75,7 +75,7 @@ function social_render($subtype, $conf, $panel_args, $context = NULL) {
         '#theme' => 'link',
           '#text' => "<span class='offscreen'>Instagram</span>
             <span class='social-icon footer-social-instagram' id='instagram-icon'></span>",
-          '#path' => 'http://instagram.com/uicollegeofed',
+          '#path' => 'https://instagram.com/uicollegeofed',
           '#options' => array('html' => TRUE),
       ),
       'link_twitter' => array(
@@ -96,7 +96,7 @@ function social_render($subtype, $conf, $panel_args, $context = NULL) {
         '#theme' => 'link',
           '#text' => "<span class='offscreen'>Pinterest</span>
             <span class='social-icon footer-social-pinterest' id='pinterest-icon'></span>",
-          '#path' => 'http://pinterest.com/uicoe/',
+          '#path' => 'https://pinterest.com/uicoe/',
           '#options' => array('html' => TRUE),
       ),
       'link_youtube' => array(
