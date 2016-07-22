@@ -402,7 +402,7 @@ function education_pages_default_page_manager_pages() {
 
 <p class="large-text"><a class="btn-long" href="/audiences/media">Media Resources</a></p>
 <p class="large-text"><a class="btn-long" href="//magazine.education.uiowa.edu">Alumni Magazine</a></p>
-<p class="large-text"><a class="btn-long" href="http://wayback.archive-it.org/823/20151226142811/http://www.education.uiowa.edu/news/annual/2015">Annual Report</a></p>
+<p class="large-text"><a class="btn-long" href="https://wayback.archive-it.org/823/20151226142811/http://www.education.uiowa.edu/news/annual/2015">Annual Report</a></p>
 ',
       'format' => 'filtered_html',
       'substitute' => TRUE,
