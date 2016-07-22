@@ -47,7 +47,7 @@
             <?php print(l('Apply', 'node/292', array('attributes' => array('class' => array('btn', 'btn-primary', 'apply'))))); ?>
             <?php print(l('Visit', 'node/724', array('attributes' => array('class' => array('btn', 'btn-primary', 'visit'))))); ?>
             <?php print(l('Contact', 'mailto:ask-education@uiowa.edu', array('attributes' => array('class' => array('btn', 'btn-primary', 'contact'))))); ?>
-            <?php print(l('Support the College', 'http://www.uifoundation.org/education/', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
+            <?php print(l('Support the College', 'https://www.uifoundation.org/education/', array('attributes' => array('class' => array('btn', 'btn-primary', 'support'))))); ?>
           </div>
           <div class="social-links">
             <h2 class="offscreen">Connect with Us</h2>
@@ -161,7 +161,7 @@
         <a href="/directories" class="footer-button">Directory</a>
       <br/>
       <?php
-        print l(t('Give'), 'http://www.uifoundation.org/education/', array('attributes' => array('class' => 'footer-button')));
+        print l(t('Give'), 'https://www.uifoundation.org/education/', array('attributes' => array('class' => 'footer-button')));
       ?>
       <br/>
       </div>
