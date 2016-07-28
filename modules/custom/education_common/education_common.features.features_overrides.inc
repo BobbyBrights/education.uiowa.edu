@@ -21,7 +21,8 @@ function education_common_features_override_default_overrides() {
   $overrides["file_type.document.mimetypes|1"] = 'text/plain';
   $overrides["file_type.document.mimetypes|10"] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
   $overrides["file_type.document.mimetypes|11"] = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
-  $overrides["file_type.document.mimetypes|12"] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+  $overrides["file_type.document.mimetypes|12"] = 'application/vnd.openxmlformats-officedocument.presentationml.template';
+  $overrides["file_type.document.mimetypes|13"] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
   $overrides["file_type.document.mimetypes|2"] = 'application/msword';
   $overrides["file_type.document.mimetypes|3"] = 'application/vnd.ms-excel';
   $overrides["file_type.document.mimetypes|4"] = 'application/pdf';

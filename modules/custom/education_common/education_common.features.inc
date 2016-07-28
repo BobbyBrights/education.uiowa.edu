@@ -49,7 +49,8 @@ function education_common_file_default_types_alter(&$data) {
     $data['document']->mimetypes[1] = 'text/plain'; /* WAS: 'application/msword' */
     $data['document']->mimetypes[10] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'; /* WAS: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' */
     $data['document']->mimetypes[11] = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'; /* WAS: '' */
-    $data['document']->mimetypes[12] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'; /* WAS: '' */
+    $data['document']->mimetypes[12] = 'application/vnd.openxmlformats-officedocument.presentationml.template'; /* WAS: '' */
+    $data['document']->mimetypes[13] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'; /* WAS: '' */
     $data['document']->mimetypes[2] = 'application/msword'; /* WAS: 'application/vnd.ms-excel' */
     $data['document']->mimetypes[3] = 'application/vnd.ms-excel'; /* WAS: 'application/pdf' */
     $data['document']->mimetypes[4] = 'application/pdf'; /* WAS: 'application/vnd.ms-powerpoint' */
