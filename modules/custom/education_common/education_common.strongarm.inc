@@ -91,7 +91,7 @@ function education_common_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'file_entity_default_allowed_extensions';
-  $strongarm->value = 'csv jpg jpeg gif png txt doc docx xls xlsx pdf ppt pptx csv';
+  $strongarm->value = 'csv eps jpg jpeg gif png txt doc docx xls xlsx pdf potx ppt pptx';
   $export['file_entity_default_allowed_extensions'] = $strongarm;
 
   $strongarm = new stdClass();
