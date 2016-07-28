@@ -19,16 +19,17 @@ function education_common_features_override_default_overrides() {
   $overrides["file_type.document.disabled"] = FALSE;
   $overrides["file_type.document.mimetypes|0"] = 'text/csv';
   $overrides["file_type.document.mimetypes|1"] = 'text/plain';
-  $overrides["file_type.document.mimetypes|10"] = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
-  $overrides["file_type.document.mimetypes|11"] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+  $overrides["file_type.document.mimetypes|10"] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+  $overrides["file_type.document.mimetypes|11"] = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
+  $overrides["file_type.document.mimetypes|12"] = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
   $overrides["file_type.document.mimetypes|2"] = 'application/msword';
   $overrides["file_type.document.mimetypes|3"] = 'application/vnd.ms-excel';
   $overrides["file_type.document.mimetypes|4"] = 'application/pdf';
-  $overrides["file_type.document.mimetypes|5"] = 'application/vnd.ms-powerpoint';
-  $overrides["file_type.document.mimetypes|6"] = 'application/vnd.oasis.opendocument.text';
-  $overrides["file_type.document.mimetypes|7"] = 'application/vnd.oasis.opendocument.spreadsheet';
-  $overrides["file_type.document.mimetypes|8"] = 'application/vnd.oasis.opendocument.presentation';
-  $overrides["file_type.document.mimetypes|9"] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+  $overrides["file_type.document.mimetypes|5"] = 'application/postscript';
+  $overrides["file_type.document.mimetypes|6"] = 'application/vnd.ms-powerpoint';
+  $overrides["file_type.document.mimetypes|7"] = 'application/vnd.oasis.opendocument.text';
+  $overrides["file_type.document.mimetypes|8"] = 'application/vnd.oasis.opendocument.spreadsheet';
+  $overrides["file_type.document.mimetypes|9"] = 'application/vnd.oasis.opendocument.presentation';
 
   // Exported overrides for: filter
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|0"] = 'btn-primary';
