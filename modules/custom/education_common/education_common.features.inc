@@ -59,6 +59,10 @@ function education_common_file_default_types_alter(&$data) {
     $data['document']->mimetypes[8] = 'application/vnd.oasis.opendocument.presentation'; /* WAS: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' */
     $data['document']->mimetypes[9] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'; /* WAS: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' */
   }
+  if (isset($data['image'])) {
+    $data['image']->disabled = FALSE; /* WAS: '' */
+    $data['image']->mimetypes[1] = 'application/postscript'; /* WAS: '' */
+  }
 }
 
 /**

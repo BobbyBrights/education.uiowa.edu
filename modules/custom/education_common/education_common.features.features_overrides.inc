@@ -30,6 +30,8 @@ function education_common_features_override_default_overrides() {
   $overrides["file_type.document.mimetypes|7"] = 'application/vnd.oasis.opendocument.spreadsheet';
   $overrides["file_type.document.mimetypes|8"] = 'application/vnd.oasis.opendocument.presentation';
   $overrides["file_type.document.mimetypes|9"] = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+  $overrides["file_type.image.disabled"] = FALSE;
+  $overrides["file_type.image.mimetypes|1"] = 'application/postscript';
 
   // Exported overrides for: filter
   $overrides["filter.filtered_html.filters|wysiwyg|settings|rule_valid_classes|0"] = 'btn-primary';
