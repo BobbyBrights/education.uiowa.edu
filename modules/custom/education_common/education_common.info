@@ -31,6 +31,7 @@ dependencies[] = text
 dependencies[] = transliteration
 dependencies[] = uiowa_favicon
 dependencies[] = views
+dependencies[] = views_ui
 dependencies[] = xmlsitemap_custom
 dependencies[] = xmlsitemap_node
 dependencies[] = xmlsitemap_taxonomy
