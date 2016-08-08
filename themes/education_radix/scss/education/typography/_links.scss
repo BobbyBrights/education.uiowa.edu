@@ -5,7 +5,7 @@ a {
   font-family: $avenir-65;
 
   &:hover, &:focus {
-    background-color: $light-yellow;
+    background-color: #f5f5f5;
     color: darken($blue, 10);
     text-decoration: none;
   }
