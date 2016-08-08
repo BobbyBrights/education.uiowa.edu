@@ -9073,9 +9073,10 @@ hr {
   border-top-width: 3pt; }
 
 a {
-  color: #0c9bd2;
+  color: #097099;
   font-family: "AvenirLT-Medium"; }
   a:hover, a:focus {
+    background-color: #fff7b9;
     color: #0977a2;
     text-decoration: none; }
 
@@ -9090,7 +9091,7 @@ ul, ol {
 
 body {
   color: #333333;
-  font-family: "AvenirLT-Light";
+  font-family: "Avenir";
   line-height: 1.5;
   font-size: 1rem; }
 
@@ -9458,7 +9459,8 @@ h1#site-name {
   line-height: 1;
   padding-bottom: 10px;
   text-align: center;
-  text-transform: uppercase; }
+  text-shadow: 2px 2px 3px #898989; 
+  text-transform: uppercase;}
   @media (min-width: 600px) {
     .front .home-subtitle {
       font-size: 3rem;
@@ -9466,11 +9468,11 @@ h1#site-name {
   @media (min-width: 900px) {
     .front .home-subtitle {
       font-size: 4rem;
-      padding-bottom: 30px; } }
+      padding-bottom: 15%; } }
   @media (min-width: 1200px) {
     .front .home-subtitle {
       font-size: 5rem;
-      padding-bottom: 50px; } }
+      padding-bottom: 15%; } }
   .front .home-subtitle .home-subtitle-bold {
     font-family: "AvenirLT-Black"; }
 

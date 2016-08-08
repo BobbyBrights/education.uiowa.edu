@@ -198,6 +198,7 @@ $caret-width: 20px;
     line-height: 1;
     padding-bottom: 10px;
     text-align: center;
+    text-shadow: 2px 2px 3px $black_60;
     text-transform: uppercase;
 
     @include breakpoint($bp-home-subtitle-small) {
@@ -207,12 +208,12 @@ $caret-width: 20px;
 
     @include breakpoint($bp-home-subtitle-medium) {
       @include font-size(4);
-      padding-bottom: 30px;
+      padding-bottom: 15%;
     }
 
     @include breakpoint($bp-home-subtitle-large) {
       @include font-size(5);
-      padding-bottom: 50px;
+      padding-bottom: 15%;
     }
 
     .home-subtitle-bold {
