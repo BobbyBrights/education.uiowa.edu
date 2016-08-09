@@ -67,7 +67,7 @@ function education_events_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Begin typing the title of the degree, program, department, center, service, or committee. Select all affiliations, separating them by commas.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -100,7 +100,7 @@ function education_events_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 1,
+        'enabled' => 0,
         'height' => 320,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
@@ -113,9 +113,13 @@ function education_events_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete_tags',
       'weight' => 4,
     ),
   );
@@ -215,7 +219,7 @@ function education_events_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 1,
+        'enabled' => 0,
         'height' => 320,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
@@ -230,7 +234,7 @@ function education_events_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 6,
     ),
   );
@@ -366,6 +370,7 @@ function education_events_field_default_field_instances() {
   t('An event\'s URL could be "For more information about <name of event>" (linking to Localist or another event page), "Register for <name of event>", "Follow this event on Twitter @eventName", or any of the like.');
   t('Area of Expertise');
   t('Audience');
+  t('Begin typing the title of the degree, program, department, center, service, or committee. Select all affiliations, separating them by commas.');
   t('Date');
   t('Description');
   t('Website');

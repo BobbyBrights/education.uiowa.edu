@@ -66,7 +66,7 @@ function education_articles_field_default_field_instances() {
     'bundle' => 'article',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Begin typing the degree, program, department, center, service, or committee name. Select affiliations one at a time, separated by a comma.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -99,7 +99,7 @@ function education_articles_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 1,
+        'enabled' => 0,
         'height' => 320,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
@@ -112,9 +112,13 @@ function education_articles_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete_tags',
       'weight' => 4,
     ),
   );
@@ -155,14 +159,14 @@ function education_articles_field_default_field_instances() {
         'dividerLocation' => 0.5,
         'doubleClickable' => 1,
         'dragToAdd' => 1,
-        'enabled' => 1,
-        'height' => 320,
+        'enabled' => 0,
+        'height' => 316,
         'includeAddAll' => 1,
         'includeRemoveAll' => 1,
         'searchable' => 1,
         'selectedContainerOnLeft' => 1,
         'sortable' => 1,
-        'width' => 320,
+        'width' => 316,
       ),
       'user_register_form' => FALSE,
     ),
@@ -170,7 +174,7 @@ function education_articles_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 5,
     ),
   );
@@ -334,6 +338,7 @@ function education_articles_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Affiliations');
   t('Audience');
+  t('Begin typing the degree, program, department, center, service, or committee name. Select affiliations one at a time, separated by a comma.');
   t('Body');
   t('Image');
   t('Source');

@@ -55,6 +55,10 @@ function education_faculty_views_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* No results behavior: Global: Text area */
@@ -135,12 +139,10 @@ function education_faculty_views_views_default_views() {
   $handler->display->display_options['filters']['field_person_rank_tid']['field'] = 'field_person_rank_tid';
   $handler->display->display_options['filters']['field_person_rank_tid']['operator'] = 'not';
   $handler->display->display_options['filters']['field_person_rank_tid']['value'] = array(
-    0 => '10',
-    1 => '11',
-    2 => '9',
-    3 => '14',
-    4 => '1',
-    5 => '13',
+    0 => '23',
+    1 => '28',
+    2 => '15',
+    3 => '27',
   );
   $handler->display->display_options['filters']['field_person_rank_tid']['expose']['operator_id'] = 'field_person_rank_tid_op';
   $handler->display->display_options['filters']['field_person_rank_tid']['expose']['label'] = 'Rank (field_person_rank)';
