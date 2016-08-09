@@ -9076,9 +9076,11 @@ a {
   color: #097099;
   font-family: "AvenirLT-Medium"; }
   a:hover, a:focus {
-    background-color: #f5f5f5;
     color: #0977a2;
     text-decoration: none; }
+  #main-wrapper a:hover, #main-wrapper a:focus {
+    background-color: #f5f5f5;
+  }
 
 ul, ol {
   color: #000000;
