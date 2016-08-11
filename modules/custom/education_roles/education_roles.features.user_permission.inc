@@ -15,6 +15,8 @@ function education_roles_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'system',
@@ -57,6 +59,7 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'contributor' => 'contributor',
     ),
     'module' => 'node',
   );
@@ -86,6 +89,7 @@ function education_roles_user_default_permissions() {
     'name' => 'access media browser',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -135,7 +139,6 @@ function education_roles_user_default_permissions() {
     'name' => 'access site reports',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'system',
@@ -166,6 +169,7 @@ function education_roles_user_default_permissions() {
     'name' => 'add media from remote sources',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -442,6 +446,7 @@ function education_roles_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -525,6 +530,7 @@ function education_roles_user_default_permissions() {
     'name' => 'administer redirects',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'redirect',
   );
@@ -746,6 +752,7 @@ function education_roles_user_default_permissions() {
     'name' => 'create announcement content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -767,6 +774,7 @@ function education_roles_user_default_permissions() {
     'name' => 'create background_image content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -817,6 +825,7 @@ function education_roles_user_default_permissions() {
     'name' => 'create event content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -827,6 +836,7 @@ function education_roles_user_default_permissions() {
     'name' => 'create fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -847,6 +857,7 @@ function education_roles_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -857,6 +868,7 @@ function education_roles_user_default_permissions() {
     'name' => 'create person content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -887,6 +899,7 @@ function education_roles_user_default_permissions() {
     'name' => 'create service content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -926,6 +939,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete any announcement content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -956,6 +970,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete any background_image content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1006,6 +1021,8 @@ function education_roles_user_default_permissions() {
     'name' => 'delete any document files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1026,6 +1043,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete any fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1036,6 +1054,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete any image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1116,6 +1135,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete own announcement content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1126,6 +1146,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete own article content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1203,6 +1224,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete own event content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1213,6 +1235,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete own fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1223,6 +1246,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
     ),
     'module' => 'file_entity',
   );
@@ -1242,6 +1266,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete own person content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1272,6 +1297,7 @@ function education_roles_user_default_permissions() {
     'name' => 'delete own service content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1392,6 +1418,8 @@ function education_roles_user_default_permissions() {
     'name' => 'download any document files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1402,6 +1430,7 @@ function education_roles_user_default_permissions() {
     'name' => 'download any image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1412,6 +1441,8 @@ function education_roles_user_default_permissions() {
     'name' => 'download any video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1440,6 +1471,7 @@ function education_roles_user_default_permissions() {
     'name' => 'download own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
     ),
     'module' => 'file_entity',
   );
@@ -1467,6 +1499,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any announcement content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1488,6 +1521,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any audio files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1498,6 +1532,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any background_image content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1508,6 +1543,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any center content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1518,6 +1554,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any committee content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1539,6 +1576,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any department content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1549,6 +1587,8 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any document files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1559,6 +1599,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any event content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1569,6 +1610,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1579,6 +1621,8 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1589,6 +1633,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1599,6 +1644,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any person content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1609,6 +1655,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any program content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1629,6 +1676,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any service content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1639,6 +1687,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit any video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1659,6 +1708,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -1670,6 +1720,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit own announcement content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1691,6 +1742,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit own audio files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
     ),
     'module' => 'file_entity',
   );
@@ -1729,7 +1781,6 @@ function education_roles_user_default_permissions() {
     'name' => 'edit own degree content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1759,6 +1810,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit own event content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1769,6 +1821,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit own fast_fact content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1838,6 +1891,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit own video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
     ),
     'module' => 'file_entity',
   );
@@ -1876,6 +1930,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit terms in audiences',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
@@ -1906,6 +1961,7 @@ function education_roles_user_default_permissions() {
     'name' => 'edit terms in media_folders',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
@@ -2079,6 +2135,7 @@ function education_roles_user_default_permissions() {
     'name' => 'manage background images',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'bg_image_ui',
@@ -2897,6 +2954,8 @@ function education_roles_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -2946,6 +3005,7 @@ function education_roles_user_default_permissions() {
     'name' => 'use manualcrop',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -2957,6 +3017,7 @@ function education_roles_user_default_permissions() {
     'name' => 'use media wysiwyg',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -3013,6 +3074,7 @@ function education_roles_user_default_permissions() {
     'name' => 'use text format filtered_html',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -3033,6 +3095,7 @@ function education_roles_user_default_permissions() {
     'name' => 'view all background images',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'bg_image',
@@ -3082,6 +3145,7 @@ function education_roles_user_default_permissions() {
     'name' => 'view any unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'view_unpublished',
@@ -3128,6 +3192,8 @@ function education_roles_user_default_permissions() {
     'name' => 'view any unpublished page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
     ),
     'module' => 'view_unpublished',
   );
@@ -3182,6 +3248,7 @@ function education_roles_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'contributor' => 'contributor',
     ),
     'module' => 'file_entity',
   );
@@ -3209,6 +3276,7 @@ function education_roles_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
@@ -3238,6 +3306,8 @@ function education_roles_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -3248,6 +3318,7 @@ function education_roles_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
