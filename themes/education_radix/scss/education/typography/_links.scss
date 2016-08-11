@@ -6,12 +6,12 @@ a {
 
   &:hover, &:focus {
     color: darken($blue, 10);
-    text-decoration: none;    
+    text-decoration: none;
   }
 }
 
 #main-wrapper {
   a:hover, a:focus {
-      background-color: #f5f5f5;
+      background-color: #fcfcfc;
   }
 }
