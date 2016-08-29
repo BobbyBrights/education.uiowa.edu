@@ -1,0 +1,35 @@
+.node-person-full {
+
+ .person_aprProfile{
+
+  .field-label, h2 {
+    @include offscreen; // h1 and h2 are same content
+  }
+
+  .media-left {
+    width: 100% !important;
+    display: block;
+
+    .img-rounded {
+      border-radius: 0 !important; //don't want rounded corners
+    }
+  }
+
+  .media-body {
+    width: 100% !important;
+
+    table {
+      border: none;
+
+      th {
+        border: none;
+        width: 75px;
+      }
+      td {
+        width: 100%;
+      }  
+    }
+  }
+
+ }
+}

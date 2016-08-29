@@ -9084,7 +9084,7 @@ a {
 
 ul, ol {
   color: #000000;
-  font-family: "Avenir, Arial, san-serif";
+  font-family: Arial, san-serif;
   margin-top: 20px; }
   ul li, ol li {
     margin-bottom: 10px; }
@@ -9093,7 +9093,7 @@ ul, ol {
 
 body {
   color: #333333;
-  font-family: "Avenir";
+  font-family: Arial, sans-serif;
   line-height: 1.5;
   font-size: 1rem; }
 
@@ -10283,4 +10283,29 @@ img {
       visibility: visible;
       height: auto; } }
 
+
+.node-person-full .person_aprProfile h2 {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;   }
+.node-person-full .person_aprProfile .media-left {
+          width: 100% !important;
+          display: block;  }
+.node-person-full .person_aprProfile .media-left .img-rounded {
+            border-radius: 0 !important; }
+.node-person-full .person_aprProfile .media-body {
+          width: 100% !important;}
+.node-person-full .person_aprProfile .media-body h3 {
+        display:none;
+        visibility:hidden;}
+.node-person-full .person_aprProfile .media-body table {
+    border: none; }
+.node-person-full .person_aprProfile .media-body table th {
+    border: none;
+    width: 75px; }
+.node-person-full .person_aprProfile .media-body table td {
+    width: 100%; }
 /*# sourceMappingURL=education_radix.style.css.map */

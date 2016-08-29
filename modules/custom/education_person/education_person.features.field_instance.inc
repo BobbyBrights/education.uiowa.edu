@@ -24,6 +24,13 @@ function education_person_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
       'referenced' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -54,7 +61,7 @@ function education_person_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -73,6 +80,15 @@ function education_person_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 10,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 11,
       ),
       'referenced' => array(
         'label' => 'above',
@@ -112,7 +128,60 @@ function education_person_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 20,
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance: 'node-person-field_person_apr_id'.
+  $field_instances['node-person-field_person_apr_id'] = array(
+    'bundle' => 'person',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the person\'s HawkID if their web profiles should be created using APR data.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 6,
+      ),
+      'referenced' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_person_apr_id',
+    'label' => 'APR id',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 14,
     ),
   );
 
@@ -129,6 +198,13 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 6,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 7,
       ),
       'referenced' => array(
         'label' => 'above',
@@ -175,7 +251,7 @@ function education_person_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 16,
+      'weight' => 13,
     ),
   );
 
@@ -198,6 +274,13 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'sitenow_map_formatter_abbr',
         'weight' => 12,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'sitenow_maps',
+        'settings' => array(),
+        'type' => 'sitenow_map_formatter_abbr',
+        'weight' => 13,
       ),
       'referenced' => array(
         'label' => 'above',
@@ -243,6 +326,13 @@ function education_person_field_default_field_instances() {
         'type' => 'email_default',
         'weight' => 4,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 4,
+      ),
       'referenced' => array(
         'label' => 'above',
         'module' => 'email',
@@ -272,7 +362,7 @@ function education_person_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -289,6 +379,13 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 9,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 10,
       ),
       'referenced' => array(
         'label' => 'above',
@@ -328,7 +425,7 @@ function education_person_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -340,6 +437,13 @@ function education_person_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -375,7 +479,7 @@ function education_person_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -386,6 +490,16 @@ function education_person_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 5,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
@@ -450,7 +564,7 @@ function education_person_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -462,6 +576,13 @@ function education_person_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -497,7 +618,7 @@ function education_person_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -514,6 +635,13 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 11,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
       ),
       'referenced' => array(
         'label' => 'above',
@@ -562,6 +690,13 @@ function education_person_field_default_field_instances() {
         'type' => 'text_plain',
         'weight' => 7,
       ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 8,
+      ),
       'referenced' => array(
         'label' => 'above',
         'module' => 'telephone',
@@ -592,7 +727,7 @@ function education_person_field_default_field_instances() {
         'placeholder' => '',
       ),
       'type' => 'telephone_default',
-      'weight' => 15,
+      'weight' => 12,
     ),
   );
 
@@ -609,6 +744,13 @@ function education_person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 8,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 9,
       ),
       'referenced' => array(
         'label' => 'above',
@@ -648,7 +790,7 @@ function education_person_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -660,6 +802,13 @@ function education_person_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
@@ -695,18 +844,20 @@ function education_person_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('APR id');
   t('APR link');
   t('Affiliations');
   t('Areas of expertise');
   t('Bio');
   t('Building');
   t('Email');
+  t('Enter the person\'s HawkID if their web profiles should be created using APR data.');
   t('First name');
   t('If no directory link, leave blank. Email link can be added programmatically. ');
   t('Image');
