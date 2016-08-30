@@ -159,6 +159,7 @@
                   print l(t('Licensure, Certificate, & Endorsement'), drupal_get_path_alias('node/691'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Non-degree programs')));
                   print l(t('Professional Development'), drupal_get_path_alias('node/269'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Teacher Leader Center')));
                   print l(t('Online'), drupal_get_path_alias('node/693'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Online programs')));
+                  print l(t('UI REACH'), 'https://education.uiowa.edu/services/reach/admissions#app', array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'UI REACH program')));                  
                 ?>
               </div>
             <!--  <div class="modal-footer">
