@@ -4521,8 +4521,10 @@ a.thumbnail.active {
   zoom: 1;
   overflow: hidden; }
 
+/** causing issues in web profile layout
 .media-body {
   width: 10000px; }
+**/
 
 .media-object {
   display: block; }
@@ -10284,28 +10286,28 @@ img {
       height: auto; } }
 
 
-.node-person-full .person_aprProfile h2 {
+.node-person-full h2 {
   position: absolute;
   top: -99999em;
   width: 1px;
   height: 1px;
   overflow: hidden;
   outline: 0;   }
-.node-person-full .person_aprProfile .media-left {
+.node-person-full .media-left {
           width: 100% !important;
           display: block;  }
-.node-person-full .person_aprProfile .media-left .img-rounded {
+.node-person-full .media-left .img-rounded {
             border-radius: 0 !important; }
-.node-person-full .person_aprProfile .media-body {
+.node-person-full .media-body {
           width: 100% !important;}
-.node-person-full .person_aprProfile .media-body h3 {
+.node-person-full .media-body h3 {
         display:none;
         visibility:hidden;}
-.node-person-full .person_aprProfile .media-body table {
+.node-person-full .media-body table {
     border: none; }
-.node-person-full .person_aprProfile .media-body table th {
+.node-person-full .media-body table th {
     border: none;
     width: 75px; }
-.node-person-full .person_aprProfile .media-body table td {
+.node-person-full .media-body table td {
     width: 100%; }
 /*# sourceMappingURL=education_radix.style.css.map */
