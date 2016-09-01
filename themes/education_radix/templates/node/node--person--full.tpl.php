@@ -30,7 +30,12 @@
     drupal_add_js('https://apps.its.uiowa.edu/facadmin/assets/lib/angular-filter/dist/angular-filter.min.js?v=4', array(
             'type' => 'external',
             'scope' => 'footer', ));
-    drupal_add_js(drupal_get_path('theme','education_radix') . '/js/apr_profile.js', array('scope' => 'footer'));
+    drupal_add_js('https://apps.its.uiowa.edu/facadmin/assets/widget/apr_profile.js', array(
+            'type' => 'external',
+            'scope' => 'footer', ));
+    /** local copy of apr_profile.js, working 9/1/16
+      drupal_add_js(drupal_get_path('theme','education_radix') . '/js/apr_profile.js', array('scope' => 'footer'));
+    **/
 
     /*** End code from Manjoine ***/ ?>
 
