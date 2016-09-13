@@ -10,6 +10,8 @@
  * @see html.tpl.php
  */
 ?>
+<!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WNGMJD“ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WNGMJD');</script><!-- End Google Tag Manager -->
+
 <header id="header" class="header" role="header">
   <div class="branding">
     <div class="container">
@@ -159,7 +161,7 @@
                   print l(t('Licensure, Certificate, & Endorsement'), drupal_get_path_alias('node/691'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Non-degree programs')));
                   print l(t('Professional Development'), drupal_get_path_alias('node/269'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Teacher Leader Center')));
                   print l(t('Online'), drupal_get_path_alias('node/693'), array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'Online programs')));
-                  print l(t('UI REACH'), 'https://education.uiowa.edu/services/reach/admissions#app', array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'UI REACH program')));                  
+                  print l(t('UI REACH'), 'https://education.uiowa.edu/services/reach/admissions#app', array('attributes' => array('class' => 'btn btn-primary btn-modal','title' => 'UI REACH program')));
                 ?>
               </div>
             <!--  <div class="modal-footer">
