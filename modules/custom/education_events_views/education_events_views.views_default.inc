@@ -191,6 +191,9 @@ function education_events_views_views_default_views() {
   $handler = $view->new_display('page', 'Landing Page', 'education_events_landing_page_view');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Upcoming Events';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -211,6 +214,36 @@ function education_events_views_views_default_views() {
     'trim_length' => '100',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'event' => 'event',
+  );
+  /* Filter criterion: Content: Date - end date (field_event_date:value2) */
+  $handler->display->display_options['filters']['field_event_date_value2']['id'] = 'field_event_date_value2';
+  $handler->display->display_options['filters']['field_event_date_value2']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['filters']['field_event_date_value2']['field'] = 'field_event_date_value2';
+  $handler->display->display_options['filters']['field_event_date_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_date_value2']['granularity'] = 'minute';
+  $handler->display->display_options['filters']['field_event_date_value2']['default_date'] = 'now';
+  /* Filter criterion: Field: Audiences (field_event_audience) */
+  $handler->display->display_options['filters']['field_event_audience_tid']['id'] = 'field_event_audience_tid';
+  $handler->display->display_options['filters']['field_event_audience_tid']['table'] = 'field_data_field_event_audience';
+  $handler->display->display_options['filters']['field_event_audience_tid']['field'] = 'field_event_audience_tid';
+  $handler->display->display_options['filters']['field_event_audience_tid']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_event_audience_tid']['value'] = '';
+  $handler->display->display_options['filters']['field_event_audience_tid']['vocabulary'] = 'audiences';
   $handler->display->display_options['path'] = 'events';
 
   /* Display: Filtered Page */
